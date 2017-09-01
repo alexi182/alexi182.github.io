@@ -1,0 +1,152 @@
+.index-body {
+  .header {
+    background: none;
+  }
+  .resh-link__title {
+    text-shadow: 0 0 7px rgba(255, 255, 255, .5);
+  }
+
+  .header-nav {
+    vertical-align: top;
+  }
+}
+
+.header-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-menu-list__item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2px;
+  &:nth-of-type(4),
+  &:nth-of-type(5) {
+      a {
+      i {
+        font-size: 21px;
+        margin-right: 10px;
+      }
+    }
+  }
+  a {
+    display: block;
+    width: 150px;
+    background: rgba(255, 255, 255, .65);
+    transition: .3s;
+    border-radius: 3px;
+    text-align: center;
+    height: 38px;
+    line-height: 38px;
+    &:hover {
+      background: rgb(255, 255, 255);
+    }
+
+    i {
+      font-size: 27px;
+      line-height: 38px;
+    }
+    span {
+      text-transform: uppercase;
+      font: bold 12px $open-sans;
+    }
+  }
+  .icon_studend {
+    color: #54b9f8;
+  }
+  .icon_parents {
+    color: #e4ac02;
+  }
+  .icon_teacher {
+    color: #40bb26;
+  }
+  .icon_about {
+    color: #e85921;
+  }
+  .icon_question {
+    color: #6ac9e8;
+  }
+}
+
+.header-right-side {
+  display: table-cell;
+  vertical-align: top;
+}
+.reg-box {
+  float: right;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1480px) {
+  .header-left-side {
+    white-space: nowrap;
+  }
+  .resh-link {
+    margin-right: 1%;
+    white-space: normal;
+  }
+  .resh-link__title {
+    font: 15px/17px $open-sans;
+  }
+
+  .header-menu-list__item {
+    margin-right: 0;
+    &:nth-of-type(4),
+    &:nth-of-type(5) {
+      a {
+        i {
+          font-size: 18px;
+          margin-top: -5px;
+        }
+      }
+    }
+    a {
+      width: auto;
+      padding: 0 10px;
+      height: 30px;
+      line-height: 30px;
+      span {
+        font-size: 10px;
+        line-height: 30px;
+      }
+      i {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+  .index-body {
+    .header-nav {
+      vertical-align: middle;
+    }
+  }
+  .header-right-side {
+    padding-top: 5px;
+  }
+  .reg-box {
+    display: block;
+    text-align: right;
+  }
+  .header-menu__register {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .reg-box {
+    float: none;
+    margin-top: 10px;
+  }
+  .header-menu__search {
+    margin: 10px 0;
+  }
+
+  .index-body {
+    .header-right-side {
+      display: block;
+      position: absolute;
+      right: 10px;
+      top: 0;
+    }
+  }
+}

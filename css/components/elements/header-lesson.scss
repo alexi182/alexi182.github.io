@@ -1,0 +1,234 @@
+.header.header-lesson {
+  background: #fff;
+}
+
+.main-logo {
+  padding: 5px 0;
+  width: 195px;
+}
+
+.limiter-wrap {
+  max-width: 1533px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.limiter-wrap-smaller {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 10px;
+}
+
+.global-nav {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.global-nav__options {
+  width: 30%;
+  text-align: right;
+  color: #cccccc;
+}
+
+.option-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 12px;
+  &.icon_searh {
+    font-size: 19px;
+  }
+  &.icon_eyes {
+    font-size: 21px;
+    line-height: 25px;
+    position: relative;
+    top: 5px;
+  }
+}
+
+span.option-item {
+  color: #ccc;
+}
+
+.option-login {
+  margin: 0 5px 0 10%;
+}
+.option-reegister {
+  margin: 0 0 0 5px;
+}
+
+
+
+.global-nav__item {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: bold;
+  i, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  i {
+    font-size: 25px;
+  }
+  &:hover {
+    background: #a3d39c;
+  }
+}
+
+$header-colors-list: #56baf8 #e4ac02 #43bc2a #e85b24 #6ac9e8;
+@for $i from 1 through length($header-colors-list) {
+  .global-nav__item-#{$i} {
+    .icon {
+      color: nth($header-colors-list, $i);
+    }
+    &:hover {
+      background-color: nth($header-colors-list, $i);
+      color: #fff;
+      .icon {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.header-menu-2 {
+  background: #236dcd;
+  padding: 20px 0;
+}
+
+.header-menu-2__item {
+  color: #fff;
+  text-decoration: none;
+  font: 15px $open-sans;
+  text-align: center;
+  &:hover {
+    color: #11eff8;
+  }
+  i {
+    display: inline-block;
+    height: 0;
+    padding-bottom: 35%;
+  }
+  p {
+    margin: 0;
+    font-size: 15px;
+    font-size: 1.15vw;
+    @media screen and (min-width: 1300px) {
+      font-size: 15px;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 11px;
+    }
+  }
+
+}
+
+.grade-logo-contain {
+  width: 23%;
+  position: relative;
+
+}
+
+.grade-05-logo {
+  top: -35%;
+  left: 0;
+  display: block;
+  background: url(/img/5-grade-logo.png) no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  position: absolute;
+}
+
+.header-menu-2__icon-1 {
+  width: 60px;
+  height: 0;
+  background: url(/img/svg/items01.svg) no-repeat center;
+}
+
+.header-menu-2__item-1 {
+  &:hover {
+    .header-menu-2__icon-1 {
+      background: url(/img/svg/items02.svg) no-repeat center;
+    }
+  }
+}
+
+.header-menu-2__icon-2 {
+  width: 69px;
+  height: 0;
+  background: url(/img/svg/teacher01.svg) no-repeat center;
+}
+
+.header-menu-2__item-2 {
+  &:hover {
+    .header-menu-2__icon-2 {
+      background: url(/img/svg/teacher02.svg) no-repeat center;
+    }
+  }
+}
+
+.header-menu-2__icon-3 {
+  width: 81px;
+  height: 0;
+  background: url(/img/svg/excellents01.svg) no-repeat center;
+}
+
+.header-menu-2__item-3 {
+  &:hover {
+    .header-menu-2__icon-3 {
+      background: url(/img/svg/excellents02.svg) no-repeat center;
+    }
+  }
+}
+
+.header-menu-2__icon-4 {
+  width: 86px;
+  height: 0;
+  background: url(/img/svg/classes01.svg) no-repeat center;
+}
+
+.header-menu-2__item-4 {
+  &:hover {
+    .header-menu-2__icon-4 {
+      background: url(/img/svg/classes02.svg) no-repeat center;
+    }
+  }
+}
+
+.header-menu-2__icon-5 {
+  width: 40px;
+  height: 0;
+  background: url(/img/svg/lessons01.svg) no-repeat center;
+}
+
+.header-menu-2__item-5 {
+  &:hover {
+    .header-menu-2__icon-5 {
+      background: url(/img/svg/lessons02.svg) no-repeat center;
+    }
+  }
+}
+
+
+
+
+//-------------------------------------------------------------------------
+//
+// media
+//
+//-------------------------------------------------------------------------
+
+@media screen and (max-width: 1200px) {
+  .global-nav__item {
+    span {
+      display: block;
+
+    }
+  }
+}

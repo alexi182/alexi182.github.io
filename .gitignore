@@ -1,0 +1,9 @@
+/npm-debug.log
+*.css.map
+design
+node_modules
+.idea
+.sass-cache
+bower_components
+output
+output.*

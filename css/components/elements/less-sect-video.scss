@@ -1,0 +1,149 @@
+.lesson {
+  margin: 20px 0;
+}
+
+.le-top-grade-link {
+  font: 14px $open-sans;
+  color: #236dcd;
+  text-decoration: underline;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.video-block {
+  margin: 20px 0;
+}
+
+.video-block__col1 {
+  width: 220px;
+  position: relative;
+  vertical-align: top;
+  position: relative;
+}
+
+.video-block__col2 {
+  padding-left: 90px;
+}
+
+.video-block__back {
+  font: 16px $open-sans;
+  color: #199cef;
+  text-decoration: underline;
+  padding-left: 25px;
+  display: block;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 60px;
+
+  &:hover {
+    text-decoration: none;
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    vertical-align: middle;
+    left: 0;
+    top: 2px;
+    @include sprite($link-arrow-back);
+  }
+
+}
+
+.video-block__links-wrapper {
+  margin: 0 0 20px;
+}
+
+.video-block__forward {
+  font: 16px $open-sans;
+  color: inherit;
+  text-decoration: none;
+  padding-left: 25px;
+  display: block;
+  position: relative;
+  margin-top: 60px;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    vertical-align: middle;
+    right: 0;
+    top: 2px;
+    @include sprite($link-arrow-forward);
+  }
+  &:hover {
+    .video-block__links-blue {
+      text-decoration: underline;
+    }
+  }
+}
+
+.video-block__links-black {
+  color: #000;
+}
+
+.video-block__links-blue {
+  font-size: 16px;
+  font-weight: bold;
+  color: #199cef;
+}
+
+.le-video-wrapper-outer {
+  width: 730px;
+  height: 426px;
+  position: relative;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  border: 17px solid #cccccc;
+  background: #e8e8e8;
+
+}
+
+.to-section {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  color: #236dcd;
+  text-decoration: none;
+
+  p {
+    margin: 0 0 10px;
+    font: 16px $open-sans;
+  }
+  .icon_circle-arr {
+    font-size: 30px;
+  }
+}
+
+.lesson-gallery {
+  margin: 20px 0;
+}
+
+//-------------------------------------------------------------------------
+//
+// media
+//
+//-------------------------------------------------------------------------
+
+@media screen and (max-width: 1300px) {
+  .le-video-wrapper-outer {
+    height: 0;
+    padding-bottom: 40.8%;
+    width: 76.1%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .video-block__col2 {
+    padding-left: 20px;
+  }
+}
+

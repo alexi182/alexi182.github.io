@@ -1,0 +1,39 @@
+.lesson-table {
+  border-collapse: collapse;
+  font-size: 16px;
+  td, th {
+    border-right: 1px solid #ccc;
+    padding: 15px;
+    &:last-of-type {
+      border-right: none;
+    }
+  }
+  th {
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+    color: #236dcd;
+  }
+  td {
+    vertical-align: top;
+    &:first-of-type {
+      font-weight: bold;
+    }
+  }
+  tr {
+    &:last-of-type {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.lesson-table--no-bold {
+  @extend .lesson-table;
+  td {
+    vertical-align: top;
+    &:first-of-type {
+      font-weight: normal;
+    }
+  }
+}

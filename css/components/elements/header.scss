@@ -1,0 +1,245 @@
+.main-title {
+   display: inline-block;
+   vertical-align: top;
+   width: 284px;
+   height: 47px;
+   color: #333e4b;
+   font-size: 14px;
+   font-weight: 400;
+   margin-top: 0;
+   margin-bottom: 0;
+   line-height: 1.25;
+}
+
+.header {
+   margin-bottom: 40px;
+   .logo {
+      img{
+         margin-right: 10px;
+         width: 43px;
+         height: 50px;
+      }
+   }
+}
+
+.wrapper-header {
+   position: relative;
+   max-width: 1618px;
+   margin: 0 auto;
+   padding: 10px;
+
+   a {
+      transition: .3s;
+      color: #333;
+      text-decoration: none;
+   }
+}
+
+.header-wrap-inner {
+   text-align: center;
+}
+
+.header-left-side {
+   text-align: center;
+}
+
+.header-right-side {
+   text-align: right;
+   position: relative;
+   a {
+      &:hover {
+         color: #fff;
+      }
+   }
+}
+
+.resh-logo {
+   display: inline-block;
+   vertical-align: middle;
+   //@include sprite($logo-resh);
+   background: url(/img/logo.png) no-repeat center;
+   -webkit-background-size: contain;
+   background-size: contain;
+   width: 82px;
+   height: 95px;
+}
+
+.resh-link {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.header-link__title {
+   display: block;
+   font: 15px/17px $open-sans;
+   width: 269px;
+   height: 28px;
+   color: #000000;
+   font-size: 13px;
+   font-weight: 300;
+}
+
+.header-nav {
+   display: inline-block;
+   vertical-align: middle;
+   > a {
+      margin-right: 40px;
+      font: bold 12px $open-sans;
+      color: #000;
+      padding: 10px 5px;
+      @include transition(200);
+      &:hover {
+         background-color: #f2f2f2;
+      }
+      &:last-of-type {
+         margin-right: 0;
+      }
+   }
+   i {
+      margin-right: 5px;
+   }
+   i, span, a {
+      display: inline-block;
+      vertical-align: middle;
+   }
+}
+
+.header-nav__parents-logo {
+   //@include sprite($header-nav-parents);
+}
+
+.header-nav__teachers-logo {
+   //@include sprite($header-nav-teachers);
+}
+
+.header-nav__question-logo {
+   //@include sprite($header-nav-question);
+}
+
+.header-menu {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.header-menu__search {
+   position: relative;
+   height: 36px;
+   transition: .5s;
+   background: rgba(255, 255, 255, .4);
+   border-radius: 3px;
+   padding: 4px 4px 4px 10px;
+   width: 200px;
+   overflow: hidden;
+   margin-right: 10px;
+   form {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      //transition: 1s;
+      width: 200px;
+      height: 28px;
+      z-index: 2;
+   }
+   input[type='search'] {
+      vertical-align: top;
+      height: 28px;
+      width: 190px;
+      outline: none;
+      border: none;
+      background: none;
+   }
+   input[type='submit'] {
+      position: absolute;
+      top: 0;
+      right: 2px;
+      outline: none;
+      border: none;
+      border-left: 1px solid #b3b3b3;
+      vertical-align: top;
+      width: 32px;
+      height: 28px;
+      //background: #ff8a00;
+      background: none;
+      cursor: pointer;
+   }
+   i {
+      transition: .3s;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-size: 20px;
+      color: #858585;
+      cursor: pointer;
+      &:hover {
+         color: #fff;
+      }
+   }
+}
+.search-curtailed {
+   margin-right: 0;
+   background: none;
+   width: 35px;
+   form {
+      right: 38px;
+      overflow: hidden;
+   }
+   i {
+      color: #333;
+   }
+}
+
+.header-menu__eye {
+   padding-top: 12px;
+   transition: .3s;
+   color: #444;
+
+   i {
+      font-size: 30px;
+      vertical-align: middle;
+   }
+}
+
+.header-menu__mobile {
+   @include sprite($header-menu-mobile);
+
+}
+
+.header-menu__login,
+.header-menu__register {
+   margin: 0;
+   font: 12px $open-sans;
+   text-decoration: none;
+   @include animated-underline(#fff);
+}
+
+.header-menu__login {
+   margin-left: 25px;
+}
+
+.header-menu__register {
+   margin-right: 25px;
+}
+
+.hamburger {
+   display: inline-block;
+   vertical-align: middle;
+   @include sprite($header-menu-hamburger);
+   margin: 10px;
+   cursor: pointer;
+}
+
+//-------------------------------------------------------------------------
+//
+// media
+//
+//-------------------------------------------------------------------------
+
+@media screen and (max-width: 1100px) {
+   .header-nav {
+      display: inline-block;
+      vertical-align: middle;
+      > a {
+         margin-right: 15px;
+      }
+   }
+}

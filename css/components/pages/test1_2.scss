@@ -1,0 +1,124 @@
+.img-selectable-wrapper {
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.img-selectable-block {
+  width: 178px;
+  height: 156px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 3px solid #fff;
+  display: inline-block;
+  margin: 10px;
+  background: #ccc url(/img/bg-img-01.jpg) center no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+
+  &._img-selected {
+    border-color: #fbc31d;
+    font-size: 0;
+    text-align: center;
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        vertical-align: middle;
+        @include sprite($selected-img);
+      }
+  }
+  &._img-correct {
+    border-color: #30b358;
+    font-size: 0;
+    text-align: center;
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      vertical-align: middle;
+      @include sprite($selected-img-correct);
+    }
+  }
+
+  &._img-incorrect {
+    border-color: #e36b3c;
+    font-size: 0;
+    text-align: center;
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      vertical-align: middle;
+      @include sprite($selected-img-incorrect);
+    }
+  }
+}
+
+.img-selectable__expand {
+  display: block;
+  position: absolute;
+  @include sprite($magn-glass);
+  bottom: 10px;
+  right: 10px;
+}
+
+.separator {
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+
+.btn-repeat {
+  border-color: #77438a;
+  @include transition(200);
+  &:hover {
+    background: #ebd9f2;
+  }
+  &:after {
+    content: '';
+    display: inline-block;
+    @include sprite($btn-icon-repeat);
+    vertical-align: middle;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+  }
+
+}
+
+.btn-checked {
+  border-color: #30b358;
+  @include transition(200);
+  &:hover {
+    background: #d8eddf;
+  }
+  &:after {
+    content: '';
+    display: inline-block;
+    @include sprite($btn-icon-checked);
+    vertical-align: middle;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+  }
+
+}
+

@@ -1,0 +1,72 @@
+.abstract-block__part {
+  font-size: 16px;
+  margin-top: 50px;
+  ol {
+    margin: 10px 0;
+    padding: 15px;
+    li {
+      margin-bottom: 10px;
+      font: italic 17px $open-sans;
+    }
+  }
+  ul {
+    margin: 0 0 20px 20px;
+    padding: 0;
+    li{
+      margin-bottom: 16px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+  }
+  ol {
+    ul {
+      li {
+        list-style-type: disc;
+      }
+    }
+  }
+}
+
+.text-indent {
+  text-indent: 30px;
+}
+
+.sub-title-middle-block {
+  + .abstract-block__part {
+    margin-top: 20px;
+  }
+}
+
+.sub-paragraph {
+  padding-left: 20px;
+}
+
+.bio-num-list {
+  > li {
+    ul {
+
+      li {
+        font-style: normal;
+      }
+    }
+  }
+}
+
+.no-itallic {
+  li {
+    font-style: normal !important;
+  }
+}
+
+.smaller-margin {
+  li {
+    margin-bottom: 5px !important;
+  }
+}
+
+.border-top {
+  td {
+    border-top: 1px solid #a6a6a6;
+  }
+}

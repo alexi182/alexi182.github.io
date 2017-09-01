@@ -1,0 +1,29 @@
+.layout-links {
+   position: absolute;
+   right: 0;
+   top: 20px;
+}
+
+.layout-link {
+   display: block;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   width: 70px;
+   height: 77px;
+   background-color: #3a4c64;
+   position: relative;
+   @include transition(300);
+   &:last-of-type {
+      margin-top: 10px;
+   }
+   &:hover {
+      background-color: #59c2f1;
+   }
+   img {
+      position: absolute;
+      width: 35px;
+      height: 39px;
+      top: 25%;
+      left: 29%;
+   }
+}

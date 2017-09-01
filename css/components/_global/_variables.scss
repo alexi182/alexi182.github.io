@@ -1,0 +1,108 @@
+//mixins
+
+@mixin transition($transTime) {
+  -webkit-transition: all $transTime+ms;
+  -moz-transition: all $transTime+ms;
+  transition: all $transTime+ms;
+}
+
+@mixin animated-underline($anim-color) {
+  & {
+    position: relative;
+    text-decoration: none;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: $anim-color;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  &:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+@mixin animated-topline($anim-color) {
+  & {
+    position: relative;
+    text-decoration: none;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  &:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+/* @mixin transition($property, $time, $function, $delay) {
+  -webkit-transition: $property $time $function $delay;
+  -moz-transition: $property $time $function $delay;
+  transition: $property $time $function $delay;
+} */
+
+@mixin transform_scale($x, $y, $z) {
+  -webkit-transform: scale($x) scale($y) scale($z);
+  -moz-transform: scale($x) scale($y) scale($z);
+  -ms-transform: scale($x) scale($y) scale($z);
+  transform: scale($x) scale($y) scale($z);
+}
+
+@mixin transform_translateX($x) {
+  -ms-transform: translateX($x);
+  -webkit-transform: translateX($x);
+  -moz-transform: translateX($x);
+  transform: translateX($x);
+}
+
+@mixin transform_translateY($y) {
+  -webkit-transform: translateY($y);
+  -moz-transform: translateY($y);
+  -ms-transform: translateX($y);
+  transform: translateY($y);
+}
+
+@mixin transform_translate($x, $y) {
+  -webkit-transform: translate($x) translate($y);
+  -moz-transform: translate($x) translate($y);
+  -ms-transform: translate($x) translate($y);
+  transform: translate($x) translate($y);
+}
+
+@mixin scaleX($x) {
+  -webkit-transform: scaleX($x);
+  -moz-transform: scaleX($x);
+  -ms-transform: scaleX($x);
+  transform: scaleX($x);
+}
+
+@mixin clear() {
+  content: "";
+  display: block;
+  clear: both;
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   @@include('../includes/common/head.html', {})
+
+</head>
+<body class="tests-body">
+
+
+@@include('../includes/common/browserhappy.html', {})
+
+@@include('../includes/common/header-lesson.html', {})
+
+
+<div class="outer-wrapper">
+   <main>
+      @@include('../includes/elements/page-header.html', {
+      "subject": "Основы безопасности жизнедеятельности Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      })
+
+      @@include('../includes/elements/page-title.html', {
+      "title": "Упражнение на однозначный / многозначный выбор",
+      "bubble": "Выберите один или несколько рисунков. Éé Ee Ââ Aa Êê  ÎîIi  Ôô Ûû Àà Èè Ùù Ëë Ïï Üü Ÿÿ Çç Ää Öö Üü ẞß Ññ áúé¿ №"
+      })
+
+      <div class="task-field">
+         <div class="img-selectable-wrapper">
+            <div class="img-selectable-block _selectable">
+               <a class="img-selectable__expand magn-popup" href="/img/bg-img-01.jpg"></a>
+            </div>
+            <div class="img-selectable-block _selectable">
+               <a class="img-selectable__expand magn-popup" href="/img/bg-img-01.jpg"></a>
+            </div>
+            <div class="img-selectable-block _selectable">
+               <a class="img-selectable__expand magn-popup" href="/img/bg-img-01.jpg"></a>
+            </div>
+            <div class="img-selectable-block _selectable">
+               <a class="img-selectable__expand magn-popup" href="/img/bg-img-01.jpg"></a>
+            </div>
+            <div class="img-selectable-block _selectable">
+               <a class="img-selectable__expand magn-popup" href="/img/bg-img-01.jpg"></a>
+            </div>
+            <div class="img-selectable-block _selectable">
+               <a class="img-selectable__expand magn-popup" href="/img/bg-img-01.jpg"></a>
+            </div>
+            <div class="img-selectable-block _selectable">
+               <a class="img-selectable__expand magn-popup" href="/img/bg-img-01.jpg"></a>
+            </div>
+         </div>
+
+
+         <div class="separator"></div>
+
+         <div class="ta-c">
+            <button type="button" class="btn btn-repeat _reset-img-select">еще раз</button>
+            <button type="button" class="btn btn-checked _check-answer">правильный ответ</button>
+         </div>
+
+      </div>
+
+   </main>
+</div>
+
+
+@@include('../includes/common/scripts.html', {})
+
+
+</body>
+</html>

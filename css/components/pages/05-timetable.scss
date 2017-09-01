@@ -1,0 +1,224 @@
+.timetable{
+	background: $white url(/img/timetable.png) no-repeat center;
+	margin: 20px 0;
+}
+
+.current-date{
+	text-align: center;
+	color: #f06f46;
+	margin-top: 75px;
+	position: relative;
+    top: -21px;
+}
+
+.current-date__year{
+	display: inline-block;
+	font-size: 23px;
+	margin-left: 10px;
+}
+
+.current-date__month{
+	display: inline-block;
+	font-size: 23px;
+	margin: 0 20px;
+	font-family: $open-sans-bold;
+}
+
+.current-date__day{
+	display: inline-block;
+	color: $white;
+	background: #f06f46;
+	font-size: 22px;
+	font-family: $open-sans-bold;
+	border-radius: 4px;
+	padding: 5px 10px;
+}
+
+.timetable__subject-list{
+	padding-top: 87px;
+   padding-bottom: 210px;
+   position: relative;
+    top: -43px;
+	ul{
+		list-style: none;
+		width: 330px;
+		margin: 0 auto;
+		position: relative;
+    	top: -35px;
+		li{
+			font-family: 'OpenSansItalic';
+			margin-bottom: 10px;
+			a{
+				color: $black;
+				text-decoration: none;
+				font-size: 23px;
+				&:hover{
+					text-decoration: underline;
+					span{
+						text-decoration: none;
+					}
+				}
+			}
+			span{
+				font-family: $open-sans-bold;
+				font-size: 25px;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.our-teachers{
+	.sub-title-middle-block{
+		height: 0;
+	}
+}
+
+.teacher{
+	background: url(/img/timetable-our-teachers.png) no-repeat top right;
+	padding-bottom: 50px;
+	&:after{
+		@include clear();
+	}
+}
+
+.our-teachers__image{
+	float: left;
+	border: 12px solid #dae3d4;
+	border-radius: 7px;
+	position: relative;
+	margin-top: 70px;
+	margin-left: 50px;
+	img{
+		max-width: 340px;
+		height: auto;
+	}
+	&:before{
+		content: "";
+		position: absolute;
+		display: block;
+		background: url(/img/svg/teacher-image-top.svg) no-repeat;
+		width: 160px;
+		height: 50px;
+		top: -60px;
+		left: 50%;
+		@include transform_translateX(-50%);
+	}
+}
+
+.teacher__item{
+	display: none;
+	min-height: 533px; 
+	&:after{
+		@include clear();
+	}
+	&:first-of-type{
+		display: block;
+	}
+}
+
+.our-teachers__info{
+	max-width: 500px;
+	margin-top: 80px;
+	margin-left: 40px;
+	float: left;
+	p{
+		&:first-of-type{
+			font-size: 22px;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		&:nth-of-type(2){
+			font-family: $open-sans-italic;
+			font-size: 18px;
+			margin-top: 0px;
+		}
+		&:last-of-type{
+			font-size: 16px;
+			margin-top: 0;
+			margin-bottom: 0;
+			line-height: 1.7;
+		}
+	}
+}
+
+.teacher-slider{
+	text-align: center;
+	max-width: 1150px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 60px;
+	a{
+		display: inline-block;
+		vertical-align: top;
+		color: blue;
+		max-width: 230px;
+		text-align: left;
+		text-decoration: none;
+		outline: 0;
+		&:hover{
+			text-decoration: underline;
+			color: $black;
+		}
+	}
+	p{
+		&:first-of-type{
+			font-size: 14px;
+			color: $black;
+			margin-top: 5px;
+			margin-bottom: 0;
+			margin-left: 40px;
+		}
+		&:last-of-type{
+			font-size: 14px;
+			font-family: $open-sans-italic;
+			color: $black;
+			margin-top: 3px;
+			margin-bottom: 0;
+			margin-left: 40px;
+		}
+	}
+	img{
+		width: 170px;
+		height: 170px;
+		border: 5px solid #f0f9b5;
+		border-radius: 50%;
+		margin: 0 auto;
+	}
+	.slick-prev{
+		background: url(/img/svg/left-arrow.svg) no-repeat;
+		width: 27px;
+		height: 97px;
+		position: absolute;
+		top: 80px;
+		left: 0;
+		@include transition(300);
+		/* &:hover{
+			background: darken(#b28cca, 10%);
+		} */
+	}
+	.slick-next{
+		background: url(/img/svg/right-arrow.svg) no-repeat;
+		width: 27px;
+		height: 97px;
+		position: absolute;
+		top: 80px;
+		right: 0;
+		@include transition(300);
+		/*&:hover{
+			background: darken(#b28cca, 10%);
+		}*/
+	}
+}
+
+@media screen and (max-width: 1260px) {
+	.teacher-slider{
+		max-width: 1000px;
+	}	
+}
+
+@media screen and (max-width: 1120px) {
+	.teacher-slider{
+		max-width: 800px;
+	}	
+}

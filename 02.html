@@ -26,12 +26,122 @@
 
 <div class="stick-footer">
    <div class="layout-links">
-      <a href="#" class="layout-link">
-         <img src="img/user2.svg" alt="">
-      </a>
-      <a href="#" class="layout-link">
-         <img src="img/magnifier.svg" alt="">
-      </a>
+      <div class="layout-links__item sidebar-profile layout-links__item_closed-profile">
+         <div class="layout-link profile-link">
+            <img src="img/user2.svg" alt="">
+         </div>
+
+         <div class="layout-content-profile">
+            <img src="img/avatar.png" alt="">
+
+            <div class="layout-content-user">
+               <div class="layout-content-user__name">
+                  Синюгина Татьяна Юрьевна
+               </div>
+               <div class="layout-content-user__actions">
+                  <a href="#" class="layout-content-user__profile">Профиль</a>
+                  <a href="#" class="layout-content-user__exit">Выйти</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="layout-links__item sidebar-search layout-links__item_closed-search">
+         <div class="layout-link search-link">
+            <img src="img/magnifier.svg" alt="">
+         </div>
+         <div class="layout-content-search">
+            <input type="text" placeholder="Поиск документов: введите название документа">
+
+            <div class="layout-content-search__block">
+               <div class="layout-content-search__block-column">
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Вид документа
+                     </label>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Все</option>
+                           <option>Не все</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Дата создания
+                     </label>
+                     <div class="search-box">
+                        <input type="text">
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Вид документа
+                        </label>
+                        <div class="search-box">
+                           <input type="text">
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="layout-content-search__block-column">
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Категория
+                     </label>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Все</option>
+                           <option>Не все</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Номер
+                     </label>
+                     <div class="search-box">
+                        <input type="text">
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Статус
+                     </label>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>В работе</option>
+                           <option>Не в работе</option>
+                        </select>
+                     </div>
+                  </div>
+
+               </div>
+
+               <button class="search-button" type="submit">Поиск</button>
+
+            </div>
+
+         </div>
+      </div>
+
    </div>
 
    <div class="index-wrapper">

@@ -898,11 +898,11 @@ The `sprites` mixin generates identical output to the CSS template
 .content-image-block {
   text-align: center;
   /* img{
-		@include transition(500);
-		&:hover{
-			@include transform_scale(1.03, 1.03);
-		}
-	  	} */ }
+     @include transition(500);
+     &:hover{
+        @include transform_scale(1.03, 1.03);
+     }
+       } */ }
   .content-image-block a {
     display: inline-block;
     vertical-align: top;
@@ -929,6 +929,22 @@ The `sprites` mixin generates identical output to the CSS template
   border-radius: 10px;
   margin: 10px;
   outline: 0; }
+
+.content-container__title {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 17px;
+  vertical-align: middle;
+  color: #39404c;
+  font-size: 36px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.content-container__icon {
+  display: inline-block;
+  width: 67px;
+  height: 59px; }
 
 .footer {
   margin-top: 20px; }

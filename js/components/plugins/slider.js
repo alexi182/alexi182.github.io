@@ -1,25 +1,25 @@
 require('../../vendor/slick');
 
-$('.teacher-slider').slick({
+$('.slick').slick({
 
     infinite: true,
-    slidesToShow: 5,
+    slidesToShow: 3,
     slidesToScroll: 1,
     speed: 400,
     responsive: [
 	{
-	  breakpoint: 1270,
+	  breakpoint: 1125,
 	  settings: {
-	    slidesToShow: 4,
+	    slidesToShow: 2,
 	    slidesToScroll: 1,
 	    infinite: true,
 	    speed: 400
 	  }
 	},
 	{
-	  breakpoint: 1120,
+	  breakpoint: 768,
 	  settings: {
-	    slidesToShow: 3,
+	    slidesToShow: 2,
 	    slidesToScroll: 1,
 	    infinite: true,
 	    speed: 400
@@ -27,9 +27,5 @@ $('.teacher-slider').slick({
 	}
 ]
     
-});
-
-$('.rm-slider-box').slick({
-
 });
 

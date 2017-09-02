@@ -24,6 +24,7 @@ body {
    background: url(../../../img/main-bg.jpg)no-repeat center top fixed;
    background-size: cover;
    font-family: $open-sans;
+   overflow: hidden;
 }
 
 *, :after, :before {
@@ -246,6 +247,7 @@ select {
    margin: auto;
    width: 100%;
    position: relative;
+   overflow: hidden;
 }
 
 .content {

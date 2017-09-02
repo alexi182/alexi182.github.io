@@ -1,3 +1,4 @@
+/*
 require('magnific-popup');
 
 if ($('.magn-popup').length > 0) {
@@ -31,3 +32,4 @@ if ($('.magn-popup__gallery').length > 0) {
     });
 }
 
+*/

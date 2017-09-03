@@ -11,13 +11,13 @@
    @include transition(500);
    &:first-of-type {
       text-align: right;
-      position: relative;
-      z-index: 10000;
+      //position: relative;
+      //z-index: 10000;
    }
    &:last-of-type {
       margin-top: 15px;
-      position: relative;
-      z-index: 10000;
+     /* position: relative;
+      z-index: 10000;*/
    }
 }
 //
@@ -35,6 +35,8 @@
 
 .layout-links__item_opened{
     @include transform_translateX(0%);
+   position: relative;
+   z-index: 10000;
 }
 
 .layout-links__item_closed-profile{

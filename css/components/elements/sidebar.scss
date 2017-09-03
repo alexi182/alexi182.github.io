@@ -1,8 +1,9 @@
 .sidebar {
    vertical-align: top;
-   width: 298px;
+
    height: 100%;
    display: table-cell;
+   @include transition(300);
    /*position: absolute;
    top:0;
    left: 0;*/
@@ -105,6 +106,14 @@
          }
       }
    }
+}
+
+.sidebar_opened {
+   width: 298px;
+}
+
+.sidebar_closed {
+
 }
 
 .opened {

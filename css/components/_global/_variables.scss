@@ -101,6 +101,13 @@
   transform: scaleX($x);
 }
 
+@mixin rotate($x) {
+  -webkit-transform: rotate($x);
+  -moz-transform: rotate($x);
+  -ms-transform: rotate($x);
+  transform: rotate($x);
+}
+
 @mixin clear() {
   content: "";
   display: block;

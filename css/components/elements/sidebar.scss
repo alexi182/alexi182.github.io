@@ -41,6 +41,10 @@
          }
       }
    }
+   .close__icon {
+      width: 34px;
+      height: 28px;
+   }
 }
 
 .sidebar_opened {
@@ -66,30 +70,61 @@
 .close__icon {
    display: block;
    position: absolute;
-   width: 32px;
-   height: 32px;
-   @include transition(300);
+   width: 20px;
+   height: 21px;
+   @include transition(400);
    right: 18px;
    top: 16px;
+   background: url(../../../img/search-close.png) no-repeat;
+}
+
+.icon-line {
+   position: absolute;
+   display: block;
+   height: 3px;
+   width: 37px;
+   background: #63b7df;
+   @include transition(400);
+   &:nth-of-type(2) {
+        top: 10px;
+     }
+   &:last-of-type {
+      top: 20px;
+   }
 }
 
 .icon-closed:hover {
    opacity: 1;
 }
-.icon-closed:before, .icon-closed:after {
-   position: absolute;
-   left: 15px;
-   content: ' ';
-   height: 33px;
-   width: 2px;
-   background-color: #63b7df;
+
+.sidebar_opened {
+   .icon-line {
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 37px;
+      background: #63b7df;
+      &:first-of-type{
+         top: 10px;
+         @include rotate(-45deg);
+      }
+
+      &:nth-of-type(2) {
+         opacity: 0;
+      }
+      &:last-of-type {
+         top: 10px;
+         @include rotate(45deg);
+      }
+   }
 }
-.icon-closed:before {
+
+/*.icon-closed:before {
    transform: rotate(45deg);
 }
 .icon-closed:after {
    transform: rotate(-45deg);
-}
+}*/
 
 .page-content__check {
    position: absolute;

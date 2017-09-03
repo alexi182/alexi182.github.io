@@ -2183,12 +2183,12 @@ span.option-item {
 .page-content {
   display: inline-block;
   vertical-align: top;
-  width: 48%;
+  width: 40%;
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
   max-width: 764px;
   padding: 15px 20px 0px 15px;
-  margin-left: 4%;
+  margin-left: 2%;
   position: relative;
   z-index: 1000; }
   .page-content:after {

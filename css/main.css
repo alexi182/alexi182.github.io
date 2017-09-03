@@ -2482,10 +2482,10 @@ span.option-item {
   right: 18px;
   top: 16px; }
 
-.opened:hover {
+.icon-opened:hover {
   opacity: 1; }
 
-.opened:before, .opened:after {
+.icon-opened:before, .icon-opened:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -2493,10 +2493,10 @@ span.option-item {
   width: 2px;
   background-color: #63b7df; }
 
-.opened:before {
+.icon-opened:before {
   transform: rotate(45deg); }
 
-.opened:after {
+.icon-opened:after {
   transform: rotate(-45deg); }
 
 .slider {

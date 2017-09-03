@@ -8,19 +8,99 @@
    left: 0;*/
    background: #39404c;
    ul {
-      margin-top: 45px;
+      margin-top: 70px;
       padding-left: 0;
       li {
          font-size: 14px;
          list-style: none;
+         position: relative;
+         margin-bottom: 14px;
          a{
             display: block;
-            padding: 18px 8px 18px 23px;
+            padding: 20px 8px 20px 23px;
             color: #ffffff;
             box-sizing: border-box;
             @include transition(300);
             &:hover {
                background: #63b7df;
+            }
+         }
+         &:first-of-type {
+            &:before {
+               content: "";
+               display: block;
+               right: 10px;
+               top: 9px;
+               position: absolute;
+               width: 41px;
+               height: 36px;
+               background: url(../../../img/svg/notice2.svg) no-repeat center right;
+               background-size: 41px 36px;
+            }
+         }
+         &:nth-of-type(2) {
+            &:before {
+               content: "";
+               display: block;
+               right: 10px;
+               top: 9px;
+               position: absolute;
+               width: 41px;
+               height: 36px;
+               background: url(../../../img/svg/messages2.svg) no-repeat center right;
+               background-size: 41px 36px;
+            }
+         }
+         &:nth-of-type(3) {
+            &:before {
+               content: "";
+               display: block;
+               right: 10px;
+               top: 9px;
+               position: absolute;
+               width: 41px;
+               height: 36px;
+               background: url(../../../img/svg/doc2.svg) no-repeat center right;
+               background-size: 41px 36px;
+            }
+         }
+         &:nth-of-type(4) {
+            &:before {
+               content: "";
+               display: block;
+               right: 10px;
+               top: 9px;
+               position: absolute;
+               width: 41px;
+               height: 36px;
+               background: url(../../../img/svg/events2.svg) no-repeat center right;
+               background-size: 41px 36px;
+            }
+         }
+         &:nth-of-type(5) {
+            &:before {
+               content: "";
+               display: block;
+               right: 10px;
+               top: 9px;
+               position: absolute;
+               width: 41px;
+               height: 36px;
+               background: url(../../../img/svg/user2.svg) no-repeat center right;
+               background-size: 41px 36px;
+            }
+         }
+         &:nth-of-type(6) {
+            &:before {
+               content: "";
+               display: block;
+               right: 10px;
+               top: 9px;
+               position: absolute;
+               width: 41px;
+               height: 36px;
+               background: url(../../../img/svg/settings2.svg) no-repeat center right;
+               background-size: 41px 36px;
             }
          }
       }
@@ -31,7 +111,7 @@
    display: block;
    position: relative;
    left: 84%;
-   top: 2%;
+   top: 2.5%;
    width: 32px;
    height: 32px;
    @include transition(300);

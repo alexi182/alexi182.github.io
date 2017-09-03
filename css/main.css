@@ -2338,14 +2338,16 @@ span.option-item {
    left: 0;*/
   background: #39404c; }
   .sidebar ul {
-    margin-top: 45px;
+    margin-top: 70px;
     padding-left: 0; }
     .sidebar ul li {
       font-size: 14px;
-      list-style: none; }
+      list-style: none;
+      position: relative;
+      margin-bottom: 14px; }
       .sidebar ul li a {
         display: block;
-        padding: 18px 8px 18px 23px;
+        padding: 20px 8px 20px 23px;
         color: #ffffff;
         box-sizing: border-box;
         -webkit-transition: all 300ms;
@@ -2353,12 +2355,72 @@ span.option-item {
         transition: all 300ms; }
         .sidebar ul li a:hover {
           background: #63b7df; }
+      .sidebar ul li:first-of-type:before {
+        content: "";
+        display: block;
+        right: 10px;
+        top: 9px;
+        position: absolute;
+        width: 41px;
+        height: 36px;
+        background: url(../../../img/svg/notice2.svg) no-repeat center right;
+        background-size: 41px 36px; }
+      .sidebar ul li:nth-of-type(2):before {
+        content: "";
+        display: block;
+        right: 10px;
+        top: 9px;
+        position: absolute;
+        width: 41px;
+        height: 36px;
+        background: url(../../../img/svg/messages2.svg) no-repeat center right;
+        background-size: 41px 36px; }
+      .sidebar ul li:nth-of-type(3):before {
+        content: "";
+        display: block;
+        right: 10px;
+        top: 9px;
+        position: absolute;
+        width: 41px;
+        height: 36px;
+        background: url(../../../img/svg/doc2.svg) no-repeat center right;
+        background-size: 41px 36px; }
+      .sidebar ul li:nth-of-type(4):before {
+        content: "";
+        display: block;
+        right: 10px;
+        top: 9px;
+        position: absolute;
+        width: 41px;
+        height: 36px;
+        background: url(../../../img/svg/events2.svg) no-repeat center right;
+        background-size: 41px 36px; }
+      .sidebar ul li:nth-of-type(5):before {
+        content: "";
+        display: block;
+        right: 10px;
+        top: 9px;
+        position: absolute;
+        width: 41px;
+        height: 36px;
+        background: url(../../../img/svg/user2.svg) no-repeat center right;
+        background-size: 41px 36px; }
+      .sidebar ul li:nth-of-type(6):before {
+        content: "";
+        display: block;
+        right: 10px;
+        top: 9px;
+        position: absolute;
+        width: 41px;
+        height: 36px;
+        background: url(../../../img/svg/settings2.svg) no-repeat center right;
+        background-size: 41px 36px; }
 
 .opened {
   display: block;
   position: relative;
   left: 84%;
-  top: 2%;
+  top: 2.5%;
   width: 32px;
   height: 32px;
   -webkit-transition: all 300ms;

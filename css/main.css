@@ -2554,6 +2554,7 @@ span.option-item {
   -moz-transition: all 400ms;
   transition: all 400ms;
   position: absolute;
+  will-change: transform;
   top: 0;
   left: 0;
   background: #39404c;
@@ -2640,6 +2641,7 @@ span.option-item {
   display: block;
   height: 3px;
   width: 37px;
+  will-change: transform;
   background: #63b7df; }
   .sidebar_opened .icon-line:first-of-type {
     top: 10px;

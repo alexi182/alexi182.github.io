@@ -5,6 +5,7 @@
    @include transform_translateX(-233px);
    @include transition(400);
    position: absolute;
+   will-change: transform;
    top:0;
    left: 0;
    background: #39404c;
@@ -104,6 +105,7 @@
       display: block;
       height: 3px;
       width: 37px;
+      will-change: transform;
       background: #63b7df;
       &:first-of-type{
          top: 10px;

@@ -24,7 +24,7 @@ body {
    background: url(../../../img/main-bg.jpg)no-repeat center top fixed;
    background-size: cover;
    font-family: $open-sans;
-   overflow: hidden;
+   overflow-x: hidden;
 }
 
 *, :after, :before {

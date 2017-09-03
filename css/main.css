@@ -1874,6 +1874,8 @@ span.option-item {
 
 .layout-content-search__block-row {
   margin-bottom: 10px; }
+  .layout-content-search__block-row input {
+    width: 97.5% !important; }
 
 .layout-content-search__block-row-item {
   width: 40%;
@@ -2586,7 +2588,8 @@ span.option-item {
           display: none; }
   .sidebar .close__icon {
     width: 34px;
-    height: 28px; }
+    height: 28px;
+    background: none; }
 
 .sidebar_opened .sidebar {
   width: 300px;

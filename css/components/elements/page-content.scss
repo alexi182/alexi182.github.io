@@ -7,6 +7,8 @@
    max-width: 764px;
    padding: 15px 20px 0px 15px;
    margin-left: 4%;
+   position: relative;
+   z-index: 1000;
    &:after {
       @include clear();
    }
@@ -41,7 +43,9 @@
 }
 
 .page-content__post{
-
+   border-bottom: 1px solid #cccccc;
+   padding-bottom: 22px;
+   padding-top: 18px;
 }
 
 .page-content__post-top {
@@ -51,6 +55,7 @@
 .page-content__post-date {
    display: inline-block;
    font-size: 20px;
+   margin-left: 15px;
    font-weight: 400;
 }
 
@@ -59,9 +64,41 @@
    color: #52adcc;
    font-size: 14px;
    font-weight: 400;
+   &:hover{
+      text-decoration: underline;
+   }
+}
+
+.page-content__post-link {
+   color: #52adcc;
+   font-size: 14px;
+   font-weight: 400;
+   &:after{
+      content: "";
+      vertical-align: middle;
+      display: inline-block;
+      margin-left: 12px;
+      width: 40px;
+      height: 22px;
+      background: url(../../../img/post-icon.png)no-repeat;
+   }
+}
+
+.page-content__post-bottom {
+   margin-top: 10px;
+   padding-left: 34px;
 }
 
 .page-content__post-text {
    font-size: 16px;
    font-weight: 400;
+}
+
+.page-content__userbar-icon {
+   width: 40px;
+   height: 22px;
+   background-color: #3a4c64;
+   border-radius: 3px;
+   float: right;
+   margin-left: 10px;
 }

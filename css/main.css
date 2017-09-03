@@ -2188,7 +2188,9 @@ span.option-item {
   background: rgba(255, 255, 255, 0.9);
   max-width: 764px;
   padding: 15px 20px 0px 15px;
-  margin-left: 4%; }
+  margin-left: 4%;
+  position: relative;
+  z-index: 1000; }
   .page-content:after {
     content: "";
     display: block;
@@ -2222,9 +2224,15 @@ span.option-item {
     background: #39404c;
     color: #ffffff; }
 
+.page-content__post {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 22px;
+  padding-top: 18px; }
+
 .page-content__post-date {
   display: inline-block;
   font-size: 20px;
+  margin-left: 15px;
   font-weight: 400; }
 
 .page-content__post-userbar {
@@ -2232,10 +2240,37 @@ span.option-item {
   color: #52adcc;
   font-size: 14px;
   font-weight: 400; }
+  .page-content__post-userbar:hover {
+    text-decoration: underline; }
+
+.page-content__post-link {
+  color: #52adcc;
+  font-size: 14px;
+  font-weight: 400; }
+  .page-content__post-link:after {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 12px;
+    width: 40px;
+    height: 22px;
+    background: url(../../../img/post-icon.png) no-repeat; }
+
+.page-content__post-bottom {
+  margin-top: 10px;
+  padding-left: 34px; }
 
 .page-content__post-text {
   font-size: 16px;
   font-weight: 400; }
+
+.page-content__userbar-icon {
+  width: 40px;
+  height: 22px;
+  background-color: #3a4c64;
+  border-radius: 3px;
+  float: right;
+  margin-left: 10px; }
 
 .page-header {
   margin: 40px 0 15px; }

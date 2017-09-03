@@ -1,9 +1,11 @@
 .index-body {
    background: url('/img/main-bg.jpg') no-repeat center top fixed;
    background-size: cover;
-   min-width: 1000px;
+   max-width: 1000px;
+   min-width: 100px;
    position: relative;
    overflow-x: hidden;
+   margin: 0 auto;
 }
 
 .index-btn-enter {

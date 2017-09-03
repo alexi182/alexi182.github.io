@@ -1,8 +1,14 @@
-.layout-links {
+
+.layout-links_profile {
    position: absolute;
    right: 0;
-   top: 20px;
-   //z-index: -1000;
+   top: 5px;
+}
+
+.layout-links_search {
+   position: absolute;
+   right: 0;
+   top: 100px;
 }
 
 .layout-links__item {
@@ -32,12 +38,17 @@
    z-index: 10000;
 }
 
+.sidebar-profile {
+   position: relative;
+   z-index: 1001;
+}
+
 .layout-links__item_opened{
     @include transform_translateX(0%);
 }
 
 .layout-links__item_closed-profile{
-    @include transform_translateX(28%);
+    @include transform_translateX(80%);
 }
 
 .layout-links__item_closed-search{

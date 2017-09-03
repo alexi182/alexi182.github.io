@@ -2813,7 +2813,6 @@ span.option-item {
 
 .index-wrapper {
   max-width: 830px;
-  padding-left: 70px;
   margin: 0 auto;
   padding-top: 20px;
   position: relative;
@@ -2821,6 +2820,9 @@ span.option-item {
   -webkit-transition: all 400ms;
   -moz-transition: all 400ms;
   transition: all 400ms; }
+
+.index-sidebar {
+  padding-left: 70px; }
 
 .index-wrapper-content {
   display: inline-block;

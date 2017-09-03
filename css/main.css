@@ -2424,13 +2424,14 @@ span.option-item {
   vertical-align: top;
   height: 100%;
   display: table-cell;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  transition: all 300ms;
-  /*position: absolute;
-   top:0;
-   left: 0;*/
-  background: #39404c; }
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  transition: all 400ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #39404c;
+  z-index: 10000; }
   .sidebar ul {
     margin-top: 70px;
     padding-left: 0; }
@@ -2438,91 +2439,48 @@ span.option-item {
       font-size: 14px;
       list-style: none;
       position: relative;
-      margin-bottom: 14px; }
+      margin-bottom: 14px;
+      -webkit-transition: all 300ms;
+      -moz-transition: all 300ms;
+      transition: all 300ms; }
+      .sidebar ul li:hover {
+        background: #63b7df; }
+      .sidebar ul li img {
+        width: 41px;
+        height: 36px;
+        display: inline-block;
+        float: right;
+        position: relative;
+        top: -7px;
+        right: 3px; }
       .sidebar ul li a {
         display: block;
-        padding: 20px 8px 20px 23px;
         color: #ffffff;
-        box-sizing: border-box;
-        -webkit-transition: all 300ms;
-        -moz-transition: all 300ms;
-        transition: all 300ms; }
-        .sidebar ul li a:hover {
-          background: #63b7df; }
-      .sidebar ul li:first-of-type:before {
-        content: "";
-        display: block;
-        right: 10px;
-        top: 9px;
-        position: absolute;
-        width: 41px;
-        height: 36px;
-        background: url(../../../img/svg/notice2.svg) no-repeat center right;
-        background-size: 41px 36px; }
-      .sidebar ul li:nth-of-type(2):before {
-        content: "";
-        display: block;
-        right: 10px;
-        top: 9px;
-        position: absolute;
-        width: 41px;
-        height: 36px;
-        background: url(../../../img/svg/messages2.svg) no-repeat center right;
-        background-size: 41px 36px; }
-      .sidebar ul li:nth-of-type(3):before {
-        content: "";
-        display: block;
-        right: 10px;
-        top: 9px;
-        position: absolute;
-        width: 41px;
-        height: 36px;
-        background: url(../../../img/svg/doc2.svg) no-repeat center right;
-        background-size: 41px 36px; }
-      .sidebar ul li:nth-of-type(4):before {
-        content: "";
-        display: block;
-        right: 10px;
-        top: 9px;
-        position: absolute;
-        width: 41px;
-        height: 36px;
-        background: url(../../../img/svg/events2.svg) no-repeat center right;
-        background-size: 41px 36px; }
-      .sidebar ul li:nth-of-type(5):before {
-        content: "";
-        display: block;
-        right: 10px;
-        top: 9px;
-        position: absolute;
-        width: 41px;
-        height: 36px;
-        background: url(../../../img/svg/user2.svg) no-repeat center right;
-        background-size: 41px 36px; }
-      .sidebar ul li:nth-of-type(6):before {
-        content: "";
-        display: block;
-        right: 10px;
-        top: 9px;
-        position: absolute;
-        width: 41px;
-        height: 36px;
-        background: url(../../../img/svg/settings2.svg) no-repeat center right;
-        background-size: 41px 36px; }
+        padding: 19px 11px 40px 23px; }
+        .sidebar ul li a span {
+          display: none; }
 
-.sidebar_opened {
-  width: 298px; }
+.sidebar_opened .sidebar {
+  width: 300px; }
+  .sidebar_opened .sidebar ul li a {
+    padding: 23px 11px 24px 23px; }
 
-.opened {
+.sidebar_opened .index-wrapper {
+  padding-left: 300px; }
+
+.sidebar_opened span {
+  display: inline-block !important; }
+
+.sidebar__icon {
   display: block;
-  position: relative;
-  left: 84%;
-  top: 24px;
+  position: absolute;
   width: 32px;
   height: 32px;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
-  transition: all 300ms; }
+  transition: all 300ms;
+  right: 18px;
+  top: 16px; }
 
 .opened:hover {
   opacity: 1; }
@@ -2846,10 +2804,14 @@ span.option-item {
 
 .index-wrapper {
   max-width: 830px;
+  padding-left: 70px;
   margin: 0 auto;
   padding-top: 20px;
   position: relative;
-  z-index: 1000; }
+  z-index: 1000;
+  -webkit-transition: all 400ms;
+  -moz-transition: all 400ms;
+  transition: all 400ms; }
 
 .index-wrapper-content {
   display: inline-block;

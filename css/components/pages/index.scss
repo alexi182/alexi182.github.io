@@ -28,10 +28,12 @@
 
 .index-wrapper {
    max-width: 830px;
+   padding-left: 70px;
    margin: 0 auto;
    padding-top: 20px;
    position: relative;
    z-index: 1000;
+   @include transition(400);
 }
 
 .index-wrapper-content {

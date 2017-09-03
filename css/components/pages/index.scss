@@ -34,6 +34,12 @@
    z-index: 1000;
 }
 
+.index-wrapper-content {
+   display: inline-block;
+   vertical-align: top;
+   margin-left: 15px;
+}
+
 .index-counters {
    font-size: 0;
    white-space: nowrap;

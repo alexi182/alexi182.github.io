@@ -1001,6 +1001,7 @@ The `sprites` mixin generates identical output to the CSS template
   margin-top: 30px; }
 
 .content-tasks__member {
+  cursor: pointer;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
@@ -2327,6 +2328,60 @@ span.option-item {
     bottom: -16px;
     right: 20px; }
 
+.sidebar {
+  display: inline-block;
+  vertical-align: top;
+  width: 298px;
+  height: 100%;
+  /*position: absolute;
+   top:0;
+   left: 0;*/
+  background: #39404c; }
+  .sidebar ul {
+    margin-top: 45px;
+    padding-left: 0; }
+    .sidebar ul li {
+      font-size: 14px;
+      list-style: none; }
+      .sidebar ul li a {
+        display: block;
+        padding: 18px 8px 18px 23px;
+        color: #ffffff;
+        box-sizing: border-box;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        transition: all 300ms; }
+        .sidebar ul li a:hover {
+          background: #63b7df; }
+
+.opened {
+  display: block;
+  position: relative;
+  left: 84%;
+  top: 2%;
+  width: 32px;
+  height: 32px;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms; }
+
+.opened:hover {
+  opacity: 1; }
+
+.opened:before, .opened:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #63b7df; }
+
+.opened:before {
+  transform: rotate(45deg); }
+
+.opened:after {
+  transform: rotate(-45deg); }
+
 .slider {
   display: inline-block; }
 
@@ -2636,6 +2691,11 @@ span.option-item {
   padding-top: 20px;
   position: relative;
   z-index: 1000; }
+
+.index-wrapper-content {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 15px; }
 
 .index-counters {
   font-size: 0;

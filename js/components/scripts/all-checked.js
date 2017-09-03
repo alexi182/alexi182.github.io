@@ -5,3 +5,4 @@ $('.all_js').on('click', function() {
 $('.none_js').on('click', function() {
    $(this).closest('.page-content').find('input:checkbox').prop('checked', false);
 });
+

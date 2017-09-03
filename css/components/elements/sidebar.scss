@@ -63,7 +63,7 @@
    }
 }
 
-.sidebar__icon {
+.close__icon {
    display: block;
    position: absolute;
    width: 32px;
@@ -73,14 +73,10 @@
    top: 16px;
 }
 
-.icon-opened {
-
-}
-
-.icon-opened:hover {
+.icon-closed:hover {
    opacity: 1;
 }
-.icon-opened:before, .icon-opened:after {
+.icon-closed:before, .icon-closed:after {
    position: absolute;
    left: 15px;
    content: ' ';
@@ -88,10 +84,10 @@
    width: 2px;
    background-color: #63b7df;
 }
-.icon-opened:before {
+.icon-closed:before {
    transform: rotate(45deg);
 }
-.icon-opened:after {
+.icon-closed:after {
    transform: rotate(-45deg);
 }
 

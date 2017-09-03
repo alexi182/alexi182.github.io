@@ -1,4 +1,4 @@
-$('.sidebar__icon').on('click', function(e) {
+$('.close_js').on('click', function(e) {
    e.preventDefault();
    var root = $(this).parent().parent();
   if(root.hasClass('sidebar_opened')) {

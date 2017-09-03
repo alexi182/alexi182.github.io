@@ -2424,6 +2424,10 @@ span.option-item {
   vertical-align: top;
   height: 100%;
   display: table-cell;
+  -ms-transform: translateX(-233px);
+  -webkit-transform: translateX(-233px);
+  -moz-transform: translateX(-233px);
+  transform: translateX(-233px);
   -webkit-transition: all 400ms;
   -moz-transition: all 400ms;
   transition: all 400ms;
@@ -2431,7 +2435,8 @@ span.option-item {
   top: 0;
   left: 0;
   background: #39404c;
-  z-index: 10000; }
+  z-index: 10000;
+  width: 300px; }
   .sidebar ul {
     margin-top: 70px;
     padding-left: 0; }
@@ -2461,7 +2466,11 @@ span.option-item {
           display: none; }
 
 .sidebar_opened .sidebar {
-  width: 300px; }
+  width: 300px;
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  transform: translateX(0); }
   .sidebar_opened .sidebar ul li a {
     padding: 23px 11px 24px 23px; }
 

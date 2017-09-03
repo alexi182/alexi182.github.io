@@ -2,12 +2,14 @@
    vertical-align: top;
    height: 100%;
    display: table-cell;
+   @include transform_translateX(-233px);
    @include transition(400);
    position: absolute;
    top:0;
    left: 0;
    background: #39404c;
    z-index: 10000;
+   width: 300px;
    ul {
       margin-top: 70px;
       padding-left: 0;
@@ -43,7 +45,8 @@
 
 .sidebar_opened {
    .sidebar{
-      width: 300px;
+     width: 300px;
+      @include transform_translateX(0);
       ul {
          li{
             a{

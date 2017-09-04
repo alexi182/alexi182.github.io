@@ -2415,7 +2415,8 @@ span.option-item {
     border: 1px solid #000000;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
-    transition: all 300ms; }
+    transition: all 300ms;
+    margin-left: 4px; }
     .pagination ul li:first-of-type {
       background: url(../../../img/svg/arrow3_1.svg) no-repeat center;
       -webkit-transition: all 300ms;

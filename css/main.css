@@ -2394,6 +2394,13 @@ span.option-item {
 .comment-show {
   display: block; }
 
+.page-content__people {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 14px; }
+  .page-content__people:hover {
+    text-decoration: none; }
+
 .page-header {
   margin: 40px 0 15px; }
 

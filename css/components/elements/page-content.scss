@@ -183,3 +183,13 @@
 .comment-show {
    display: block;
 }
+
+.page-content__people {
+   color: #000000;
+   text-decoration: underline;
+   font-size: 14px;
+   &:hover {
+      text-decoration: none;
+   }
+}
+

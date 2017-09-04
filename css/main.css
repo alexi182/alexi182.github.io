@@ -2401,6 +2401,9 @@ span.option-item {
   .page-content__people:hover {
     text-decoration: none; }
 
+.ui-widget-header .ui-icon {
+  background-image: url(../../../img/ui-icons_444444_256x240.png) !important; }
+
 .page-header {
   margin: 40px 0 15px; }
 

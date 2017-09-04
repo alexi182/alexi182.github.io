@@ -2405,6 +2405,49 @@ span.option-item {
 .ui-widget-header .ui-icon {
   background-image: url(../../../img/ui-icons_444444_256x240.png) !important; }
 
+.pagination ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0; }
+  .pagination ul li {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #000000;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms; }
+    .pagination ul li:first-of-type {
+      background: url(../../../img/svg/arrow3_1.svg) no-repeat center;
+      -webkit-transition: all 300ms;
+      -moz-transition: all 300ms;
+      transition: all 300ms; }
+      .pagination ul li:first-of-type a {
+        padding: 16.5px 17px; }
+      .pagination ul li:first-of-type:hover {
+        background: #39404c url(../../../img/svg/arrow3_2.svg) no-repeat center; }
+    .pagination ul li:last-of-type {
+      background: url(../../../img/svg/arrow4_1.svg) no-repeat center;
+      -webkit-transition: all 300ms;
+      -moz-transition: all 300ms;
+      transition: all 300ms; }
+      .pagination ul li:last-of-type a {
+        padding: 16.5px 17px; }
+      .pagination ul li:last-of-type:hover {
+        background: #39404c url(../../../img/svg/arrow4_2.svg) no-repeat center; }
+    .pagination ul li a {
+      display: block;
+      padding: 5px 12px;
+      -webkit-transition: all 300ms;
+      -moz-transition: all 300ms;
+      transition: all 300ms;
+      color: #000000;
+      font-size: 17px;
+      font-weight: 400; }
+    .pagination ul li:hover {
+      background: #39404c; }
+      .pagination ul li:hover a {
+        color: #ffffff; }
+
 .page-header {
   margin: 40px 0 15px; }
 

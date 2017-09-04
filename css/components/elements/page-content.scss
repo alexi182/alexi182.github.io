@@ -198,3 +198,50 @@
    background-image: url(../../../img/ui-icons_444444_256x240.png)!important;
 }
 
+.pagination {
+   ul {
+      list-style: none;
+      text-align: center;
+      padding-left: 0;
+      li {
+         display: inline-block;
+         vertical-align: top;
+         border: 1px solid #000000;
+         @include transition(300);
+         &:first-of-type {
+            background: url(../../../img/svg/arrow3_1.svg)no-repeat center;
+            @include transition(300);
+            a{
+               padding: 16.5px 17px;
+            }
+            &:hover {
+               background: #39404c url(../../../img/svg/arrow3_2.svg)no-repeat center;
+            }
+         }
+         &:last-of-type {
+            background: url(../../../img/svg/arrow4_1.svg)no-repeat center;
+            @include transition(300);
+            a{
+               padding: 16.5px 17px;
+            }
+            &:hover {
+               background: #39404c url(../../../img/svg/arrow4_2.svg)no-repeat center;
+            }
+         }
+         a{
+            display: block;
+            padding: 5px 12px;
+            @include transition(300);
+            color: #000000;
+            font-size: 17px;
+            font-weight: 400;
+         }
+         &:hover {
+            background: #39404c;
+            a{
+               color: #ffffff;
+            }
+         }
+      }
+   }
+}

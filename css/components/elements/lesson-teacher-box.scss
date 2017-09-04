@@ -1,128 +1,128 @@
 .lesson-teacher-box {
-  transition: width .7s ease;
-  position: absolute;
-  top: 353px;
-  right: 0;
-  width: 530px;
-  height: 390px;
-  box-shadow: 0 0 5px 0 rgba(137, 137, 137, 0.75);
-  border-radius: 10px 0 0 10px;
-  overflow: hidden;
-  z-index: 1;
-  &.hide {
-    width: 145px;
-    .lesson-teacher-label {
-      cursor: pointer;
-    }
-  }
-  p {
-    margin: 10px 0;
-  }
+   transition: width .7s ease;
+   position: absolute;
+   top: 353px;
+   right: 0;
+   width: 530px;
+   height: 390px;
+   box-shadow: 0 0 5px 0 rgba(137, 137, 137, 0.75);
+   border-radius: 10px 0 0 10px;
+   overflow: hidden;
+   z-index: 1;
+   &.hide {
+      width: 145px;
+      .lesson-teacher-label {
+         cursor: pointer;
+      }
+   }
+   p {
+      margin: 10px 0;
+   }
 }
 
 .lesson-teacher-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 145px;
-  height: 390px;
-  background: #fff;
-  color: #236dcd;
-  border-radius: 10px 0 0 10px;
-  padding: 20px 0 0 20px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 145px;
+   height: 390px;
+   background: #fff;
+   color: #236dcd;
+   border-radius: 10px 0 0 10px;
+   padding: 20px 0 0 20px;
 
 }
 
 .lesson-teacher-label__ellipsis {
-  display: inline-block;
-  position: relative;
-  width: 10px;
-  height: 10px;
-  background: #236dcd;
-  border-radius: 50%;
-  margin-left: 42px;
-  &:before,
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -15px;
-    width: 10px;
-    height: 10px;
-    background: #236dcd;
-    border-radius: 50%;
-  }
-  &:after {
-    left: auto;
-    right: -15px;
-  }
+   display: inline-block;
+   position: relative;
+   width: 10px;
+   height: 10px;
+   background: #236dcd;
+   border-radius: 50%;
+   margin-left: 42px;
+   &:before,
+   &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 10px;
+      height: 10px;
+      background: #236dcd;
+      border-radius: 50%;
+   }
+   &:after {
+      left: auto;
+      right: -15px;
+   }
 }
 .lesson-teacher-name {
-  margin-top: 25px;
-  font-size: 15px;
-  color: #303030;
-  text-transform: uppercase;
-  span {
-    display: block;
-    margin-top: 15px;
-    text-transform: none;
-    color: #236dcd;
-    font: 16px/20px $open-sans;
-  }
+   margin-top: 25px;
+   font-size: 15px;
+   color: #303030;
+   text-transform: uppercase;
+   span {
+      display: block;
+      margin-top: 15px;
+      text-transform: none;
+      color: #236dcd;
+      font: 16px/20px $open-sans;
+   }
 }
 
 .lesson-teacher-label__img {
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  margin-left: -48px;
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  border: 3px solid #ebebea;
-  background-size: cover;
-  background-repeat: no-repeat;
+   position: absolute;
+   bottom: 40px;
+   left: 50%;
+   margin-left: -48px;
+   width: 96px;
+   height: 96px;
+   border-radius: 50%;
+   border: 3px solid #ebebea;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
 
 .lesson-teacher-description {
-  position: absolute;
-  top: 0;
-  left: 146px;
-  width: 385px;
-  height: 390px;
-  padding: 0 20px 0 40px;
-  font-size: 16px;
-  color: #303030;
-  border-top: 1px solid #dcdcdc;
-  border-bottom: 1px solid #dcdcdc;
-  border-left: 4px solid #236dcd;
-  background: #fff;
-  p {
-    margin: 5px 0;
-  }
+   position: absolute;
+   top: 0;
+   left: 146px;
+   width: 385px;
+   height: 390px;
+   padding: 0 20px 0 40px;
+   font-size: 16px;
+   color: #303030;
+   border-top: 1px solid #dcdcdc;
+   border-bottom: 1px solid #dcdcdc;
+   border-left: 4px solid #236dcd;
+   background: #fff;
+   p {
+      margin: 5px 0;
+   }
 }
 
 .teacher-info-link {
-  transition: .3s;
-  display: block;
-  margin: 60px auto 40px;
-  color: #236dcd;
-  text-transform: uppercase;
-  text-decoration: none;
-  i {
-    transition: .3s;
-    display: inline-block;
-    margin-left: 5px;
-    position: relative;
-    top: -3px;
-    vertical-align: middle;
-    font-size: 30px;
-    transform: rotate(-90deg);
-  }
-  &:hover {
-    color: #19c2e7;
-    i {
+   transition: .3s;
+   display: block;
+   margin: 60px auto 40px;
+   color: #236dcd;
+   text-transform: uppercase;
+   text-decoration: none;
+   i {
+      transition: .3s;
+      display: inline-block;
+      margin-left: 5px;
+      position: relative;
+      top: -3px;
+      vertical-align: middle;
+      font-size: 30px;
+      transform: rotate(-90deg);
+   }
+   &:hover {
       color: #19c2e7;
-    }
-  }
+      i {
+         color: #19c2e7;
+      }
+   }
 }

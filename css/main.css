@@ -2239,7 +2239,8 @@ span.option-item {
     margin-bottom: 40px; }
 
 .page-content {
-  display: inline-block;
+  display: table-cell;
+  right: 7%;
   vertical-align: top;
   width: 40%;
   height: 100%;

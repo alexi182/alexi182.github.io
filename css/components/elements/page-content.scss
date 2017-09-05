@@ -246,3 +246,11 @@
       }
    }
 }
+
+.slick-slider {
+   width: 810px;
+}
+
+.slick-prev, .slick-next {
+   z-index: 10000;
+}

@@ -4,7 +4,7 @@
 
 .link-block__item {
    letter-spacing: 0;
-   width: 265px;
+   width: 33.3%;
    display: inline-block;
    vertical-align: top;
    height: 265px;
@@ -75,4 +75,11 @@
    }
 }
 
+.slick-track {
+   .slick-active {
+      &:first-of-type {
+         background: #000000;
+      }
 
+   }
+}

@@ -2,7 +2,6 @@
    display: table-cell;
    right: 7%;
    vertical-align: top;
-   width: 40%;
    height: 100%;
    background: rgba(255,255,255,0.8);
    max-width: 764px;
@@ -10,8 +9,87 @@
    margin-left: 2%;
    position: relative;
    z-index: 1000;
+   @include transition(400);
    &:after {
       @include clear();
+   }
+}
+
+.page-content_closed{
+    width: 54%;
+ }
+
+.page-content_opened{
+   width: 66%;
+}
+
+@media (max-width: 1820px) {
+   .page-content_closed{
+      width: 52%;
+   }
+
+   .page-content_opened{
+      width: 64%;
+   }
+}
+
+@media (max-width: 1750px) {
+   .page-content_closed{
+      width: 50%;
+   }
+
+   .page-content_opened{
+      width: 63%;
+   }
+}
+
+@media (max-width: 1670px) {
+   .page-content_closed{
+      width: 48%;
+   }
+
+   .page-content_opened{
+      width: 61%;
+   }
+}
+
+@media (max-width: 1600px) {
+   .page-content_closed{
+      width: 47%;
+   }
+
+   .page-content_opened{
+      width: 60%;
+   }
+}
+
+@media (max-width: 1550px) {
+   .page-content_closed{
+      width: 45%;
+   }
+
+   .page-content_opened{
+      width: 58%;
+   }
+}
+
+@media (max-width: 1500px) {
+   .page-content_closed{
+      width: 43%;
+   }
+
+   .page-content_opened{
+      width: 58%;
+   }
+}
+
+@media (max-width: 1400px) {
+   .page-content_closed{
+      width: 41%;
+   }
+
+   .page-content_opened{
+      width: 57%;
    }
 }
 

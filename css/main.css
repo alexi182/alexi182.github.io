@@ -2205,43 +2205,31 @@ span.option-item {
     .link-block__item:hover .link-block__item-label, .link-block__item:hover .link-block__item-alert {
       color: #3a4c64; }
   .link-block__item:first-of-type {
-    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/notice2.svg) no-repeat center 35px;
-    background-size: 90px; }
+    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/notice2.svg) no-repeat center 35px; }
     .link-block__item:first-of-type:hover {
-      background: #ffffff url(../../../img/svg/notice.svg) no-repeat center 35px;
-      background-size: 90px; }
+      background: #ffffff url(../../../img/svg/notice.svg) no-repeat center 35px; }
   .link-block__item:nth-of-type(2) {
-    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/messages2.svg) no-repeat center 35px;
-    background-size: 90px; }
+    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/messages2.svg) no-repeat center 35px; }
     .link-block__item:nth-of-type(2):hover {
-      background: #ffffff url(../../../img/svg/messages.svg) no-repeat center 35px;
-      background-size: 90px; }
+      background: #ffffff url(../../../img/svg/messages.svg) no-repeat center 35px; }
   .link-block__item:nth-of-type(3) {
-    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/doc2.svg) no-repeat center 35px;
-    background-size: 90px; }
+    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/doc2.svg) no-repeat center 35px; }
     .link-block__item:nth-of-type(3):hover {
-      background: #ffffff url(../../../img/svg/doc.svg) no-repeat center 35px;
-      background-size: 90px; }
+      background: #ffffff url(../../../img/svg/doc.svg) no-repeat center 35px; }
   .link-block__item:nth-of-type(4) {
-    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/events2.svg) no-repeat center 35px;
-    background-size: 90px; }
+    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/events2.svg) no-repeat center 35px; }
     .link-block__item:nth-of-type(4):hover {
-      background: #ffffff url(../../../img/svg/events.svg) no-repeat center 35px;
-      background-size: 90px; }
+      background: #ffffff url(../../../img/svg/events.svg) no-repeat center 35px; }
   .link-block__item:nth-of-type(5) {
-    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/user2.svg) no-repeat center 35px;
-    background-size: 90px; }
+    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/user2.svg) no-repeat center 35px; }
     .link-block__item:nth-of-type(5):hover {
-      background: #ffffff url(../../../img/svg/user.svg) no-repeat center 35px;
-      background-size: 90px; }
+      background: #ffffff url(../../../img/svg/user.svg) no-repeat center 35px; }
   .link-block__item:nth-of-type(6) {
-    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/settings2.svg) no-repeat center 35px;
-    background-size: 90px; }
+    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/settings2.svg) no-repeat center 35px; }
     .link-block__item:nth-of-type(6) .link-block__item-label {
       display: block; }
     .link-block__item:nth-of-type(6):hover {
-      background: #ffffff url(../../../img/svg/settings.svg) no-repeat center 35px;
-      background-size: 90px; }
+      background: #ffffff url(../../../img/svg/settings.svg) no-repeat center 35px; }
   .link-block__item-label {
     font-size: 22px;
     font-weight: 400;

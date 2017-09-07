@@ -108,6 +108,13 @@
   transform: rotate($x);
 }
 
+@mixin rotateTranslateY($x, $y) {
+  -webkit-transform: rotate($x) translateY($y);
+  -moz-transform: rotate($x) translateY($y);
+  -ms-transform: rotate($x) translateY($y);
+  transform: rotate($x) translateY($y);
+}
+
 @mixin clear() {
   content: "";
   display: block;

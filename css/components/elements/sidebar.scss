@@ -43,8 +43,8 @@
       }
    }
    .close__icon {
-      width: 34px;
-      height: 28px;
+      width: 45px;
+      height: 29px;
       background: none;
    }
 }
@@ -76,8 +76,8 @@
    width: 20px;
    height: 21px;
    @include transition(400);
-   right: 18px;
-   top: 16px;
+   right: 9px;
+   top: 17px;
    background: url(../../../img/search-close.png) no-repeat;
 }
 
@@ -109,16 +109,16 @@
       will-change: transform;
       background: #63b7df;
       &:first-of-type{
-         top: 10px;
-         @include rotate(-45deg);
+   /*      top: 10px;
+         @include rotate(-45deg);*/
+         @include rotateTranslateY(-45deg, 14px);
       }
 
       &:nth-of-type(2) {
          opacity: 0;
       }
       &:last-of-type {
-         top: 10px;
-         @include rotate(45deg);
+         @include rotateTranslateY(45deg, -14px);
       }
    }
 }
@@ -130,12 +130,12 @@
    transform: rotate(-45deg);
 }*/
 
-.page-content__check {
+.checkbox {
    position: absolute;
    left: -9999px;
 }
 
-.page-content__check+.check-label:before {
+.checkbox+.checkbox-label:before {
    content: '';
    display: inline-block;
    position: relative;
@@ -147,7 +147,7 @@
    cursor: pointer;
 }
 
-.page-content__check:checked+.check-label:before {
+.checkbox:checked+.checkbox-label:before {
    content: '';
    display: inline-block;
    position: relative;

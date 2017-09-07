@@ -1,6 +1,6 @@
 .date-block {
    margin-bottom: 20px;
-   &-item{
+   &__item{
       display: inline-block;
       vertical-align: top;
       max-width: 271px;
@@ -14,20 +14,20 @@
          border-right: none;
       }
    }
-   &-item-top {
+   &__item-top {
       margin-bottom: 5px;
       &-icon {
          float: right;
       }
    }
-   &-item-top-data {
+   &__item-top-data {
       display: inline-block;
       color: #3a4c64;
       font-size: 20px;
       font-weight: 400;
       line-height: 24px;
    }
-   &-item-bottom {
+   &__item-bottom {
       color: #3a4c64;
       font-size: 14px;
       font-weight: 400;
@@ -72,6 +72,7 @@
    .slick-next {
       background:  #3a4c64 url(../../../img/right.png) no-repeat center;
       top: 18px;
+      right: -50px;
    }
 
    .slick-active {

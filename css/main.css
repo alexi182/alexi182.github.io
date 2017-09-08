@@ -1839,7 +1839,7 @@ span.option-item {
     color: #000000;
     float: right;
     margin-top: 5px;
-    margin-right: 53px; }
+    margin-right: 25px; }
     .layout-content-search__top .advance-search:hover {
       text-decoration: underline; }
     .layout-content-search__top .advance-search:after {
@@ -1851,7 +1851,7 @@ span.option-item {
       background: url(../../../img/search-down.png) no-repeat; }
   .layout-content-search__top .close-search {
     position: absolute;
-    right: 50px;
+    right: 25px;
     top: 52px;
     display: none; }
     .layout-content-search__top .close-search:after {
@@ -1883,17 +1883,9 @@ span.option-item {
 .layout-content-search__block-row-item {
   width: 40%;
   display: inline-block;
-  vertical-align: top; }
-  .layout-content-search__block-row-item:after {
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    background: url(../../../img/icondate.png) no-repeat;
-    width: 27px;
-    height: 29px;
-    position: relative;
-    top: -32px;
-    left: 169px; }
+  vertical-align: top;
+  background: url(../../../img/icondate.png) no-repeat 130px 27px;
+  background-size: 25px; }
   .layout-content-search__block-row-item:last-of-type {
     margin-left: 35px; }
 
@@ -2235,11 +2227,11 @@ span.option-item {
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 155px; }
+    margin-top: 140px; }
   .link-block__item-alert {
     color: #ffffff;
     font-size: 18px;
-    margin-top: 20px; }
+    margin-top: 15px; }
   .link-block__item-icon {
     margin-top: 35px;
     margin-bottom: 40px; }
@@ -3253,19 +3245,19 @@ span.option-item {
   width: 179px;
   padding: 11px 0px;
   border: 1px solid rgba(0, 0, 0, 0.25);
-  background: rgba(255, 245, 215, 0.25);
+  background: #455773;
   text-decoration: none;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #39404c;
+  color: #ffffff;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms; }
   .index-btn-enter:hover {
-    background: #455773;
-    color: #fff; }
+    background: rgba(255, 245, 215, 0.25);
+    color: #39404c; }
 
 .index-wrapper {
   max-width: 857px;

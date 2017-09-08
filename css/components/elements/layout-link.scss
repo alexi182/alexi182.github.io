@@ -178,7 +178,7 @@
       color: #000000;
       float: right;
       margin-top: 5px;
-      margin-right: 53px;
+      margin-right: 25px;
       &:hover {
          text-decoration: underline;
       }
@@ -193,7 +193,7 @@
    }
    .close-search {
       position: absolute;
-      right: 50px;
+      right: 25px;
       top: 52px;
       display: none;
       &:after{
@@ -235,17 +235,8 @@
    width: 40%;
    display: inline-block;
    vertical-align: top;
-   &:after {
-      content: "";
-      display: inline-block;
-      vertical-align: top;
-      background: url(../../../img/icondate.png) no-repeat;
-      width: 27px;
-      height: 29px;
-      position: relative;
-      top: -32px;
-      left: 169px;
-   }
+   background: url(../../../img/icondate.png) no-repeat 130px 27px;
+   background-size: 25px;
    &:last-of-type {
       margin-left: 35px;
    }

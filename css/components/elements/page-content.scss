@@ -153,15 +153,6 @@
    color: #52adcc;
    font-size: 14px;
    font-weight: 400;
-   &:after{
-      content: "";
-      vertical-align: middle;
-      display: inline-block;
-      margin-left: 12px;
-      width: 40px;
-      height: 22px;
-      background: url(../../../img/post-icon.png)no-repeat;
-   }
 }
 
 .page-content__post-bottom {

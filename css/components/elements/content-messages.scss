@@ -10,13 +10,14 @@
       font-size: 16px;
       font-weight: 400;
       text-align: center;
+      margin-right: 7px;
       &:hover{
          background: #ffffff;
          color: #000000;
          border: 1px solid #ffffff;
       }
       &:last-of-type {
-         margin-left: 10px;
+         margin-right: 0px;
       }
    }
 }

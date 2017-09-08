@@ -931,13 +931,14 @@ The `sprites` mixin generates identical output to the CSS template
   color: #39404c;
   font-size: 16px;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+  margin-right: 7px; }
   .content-messages a:hover {
     background: #ffffff;
     color: #000000;
     border: 1px solid #ffffff; }
   .content-messages a:last-of-type {
-    margin-left: 10px; }
+    margin-right: 0px; }
 
 .btn {
   text-transform: uppercase;
@@ -966,7 +967,7 @@ The `sprites` mixin generates identical output to the CSS template
   text-transform: uppercase; }
 
 .content-tasks {
-  margin-top: 66px; }
+  margin-top: 50px; }
 
 .content-container__subtitle {
   color: #000000;
@@ -1000,26 +1001,26 @@ The `sprites` mixin generates identical output to the CSS template
     margin: -7px 0 0 7px;
     background: url("../../../img/icondate.png") no-repeat; }
 
-.content-tasks__members {
+.tags-block {
   max-width: 380px;
-  margin-top: 30px; }
+  margin-top: 15px; }
 
-.content-tasks__member {
+.tag {
   cursor: pointer;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;
   color: #000000;
-  width: 177px;
+  /*width: 177px;*/
   font-size: 16px;
   font-weight: 400;
-  padding: 3px 10px;
+  padding: 5px 18px 3px 18px;
   border-radius: 5px;
+  text-transform: uppercase;
   border: 1px solid #979ea9;
   background-color: #ffffff;
-  margin-bottom: 10px; }
-  .content-tasks__member:nth-of-type(2n+1) {
-    margin-right: 10px; }
+  margin-bottom: 10px;
+  margin-right: 10px; }
 
 .footer {
   margin-top: 20px; }
@@ -2508,14 +2509,6 @@ span.option-item {
   color: #52adcc;
   font-size: 14px;
   font-weight: 400; }
-  .page-content__post-link:after {
-    content: "";
-    vertical-align: middle;
-    display: inline-block;
-    margin-left: 12px;
-    width: 40px;
-    height: 22px;
-    background: url(../../../img/post-icon.png) no-repeat; }
 
 .page-content__post-bottom {
   margin-top: 10px;

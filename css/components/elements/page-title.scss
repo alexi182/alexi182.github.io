@@ -1,71 +1,72 @@
 .page-title {
-  margin: 40px 0 0;
+   margin: 40px 0 0;
 }
 .page-title__title-wrap {
-  text-align: center;
-  position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin: 0 0 20px;
+   text-align: center;
+   position: relative;
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: center;
+   margin: 0 0 20px;
 }
 
 .page-title__line-left,
 .page-title__line-right,
 .page-title__title {
-  //height: 20px;
-  //background: #cccccc;
-  //position: absolute;
-  //top: 0;
+   //height: 20px;
+   //background: #cccccc;
+   //position: absolute;
+   //top: 0;
+
 }
 
 .page-title__line-left,
 .page-title__line-right {
-  flex-grow: 1;
-  position: relative;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    margin-top: -3px;
-    display: block;
-    left: 0;
-    right: 0;
-    border-bottom: 1px solid #333333;
-  }
+   flex-grow: 1;
+   position: relative;
+   &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      margin-top: -3px;
+      display: block;
+      left: 0;
+      right: 0;
+      border-bottom: 1px solid #333333;
+   }
 }
 
 .page-title__title {
-  display: inline-block;
-  font: normal 24px $open-sans;
-  color: #333;
-  margin: 0 10px 10px;
-  max-width: 75%;
+   display: inline-block;
+   font: normal 24px $open-sans;
+   color: #333;
+   margin: 0 10px 10px;
+   max-width: 75%;
 }
 
 .page-bubble-row {
-  text-align: left;
-  margin: 10px 0 20px;
+   text-align: left;
+   margin: 10px 0 20px;
 }
 
 .page-bubble {
-  display: inline-block;
-  color: #fcfbfb;
-  font: 18px $open-sans;
-  padding: 20px 10px;
-  background: #364693;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
-  max-width: 90%;
-  position: relative;
-  &:after {
-    content: '';
-    display: block;
-    @include sprite($bubble-tail);
-    position: absolute;
-    bottom: -16px;
-    right: 20px;
-  }
+   display: inline-block;
+   color: #fcfbfb;
+   font: 18px $open-sans;
+   padding: 20px 10px;
+   background: #364693;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   max-width: 90%;
+   position: relative;
+   &:after {
+      content: '';
+      display: block;
+      @include sprite($bubble-tail);
+      position: absolute;
+      bottom: -16px;
+      right: 20px;
+   }
 }
 

@@ -254,7 +254,7 @@ select {
 
 .content {
   height: 100%;
-  padding: 0 10px; }
+  padding: 0 15px; }
 
 .content-container {
   /* margin: 0 auto;
@@ -2466,48 +2466,6 @@ span.option-item {
 .page-content_opened {
   width: 66%; }
 
-@media (max-width: 1820px) {
-  .page-content_closed {
-    width: 52%; }
-  .page-content_opened {
-    width: 64%; } }
-
-@media (max-width: 1750px) {
-  .page-content_closed {
-    width: 50%; }
-  .page-content_opened {
-    width: 63%; } }
-
-@media (max-width: 1670px) {
-  .page-content_closed {
-    width: 48%; }
-  .page-content_opened {
-    width: 61%; } }
-
-@media (max-width: 1600px) {
-  .page-content_closed {
-    width: 47%; }
-  .page-content_opened {
-    width: 60%; } }
-
-@media (max-width: 1550px) {
-  .page-content_closed {
-    width: 45%; }
-  .page-content_opened {
-    width: 58%; } }
-
-@media (max-width: 1500px) {
-  .page-content_closed {
-    width: 43%; }
-  .page-content_opened {
-    width: 58%; } }
-
-@media (max-width: 1400px) {
-  .page-content_closed {
-    width: 41%; }
-  .page-content_opened {
-    width: 57%; } }
-
 .page-content__userbar {
   position: relative;
   z-index: 1000;
@@ -2539,7 +2497,7 @@ span.option-item {
 .page-content__post {
   display: inline-block;
   vertical-align: top;
-  padding: 22px;
+  padding: 12px 10px 8px 15px;
   height: 170px;
   width: 49%;
   margin-bottom: 10px;
@@ -2710,6 +2668,55 @@ span.option-item {
 
 .slick-prev, .slick-next {
   z-index: 10000; }
+
+@media (max-width: 1820px) {
+  .page-content_closed {
+    width: 52%; }
+  .page-content_opened {
+    width: 64%; } }
+
+@media (max-width: 1750px) {
+  .page-content_closed {
+    width: 50%; }
+  .page-content_opened {
+    width: 63%; } }
+
+@media (max-width: 1670px) {
+  .page-content_closed {
+    width: 48%; }
+  .page-content_opened {
+    width: 61%; }
+  .page-content__post-text {
+    font-size: 14px; } }
+
+@media (max-width: 1600px) {
+  .page-content_closed {
+    width: 49%; }
+  .page-content_opened {
+    width: 60%; } }
+
+@media (max-width: 1550px) {
+  .page-content_closed {
+    width: 48%; }
+  .page-content_opened {
+    width: 58%; } }
+
+@media (max-width: 1500px) {
+  .page-content_closed {
+    width: 44%; }
+  .page-content_opened {
+    width: 58%; }
+  .page-content__post {
+    display: block;
+    width: 100%; }
+  .page-content__post:nth-of-type(2n+1) {
+    margin-left: 0%; } }
+
+@media (max-width: 1400px) {
+  .page-content_closed {
+    width: 41%; }
+  .page-content_opened {
+    width: 57%; } }
 
 .page-header {
   margin: 40px 0 15px; }

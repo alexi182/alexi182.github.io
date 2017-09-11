@@ -25,7 +25,7 @@
 .page-content__userbar {
    position: relative;
    z-index: 1000;
-   margin-bottom: 30px;
+   margin-bottom: 15px;
    &:after {
       @include clear();
    }
@@ -47,6 +47,21 @@
    &:hover {
       background: #39404c;
       color: #ffffff;
+   }
+}
+
+.page-content__btn-document {
+   display: block;
+   padding: 18px 23px 18px 58px;
+   margin-right: 7px;
+   background: #63b7df url(../../../img/plus.png)no-repeat 20px 21px;
+   color: #ffffff;
+   float: right;
+   font-size: 18px;
+   font-weight: 400;
+   @include transition(300);
+   &:hover {
+      background: darken(#63b7df, 10%) url(../../../img/plus.png)no-repeat 20px 23px;
    }
 }
 

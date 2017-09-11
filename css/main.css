@@ -2499,7 +2499,7 @@ span.option-item {
 .page-content__userbar {
   position: relative;
   z-index: 1000;
-  margin-bottom: 30px; }
+  margin-bottom: 15px; }
   .page-content__userbar:after {
     content: "";
     display: block;
@@ -2523,6 +2523,21 @@ span.option-item {
   .page-content__btn:hover {
     background: #39404c;
     color: #ffffff; }
+
+.page-content__btn-document {
+  display: block;
+  padding: 18px 23px 18px 58px;
+  margin-right: 7px;
+  background: #63b7df url(../../../img/plus.png) no-repeat 20px 21px;
+  color: #ffffff;
+  float: right;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms; }
+  .page-content__btn-document:hover {
+    background: #39a3d6 url(../../../img/plus.png) no-repeat 20px 23px; }
 
 .page-content__post {
   display: inline-block;

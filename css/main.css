@@ -954,7 +954,8 @@ The `sprites` mixin generates identical output to the CSS template
   .dateblock .ui-widget.ui-widget-content {
     border: none; }
   .dateblock .ui-datepicker-header {
-    background: transparent; }
+    background: transparent;
+    border: none; }
   .dateblock .ui-datepicker-title {
     background: transparent; }
   .dateblock .ui-datepicker-prev, .dateblock .ui-datepicker-next {
@@ -970,7 +971,8 @@ The `sprites` mixin generates identical output to the CSS template
     border: 1px solid #63b7df; }
   .dateblock .ui-datepicker td {
     border: 1px solid #63b7df;
-    padding: 2px 16px 12px 11px; }
+    padding: 2px 16px 12px 11px;
+    cursor: pointer; }
   .dateblock .ui-widget-content .ui-state-default {
     border: none;
     font-size: 15px;
@@ -979,7 +981,8 @@ The `sprites` mixin generates identical output to the CSS template
     position: relative;
     top: -1px;
     right: -12px;
-    padding: 0; }
+    padding: 0;
+    background: transparent; }
   .dateblock .iu-state-hover a:hover {
     background: transparent; }
   .dateblock .ui-state-active, .dateblock .ui-widget-content .ui-state-active {
@@ -1019,7 +1022,10 @@ The `sprites` mixin generates identical output to the CSS template
   text-transform: uppercase; }
 
 .content-tasks {
-  margin-top: 50px; }
+  margin-top: 30px;
+  /*&:last-of-type {
+      margin-top: 40px;
+   }*/ }
 
 .content-container__subtitle {
   color: #000000;
@@ -1057,6 +1063,22 @@ The `sprites` mixin generates identical output to the CSS template
   max-width: 380px;
   margin-top: 15px; }
 
+.tags-block.category .tag {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  transition: all 200ms; }
+  .tags-block.category .tag:hover {
+    background: #63b7df;
+    color: #ffffff; }
+
+.tags-block.status .tag {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  transition: all 200ms; }
+  .tags-block.status .tag:hover {
+    background: #00ad5d;
+    color: #ffffff; }
+
 .tag {
   cursor: pointer;
   display: inline-block;
@@ -1066,13 +1088,20 @@ The `sprites` mixin generates identical output to the CSS template
   /*width: 177px;*/
   font-size: 16px;
   font-weight: 400;
-  padding: 5px 18px 3px 18px;
+  padding: 4px 18px 4px 18px;
   border-radius: 5px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   border: 1px solid #979ea9;
   background-color: #ffffff;
   margin-bottom: 10px;
   margin-right: 10px; }
+
+.page-content__post-tag {
+  color: #2685b2;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 5px; }
 
 .footer {
   margin-top: 20px; }

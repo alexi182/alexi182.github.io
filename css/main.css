@@ -940,6 +940,58 @@ The `sprites` mixin generates identical output to the CSS template
   .content-messages a:last-of-type {
     margin-right: 0px; }
 
+.dateblock {
+  /*  .ui-datepicker-month {
+      background: #3a4c64;
+   }
+   .ui-datepicker-year {
+      background: #3a4c64;
+   }*/ }
+  .dateblock .ui-datepicker-calendar {
+    background: rgba(255, 255, 255, 0.8); }
+  .dateblock .ui-widget-content {
+    background: transparent; }
+  .dateblock .ui-widget.ui-widget-content {
+    border: none; }
+  .dateblock .ui-datepicker-header {
+    background: transparent; }
+  .dateblock .ui-datepicker-title {
+    background: transparent; }
+  .dateblock .ui-datepicker-prev, .dateblock .ui-datepicker-next {
+    display: none; }
+  .dateblock .ui-datepicker .ui-datepicker-title {
+    text-align: left;
+    margin: 0 40px 2px 0px; }
+  .dateblock .ui-datepicker th {
+    font-size: 14px;
+    font-weight: 400;
+    color: #63b7df;
+    padding: 4px 1px;
+    border: 1px solid #63b7df; }
+  .dateblock .ui-datepicker td {
+    border: 1px solid #63b7df;
+    padding: 2px 16px 12px 11px; }
+  .dateblock .ui-widget-content .ui-state-default {
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: #3a4c64;
+    position: relative;
+    top: -1px;
+    right: -12px;
+    padding: 0; }
+  .dateblock .iu-state-hover a:hover {
+    background: transparent; }
+  .dateblock .ui-state-active, .dateblock .ui-widget-content .ui-state-active {
+    background: #63b7df;
+    color: #ffffff; }
+  .dateblock .ui-datepicker-current-day {
+    background: #63b7df; }
+  .dateblock .ui-datepicker td a {
+    /*padding: 5px 4px 11px 2px;*/ }
+  .dateblock .ui-state-highlight, .dateblock .ui-widget-content .ui-state-highlight {
+    background: transparent; }
+
 .btn {
   text-transform: uppercase;
   border: 2px solid #ccc;
@@ -2616,12 +2668,13 @@ span.option-item {
     display: inline-block;
     vertical-align: top;
     border: 1px solid #000000;
+    background: rgba(255, 255, 255, 0.8);
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     transition: all 300ms;
     margin-left: 4px; }
     .pagination ul li:first-of-type {
-      background: url(../../../img/svg/arrow3_1.svg) no-repeat center;
+      background: rgba(255, 255, 255, 0.8) url(../../../img/svg/arrow3_1.svg) no-repeat center;
       -webkit-transition: all 300ms;
       -moz-transition: all 300ms;
       transition: all 300ms; }
@@ -2630,7 +2683,7 @@ span.option-item {
       .pagination ul li:first-of-type:hover {
         background: #39404c url(../../../img/svg/arrow3_2.svg) no-repeat center; }
     .pagination ul li:last-of-type {
-      background: url(../../../img/svg/arrow4_1.svg) no-repeat center;
+      background: rgba(255, 255, 255, 0.8) url(../../../img/svg/arrow4_1.svg) no-repeat center;
       -webkit-transition: all 300ms;
       -moz-transition: all 300ms;
       transition: all 300ms; }
@@ -7074,7 +7127,7 @@ a:visited.ui-button,
   color: #454545;
   text-decoration: none; }
 
-.ui-state-hover,
+/*.ui-state-hover,
 .ui-widget-content .ui-state-hover,
 .ui-widget-header .ui-state-hover,
 .ui-state-focus,
@@ -7082,11 +7135,12 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-  border: 1px solid #cccccc;
-  background: #ededed;
-  font-weight: normal;
-  color: #2b2b2b; }
-
+	border: 1px solid #cccccc;
+	background: #ededed;
+	font-weight: normal;
+	color: #2b2b2b;
+}*/
+/*
 .ui-state-hover a,
 .ui-state-hover a:hover,
 .ui-state-hover a:link,
@@ -7097,9 +7151,10 @@ a:visited.ui-button,
 .ui-state-focus a:visited,
 a.ui-button:hover,
 a.ui-button:focus {
-  color: #2b2b2b;
-  text-decoration: none; }
-
+	color: #2b2b2b;
+	text-decoration: none;
+}
+*/
 .ui-visual-focus {
   box-shadow: 0 0 3px 1px #5e9ed6; }
 

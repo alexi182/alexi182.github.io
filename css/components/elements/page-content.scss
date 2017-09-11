@@ -287,9 +287,10 @@
          display: inline-block;
          vertical-align: top;
          border: 1px solid #000000;
+         background: rgba(255, 255, 255, 0.8);
          @include transition(300);
          &:first-of-type {
-            background: url(../../../img/svg/arrow3_1.svg)no-repeat center;
+            background: rgba(255, 255, 255, 0.8) url(../../../img/svg/arrow3_1.svg)no-repeat center;
             @include transition(300);
             a{
                padding: 16.5px 17px;
@@ -299,7 +300,7 @@
             }
          }
          &:last-of-type {
-            background: url(../../../img/svg/arrow4_1.svg)no-repeat center;
+            background: rgba(255, 255, 255, 0.8) url(../../../img/svg/arrow4_1.svg)no-repeat center;
             @include transition(300);
             a{
                padding: 16.5px 17px;

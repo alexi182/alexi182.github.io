@@ -1,210 +1,22 @@
 <!doctype html>
 <html class="no-js" lang="">
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title></title>
-   <meta name="description" content="">
-   <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
-
-   <link rel="stylesheet" href="/css/main.css">
+   @@include('../includes/common/head.html', {})
 
 </head>
 <body>
 
-<!--[if lte IE 8]>
-<style>
-   .browserupgrade {text-align: center;border: 2px solid #b4b472;font-size: 20px;padding: 20px;position: fixed;background: #333;color: #c1bea2;width: 400px;left: 50%;margin-left: -200px;z-index: 999999;}
-   .browserupgrade a {color: #fff;}
-   .browserupgrade a:hover {color: #e0c1ff;text-decoration: none;}
-</style>
-<p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста<br/> <a
-        href="http://browsehappy.com/">обновите ваш браузер или установите альтернативный</a><br/> для корректного
-   отображения содержимого сайта.</p>
-<![endif]-->
-
+@@include('../includes/common/browserhappy.html', {})
 
 <div class="stick-footer sidebar_opened">
-   <div class="layout-links layout-links_profile">
-      <div class="layout-links__item sidebar-profile layout-links__item_closed-profile">
-         <div class="layout-link profile-link">
-            <img src="/img/user2.svg" alt="">
-         </div>
+   @@include('../includes/elements/right-layout-links.html', {})
 
-         <div class="layout-content-profile">
-            <img src="/img/avatar.png" alt="">
-
-            <div class="layout-content-user">
-               <div class="layout-content-user__name">
-                  Синюгина Татьяна Юрьевна
-               </div>
-               <div class="layout-content-user__actions">
-                  <a href="#" class="layout-content-user__profile">Профиль</a>
-                  <a href="#" class="layout-content-user__exit">Выйти</a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-
-   <div class="layout-links layout-links_search">
-      <div class="layout-links__item sidebar-search layout-links__item_closed-search">
-         <div class="layout-link search-link">
-            <img src="/img/magnifier.svg" alt="">
-         </div>
-         <div class="layout-content-search">
-            <div class="layout-content-search__top">
-               <input type="text" placeholder="Поиск документов: введите название документа">
-               <a href="#" class="advance-search">Расширенный поиск</a>
-               <a href="#" class="close-search"></a>
-            </div>
-
-            <div class="layout-content-search__block block-hide">
-               <div class="layout-content-search__block-column">
-                  <div class="layout-content-search__block-row">
-                     <label class="layout-content-search__label">
-                        Вид документа
-                     </label>
-                     <div class="search-box">
-                        <select class="chosen-select">
-                           <option>Все</option>
-                           <option>Не все</option>
-                        </select>
-                     </div>
-                  </div>
-
-                  <div class="layout-content-search__block-row">
-                     <label class="layout-content-search__label">
-                        Заголовок
-                     </label>
-                     <div class="search-box">
-                        <input type="text">
-                     </div>
-                  </div>
-
-                  <div class="layout-content-search__block-row">
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата создания
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата изменения
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                  </div>
-
-               </div>
-
-               <div class="layout-content-search__block-column">
-                  <div class="layout-content-search__block-row">
-                     <label class="layout-content-search__label">
-                        Категория
-                     </label>
-                     <div class="search-box">
-                        <select class="chosen-select">
-                           <option>Все</option>
-                           <option>Не все</option>
-                        </select>
-                     </div>
-                  </div>
-
-                  <div class="layout-content-search__block-row">
-                     <label class="layout-content-search__label">
-                        Номер
-                     </label>
-                     <div class="search-box">
-                        <input type="text">
-                     </div>
-                  </div>
-
-                  <div class="layout-content-search__block-row">
-                     <label class="layout-content-search__label">
-                        Статус
-                     </label>
-                     <div class="search-box">
-                        <select class="chosen-select">
-                           <option>В работе</option>
-                           <option>Не в работе</option>
-                        </select>
-                     </div>
-                  </div>
-               </div>
-
-               <button class="search-button" type="submit">Поиск</button>
-
-            </div>
-
-         </div>
-      </div>
-   </div>
-
-   <aside class="sidebar">
-      <a href="#" class="close__icon icon-closed close_js">
-         <span class="icon-line"></span>
-         <span class="icon-line"></span>
-         <span class="icon-line"></span>
-      </a>
-      <ul>
-         <li>
-            <a href="#">
-               <span>УВЕДОМЛЕНИЯ (+5)</span>
-               <img src="/img/svg/notice2.svg" alt="icon">
-            </a>
-         </li>
-         <li>
-            <a href="#">
-               <span>ЛИЧНЫЕ СООБЩЕНИЯ (+1)</span>
-               <img src="/img/svg/messages2.svg" alt="icon">
-            </a>
-         </li>
-         <li>
-            <a href="#">
-               <span>ДОКУМЕНТЫ (+3)</span>
-               <img src="/img/svg/doc2.svg" alt="icon">
-            </a>
-         </li>
-         <li>
-            <a href="#">
-               <span>СОБЫТИЯ (+5)</span>
-               <img src="/img/svg/events2.svg" alt="icon">
-            </a>
-         </li>
-         <li>
-            <a href="#">
-               <span>ПОЛЬЗОВАТЕЛИ (+2)</span>
-               <img src="/img/svg/user2.svg" alt="icon">
-            </a>
-         </li>
-         <li>
-            <a href="#">
-               <span>ПРОФИЛЬ И НАСТРОЙКИ</span>
-               <img src="/img/svg/settings2.svg" alt="icon">
-            </a>
-         </li>
-      </ul>
-   </aside>
+   @@include('../includes/elements/sidebar.html', {})
 
    <div class="index-wrapper index-sidebar">
       <main class="content">
 
-         <header class="header">
-            <a href="../02.html" class="logo">
-               <img src="/img/logo.png" alt="logo">
-               <h1 class="main-title">
-                  ПЛАТФОРМА ДЛЯ ПОДГОТОВКИ И СОГЛАСОВАНИЯ НОРМАТИВНЫХ ДОКУМЕНТОВ МИНОБРНАУКИ РОССИИ
-               </h1>
-            </a>
-         </header>
+         @@include('../includes/elements/header.html', {})
 
          <div class="content-container">
             <div class="content-container__head">
@@ -247,8 +59,7 @@
             </div>
 
             <div class="content-tasks">
-               <h3 class="content-container__subtitle">Календарь событий</h3>
-               <div class="dateblock"></div>
+               @@include('../includes/elements/calendar.html', {})
             </div>
 
          </div>
@@ -257,7 +68,7 @@
 
    <div class="page-content content-docs page-content_closed">
       <div class="page-content__userbar">
-         <a href="#" class="page-content__btn all_js">выделить</a>
+         <a href="#" class="page-content__btn all_js">выделить всё</a>
          <a href="#" class="page-content__btn none_js">в архив</a>
 
          <a href="" class="page-content__btn-document">Добавить документ</a>

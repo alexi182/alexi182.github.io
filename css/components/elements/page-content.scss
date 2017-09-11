@@ -61,7 +61,7 @@
    font-weight: 400;
    @include transition(300);
    &:hover {
-      background: darken(#63b7df, 10%) url(../../../img/plus.png)no-repeat 20px 23px;
+      background: darken(#63b7df, 10%) url(../../../img/plus.png)no-repeat 20px 21px;
    }
 }
 
@@ -314,9 +314,54 @@
    font-size: 20px;
 }
 
+.row-count {
+   text-align: right;
+   border-top: 1px solid #a5a5a5;
+   padding-top: 15px;
+}
+
+.row-count__item_grey {
+   font-size: 14px;
+   font-weight: 400;
+   span {
+      background-color: #a5a5a5;
+      color: #ffffff;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+      margin-left: 3px;
+   }
+}
+
+.row-count__item_green {
+   font-size: 14px;
+   font-weight: 400;
+   span {
+      background-color: #00a602;
+      color: #ffffff;
+      padding: 1px 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+      margin-left: 3px;
+   }
+}
+
+.row-count__item_red {
+   font-size: 14px;
+   font-weight: 400;
+   span {
+      background-color: #ff3333;
+      padding: 1px 10px;
+      border-radius: 5px;
+      color: #ffffff;
+      margin-right: 10px;
+      margin-left: 3px;
+   }
+}
+
 .row-tag {
    color: #7d7d7d;
-   font-size: 12px;
+   font-size: 14px;
 }
 
 .tag-link {

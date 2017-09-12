@@ -42,6 +42,7 @@
    .content-container__subtitle {
       color: #ffffff;
       margin-bottom: 7px;
+      width: auto;
    }
 }
 
@@ -51,6 +52,8 @@
    font-weight: 400;
    margin-top: 0;
    margin-bottom: 0;
+   width: 381px;
+   line-height: 1.2;
 }
 
 .content-container__icon {

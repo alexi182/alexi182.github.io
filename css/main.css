@@ -926,6 +926,19 @@ The `sprites` mixin generates identical output to the CSS template
     .content-image-block a:last-of-type {
       margin-right: 0; }
 
+.page-content__inner {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 27px 75px 27px 30px;
+  height: 100%; }
+
+.content-main__header {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0; }
+
 .content-messages a {
   display: inline-block;
   margin-top: 40px;
@@ -1104,14 +1117,17 @@ The `sprites` mixin generates identical output to the CSS template
   border-radius: 5px; }
   .content-tasks.calendar .content-container__subtitle {
     color: #ffffff;
-    margin-bottom: 7px; }
+    margin-bottom: 7px;
+    width: auto; }
 
 .content-container__subtitle {
   color: #000000;
   font-size: 22px;
   font-weight: 400;
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  width: 381px;
+  line-height: 1.2; }
 
 .content-container__icon {
   display: inline-block;

@@ -47,11 +47,12 @@
       background: transparent;
    }
    .ui-state-active, .ui-widget-content .ui-state-active {
-      background: #63b7df;
+      //background: #63b7df;
       color: #ffffff;
    }
    .ui-datepicker-current-day {
-      background: #63b7df;
+      outline: 2px solid #ffffff;
+      outline-offset: -2px;
    }
    .ui-datepicker td a {
       /*padding: 5px 4px 11px 2px;*/
@@ -89,13 +90,16 @@
 
    .ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
       width: 35%;
-      background: #526b8b url(../../../img/svg/arrow1.svg)no-repeat 90px center;
+      height: 21px;
+      background: #526b8b url(../../../img/svg/arrow1.svg) no-repeat 90px center;
       border: 1px solid #fff;
       padding-left: 5px;
       color: #ffffff;
       font-size: 13px;
       font-weight: 700;
       text-transform: uppercase;
+      line-height: 1.7;
+      padding-bottom: 0px;
       option {
          background: #ffffff;
          color: #000000;

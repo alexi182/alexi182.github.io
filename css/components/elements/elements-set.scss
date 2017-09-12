@@ -33,6 +33,18 @@
    }*/
 }
 
+.content-tasks.calendar {
+   width: 355px;
+   text-align: center;
+   background: #526b8b;
+   padding: 10px 19px 17px 17px;
+   border-radius: 5px;
+   .content-container__subtitle {
+      color: #ffffff;
+      margin-bottom: 7px;
+   }
+}
+
 .content-container__subtitle {
    color: #000000;
    font-size: 22px;

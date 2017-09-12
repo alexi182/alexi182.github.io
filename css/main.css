@@ -947,60 +947,119 @@ The `sprites` mixin generates identical output to the CSS template
   .content-messages a:last-of-type {
     margin-right: 0px; }
 
-.dateblock {
-  /*  .ui-datepicker-month {
-      background: #3a4c64;
-   }
-   .ui-datepicker-year {
-      background: #3a4c64;
-   }*/ }
-  .dateblock .ui-datepicker-calendar {
-    background: rgba(255, 255, 255, 0.8); }
-  .dateblock .ui-widget-content {
-    background: transparent; }
-  .dateblock .ui-widget.ui-widget-content {
-    border: none; }
-  .dateblock .ui-datepicker-header {
-    background: transparent;
-    border: none; }
-  .dateblock .ui-datepicker-title {
-    background: transparent; }
-  .dateblock .ui-datepicker-prev, .dateblock .ui-datepicker-next {
-    display: none; }
-  .dateblock .ui-datepicker .ui-datepicker-title {
-    text-align: left;
-    margin: 0 40px 2px 0px; }
-  .dateblock .ui-datepicker th {
-    font-size: 14px;
-    font-weight: 400;
-    color: #63b7df;
-    padding: 4px 1px;
-    border: 1px solid #63b7df; }
-  .dateblock .ui-datepicker td {
-    border: 1px solid #63b7df;
-    padding: 2px 16px 12px 11px;
-    cursor: pointer; }
-  .dateblock .ui-widget-content .ui-state-default {
-    border: none;
-    font-size: 15px;
-    font-weight: 700;
-    color: #3a4c64;
-    position: relative;
-    top: -1px;
-    right: -12px;
-    padding: 0;
-    background: transparent; }
-  .dateblock .iu-state-hover a:hover {
-    background: transparent; }
-  .dateblock .ui-state-active, .dateblock .ui-widget-content .ui-state-active {
-    background: #63b7df;
-    color: #ffffff; }
-  .dateblock .ui-datepicker-current-day {
-    background: #63b7df; }
-  .dateblock .ui-datepicker td a {
-    /*padding: 5px 4px 11px 2px;*/ }
-  .dateblock .ui-state-highlight, .dateblock .ui-widget-content .ui-state-highlight {
-    background: transparent; }
+.dateblock .ui-widget-content {
+  background: transparent; }
+
+.dateblock .ui-widget.ui-widget-content {
+  border: none;
+  width: 100%; }
+
+.dateblock .ui-datepicker-header {
+  background: transparent;
+  border: none; }
+
+.dateblock .ui-datepicker-title {
+  background: transparent; }
+
+.dateblock .ui-datepicker .ui-datepicker-title {
+  text-align: center;
+  margin: 0 0px 5px 0px; }
+
+.dateblock .ui-datepicker th {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 4px 1px;
+  border: 1px solid #677f9e; }
+
+.dateblock .ui-datepicker td {
+  border: 1px solid #677f9e;
+  padding: 2px 16px 12px 11px;
+  cursor: pointer; }
+
+.dateblock .ui-widget-content .ui-state-default {
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  top: -1px;
+  right: -12px;
+  padding: 0;
+  background: transparent; }
+
+.dateblock .iu-state-hover a:hover {
+  background: transparent; }
+
+.dateblock .ui-state-active, .dateblock .ui-widget-content .ui-state-active {
+  background: #63b7df;
+  color: #ffffff; }
+
+.dateblock .ui-datepicker-current-day {
+  background: #63b7df; }
+
+.dateblock .ui-datepicker td a {
+  /*padding: 5px 4px 11px 2px;*/ }
+
+.dateblock .ui-state-highlight, .dateblock .ui-widget-content .ui-state-highlight {
+  background: transparent; }
+
+.dateblock .ui-datepicker select.ui-datepicker-month {
+  width: 35%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-right: 5px; }
+
+.dateblock .ui-datepicker select.ui-datepicker-year {
+  background: #526b8b;
+  width: 35%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-left: 5px; }
+
+.dateblock .ui-datepicker-year::-ms-expand {
+  display: none; }
+
+.dateblock .ui-datepicker-month::-ms-expand {
+  display: none; }
+
+.dateblock .ui-widget-header .ui-icon {
+  background-image: url(../../../img/ui-icons_444444_256x240.png) !important; }
+
+.dateblock .ui-datepicker select.ui-datepicker-month, .dateblock .ui-datepicker select.ui-datepicker-year {
+  width: 35%;
+  background: #526b8b url(../../../img/svg/arrow1.svg) no-repeat 90px center;
+  border: 1px solid #fff;
+  padding-left: 5px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .dateblock .ui-datepicker select.ui-datepicker-month option, .dateblock .ui-datepicker select.ui-datepicker-year option {
+    background: #ffffff;
+    color: #000000; }
+
+.dateblock .ui-datepicker .ui-datepicker-next span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+  background: url(../../../img/svg/arrow4_2.svg) no-repeat !important;
+  cursor: pointer; }
+
+.dateblock .ui-datepicker .ui-datepicker-prev span {
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  top: 50%;
+  margin-top: -8px;
+  background: url(../../../img/svg/arrow3_2.svg) no-repeat !important;
+  cursor: pointer; }
 
 .btn {
   text-transform: uppercase;
@@ -1033,6 +1092,16 @@ The `sprites` mixin generates identical output to the CSS template
   /*&:last-of-type {
       margin-top: 40px;
    }*/ }
+
+.content-tasks.calendar {
+  width: 355px;
+  text-align: center;
+  background: #526b8b;
+  padding: 10px 19px 17px 17px;
+  border-radius: 5px; }
+  .content-tasks.calendar .content-container__subtitle {
+    color: #ffffff;
+    margin-bottom: 7px; }
 
 .content-container__subtitle {
   color: #000000;
@@ -5632,7 +5701,7 @@ a:visited.ui-button,
   color: #454545;
   text-decoration: none; }
 
-.ui-state-hover,
+/*.ui-state-hover,
 .ui-widget-content .ui-state-hover,
 .ui-widget-header .ui-state-hover,
 .ui-state-focus,
@@ -5640,11 +5709,11 @@ a:visited.ui-button,
 .ui-widget-header .ui-state-focus,
 .ui-button:hover,
 .ui-button:focus {
-  border: 1px solid #cccccc;
-  background: #ededed;
-  font-weight: normal;
-  color: #2b2b2b; }
-
+	border: 1px solid #cccccc;
+	background: #ededed;
+	font-weight: normal;
+	color: #2b2b2b;
+}*/
 .ui-state-hover a,
 .ui-state-hover a:hover,
 .ui-state-hover a:link,
@@ -6742,16 +6811,12 @@ button.ui-button::-moz-focus-inner {
   width: 1.8em;
   height: 1.8em; }
 
-.ui-datepicker .ui-datepicker-prev-hover,
-.ui-datepicker .ui-datepicker-next-hover {
-  top: 1px; }
-
-.ui-datepicker .ui-datepicker-prev {
-  left: 2px; }
-
+/*.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
 .ui-datepicker .ui-datepicker-next {
-  right: 2px; }
-
+	right: 2px;
+}*/
 .ui-datepicker .ui-datepicker-prev-hover {
   left: 1px; }
 

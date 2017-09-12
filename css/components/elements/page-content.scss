@@ -80,8 +80,8 @@
    }
 }
 
-.page-content__post-top {
-
+.page-content__post-row {
+   clear: both;
 }
 
 .page-content__post-date {
@@ -105,7 +105,7 @@
    font-size: 14px;
    font-weight: 400;
    @include transition(300);
-   padding: 4px 8px 5px;
+   padding: 2px 8px 3px;
    border-radius: 4px;
    &:hover {
       text-decoration: none;
@@ -136,6 +136,23 @@
    display: block;
    &:hover {
       text-decoration: underline;
+   }
+}
+
+.page-content__img {
+   display: inline-block;
+   vertical-align: top;
+}
+
+.page-content__user-name {
+   width: 70%;
+   display: inline-block;
+   color: #000000;
+   font-size: 18px;
+   font-weight: 400;
+   span{
+      font-size: 14px;
+      font-weight: 300;
    }
 }
 

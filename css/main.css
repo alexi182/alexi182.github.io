@@ -1198,6 +1198,13 @@ The `sprites` mixin generates identical output to the CSS template
   text-transform: uppercase;
   margin-top: 10px; }
 
+.search-row {
+  width: 793px;
+  height: 41px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+  padding: 3px 7px; }
+
 .footer {
   margin-top: 20px; }
 
@@ -2646,6 +2653,9 @@ span.option-item {
   .page-content__post:nth-of-type(2n+1) {
     margin-left: 1%; }
 
+.page-content__post-row {
+  clear: both; }
+
 .page-content__post-date {
   display: inline-block;
   font-size: 20px;
@@ -2667,7 +2677,7 @@ span.option-item {
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms;
-  padding: 4px 8px 5px;
+  padding: 2px 8px 3px;
   border-radius: 4px; }
   .page-content__post-link:hover {
     text-decoration: none; }
@@ -2692,6 +2702,20 @@ span.option-item {
   display: block; }
   .page-content__post-text:hover {
     text-decoration: underline; }
+
+.page-content__img {
+  display: inline-block;
+  vertical-align: top; }
+
+.page-content__user-name {
+  width: 70%;
+  display: inline-block;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400; }
+  .page-content__user-name span {
+    font-size: 14px;
+    font-weight: 300; }
 
 .page-content__userbar-icon {
   width: 40px;

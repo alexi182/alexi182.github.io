@@ -342,7 +342,11 @@
 .row-count {
    text-align: right;
    border-top: 1px solid #a5a5a5;
-   padding-top: 15px;
+   /*padding-top: 15px;*/
+}
+
+.row-count__item {
+   margin-top: 15px;
 }
 
 .row-count__item_grey {
@@ -580,6 +584,7 @@
    .page-content__post {
       display: block;
       width: 100%;
+      height: auto!important;
    }
    .page-content__post:nth-of-type(2n+1) {
       margin-left: 0%;

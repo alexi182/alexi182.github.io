@@ -2,7 +2,6 @@
 <html class="no-js" lang="">
 <head>
    @@include('../includes/common/head.html', {})
-
 </head>
 <body>
 
@@ -30,86 +29,614 @@
       </main>
    </div>
 
-   <div class="page-content content-docs page-content_closed">
-      <div class="page-content-row">
-         <form action="/">
+   <div class="page-content page-content-users page-content_closed">
+      <div class="page-content-row row-search">
+         <form action="/" class="form-search">
             <input type="search" class="search-row" />
-            <button class="search-btn">Искать</button>
+            <button type ="submit" class="search-btn">Искать</button>
          </form>
          <a href="#" class="add-btn"></a>
       </div>
-
-      <div class="page-content__post">
-         <div class="page-content__post-userbar">
-            <a href="#" class="page-content__post-link">московская область</a>
-         </div>
-         <div class="page-content__post-row">
-            <div class="page-content__user">
-               <div class="page-content__img">
-                  <img src="/img/avatar2.png" alt="avatar" />
-               </div>
-               <div class="page-content__user-name">
-                  Захарова Марина Борисовна
-                  <span>Региональный министр образования</span>
+      <div class="page-content__post-block">
+         <div class="page-content__post">
+            <div class="page-content__post-userbar">
+               <div class="page-content__post-region">московская область</div>
+            </div>
+            <div class="page-content__post-row">
+               <div class="page-content__user">
+                  <div class="page-content__img">
+                     <img src="/img/avatar2.png" alt="avatar" />
+                  </div>
+                  <div class="page-content__user-name">
+                     <div class="page-content__user-name-item">
+                        Захарова Марина Борисовна
+                     </div>
+                     <div class="page-content__user-status">Региональный министр образования</div>
+                  </div>
                </div>
             </div>
-         </div>
-         <div class="page-content__post-row">
-            <a href="#" class="page-content__userlink">
-               Заблокировать
-            </a>
-            <a href="#" class="page-content__userlink">
-               Отправить сообщение
-            </a>
-         </div>
+            <div class="page-content__post-row userlinks">
+               <a href="#" class="page-content__userlink">
+                  Заблокировать
+               </a>
+               <a href="#" class="page-content__userlink">
+                  Отправить сообщение
+               </a>
+            </div>
 
-         <div class="page-content__comment comment-hide">
-            <a href="#" class="close__icon icon-closed"></a>
-            <form>
-               <div class="search-box">
-                  <select class="chosen-select">
-                     <option>Отдел</option>
-                     <option>Отдел 1</option>
-                     <option>Отдел 2</option>
-                  </select>
-               </div>
-               <div class="search-box">
-                  <select class="chosen-select">
-                     <option>ФИО сотрудника</option>
-                     <option>Сотрудник 1</option>
-                     <option>Сотрудник 2</option>
-                  </select>
-               </div>
-               <div class="layout-content-search__block-row">
-                  <div class="layout-content-search__block-row-item">
-                     <label class="layout-content-search__label">
-                        Дата создания
-                     </label>
-                     <div class="search-box">
-                        <input type="text" class="datepicker">
-                     </div>
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
                   </div>
-
-                  <div class="layout-content-search__block-row-item">
-                     <label class="layout-content-search__label">
-                        Дата изменения
-                     </label>
-                     <div class="search-box">
-                        <input type="text" class="datepicker">
-                     </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
                   </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
 
-               </div>
-               <div class="search-box">
-                  <label for="text" class="layout-content-search__label">Примечания</label>
-                  <textarea id="text" class="page-content__textarea"></textarea>
-               </div>
-               <div class="search-box sbmt">
-                  <button type="submit" class="page-content__submit">Назначить</button>
-               </div>
-            </form>
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
+            </div>
+
          </div>
 
+         <div class="page-content__post">
+            <div class="page-content__post-userbar">
+               <div class="page-content__post-region">московская область</div>
+            </div>
+            <div class="page-content__post-row">
+               <div class="page-content__user">
+                  <div class="page-content__img">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                  </div>
+                  <div class="page-content__user-name">
+                     <div class="page-content__user-name-item">
+                        Иванов Петр Сергеевич
+                     </div>
+                     <div class="page-content__user-status">Региональный эксперт</div>
+                  </div>
+               </div>
+            </div>
+            <div class="page-content__post-row userlinks">
+               <a href="#" class="page-content__userlink">
+                  Заблокировать
+               </a>
+               <a href="#" class="page-content__userlink">
+                  Отправить сообщение
+               </a>
+            </div>
+
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
+                  </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
+                  </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+
+         <div class="page-content__post">
+            <div class="page-content__post-userbar">
+               <div class="page-content__post-region">москва</div>
+            </div>
+            <div class="page-content__post-row">
+               <div class="page-content__user">
+                  <div class="page-content__img">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                  </div>
+                  <div class="page-content__user-name">
+                     <div class="page-content__user-name-item">
+                        Петров Иван Сергеевич
+                     </div>
+                     <div class="page-content__user-status">Региональный министр образования</div>
+                  </div>
+               </div>
+            </div>
+            <div class="page-content__post-row userlinks">
+               <a href="#" class="page-content__userlink">
+                  Заблокировать
+               </a>
+               <a href="#" class="page-content__userlink">
+                  Отправить сообщение
+               </a>
+            </div>
+
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
+                  </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
+                  </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+
+         <div class="page-content__post">
+            <div class="page-content__post-userbar">
+               <div class="page-content__post-region">кировская область</div>
+            </div>
+            <div class="page-content__post-row">
+               <div class="page-content__user">
+                  <div class="page-content__img">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                  </div>
+                  <div class="page-content__user-name">
+                     <div class="page-content__user-name-item">
+                        Смирнова Мария Владимировна
+                     </div>
+                     <div class="page-content__user-status">Региональный министр образования</div>
+                  </div>
+               </div>
+            </div>
+            <div class="page-content__post-row userlinks">
+               <a href="#" class="page-content__userlink">
+                  Заблокировать
+               </a>
+               <a href="#" class="page-content__userlink">
+                  Отправить сообщение
+               </a>
+            </div>
+
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
+                  </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
+                  </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+
+         <div class="page-content__post">
+            <div class="page-content__post-userbar">
+               <div class="page-content__post-region">московская область</div>
+            </div>
+            <div class="page-content__post-row">
+               <div class="page-content__user">
+                  <div class="page-content__img">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                  </div>
+                  <div class="page-content__user-name">
+                     <div class="page-content__user-name-item">
+                        Серов Дмитрий Семенович
+                     </div>
+                     <div class="page-content__user-status">Региональный министр образования</div>
+                  </div>
+               </div>
+            </div>
+            <div class="page-content__post-row userlinks">
+               <a href="#" class="page-content__userlink">
+                  Заблокировать
+               </a>
+               <a href="#" class="page-content__userlink">
+                  Отправить сообщение
+               </a>
+            </div>
+
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
+                  </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
+                  </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+
+         <div class="page-content__post">
+            <div class="page-content__post-userbar">
+               <div class="page-content__post-region">московская область</div>
+            </div>
+            <div class="page-content__post-row">
+               <div class="page-content__user">
+                  <div class="page-content__img">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                  </div>
+                  <div class="page-content__user-name">
+                     <div class="page-content__user-name-item">
+                        Левина Елена Васильевна
+                     </div>
+                     <div class="page-content__user-status">Региональный министр образования</div>
+                  </div>
+               </div>
+            </div>
+            <div class="page-content__post-row userlinks">
+               <a href="#" class="page-content__userlink">
+                  Заблокировать
+               </a>
+               <a href="#" class="page-content__userlink">
+                  Отправить сообщение
+               </a>
+            </div>
+
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
+                  </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
+                  </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+
+         <div class="page-content__post">
+            <div class="page-content__post-userbar">
+               <div class="page-content__post-region">московская область</div>
+            </div>
+            <div class="page-content__post-row">
+               <div class="page-content__user">
+                  <div class="page-content__img">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                  </div>
+                  <div class="page-content__user-name">
+                     <div class="page-content__user-name-item">
+                        Иванова Мария Сергеевна
+                     </div>
+                     <div class="page-content__user-status">Региональный министр образования</div>
+                  </div>
+               </div>
+            </div>
+            <div class="page-content__post-row userlinks">
+               <a href="#" class="page-content__userlink">
+                  Заблокировать
+               </a>
+               <a href="#" class="page-content__userlink">
+                  Отправить сообщение
+               </a>
+            </div>
+
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
+                  </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
+                  </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
+
+         <div class="page-content__post">
+            <div class="page-content__post-userbar">
+               <div class="page-content__post-region">московская область</div>
+            </div>
+            <div class="page-content__post-row">
+               <div class="page-content__user">
+                  <div class="page-content__img">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                  </div>
+                  <div class="page-content__user-name">
+                     <div class="page-content__user-name-item">
+                        Сергеев Сергей Михайлович
+                     </div>
+                     <div class="page-content__user-status">Региональный эксперт</div>
+                  </div>
+               </div>
+            </div>
+            <div class="page-content__post-row userlinks">
+               <a href="#" class="page-content__userlink">
+                  Заблокировать
+               </a>
+               <a href="#" class="page-content__userlink">
+                  Отправить сообщение
+               </a>
+            </div>
+
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
+                  </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
+                  </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
+            </div>
+
+         </div>
       </div>
 
       <div class="pagination">

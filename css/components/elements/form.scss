@@ -151,3 +151,47 @@
    font-weight: 400;
    margin-left: 10px;
 }
+
+.forum-block {
+   margin-bottom: 15px;
+}
+
+.page-content-row.user-links {
+   display: flex;
+   align-content: center;
+   margin-bottom: 10px;
+   a {
+      color: #ffffff;
+      display: block;
+      margin-left: 10px;
+      text-align: center;
+      padding: 17px 0;
+      text-transform: uppercase;
+      @include transition(300);
+      &:hover {
+         color: #000000;
+      }
+      &:first-of-type {
+         width: 280px;
+         margin-left: 0;
+         background: #3a4c64 url(../../../img/svg/document/files.svg)no-repeat 50px 14px;
+         &:hover {
+            background: #ffffff url(../../../img/svg/document/files2.svg)no-repeat 50px 14px;
+         }
+      }
+      &:nth-of-type(2) {
+         width: 327px;
+         background: #4c6380 url(../../../img/svg/document/statistics.svg)no-repeat 50px 14px;
+         &:hover {
+            background: #ffffff url(../../../img/svg/document/statistics2.svg)no-repeat 50px 14px;
+         }
+      }
+      &:last-of-type {
+         width: 374px;
+         background: #63b7df url(../../../img/svg/document/info.svg)no-repeat 45px 14px;
+         &:hover {
+            background: #ffffff url(../../../img/svg/document/info2.svg)no-repeat 45px 14px;
+         }
+      }
+   }
+}

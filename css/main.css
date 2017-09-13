@@ -928,7 +928,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .page-content__inner {
   background: rgba(255, 255, 255, 0.9);
-  padding: 27px 75px 27px 30px;
+  padding: 27px 45px 27px 30px;
   height: 100%; }
 
 .content-main__header {
@@ -1360,6 +1360,136 @@ The `sprites` mixin generates identical output to the CSS template
     padding-right: 3%; }
   .foot-main-link {
     margin-right: 4%; } }
+
+.form-forum {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px; }
+
+.form-forum__area {
+  width: 100%;
+  height: 102px;
+  border: 1px solid #e1e1e1;
+  resize: none;
+  margin-left: 15px;
+  padding: 4px; }
+
+.form-forum-send {
+  display: flex;
+  margin-top: 35px;
+  align-items: center;
+  margin-bottom: 15px; }
+  .form-forum-send img {
+    width: 62px;
+    height: 62px; }
+
+.form-forum__send-btn {
+  width: 97px;
+  height: 32px;
+  border: 1px solid #39404c;
+  background: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  margin-left: 77px;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  transition: all 300ms; }
+  .form-forum__send-btn:hover {
+    background: #39404c;
+    color: #fff; }
+
+.form-notice {
+  margin-top: 15px; }
+  .form-notice span {
+    text-decoration: underline;
+    color: #04a8f6;
+    cursor: pointer; }
+
+.message-info {
+  display: flex;
+  align-items: center; }
+
+.message-info__author {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 10px; }
+
+.message-info__date {
+  color: #665665;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 15px; }
+
+.main-message__text {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400; }
+
+.main-message {
+  margin-top: 20px; }
+
+.forum {
+  margin-top: 45px;
+  padding-left: 5%; }
+
+.message-disagree {
+  background: #ff3333;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  margin-left: 30%;
+  margin-right: 3%; }
+
+.message-like img {
+  width: 28px;
+  height: 24px; }
+
+.message-like span {
+  color: #665665;
+  font-size: 16px;
+  font-weight: 400; }
+
+.message__text {
+  background: #f8f6f6;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+  margin-top: 15px;
+  padding: 15px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400; }
+  .message__text .form-forum {
+    border-bottom: none; }
+
+.message__text-userbar {
+  margin-top: 7px; }
+  .message__text-userbar a {
+    color: #665665;
+    text-decoration: underline;
+    font-size: 14px; }
+    .message__text-userbar a:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 20px;
+      background: url(../../../img/mes.png) no-repeat; }
+    .message__text-userbar a:hover {
+      text-decoration: none; }
+  .message__text-userbar img {
+    width: 28px;
+    height: 25px;
+    position: relative;
+    top: -2px; }
+
+.message-answer {
+  color: #665665;
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px; }
 
 .header.header-lesson {
   background: #fff; }

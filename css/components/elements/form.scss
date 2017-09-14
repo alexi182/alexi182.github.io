@@ -246,6 +246,7 @@
          &:before {
             content: "";
             display: inline-block;
+            margin-right: 4px;
             width: 27px;
             height: 27px;
             @include transition(300);
@@ -272,6 +273,7 @@
             display: inline-block;
             width: 27px;
             height: 27px;
+            margin-right: 4px;
             @include transition(300);
             background: url(../../../img/svg/document/statistics.svg) no-repeat center;
          }
@@ -296,6 +298,7 @@
             display: inline-block;
             width: 27px;
             height: 27px;
+            margin-right: 4px;
             @include transition(300);
             background: url(../../../img/svg/document/info.svg) no-repeat center;
          }

@@ -14,7 +14,7 @@
 
 .form-forum-send {
    display: flex;
-   margin-top: 35px;
+   margin-top: 25px;
    align-items:center;
    margin-bottom: 15px;
    img {
@@ -50,7 +50,13 @@
 
 .message-info {
    display: flex;
+   flex-wrap: wrap;
    align-items:center;
+}
+
+.message-info__item {
+   display: flex;
+   flex-wrap: wrap;
 }
 
 .message-info__author {
@@ -69,7 +75,7 @@
 
 .main-message__text {
    color: #000000;
-   font-size: 16px;
+   font-size: 15px;
    font-weight: 400;
 }
 
@@ -92,7 +98,7 @@
    font-weight: 400;
    text-transform: uppercase;
    padding: 3px 8px;
-   margin-left: 30%;
+   margin-left: 3%;
    margin-right: 3%;
 }
 
@@ -115,7 +121,7 @@
    margin-top: 15px;
    padding: 15px;
    color: #000000;
-   font-size: 16px;
+   font-size: 15px;
    font-weight: 400;
    position: relative;
    z-index: 100;
@@ -146,11 +152,14 @@
 
 .message__text-userbar {
    margin-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
    a{
       color: #665665;
       text-decoration: underline;
       font-size: 14px;
-      margin-right: 10px;
+      margin-right: 17px;
+      margin-bottom: 5px;
       &:before {
          margin-right: 3px;
       }
@@ -215,40 +224,100 @@
 
 .page-content-row.user-links {
    display: flex;
-   align-content: center;
-   margin-bottom: 10px;
+   justify-content: center;
+   margin-bottom: 7px;
    a {
       color: #ffffff;
-      display: block;
-      margin-left: 10px;
+      margin-right: 7px;
       text-align: center;
       padding: 17px 0;
       text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
       @include transition(300);
       &:hover {
          color: #000000;
       }
       &:first-of-type {
-         width: 280px;
-         margin-left: 0;
-         background: #3a4c64 url(../../../img/svg/document/files.svg)no-repeat 50px 14px;
+         width: 30%;
+         background: #3a4c64;
+         &:before {
+            content: "";
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            @include transition(300);
+            background: url(../../../img/svg/document/files.svg) no-repeat center;
+         }
          &:hover {
-            background: #ffffff url(../../../img/svg/document/files2.svg)no-repeat 50px 14px;
+            background: #ffffff;
+            &:before {
+               content: "";
+               display: inline-block;
+               width: 27px;
+               height: 27px;
+               background: url(../../../img/svg/document/files2.svg) no-repeat center;
+            }
          }
       }
+
       &:nth-of-type(2) {
-         width: 327px;
-         background: #4c6380 url(../../../img/svg/document/statistics.svg)no-repeat 50px 14px;
+         width: 35%;
+         margin-left: 0;
+         background: #4c6380;
+         &:before {
+            content: "";
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            @include transition(300);
+            background: url(../../../img/svg/document/statistics.svg) no-repeat center;
+         }
          &:hover {
-            background: #ffffff url(../../../img/svg/document/statistics2.svg)no-repeat 50px 14px;
+            background: #ffffff;
+            &:before {
+               content: "";
+               display: inline-block;
+               width: 27px;
+               height: 27px;
+               background: url(../../../img/svg/document/statistics2.svg) no-repeat center;
+            }
          }
       }
+
       &:last-of-type {
-         width: 374px;
-         background: #63b7df url(../../../img/svg/document/info.svg)no-repeat 45px 14px;
+         width: 43%;
+         margin-right: 0;
+         background: #63b7df;
+         &:before {
+            content: "";
+            display: inline-block;
+            width: 27px;
+            height: 27px;
+            @include transition(300);
+            background: url(../../../img/svg/document/info.svg) no-repeat center;
+         }
          &:hover {
-            background: #ffffff url(../../../img/svg/document/info2.svg)no-repeat 45px 14px;
+            background: #ffffff;
+            &:before {
+               content: "";
+               display: inline-block;
+               width: 27px;
+               height: 27px;
+               background: url(../../../img/svg/document/info2.svg) no-repeat center;
+            }
          }
       }
+   }
+}
+
+@media (max-width: 1400px) {
+   .main-message__text {
+      font-size: 14px;
+   }
+   .message__text {
+      font-size: 14px;
    }
 }

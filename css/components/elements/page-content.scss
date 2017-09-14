@@ -1,3 +1,7 @@
+.content-container__head{
+   display: flex;
+}
+
 .page-content {
    display: table-cell;
    right: 7%;
@@ -537,6 +541,13 @@
    .page-content_opened{
       width: 63%;
    }
+
+   .page-content_closed.page-one {
+      width: 54%;
+   }
+   .page-content_opened.page-one{
+      width: 65%;
+   }
 }
 
 @media (max-width: 1670px) {
@@ -554,6 +565,14 @@
 }
 
 @media (max-width: 1600px) {
+   .page-content.page-one {
+      .message__text {
+         font-size: 14px;
+      }
+      .message-info__author {
+         font-size: 14px;
+      }
+   }
    .page-content_closed{
       width: 49%;
    }
@@ -599,6 +618,12 @@
    .page-content_opened{
       width: 57%;
    }
+   .page-content_closed {
+      .page-content__inner {
+         padding: 27px 10px 27px 10px;
+      }
+   }
+
 }
 
 @media (max-width: 1300px) {

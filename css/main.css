@@ -247,6 +247,9 @@ select {
 .fr {
   float: right; }
 
+.mt0 {
+  margin-top: 0 !important; }
+
 .mt30 {
   margin-top: 30px; }
 
@@ -1377,7 +1380,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .form-forum-send {
   display: flex;
-  margin-top: 35px;
+  margin-top: 25px;
   align-items: center;
   margin-bottom: 15px; }
   .form-forum-send img {
@@ -1409,7 +1412,12 @@ The `sprites` mixin generates identical output to the CSS template
 
 .message-info {
   display: flex;
+  flex-wrap: wrap;
   align-items: center; }
+
+.message-info__item {
+  display: flex;
+  flex-wrap: wrap; }
 
 .message-info__author {
   color: #000000;
@@ -1425,7 +1433,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .main-message__text {
   color: #000000;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400; }
 
 .main-message {
@@ -1444,7 +1452,7 @@ The `sprites` mixin generates identical output to the CSS template
   font-weight: 400;
   text-transform: uppercase;
   padding: 3px 8px;
-  margin-left: 30%;
+  margin-left: 3%;
   margin-right: 3%; }
 
 .message-like img {
@@ -1463,7 +1471,7 @@ The `sprites` mixin generates identical output to the CSS template
   margin-top: 15px;
   padding: 15px;
   color: #000000;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   position: relative;
   z-index: 100; }
@@ -1489,12 +1497,15 @@ The `sprites` mixin generates identical output to the CSS template
     z-index: 98; }
 
 .message__text-userbar {
-  margin-top: 20px; }
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; }
   .message__text-userbar a {
     color: #665665;
     text-decoration: underline;
     font-size: 14px;
-    margin-right: 10px; }
+    margin-right: 17px;
+    margin-bottom: 5px; }
     .message__text-userbar a:before {
       margin-right: 3px; }
     .message__text-userbar a:first-of-type:before {
@@ -1539,36 +1550,91 @@ The `sprites` mixin generates identical output to the CSS template
 
 .page-content-row.user-links {
   display: flex;
-  align-content: center;
-  margin-bottom: 10px; }
+  justify-content: center;
+  margin-bottom: 7px; }
   .page-content-row.user-links a {
     color: #ffffff;
-    display: block;
-    margin-left: 10px;
+    margin-right: 7px;
     text-align: center;
     padding: 17px 0;
     text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     transition: all 300ms; }
     .page-content-row.user-links a:hover {
       color: #000000; }
     .page-content-row.user-links a:first-of-type {
-      width: 280px;
-      margin-left: 0;
-      background: #3a4c64 url(../../../img/svg/document/files.svg) no-repeat 50px 14px; }
+      width: 30%;
+      background: #3a4c64; }
+      .page-content-row.user-links a:first-of-type:before {
+        content: "";
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        transition: all 300ms;
+        background: url(../../../img/svg/document/files.svg) no-repeat center; }
       .page-content-row.user-links a:first-of-type:hover {
-        background: #ffffff url(../../../img/svg/document/files2.svg) no-repeat 50px 14px; }
+        background: #ffffff; }
+        .page-content-row.user-links a:first-of-type:hover:before {
+          content: "";
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          background: url(../../../img/svg/document/files2.svg) no-repeat center; }
     .page-content-row.user-links a:nth-of-type(2) {
-      width: 327px;
-      background: #4c6380 url(../../../img/svg/document/statistics.svg) no-repeat 50px 14px; }
+      width: 35%;
+      margin-left: 0;
+      background: #4c6380; }
+      .page-content-row.user-links a:nth-of-type(2):before {
+        content: "";
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        transition: all 300ms;
+        background: url(../../../img/svg/document/statistics.svg) no-repeat center; }
       .page-content-row.user-links a:nth-of-type(2):hover {
-        background: #ffffff url(../../../img/svg/document/statistics2.svg) no-repeat 50px 14px; }
+        background: #ffffff; }
+        .page-content-row.user-links a:nth-of-type(2):hover:before {
+          content: "";
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          background: url(../../../img/svg/document/statistics2.svg) no-repeat center; }
     .page-content-row.user-links a:last-of-type {
-      width: 374px;
-      background: #63b7df url(../../../img/svg/document/info.svg) no-repeat 45px 14px; }
+      width: 43%;
+      margin-right: 0;
+      background: #63b7df; }
+      .page-content-row.user-links a:last-of-type:before {
+        content: "";
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        transition: all 300ms;
+        background: url(../../../img/svg/document/info.svg) no-repeat center; }
       .page-content-row.user-links a:last-of-type:hover {
-        background: #ffffff url(../../../img/svg/document/info2.svg) no-repeat 45px 14px; }
+        background: #ffffff; }
+        .page-content-row.user-links a:last-of-type:hover:before {
+          content: "";
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+          background: url(../../../img/svg/document/info2.svg) no-repeat center; }
+
+@media (max-width: 1400px) {
+  .main-message__text {
+    font-size: 14px; }
+  .message__text {
+    font-size: 14px; } }
 
 .header.header-lesson {
   background: #fff; }
@@ -2813,6 +2879,9 @@ span.option-item {
   color: #000000;
   font-size: 14px; }
 
+.content-container__head {
+  display: flex; }
+
 .page-content {
   display: table-cell;
   right: 7%;
@@ -3256,7 +3325,11 @@ span.option-item {
   .page-content_closed {
     width: 50%; }
   .page-content_opened {
-    width: 63%; } }
+    width: 63%; }
+  .page-content_closed.page-one {
+    width: 54%; }
+  .page-content_opened.page-one {
+    width: 65%; } }
 
 @media (max-width: 1670px) {
   .page-content_closed {
@@ -3267,6 +3340,10 @@ span.option-item {
     font-size: 14px; } }
 
 @media (max-width: 1600px) {
+  .page-content.page-one .message__text {
+    font-size: 14px; }
+  .page-content.page-one .message-info__author {
+    font-size: 14px; }
   .page-content_closed {
     width: 49%; }
   .page-content_opened {
@@ -3294,7 +3371,9 @@ span.option-item {
   .page-content_closed {
     width: 41%; }
   .page-content_opened {
-    width: 57%; } }
+    width: 57%; }
+  .page-content_closed .page-content__inner {
+    padding: 27px 10px 27px 10px; } }
 
 @media (max-width: 1300px) {
   .page-content_closed {

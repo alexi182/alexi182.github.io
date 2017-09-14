@@ -3007,7 +3007,9 @@ span.option-item {
 .page-content__post-bottom {
   margin-top: 15px; }
   .page-content__post-bottom .row {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap; }
 
 .page-content__post-text {
   color: #000000;

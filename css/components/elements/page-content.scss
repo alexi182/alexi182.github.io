@@ -36,6 +36,10 @@
    }
 }
 
+.page-content__userbar-item {
+float: left;
+}
+
 .page-content__btn {
    display: inline-block;
    box-sizing: border-box;
@@ -48,6 +52,7 @@
    border: 1px solid #39404c;
    cursor: pointer;
    margin-right: 7px;
+   text-transform: uppercase;
    @include transition(300);
    &:hover {
       background: #39404c;
@@ -57,16 +62,17 @@
 
 .page-content__btn-document {
    display: block;
-   padding: 18px 23px 18px 58px;
-   margin-right: 7px;
-   background: #63b7df url(../../../img/plus.png)no-repeat 20px 21px;
+   height: 32px;
+   padding: 6px 17px 5px 37px;
+   background: #63b7df url(../../../img/plus-c.png) no-repeat 9px 7px;
    color: #ffffff;
    float: right;
-   font-size: 18px;
+   font-size: 14px;
+   text-transform: uppercase;
    font-weight: 400;
    @include transition(300);
    &:hover {
-      background: darken(#63b7df, 10%) url(../../../img/plus.png)no-repeat 20px 21px;
+      background: darken(#63b7df, 10%)  url(../../../img/plus-c.png) no-repeat 9px 7px;
    }
 }
 

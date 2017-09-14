@@ -2916,6 +2916,9 @@ span.option-item {
     display: block;
     clear: both; }
 
+.page-content__userbar-item {
+  float: left; }
+
 .page-content__btn {
   display: inline-block;
   box-sizing: border-box;
@@ -2928,6 +2931,7 @@ span.option-item {
   border: 1px solid #39404c;
   cursor: pointer;
   margin-right: 7px;
+  text-transform: uppercase;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms; }
@@ -2937,18 +2941,19 @@ span.option-item {
 
 .page-content__btn-document {
   display: block;
-  padding: 18px 23px 18px 58px;
-  margin-right: 7px;
-  background: #63b7df url(../../../img/plus.png) no-repeat 20px 21px;
+  height: 32px;
+  padding: 6px 17px 5px 37px;
+  background: #63b7df url(../../../img/plus-c.png) no-repeat 9px 7px;
   color: #ffffff;
   float: right;
-  font-size: 18px;
+  font-size: 14px;
+  text-transform: uppercase;
   font-weight: 400;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms; }
   .page-content__btn-document:hover {
-    background: #39a3d6 url(../../../img/plus.png) no-repeat 20px 21px; }
+    background: #39a3d6 url(../../../img/plus-c.png) no-repeat 9px 7px; }
 
 .page-content__post-block {
   display: flex;

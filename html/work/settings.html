@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   @@include('../includes/common/head.html', {})
+
+</head>
+<body>
+
+@@include('../includes/common/browserhappy.html', {})
+
+<div class="stick-footer sidebar_opened">
+   @@include('../includes/elements/right-layout-links.html', {})
+
+   @@include('../includes/elements/sidebar.html', {})
+
+   <div class="index-wrapper index-sidebar">
+      <main class="content">
+
+         @@include('../includes/elements/header.html', {})
+
+         <div class="content-container">
+            <div class="content-container__head">
+               <img src="/img/svg/settings.svg" alt="settings" class="content-container__icon">
+               <h2 class="content-container__title">ПРОФИЛЬ И
+                  НАСТРОЙКИ
+               </h2>
+            </div>
+            <div class="content-tasks">
+
+            </div>
+
+            @@include('../includes/elements/calendar.html', {})
+
+         </div>
+      </main>
+   </div>
+
+   <div class="page-content page-content_closed">
+      <div class="page-content__inner">
+
+      </div>
+
+   </div>
+</div>
+<script src="/assets/js/bundle.js"></script>
+
+</body>
+</html>

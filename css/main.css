@@ -1464,9 +1464,29 @@ The `sprites` mixin generates identical output to the CSS template
   padding: 15px;
   color: #000000;
   font-size: 16px;
-  font-weight: 400; }
+  font-weight: 400;
+  position: relative;
+  z-index: 100; }
   .message__text .form-forum {
     border-bottom: none; }
+  .message__text:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 89px;
+    top: -30px;
+    border: 14px solid transparent;
+    border-bottom: 18px solid #f8f6f6;
+    z-index: 99; }
+  .message__text:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 89px;
+    top: -32px;
+    border: 14px solid transparent;
+    border-bottom: 18px solid #e1e1e1;
+    z-index: 98; }
 
 .message__text-userbar {
   margin-top: 20px; }

@@ -952,10 +952,11 @@ The `sprites` mixin generates identical output to the CSS template
   -moz-transition: all 300ms;
   transition: all 300ms;
   color: #39404c;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   text-align: center;
-  margin-right: 7px; }
+  margin-right: 7px;
+  text-transform: uppercase; }
   .content-messages a:hover {
     background: #ffffff;
     color: #000000;
@@ -963,122 +964,126 @@ The `sprites` mixin generates identical output to the CSS template
   .content-messages a:last-of-type {
     margin-right: 0px; }
 
-.dateblock .ui-widget-content {
-  background: transparent; }
+.dateblock {
+  width: 336px;
+  /*   .ui-datepicker .ui-datepicker-next span {
+      display: block;
+      position: absolute;
+      left: 81%;
+      margin-left: -8px;
+      top: 55%;
+      margin-top: -8px;
+      background: url(../../../img/svg/arrow4_2.svg) no-repeat!important;
+      cursor: pointer;
+   }
 
-.dateblock .ui-widget.ui-widget-content {
-  border: none;
-  width: 100%; }
-
-.dateblock .ui-datepicker-header {
-  background: transparent;
-  border: none; }
-
-.dateblock .ui-datepicker-title {
-  background: transparent; }
-
-.dateblock .ui-datepicker .ui-datepicker-title {
-  text-align: center;
-  margin: 0 0px 5px 0px; }
-
-.dateblock .ui-datepicker th {
-  font-size: 14px;
-  font-weight: 400;
-  color: #ffffff;
-  padding: 4px 1px;
-  border: 1px solid #677f9e; }
-
-.dateblock .ui-datepicker td {
-  border: 1px solid #677f9e;
-  padding: 2px 10px 12px 10px;
-  cursor: pointer; }
-
-.dateblock .ui-widget-content .ui-state-default {
-  border: none;
-  font-size: 15px;
-  font-weight: 700;
-  color: #ffffff;
-  position: relative;
-  top: 0px;
-  right: -3px;
-  padding: 0;
-  background: transparent; }
-
-.dateblock .iu-state-hover a:hover {
-  background: transparent; }
-
-.dateblock .ui-state-active, .dateblock .ui-widget-content .ui-state-active {
-  color: #ffffff; }
-
-.dateblock .ui-datepicker-current-day {
-  outline: 2px solid #ffffff;
-  outline-offset: -2px; }
-
-.dateblock .ui-datepicker td a {
-  /*padding: 5px 4px 11px 2px;*/ }
-
-.dateblock .ui-state-highlight, .dateblock .ui-widget-content .ui-state-highlight {
-  background: transparent; }
-
-.dateblock .ui-datepicker select.ui-datepicker-month {
-  width: 35%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin-right: 5px; }
-
-.dateblock .ui-datepicker select.ui-datepicker-year {
-  background: #526b8b;
-  width: 35%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin-left: 5px; }
-
-.dateblock .ui-datepicker-year::-ms-expand {
-  display: none; }
-
-.dateblock .ui-datepicker-month::-ms-expand {
-  display: none; }
-
-.dateblock .ui-widget-header .ui-icon {
-  background-image: url(../../../img/ui-icons_444444_256x240.png) !important; }
-
-.dateblock .ui-datepicker select.ui-datepicker-month, .dateblock .ui-datepicker select.ui-datepicker-year {
-  width: 40%;
-  height: 21px;
-  background: #526b8b url(../../../img/svg/arrow1.svg) no-repeat 87px center;
-  border: 1px solid #fff;
-  padding-left: 5px;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.7;
-  padding-bottom: 0px; }
-  .dateblock .ui-datepicker select.ui-datepicker-month option, .dateblock .ui-datepicker select.ui-datepicker-year option {
-    background: #ffffff;
-    color: #000000; }
-
-.dateblock .ui-datepicker .ui-datepicker-next span {
-  display: block;
-  position: absolute;
-  left: 81%;
-  margin-left: -8px;
-  top: 55%;
-  margin-top: -8px;
-  background: url(../../../img/svg/arrow4_2.svg) no-repeat !important;
-  cursor: pointer; }
-
-.dateblock .ui-datepicker .ui-datepicker-prev span {
-  display: block;
-  position: absolute;
-  left: 46%;
-  margin-left: -8px;
-  top: 57%;
-  margin-top: -8px;
-  background: url(../../../img/svg/arrow3_2.svg) no-repeat !important;
-  cursor: pointer; }
+   .ui-datepicker .ui-datepicker-prev span {
+      display: block;
+      position: absolute;
+      left: 46%;
+      margin-left: -8px;
+      top: 57%;
+      margin-top: -8px;
+      background: url(../../../img/svg/arrow3_2.svg) no-repeat!important;
+      cursor: pointer;
+   }*/ }
+  .dateblock .ui-widget-content {
+    background: transparent; }
+  .dateblock .ui-widget.ui-widget-content {
+    border: none;
+    width: 100%; }
+  .dateblock .ui-datepicker-header {
+    background: #63b7df;
+    border: none; }
+  .dateblock .ui-datepicker-title {
+    background: transparent; }
+  .dateblock .ui-datepicker .ui-datepicker-title {
+    text-align: center;
+    margin: 0 0px 5px 0px; }
+  .dateblock .ui-datepicker th {
+    font-size: 16px;
+    font-weight: 400;
+    color: #0578af;
+    padding: 8px 1px;
+    border-bottom: 1px solid #0578af; }
+  .dateblock .ui-datepicker td {
+    padding: 9px 13px;
+    cursor: pointer; }
+  .dateblock .ui-widget-content .ui-state-default {
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    color: #373e4b;
+    /* position: relative; */
+    top: 0px;
+    /* right: -3px; */
+    padding: 0;
+    text-align: center;
+    background: transparent; }
+  .dateblock .iu-state-hover a:hover {
+    background: transparent; }
+  .dateblock .ui-state-active, .dateblock .ui-widget-content .ui-state-active {
+    color: #63b7df; }
+  .dateblock .ui-datepicker-current-day {
+    outline: 2px solid #ffffff;
+    outline-offset: -2px; }
+  .dateblock .ui-datepicker td a {
+    /*padding: 5px 4px 11px 2px;*/ }
+  .dateblock .ui-state-highlight, .dateblock .ui-widget-content .ui-state-highlight {
+    background: transparent; }
+  .dateblock .ui-datepicker select.ui-datepicker-month {
+    width: 35%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 5px; }
+  .dateblock .ui-datepicker select.ui-datepicker-year {
+    background: #526b8b;
+    width: 35%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-left: 5px; }
+  .dateblock .ui-datepicker-year::-ms-expand {
+    display: none; }
+  .dateblock .ui-datepicker-month::-ms-expand {
+    display: none; }
+  .dateblock .ui-widget-header .ui-icon {
+    background-image: url(../../../img/ui-icons_444444_256x240.png) !important; }
+  .dateblock .ui-datepicker select.ui-datepicker-month {
+    cursor: pointer;
+    background: transparent url(../../../img/svg/arrow1.svg) no-repeat 121px 19px;
+    padding-left: 5px;
+    color: #ffffff;
+    border: none;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.7;
+    padding-bottom: 0px;
+    width: 139px; }
+    .dateblock .ui-datepicker select.ui-datepicker-month option {
+      background: #ffffff;
+      color: #000000;
+      font-size: 18px; }
+  .dateblock .ui-datepicker select.ui-datepicker-year {
+    cursor: pointer;
+    background: transparent url(../../../img/svg/arrow1.svg) no-repeat 70px 19px;
+    padding-left: 5px;
+    color: #ffffff;
+    border: none;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.7;
+    padding-bottom: 0px;
+    width: 100px; }
+    .dateblock .ui-datepicker select.ui-datepicker-year option {
+      background: #ffffff;
+      color: #000000;
+      font-size: 18px; }
+  .dateblock .ui-widget-header .ui-icon {
+    display: none !important; }
+  .dateblock .ui-datepicker-calendar {
+    background: #ffffff; }
 
 .btn {
   text-transform: uppercase;
@@ -1109,21 +1114,15 @@ The `sprites` mixin generates identical output to the CSS template
   text-transform: uppercase; }
 
 .content-tasks {
-  margin-top: 30px;
+  margin-top: 20px;
   /*&:last-of-type {
       margin-top: 40px;
    }*/ }
 
-.content-tasks.calendar {
-  width: 308px;
-  text-align: center;
-  background: #526b8b;
-  padding: 10px 19px 17px 17px;
-  border-radius: 5px; }
-  .content-tasks.calendar .content-container__subtitle {
-    color: #ffffff;
-    margin-bottom: 7px;
-    width: auto; }
+.content-tasks.calendar .content-container__subtitle {
+  color: #ffffff;
+  margin-bottom: 7px;
+  width: auto; }
 
 .content-container__subtitle {
   color: #000000;
@@ -1160,8 +1159,8 @@ The `sprites` mixin generates identical output to the CSS template
     background: url("../../../img/icondate.png") no-repeat; }
 
 .tags-block {
-  max-width: 380px;
-  margin-top: 15px; }
+  max-width: 376px;
+  margin-top: 10px; }
 
 .tags-block.category .tag {
   -webkit-transition: all 200ms;
@@ -1169,15 +1168,17 @@ The `sprites` mixin generates identical output to the CSS template
   transition: all 200ms; }
   .tags-block.category .tag:hover {
     background: #63b7df;
-    color: #ffffff; }
+    color: #ffffff;
+    border: 1px solid #4aa1ca; }
 
 .tags-block.status .tag {
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   transition: all 200ms; }
   .tags-block.status .tag:hover {
-    background: #00ad5d;
-    color: #ffffff; }
+    background: #e0aa4c;
+    color: #ffffff;
+    border: 1px solid #d09939; }
 
 .tag {
   cursor: pointer;
@@ -1185,19 +1186,15 @@ The `sprites` mixin generates identical output to the CSS template
   text-align: center;
   box-sizing: border-box;
   color: #000000;
-  /*width: 177px;*/
-  font-size: 16px;
-  font-weight: 400;
-  padding: 4px 18px 4px 18px;
+  padding: 3px 11px 4px 11px;
   border-radius: 5px;
-  /*text-transform: uppercase;*/
+  /* text-transform: uppercase; */
   border: 1px solid #979ea9;
   background-color: #ffffff;
   margin-bottom: 10px;
-  margin-right: 10px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 36px; }
+  margin-right: 3px;
+  font-size: 15px;
+  font-weight: 400; }
 
 .page-content__post-tag {
   color: #2685b2;
@@ -2883,7 +2880,8 @@ span.option-item {
   font-size: 14px; }
 
 .content-container__head {
-  display: flex; }
+  display: flex;
+  align-items: center; }
 
 .page-content {
   display: table-cell;
@@ -4870,6 +4868,23 @@ span.option-item {
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0; }
+
+.multi-select .chosen-container-multi .chosen-choices {
+  padding: 7px 10px;
+  border-radius: 5px;
+  border: 1px solid #979ea9; }
+  .multi-select .chosen-container-multi .chosen-choices li.search-choice {
+    background: #63b7df;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 22px 5px 11px;
+    border-radius: 5px;
+    border: none; }
+    .multi-select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+      background: url(../../../img/multi-close.png) no-repeat 0px 4px; }
+      .multi-select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+        background: url(../../../img/multi-close.png) no-repeat 0px 4px; }
 
 /* Chosen v1.6.1 | (c) 2011-2016 by Harvest | MIT License, https://github.com/harvesthq/chosen/blob/master/LICENSE.md */
 .chosen-container {

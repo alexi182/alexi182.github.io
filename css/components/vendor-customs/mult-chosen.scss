@@ -1,0 +1,25 @@
+.multi-select {
+   .chosen-container-multi {
+      .chosen-choices {
+         padding: 7px 10px;
+         border-radius: 5px;
+         border: 1px solid #979ea9;
+         li.search-choice {
+            background: #63b7df;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 400;
+            padding: 5px 22px 5px 11px;
+            border-radius: 5px;
+            border: none;
+            .search-choice-close {
+               background: url(../../../img/multi-close.png)no-repeat 0px 4px;
+               &:hover{
+                  background: url(../../../img/multi-close.png)no-repeat 0px 4px;
+               }
+            }
+         }
+      }
+   }
+}
+

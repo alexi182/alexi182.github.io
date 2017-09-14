@@ -1198,7 +1198,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .page-content__post-tag {
   color: #2685b2;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 10px; }
@@ -2962,7 +2962,6 @@ span.option-item {
 
 .page-content__post {
   padding: 14px 10px 8px 15px;
-  height: 170px;
   width: 49%;
   margin-bottom: 10px;
   background: rgba(255, 255, 255, 0.8);
@@ -3172,15 +3171,12 @@ span.option-item {
 .slick-prev, .slick-next {
   z-index: 10000; }
 
-.content-docs .page-content__post {
-  height: 270px; }
-
 .row-date {
   font-size: 14px; }
 
 .row-date-changed {
   color: #2685b2;
-  font-size: 20px; }
+  font-size: 15px; }
 
 .row-count {
   text-align: right;
@@ -3225,7 +3221,8 @@ span.option-item {
 
 .row-tag {
   color: #7d7d7d;
-  font-size: 14px; }
+  font-size: 12px;
+  margin-right: 5px; }
 
 .tag-link {
   color: #63b7df;
@@ -3238,6 +3235,11 @@ span.option-item {
   color: #63b7df;
   font-size: 14px;
   font-weight: 400; }
+  .comments-link span {
+    background: #717f91;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 1px 6px; }
   .comments-link:hover {
     text-decoration: underline; }
 
@@ -3246,6 +3248,9 @@ span.option-item {
   color: #63b7df;
   font-size: 14px;
   font-weight: 400; }
+
+.page-content__post-bottom .row {
+  display: block; }
 
 .page-content__post-region {
   color: #52adcc;
@@ -3608,6 +3613,7 @@ span.option-item {
         right: 3px; }
       .sidebar ul li a {
         display: block;
+        position: relative;
         color: #ffffff;
         padding: 19px 11px 40px 23px; }
         .sidebar ul li a span {
@@ -3616,6 +3622,20 @@ span.option-item {
     width: 45px;
     height: 29px;
     background: none; }
+
+.sidebar__num {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #39404c;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2px 0;
+  font-weight: 700;
+  position: absolute;
+  top: 13px;
+  right: 56px; }
 
 .sidebar_opened .sidebar {
   width: 300px;
@@ -3716,6 +3736,21 @@ span.option-item {
   border: 1px solid #818181;
   background: url(../../../img/svg/tick.svg) no-repeat 1px;
   background-size: 20px 20px; }
+
+.sidebar__item {
+  position: absolute;
+  width: 175px;
+  bottom: 5%;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.sidebar__phone {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff; }
 
 .slider {
   display: inline-block; }

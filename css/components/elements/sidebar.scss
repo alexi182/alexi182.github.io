@@ -34,6 +34,7 @@
          }
          a{
             display: block;
+            position: relative;
             color: #ffffff;
             padding: 19px 11px 40px 23px;;
             span{
@@ -47,6 +48,22 @@
       height: 29px;
       background: none;
    }
+
+}
+
+.sidebar__num {
+   width: 24px;
+   height: 24px;
+   background: #ffffff;
+   border-radius: 50%;
+   color: #39404c;
+   text-align: center;
+   box-sizing: border-box;
+   padding: 2px 0;
+   font-weight: 700;
+   position: absolute;
+   top: 13px;
+   right: 56px;
 }
 
 .sidebar_opened {
@@ -158,4 +175,19 @@
    border: 1px solid #818181;
    background: url(../../../img/svg/tick.svg) no-repeat 1px;
    background-size: 20px 20px;
+}
+
+.sidebar__item {
+   position: absolute;
+   width: 175px;
+   bottom: 5%;
+   left: 50%;
+   @include transform_translateX(-50%);
+}
+
+.sidebar__phone {
+   font-size: 16px;
+   font-weight: 400;
+   color: #ffffff;
+
 }

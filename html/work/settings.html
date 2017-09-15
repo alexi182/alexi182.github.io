@@ -25,8 +25,31 @@
                   НАСТРОЙКИ
                </h2>
             </div>
-            <div class="content-tasks">
 
+            <div class="content-block user-info">
+               <div class="content-block__item">
+                  <img src="/img/avatar-settings.png" alt="avatar" />
+               </div>
+               <div class="content-block__item">
+                  <div class="content-block__name">
+                     Захарова Марина Борисовна
+                  </div>
+                  <div class="content-block__position">
+                     Министр образования Московской области
+                  </div>
+               </div>
+            </div>
+
+            <div class="content-block">
+               <div class="content-row">
+                  Дата рождения: <span>06.12.1966</span>
+               </div>
+               <div class="content-row">
+                  <img src="/img/letter.png" alt="letter" /> <span>m_zaharova@mon.gov.ru</span>
+               </div>
+               <div class="content-row">
+                  <img src="/img/phone.png" alt="phone" /> <span>8(916)777-66-77</span>
+               </div>
             </div>
 
             @@include('../includes/elements/calendar.html', {})
@@ -36,8 +59,51 @@
    </div>
 
    <div class="page-content page-content_closed">
-      <div class="page-content__inner">
-
+      <div class="page-content__item">
+         <form action="#">
+            <div class="page-content__row">
+               <label class="page-content__label">Фамилия</label>
+               <div class="page-content__row-item">
+                  <input type="text" value="Захарова" />
+               </div>
+            </div>
+            <div class="page-content__row">
+               <label class="page-content__label">Имя</label>
+               <div class="page-content__row-item">
+                  <input type="text" value="Марина" />
+               </div>
+            </div>
+            <div class="page-content__row">
+               <label class="page-content__label">Отчество</label>
+               <div class="page-content__row-item">
+                  <input type="text" value="Борисовна" />
+               </div>
+            </div>
+            <div class="page-content__row">
+               <label class="page-content__label">E-mail</label>
+               <div class="page-content__row-item">
+                  <input type="text" value="m_zaharova@mon.gov.ru" />
+               </div>
+            </div>
+            <div class="page-content__row">
+               <label class="page-content__label">Телефон</label>
+               <div class="page-content__row-item">
+                  <input type="text" value="8(916) 777-66-77" />
+               </div>
+            </div>
+            <div class="page-content__row">
+               <label class="page-content__label">Место работы, должность</label>
+               <div class="page-content__row-item">
+                  <input type="text" value="Министр образования Московской области" />
+               </div>
+            </div>
+            <div class="page-content__row">
+               <label class="page-content__label">Дата рождения</label>
+               <div class="search-box page-content__row-item">
+                  <input type="text" class="datepicker" />
+               </div>
+            </div>
+         </form>
       </div>
 
    </div>

@@ -1,5 +1,6 @@
 .dateblock {
    width: 336px;
+   background: rgba(255, 255, 255, 0.8);
    .ui-datepicker-calendar {
       //background: rgba(255, 255, 255, 0.8);
    }
@@ -10,9 +11,14 @@
       border: none;
       width: 100%;
    }
+   .ui-datepicker {
+      padding: 0em 1.2em 0;
+   }
+
    .ui-datepicker-header {
-      background: #63b7df;
+      background: #3b94c0;
       border: none;
+      margin: 0 -17px;
    }
    .ui-datepicker-title {
       background: transparent;
@@ -30,7 +36,7 @@
    }
    .ui-datepicker td {
       //border:1px solid #677f9e;
-      padding: 9px 13px;
+      padding: 9px 10px;
       cursor: pointer;
    }
    .ui-widget-content .ui-state-default {
@@ -53,7 +59,7 @@
       color: #63b7df;
    }
    .ui-datepicker-current-day {
-      outline: 2px solid #ffffff;
+      //outline: 2px solid rgba(255, 255, 255, 0.8);
       outline-offset: -2px;
    }
    .ui-datepicker td a {
@@ -94,14 +100,15 @@
       //width: 40%;
       //height: 21px;
       cursor: pointer;
-      background: transparent url(../../../img/svg/arrow1.svg) no-repeat 121px 19px;
+      background: transparent url(../../../img/svg/arrow1.svg) no-repeat 121px 17px;
       padding-left: 5px;
       color: #ffffff;
       border: none;
       font-size: 25px;
       font-weight: 400;
-      line-height: 1.7;
+      line-height: 40px;
       padding-bottom: 0px;
+      height: 40px;
       width: 139px;
       option {
          background: #ffffff;
@@ -114,15 +121,16 @@
       //width: 40%;
       //height: 21px;
       cursor: pointer;
-      background: transparent url(../../../img/svg/arrow1.svg) no-repeat 70px 19px;
+      background: transparent url(../../../img/svg/arrow1.svg) no-repeat 70px 17px;
       padding-left: 5px;
       color: #ffffff;
       border: none;
       font-size: 25px;
       font-weight: 400;
-      line-height: 1.7;
+      line-height: 40px;
       padding-bottom: 0px;
       width: 100px;
+      height: 40px;
       option {
          background: #ffffff;
          color: #000000;
@@ -156,7 +164,40 @@
       display: none!important;
    }
 
-   .ui-datepicker-calendar {
-      background: #ffffff;
+  /* .ui-datepicker-calendar {
+      background: rgba(255, 255, 255, 0.8);
+   }*/
+}
+
+.content-block.user-info {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   .content-block__item {
+      width: 280px;
+      line-height: 1.2;
+      &:first-of-type {
+         width: 106px;
+         margin-right: 10px;
+      }
+   }
+}
+
+.content-block__name {
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.content-block__position {
+   font-size: 16px;
+}
+
+.content-row {
+   margin-bottom: 10px;
+   span {
+      font-size: 16px;
+      font-weight: 400;
+      margin-left: 15px;
+      letter-spacing: 1px;
    }
 }

@@ -28,14 +28,14 @@
    text-transform: uppercase;
 }
 
-.content-tasks {
+.content-block {
    margin-top: 20px;
    /*&:last-of-type {
       margin-top: 40px;
    }*/
 }
 
-.content-tasks.calendar {
+.content-block.calendar {
    //width: 308px;
    //text-align: center;
    ///*background: #526b8b;*/
@@ -64,16 +64,16 @@
    height: 59px;
 }
 
-.content-tasks__date {
+.content-block__date {
    margin-top: 17px;
 }
 
-.content-tasks__label {
+.content-block__label {
    font-size: 16px;
    font-weight: 400;
 }
 
-.content-tasks__current-date {
+.content-block__current-date {
    display: inline-block;
    font-size: 18px;
    font-weight: 700;
@@ -180,6 +180,8 @@
    background: #63b7df url(../../../img/add2.png)no-repeat center;
    @include transition(300);
 }
+
+
 
 @media (max-width: 1400px) {
    .content-container__title {

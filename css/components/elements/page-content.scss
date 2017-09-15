@@ -76,10 +76,61 @@ float: left;
    }
 }
 
+.page-content__item {
+   padding: 25px 20px 20px 20px;
+   background: rgba(255, 255, 255, 0.8);
+   margin-bottom: 27px;
+}
+
 .page-content__post-block {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+}
+
+.page-content__col {
+   border-left: 1px solid #8696ae;
+}
+
+.page-content__row {
+   display: flex;
+   //flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   margin-bottom: 17px;
+
+   label {
+      font-size: 16px;
+   }
+
+   input {
+      width: 100%;
+      padding: 5px 7px;
+      border: 1px solid #e1e1e1;
+      background: #ffffff;
+      font-size: 16px;
+   }
+
+   .datepicker {
+      background: #ffffff url(../../../img/icondate.png) no-repeat 95% center;
+      background-size: 22px;
+   }
+}
+
+.page-content__row-item {
+   width: 75%;
+}
+
+.search-box.page-content__row-item {
+   .datepicker {
+      width: 134px;
+   }
+}
+
+.page-content__label {
+   display: block;
+   width: 23%;
+   line-height: 1.1;
 }
 
 .page-content__post{

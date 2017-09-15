@@ -3115,6 +3115,9 @@ span.option-item {
   .page-content__post-text:hover {
     text-decoration: underline; }
 
+.page-content__post-text.w100 {
+  height: 70px; }
+
 .page-content__img {
   display: inline-block;
   vertical-align: top; }

@@ -101,7 +101,7 @@
       //height: 21px;
       cursor: pointer;
       display: inline-block;
-      background: transparent;
+      background: transparent url(../../../img/svg/arrow1.svg) no-repeat 121px 17px;
       padding-left: 5px;
       color: #ffffff;
       border: none;
@@ -111,14 +111,14 @@
       padding-bottom: 0px;
       height: 40px;
       width: 139px;
-      text-align: right;
-      &:after {
+      /*text-align: right;*/
+   /*   &:after {
          content: "";
          display: inline-block;
-         background: url(../../../img/svg/arrow1.svg) no-repeat;
+
          width: 20px;
          height: 10px;
-      }
+      }*/
       option {
          background: #ffffff;
          color: #000000;

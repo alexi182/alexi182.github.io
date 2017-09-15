@@ -1064,7 +1064,8 @@ The `sprites` mixin generates identical output to the CSS template
     background-image: url(../../../img/ui-icons_444444_256x240.png) !important; }
   .dateblock .ui-datepicker select.ui-datepicker-month {
     cursor: pointer;
-    background: transparent url(../../../img/svg/arrow1.svg) no-repeat 121px 17px;
+    display: inline-block;
+    background: transparent;
     padding-left: 5px;
     color: #ffffff;
     border: none;
@@ -1073,7 +1074,14 @@ The `sprites` mixin generates identical output to the CSS template
     line-height: 40px;
     padding-bottom: 0px;
     height: 40px;
-    width: 139px; }
+    width: 139px;
+    text-align: right; }
+    .dateblock .ui-datepicker select.ui-datepicker-month:after {
+      content: "";
+      display: inline-block;
+      background: url(../../../img/svg/arrow1.svg) no-repeat;
+      width: 20px;
+      height: 10px; }
     .dateblock .ui-datepicker select.ui-datepicker-month option {
       background: #ffffff;
       color: #000000;
@@ -1236,7 +1244,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 .page-content__post-tag {
   color: #2685b2;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   margin-top: 10px; }
@@ -3058,13 +3066,15 @@ span.option-item {
   float: right;
   color: #52adcc;
   font-size: 14px;
-  font-weight: 400; }
+  font-weight: 400;
+  display: flex; }
 
 .page-content__post-link {
   display: block;
   background: #52adcc;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 13px;
+  text-transform: uppercase;
   font-weight: 400;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -3073,6 +3083,9 @@ span.option-item {
   border-radius: 4px; }
   .page-content__post-link:hover {
     text-decoration: none; }
+
+.page-content__post-icon {
+  margin-left: 20px; }
 
 .page-content__post-link_green {
   background: #00ad5d; }
@@ -3093,7 +3106,9 @@ span.option-item {
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: 400;
-  display: block; }
+  display: inline-block;
+  vertical-align: top;
+  width: 85%; }
   .page-content__post-text:hover {
     text-decoration: underline; }
 
@@ -3295,7 +3310,7 @@ span.option-item {
 
 .row-tag {
   color: #7d7d7d;
-  font-size: 12px;
+  font-size: 14px;
   margin-right: 5px; }
 
 .tag-link {
@@ -3390,6 +3405,13 @@ span.option-item {
 .page-content__post-row.links-block {
   margin-top: 10px; }
 
+.doc-icon {
+  margin-right: 5px; }
+
+.label-theme {
+  margin-right: 5px;
+  color: #858585; }
+
 @media (max-width: 1820px) {
   .page-content_closed {
     width: 52%; }
@@ -3445,12 +3467,6 @@ span.option-item {
   .page-content_closed {
     width: 48%; }
   .page-content_opened {
-    width: 58%; } }
-
-@media (max-width: 1500px) {
-  .page-content_closed {
-    width: 44%; }
-  .page-content_opened {
     width: 58%; }
   .page-content__post {
     display: block;
@@ -3458,6 +3474,12 @@ span.option-item {
     height: auto !important; }
   .page-content__post:nth-of-type(2n+1) {
     margin-left: 0%; } }
+
+@media (max-width: 1500px) {
+  .page-content_closed {
+    width: 44%; }
+  .page-content_opened {
+    width: 58%; } }
 
 @media (max-width: 1400px) {
   .page-content_closed {

@@ -1210,6 +1210,8 @@ The `sprites` mixin generates identical output to the CSS template
 .tags-block {
   max-width: 376px;
   margin-top: 10px; }
+  .tags-block .chosen-container {
+    width: 350px !important; }
 
 .tags-block.category .tag {
   -webkit-transition: all 200ms;
@@ -3095,6 +3097,9 @@ span.option-item {
 
 .page-content__post-link_grey {
   background: #aeaeae; }
+
+.page-content__post-link_yellow {
+  background: #e0aa4c; }
 
 .page-content__post-bottom {
   margin-top: 15px; }

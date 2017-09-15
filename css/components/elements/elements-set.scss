@@ -91,6 +91,10 @@
 .tags-block {
    max-width: 376px;
    margin-top: 10px;
+
+   .chosen-container {
+      width: 350px!important;
+   }
 }
 
 .tags-block.category {

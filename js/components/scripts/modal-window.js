@@ -1,7 +1,14 @@
-$('.overlay').fadeIn(500);
+
+$('.file-list').on('click', function() {
+   $(this).addClass('window1-active');
+   $(this).parent().siblings('.page-content__inner').find('.window-1').show();
+   $('.overlay').show();
+});
 
 $('.button-close_js').on('click', function() {
-	$(this).parent('.window').fadeOut(500);
+   $(this).parent().parent().siblings('.page-content-row').find('.file-list').removeClass('window1-active');
+	$(this).parent('.window').hide();
+	$('.overlay').hide();
 });
 
 

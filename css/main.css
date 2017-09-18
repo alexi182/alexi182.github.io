@@ -2843,10 +2843,11 @@ span.option-item {
   -webkit-animation: fadeIn 1s;
   -moz-animation: fadeIn 1s;
   animation: fadeIn 1s;
-  z-index: 100001; }
+  z-index: 1000; }
 
 .window {
   width: 100%;
+  display: none;
   /*height: 583px;*/
   position: absolute;
   z-index: 1001;
@@ -2862,6 +2863,16 @@ span.option-item {
   /*-webkit-transform: translate(-50%, -50%);
    -moz-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);*/ }
+
+.window1-active a {
+  background: #ffffff;
+  color: #000000; }
+  .window1-active a:before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url(../../../img/svg/document/files2.svg) no-repeat center; }
 
 .window:after {
   content: "";

@@ -941,7 +941,8 @@ The `sprites` mixin generates identical output to the CSS template
 .page-content__inner {
   background: rgba(255, 255, 255, 0.9);
   padding: 27px 45px 27px 30px;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 .content-main__header {
   color: #000000;
@@ -2845,21 +2846,22 @@ span.option-item {
   z-index: 100001; }
 
 .window {
-  width: 809px;
+  width: 100%;
   /*height: 583px;*/
   position: absolute;
+  z-index: 1001;
   text-align: left;
   background: #ffffff;
   padding: 33px 90px 40px 54px;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   -webkit-animation: fadeIn 1s;
   -moz-animation: fadeIn 1s;
   animation: fadeIn 1s;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  /*-webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);*/ }
 
 .window:after {
   content: "";

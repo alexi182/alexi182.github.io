@@ -231,7 +231,7 @@
       color: #ffffff;
       margin-right: 7px;
       text-align: center;
-      padding: 17px 0;
+      padding: 17px 7px;
       text-transform: uppercase;
       display: flex;
       justify-content: center;
@@ -316,6 +316,7 @@
       }
    }
 }
+
 
 @media (max-width: 1400px) {
    .main-message__text {

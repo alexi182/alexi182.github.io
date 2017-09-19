@@ -68,7 +68,8 @@ body {
 
 *, :after, :before {
   box-sizing: border-box;
-  outline: none; }
+  outline: none;
+  list-style: none; }
 
 /*
 * Remove text-shadow in selection highlight:
@@ -1605,7 +1606,7 @@ The `sprites` mixin generates identical output to the CSS template
     color: #ffffff;
     margin-right: 7px;
     text-align: center;
-    padding: 17px 0;
+    padding: 17px 7px;
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -2839,7 +2840,7 @@ span.option-item {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.2);
   -webkit-animation: fadeIn 1s;
   -moz-animation: fadeIn 1s;
   animation: fadeIn 1s;
@@ -2881,13 +2882,13 @@ span.option-item {
 
 .button-close {
   position: absolute;
-  top: -1px;
-  right: -47px;
+  top: 0px;
+  right: 0px;
   width: 47px;
   height: 47px;
   cursor: pointer;
   outline: none;
-  background: #1aa1dc; }
+  /* background: #1aa1dc;*/ }
 
 .button-close:after {
   content: "";
@@ -2895,7 +2896,7 @@ span.option-item {
   height: 2px;
   width: 32px;
   margin: -2px auto;
-  background-color: #ffffff;
+  background-color: #3a4c64;
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -2908,7 +2909,7 @@ span.option-item {
   height: 2px;
   width: 32px;
   margin: -7px auto;
-  background-color: #ffffff;
+  background-color: #3a4c64;
   -ms-transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -2921,6 +2922,25 @@ span.option-item {
   font-weight: 400;
   margin-bottom: 15px;
   margin-top: 0; }
+
+.window__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.window__cell {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 280px;
+  margin-bottom: 40px; }
+
+.window__link {
+  line-height: 1.2;
+  color: #000000;
+  margin-left: 8px; }
+  .window__link:hover {
+    text-decoration: underline; }
 
 .window__post {
   border-bottom: 1px solid #000000;

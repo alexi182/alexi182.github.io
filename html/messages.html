@@ -12,7 +12,7 @@
 </head>
 <body>
 
-   <!--[if lte IE 9]>
+<!--[if lte IE 9]>
 <style>
    .browserupgrade {text-align: center;border: 2px solid #b4b472;font-size: 20px;padding: 20px;position: fixed;background: #333;color: #c1bea2;width: 400px;left: 50%;margin-left: -200px;z-index: 999999;}
    .browserupgrade a {color: #fff;}
@@ -156,38 +156,38 @@
    </a>
    <ul>
       <li>
-         <a href="../../html/messages.html">
-            <span>УВЕДОМЛЕНИЯ (+5)</span>
+         <a href="messages.html">
+            <span class="messages__notice">УВЕДОМЛЕНИЯ (+5)</span>
             <img src="/img/svg/notice2.svg" alt="icon">
          </a>
       </li>
       <li>
          <a href="private-messages.html">
-            <span>ЛИЧНЫЕ СООБЩЕНИЯ (+1)</span>
+            <span class="messages__notice">ЛИЧНЫЕ СООБЩЕНИЯ (+1)</span>
             <img src="/img/svg/messages2.svg" alt="icon">
          </a>
       </li>
       <li>
-         <a href="../../html/documents.html">
-            <span>ДОКУМЕНТЫ (+3)</span>
+         <a href="documents.html">
+            <span class="messages__notice">ДОКУМЕНТЫ (+3)</span>
             <img src="/img/svg/doc2.svg" alt="icon">
          </a>
       </li>
       <li>
-         <a href="../../html/events.html">
-            <span>СОБЫТИЯ (+5)</span>
+         <a href="events.html">
+            <span class="messages__notice">СОБЫТИЯ (+5)</span>
             <img src="/img/svg/events2.svg" alt="icon">
          </a>
       </li>
       <li>
-         <a href="../../html/users.html">
-            <span>ПОЛЬЗОВАТЕЛИ (+2)</span>
+         <a href="users.html">
+            <span class="messages__notice">ПОЛЬЗОВАТЕЛИ (+2)</span>
             <img src="/img/svg/user2.svg" alt="icon">
          </a>
       </li>
       <li>
-         <a href="#">
-            <span>ПРОФИЛЬ И НАСТРОЙКИ</span>
+         <a href="settings.html">
+            <span class="messages__notice">ПРОФИЛЬ И НАСТРОЙКИ</span>
             <img src="/img/svg/settings2.svg" alt="icon">
          </a>
       </li>
@@ -198,7 +198,7 @@
       <main class="content">
 
          <header class="header">
-   <a href="02.html" class="logo">
+   <a href="main.html" class="logo">
       <img src="/img/logo.png" alt="logo">
       <h1 class="main-title">
          ПЛАТФОРМА ДЛЯ ПОДГОТОВКИ И СОГЛАСОВАНИЯ НОРМАТИВНЫХ ДОКУМЕНТОВ МИНОБРНАУКИ РОССИИ
@@ -383,69 +383,69 @@
          </div>
 
          <div class="page-content__post">
-         <div class="page-content__post-top">
-            <input type="checkbox" class="checkbox" id="check3" />
-            <label class="checkbox-label" for="check3"></label>
-            <div class="page-content__post-date">
-               19 / 07 / 2017
+            <div class="page-content__post-top">
+               <input type="checkbox" class="checkbox" id="check3" />
+               <label class="checkbox-label" for="check3"></label>
+               <div class="page-content__post-date">
+                  19 / 07 / 2017
+               </div>
+               <div class="page-content__post-userbar">
+                  <a href="#" class="page-content__post-link">документ</a>
+               </div>
             </div>
-            <div class="page-content__post-userbar">
-               <a href="#" class="page-content__post-link">документ</a>
+            <div class="page-content__post-bottom">
+               <a href="#" class="page-content__post-text">
+                  Истекает срок согласования документа «Проект приказа о создании региональных центров развития вариативных форм дошкольного образования...
+               </a>
+            </div>
+
+            <div class="page-content__comment comment-hide">
+               <a href="#" class="close__icon icon-closed"></a>
+               <form>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>Отдел</option>
+                        <option>Отдел 1</option>
+                        <option>Отдел 2</option>
+                     </select>
+                  </div>
+                  <div class="search-box">
+                     <select class="chosen-select">
+                        <option>ФИО сотрудника</option>
+                        <option>Сотрудник 1</option>
+                        <option>Сотрудник 2</option>
+                     </select>
+                  </div>
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+                  <div class="search-box">
+                     <label for="text" class="layout-content-search__label">Примечания</label>
+                     <textarea id="text" class="page-content__textarea"></textarea>
+                  </div>
+                  <div class="search-box sbmt">
+                     <button type="submit" class="page-content__submit">Назначить</button>
+                  </div>
+               </form>
             </div>
          </div>
-         <div class="page-content__post-bottom">
-            <a href="#" class="page-content__post-text">
-               Истекает срок согласования документа «Проект приказа о создании региональных центров развития вариативных форм дошкольного образования...
-            </a>
-         </div>
-
-         <div class="page-content__comment comment-hide">
-            <a href="#" class="close__icon icon-closed"></a>
-            <form>
-               <div class="search-box">
-                  <select class="chosen-select">
-                     <option>Отдел</option>
-                     <option>Отдел 1</option>
-                     <option>Отдел 2</option>
-                  </select>
-               </div>
-               <div class="search-box">
-                  <select class="chosen-select">
-                     <option>ФИО сотрудника</option>
-                     <option>Сотрудник 1</option>
-                     <option>Сотрудник 2</option>
-                  </select>
-               </div>
-               <div class="layout-content-search__block-row">
-                  <div class="layout-content-search__block-row-item">
-                     <label class="layout-content-search__label">
-                        Дата создания
-                     </label>
-                     <div class="search-box">
-                        <input type="text" class="datepicker">
-                     </div>
-                  </div>
-
-                  <div class="layout-content-search__block-row-item">
-                     <label class="layout-content-search__label">
-                        Дата изменения
-                     </label>
-                     <div class="search-box">
-                        <input type="text" class="datepicker">
-                     </div>
-                  </div>
-
-               </div>
-               <div class="search-box">
-                  <label for="text" class="layout-content-search__label">Примечания</label>
-                  <textarea id="text" class="page-content__textarea"></textarea>
-               </div>
-               <div class="search-box sbmt">
-                  <button type="submit" class="page-content__submit">Назначить</button>
-               </div>
-            </form>
-         </div>
-      </div>
 
          <div class="page-content__post">
             <div class="page-content__post-top">

@@ -266,6 +266,14 @@ select {
    justify-content: space-between;
 }
 
+.flex-sb {
+   justify-content: space-between;
+}
+
+.flex-wrap {
+   flex-wrap: wrap;
+}
+
 .stick-footer {
    display: table;
    height: 100%;

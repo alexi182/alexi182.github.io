@@ -263,6 +263,12 @@ select {
   align-items: center;
   justify-content: space-between; }
 
+.flex-sb {
+  justify-content: space-between; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
 .stick-footer {
   display: table;
   height: 100%;
@@ -2854,7 +2860,7 @@ span.option-item {
   z-index: 1001;
   text-align: left;
   background: #ffffff;
-  padding: 33px 90px 40px 54px;
+  padding: 50px 37px 40px 30px;
   top: 0;
   left: 0;
   box-sizing: border-box;
@@ -2882,8 +2888,8 @@ span.option-item {
 
 .button-close {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 9px;
+  right: 9px;
   width: 47px;
   height: 47px;
   cursor: pointer;
@@ -2925,15 +2931,56 @@ span.option-item {
 
 .window__row {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
+  font-size: 16px; }
+
+.window__col {
+  margin-right: 3%;
+  margin-bottom: 2%; }
+  .window__col:last-of-type {
+    margin-right: 0; }
+
+.window__title {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2; }
+  .window__title span {
+    display: block;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px; }
 
 .window__cell {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 280px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  line-height: 1.2;
+  font-size: 16px; }
+
+.window__cell_red {
+  display: block;
+  background: url(../../../img/red.png) no-repeat left; }
+
+.window__cell_green {
+  display: block;
+  background: url(../../../img/green.png) no-repeat left; }
+
+.window__cell_grey {
+  display: block;
+  background: url(../../../img/grey.png) no-repeat left; }
+
+.window-2 .window__cell {
+  margin-bottom: 25px;
+  padding-left: 25px; }
+
+.window__cell_f18 {
+  font-size: 18px; }
+  .window__cell_f18 span {
+    color: #58a4c6;
+    display: inline !important; }
 
 .window__link {
   line-height: 1.2;
@@ -2962,6 +3009,19 @@ span.option-item {
 .window__post-text-small {
   color: #000000;
   font-size: 14px; }
+
+.window-3 .window__cell {
+  display: block; }
+  .window-3 .window__cell span {
+    display: block;
+    margin-top: 4px; }
+
+@media (max-width: 1600px) {
+  .window-2 .window__row {
+    flex-wrap: wrap;
+    justify-content: start; }
+    .window-2 .window__row .window__cell {
+      max-width: 100%; } }
 
 .content-container__head {
   display: flex;
@@ -3790,7 +3850,7 @@ span.option-item {
   padding-left: 300px;
   padding-right: 20px; }
 
-.sidebar_opened span {
+.sidebar_opened .messages__notice {
   display: inline-block !important; }
 
 .close__icon {

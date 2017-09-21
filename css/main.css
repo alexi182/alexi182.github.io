@@ -2860,7 +2860,7 @@ span.option-item {
   z-index: 1001;
   text-align: left;
   background: #ffffff;
-  padding: 50px 37px 40px 30px;
+  padding: 65px 37px 40px 30px;
   top: 0;
   left: 0;
   box-sizing: border-box;
@@ -2934,7 +2934,7 @@ span.option-item {
   font-size: 16px; }
 
 .window__col {
-  margin-right: 3%;
+  margin-right: 27px;
   margin-bottom: 2%; }
   .window__col:last-of-type {
     margin-right: 0; }
@@ -3010,18 +3010,25 @@ span.option-item {
   color: #000000;
   font-size: 14px; }
 
-.window-3 .window__cell {
-  display: block; }
-  .window-3 .window__cell span {
-    display: block;
-    margin-top: 4px; }
+.window-3 {
+  padding-top: 30px; }
+  .window-3 .window__cell {
+    display: block; }
+    .window-3 .window__cell span {
+      display: block;
+      margin-top: 4px; }
+  .window-3 .window__row:last-of-type {
+    margin-top: 20px; }
 
 @media (max-width: 1600px) {
   .window-2 .window__row {
     flex-wrap: wrap;
     justify-content: start; }
     .window-2 .window__row .window__cell {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .window-3 .window__row {
+    flex-wrap: wrap;
+    justify-content: start; } }
 
 .content-container__head {
   display: flex;

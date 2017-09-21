@@ -11,6 +11,9 @@
    background: #39404c;
    z-index: 1000;
    width: 300px;
+   .messages__notice {
+      display: none;
+   }
    ul {
       margin-top: 70px;
       padding-left: 0;
@@ -37,9 +40,6 @@
             position: relative;
             color: #ffffff;
             padding: 19px 11px 40px 23px;;
-            span{
-               display: none;
-            }
          }
       }
    }
@@ -62,10 +62,9 @@
    padding: 2px 0;
    font-weight: 700;
    position: absolute;
-   top: 13px;
-   right: 56px;
+   top: -8px;
+   right: 42px;
 }
-
 
 .sidebar_opened {
    .sidebar{
@@ -85,6 +84,20 @@
    }
    .messages__notice{
       display: inline-block!important;
+   }
+   .sidebar__num {
+      width: 24px;
+      height: 24px;
+      background: #ffffff;
+      border-radius: 50%;
+      color: #39404c;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 2px 0;
+      font-weight: 700;
+      position: absolute;
+      top: 13px;
+      right: 56px;
    }
 }
 

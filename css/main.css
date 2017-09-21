@@ -3790,6 +3790,8 @@ span.option-item {
   background: #39404c;
   z-index: 1000;
   width: 300px; }
+  .sidebar .messages__notice {
+    display: none; }
   .sidebar ul {
     margin-top: 70px;
     padding-left: 0; }
@@ -3816,8 +3818,6 @@ span.option-item {
         position: relative;
         color: #ffffff;
         padding: 19px 11px 40px 23px; }
-        .sidebar ul li a span {
-          display: none; }
   .sidebar .close__icon {
     width: 45px;
     height: 29px;
@@ -3834,8 +3834,8 @@ span.option-item {
   padding: 2px 0;
   font-weight: 700;
   position: absolute;
-  top: 13px;
-  right: 56px; }
+  top: -8px;
+  right: 42px; }
 
 .sidebar_opened .sidebar {
   width: 300px;
@@ -3852,6 +3852,20 @@ span.option-item {
 
 .sidebar_opened .messages__notice {
   display: inline-block !important; }
+
+.sidebar_opened .sidebar__num {
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #39404c;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2px 0;
+  font-weight: 700;
+  position: absolute;
+  top: 13px;
+  right: 56px; }
 
 .close__icon {
   display: block;

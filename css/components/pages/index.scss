@@ -1,6 +1,7 @@
 .index-body {
    background: url('/img/main-bg.jpg') no-repeat center top fixed;
    background-size: cover;
+
    max-width: 1000px;
    min-width: 100px;
    position: relative;
@@ -26,6 +27,10 @@
       background: rgba(255,245,215, 0.25);
       color: #39404c;
    }
+}
+
+.index-question {
+
 }
 
 .index-wrapper {
@@ -102,6 +107,7 @@
    width: 100%;
    &-item{
       display: block;
+      margin-bottom: 15px;
       label {
          font-size: 15px;
          font-weight: 400;

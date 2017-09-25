@@ -4494,7 +4494,8 @@ span.option-item {
   display: table;
   width: 100%; }
   .index-search__form-item {
-    display: block; }
+    display: block;
+    margin-bottom: 15px; }
     .index-search__form-item label {
       font-size: 15px;
       font-weight: 400; }

@@ -28,7 +28,13 @@
 
             <div class="content-block user-info">
                <div class="content-block__item">
-                  <img src="/img/avatar-settings.png" alt="avatar" />
+                  <div class="content-block__img">
+                     <img src="/img/avatar-settings.png" class="content-block__avatar" alt="avatar" />
+
+                     <!--<div class="avatar-back">-->
+                        <!--<span>Привет</span>-->
+                     <!--</div>-->
+                  </div>
                </div>
                <div class="content-block__item">
                   <div class="content-block__name">
@@ -60,6 +66,7 @@
 
    <div class="page-content page-content_closed">
       <div class="page-content__item">
+         <p class="page-content__item-name">Основное</p>
          <form action="#">
             <div class="page-content__row">
                <label class="page-content__label">Фамилия</label>
@@ -103,7 +110,36 @@
                   <input type="text" class="datepicker" />
                </div>
             </div>
+            <div class="page-content__row flex-c">
+               <button type="submit" class="page-content__btn">Cохранить</button>
+               <button type="submit" class="page-content__btn">Отменить</button>
+            </div>
          </form>
+      </div>
+
+      <div class="page-content__item">
+         <p class="page-content__item-name">Изменить пароль</p>
+
+         <form action="#">
+            <div class="page-content__row">
+               <label class="page-content__label">введите новый
+                  пароль</label>
+               <div class="page-content__row-item">
+                  <input type="password" />
+               </div>
+            </div>
+            <div class="page-content__row">
+               <label class="page-content__label">повторите новый
+                  пароль</label>
+               <div class="page-content__row-item">
+                  <input type="password" />
+               </div>
+            </div>
+            <div class="page-content__row flex-c">
+               <button type="submit" class="page-content__btn">Cохранить</button>
+            </div>
+         </form>
+
       </div>
 
    </div>

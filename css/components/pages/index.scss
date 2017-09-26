@@ -11,8 +11,7 @@
 
 .index-btn-enter {
    display: block;
-   margin: 25px auto 0;
-   width: 179px;
+   width: 139px;
    padding: 11px 0px;
    border: 1px solid rgba(0,0,0, 0.25);
    background: #455773;
@@ -29,8 +28,22 @@
    }
 }
 
-.index-question {
+.index-search__col {
+   width: 400px;
+   margin-left: 7px;
+}
 
+.index-question {
+   width: 51px;
+   height: 46px;
+   border: 2px solid #ffffff;
+   background-color: transparent;
+   padding-top: 9px;
+   @include transition(300);
+   &:hover {
+      background: #455773;
+      border: 2px solid #455773;
+   }
 }
 
 .index-wrapper {
@@ -92,7 +105,7 @@
 }
 
 .index-search-box {
-   width: 500px;
+   width: 470px;
    margin: 70px auto 0;
    .icon {
       display: block;
@@ -106,7 +119,6 @@
    display: table;
    width: 100%;
    &-item{
-      display: block;
       margin-bottom: 15px;
       label {
          font-size: 15px;

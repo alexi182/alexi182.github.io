@@ -2936,9 +2936,9 @@ span.option-item {
     color: #485973;
     border-radius: 50%;
     padding-top: 2px;
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
-    transition: all 300ms; }
+    -webkit-transition: all 350ms;
+    -moz-transition: all 350ms;
+    transition: all 350ms; }
   .link-block__item-icon {
     margin-top: 35px;
     margin-bottom: 40px; }

@@ -74,6 +74,7 @@
       text-transform: uppercase;
       color: #ffffff;
       margin-top: 165px;
+      @include transition(300);
    }
 
    &-alert {
@@ -88,6 +89,7 @@
       color: #485973;
       border-radius: 50%;
       padding-top: 2px;
+      @include transition(300);
    }
    &-icon{
       margin-top: 35px;

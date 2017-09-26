@@ -2920,7 +2920,10 @@ span.option-item {
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 165px; }
+    margin-top: 165px;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms; }
   .link-block__item-alert {
     font-size: 18px;
     margin-top: 15px;
@@ -2932,7 +2935,10 @@ span.option-item {
     background: #ffffff;
     color: #485973;
     border-radius: 50%;
-    padding-top: 2px; }
+    padding-top: 2px;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms; }
   .link-block__item-icon {
     margin-top: 35px;
     margin-bottom: 40px; }

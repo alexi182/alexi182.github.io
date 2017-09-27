@@ -1001,29 +1001,29 @@ The `sprites` mixin generates identical output to the CSS template
   width: 336px;
   background: rgba(255, 255, 255, 0.8);
   /*   .ui-datepicker .ui-datepicker-next span {
-      display: block;
-      position: absolute;
-      left: 81%;
-      margin-left: -8px;
-      top: 55%;
-      margin-top: -8px;
-      background: url(../../../img/svg/arrow4_2.svg) no-repeat!important;
-      cursor: pointer;
-   }
+         display: block;
+         position: absolute;
+         left: 81%;
+         margin-left: -8px;
+         top: 55%;
+         margin-top: -8px;
+         background: url(../../../img/svg/arrow4_2.svg) no-repeat!important;
+         cursor: pointer;
+      }
 
-   .ui-datepicker .ui-datepicker-prev span {
-      display: block;
-      position: absolute;
-      left: 46%;
-      margin-left: -8px;
-      top: 57%;
-      margin-top: -8px;
-      background: url(../../../img/svg/arrow3_2.svg) no-repeat!important;
-      cursor: pointer;
-   }*/
+      .ui-datepicker .ui-datepicker-prev span {
+         display: block;
+         position: absolute;
+         left: 46%;
+         margin-left: -8px;
+         top: 57%;
+         margin-top: -8px;
+         background: url(../../../img/svg/arrow3_2.svg) no-repeat!important;
+         cursor: pointer;
+      }*/
   /* .ui-datepicker-calendar {
-      background: rgba(255, 255, 255, 0.8);
-   }*/ }
+       background: rgba(255, 255, 255, 0.8);
+    }*/ }
   .dateblock .ui-widget-content {
     background: transparent; }
   .dateblock .ui-widget.ui-widget-content {
@@ -1032,14 +1032,15 @@ The `sprites` mixin generates identical output to the CSS template
   .dateblock .ui-datepicker {
     padding: 0em 1.2em 0; }
   .dateblock .ui-datepicker-header {
-    background: #3b94c0;
+    /*background: #3b94c0;*/
     border: none;
+    background: transparent;
     margin: 0 -17px; }
   .dateblock .ui-datepicker-title {
     background: transparent; }
   .dateblock .ui-datepicker .ui-datepicker-title {
     text-align: center;
-    margin: 0 0px 5px 0px; }
+    margin: 5px 0px 5px 0px; }
   .dateblock .ui-datepicker th {
     font-size: 16px;
     font-weight: 400;
@@ -1092,43 +1093,47 @@ The `sprites` mixin generates identical output to the CSS template
   .dateblock .ui-datepicker select.ui-datepicker-month {
     cursor: pointer;
     display: inline-block;
-    background: transparent url(../../../img/svg/arrow1.svg) no-repeat 121px 17px;
-    padding-left: 5px;
+    background: #3b94c0 url(../../../img/svg/arrow1.svg) no-repeat 143px 17px;
+    padding-left: 12px;
     color: #ffffff;
     border: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 40px;
     padding-bottom: 0px;
     height: 40px;
-    width: 139px;
+    width: 173px;
+    border-radius: 2px;
     /*   &:after {
-         content: "";
-         display: inline-block;
+            content: "";
+            display: inline-block;
 
-         width: 20px;
-         height: 10px;
-      }*/ }
+            width: 20px;
+            height: 10px;
+         }*/ }
     .dateblock .ui-datepicker select.ui-datepicker-month option {
       background: #ffffff;
       color: #000000;
-      font-size: 18px; }
+      font-size: 16px; }
   .dateblock .ui-datepicker select.ui-datepicker-year {
     cursor: pointer;
-    background: transparent url(../../../img/svg/arrow1.svg) no-repeat 70px 17px;
-    padding-left: 5px;
+    background: #3b94c0 url(../../../img/svg/arrow1.svg) no-repeat 86px 17px;
+    padding-left: 12px;
     color: #ffffff;
     border: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 40px;
     padding-bottom: 0px;
-    width: 100px;
-    height: 40px; }
+    width: 112px;
+    height: 40px;
+    border-radius: 2px; }
     .dateblock .ui-datepicker select.ui-datepicker-year option {
       background: #ffffff;
       color: #000000;
-      font-size: 18px; }
+      font-size: 16px; }
+      .dateblock .ui-datepicker select.ui-datepicker-year option:hover {
+        background: red; }
   .dateblock .ui-widget-header .ui-icon {
     display: none !important; }
 
@@ -1168,7 +1173,7 @@ The `sprites` mixin generates identical output to the CSS template
   transition: all 300ms;
   cursor: pointer; }
   .content-block__img:hover .avatar-back {
-    visibility: visible;
+    opacity: 1;
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
     -ms-transform: translateX(-100%);
@@ -1176,13 +1181,13 @@ The `sprites` mixin generates identical output to the CSS template
 
 .avatar-back {
   position: absolute;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-30%);
+  -moz-transform: translateY(-30%);
+  -ms-transform: translateX(-30%);
+  transform: translateY(-30%);
   width: 100%;
   height: 100%;
-  visibility: hidden;
+  opacity: 0;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms;
@@ -1197,6 +1202,46 @@ The `sprites` mixin generates identical output to the CSS template
   width: 106px;
   height: 106px;
   border-radius: 50%; }
+
+.ui-datepicker-calendar tbody tr:nth-of-type(2) td:nth-of-type(5) a {
+  color: red;
+  font-weight: bold; }
+
+.file-upload {
+  position: relative;
+  /* Даем возможность делать позиционирование, внутри данного элемента */
+  overflow: hidden;
+  /* Все что выходит за пределы - скрываем */
+  width: 20%;
+  /* Задаем ширину кнопки выбора файла */
+  height: 20px;
+  /* Задаем высоту кнопки выбора файла */
+  background: #6da047;
+  border-radius: 3px;
+  padding: 8px 4px;
+  color: #fff;
+  text-align: center; }
+
+.file-upload:hover {
+  background: #7aad55; }
+
+.file-upload input[type="file"] {
+  display: none;
+  /* Обязательно скрываем настоящий Input File */ }
+
+.file-upload label {
+  /* Растягиваем label на всю возможную площадь блока .file-upload */
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; }
+
+.file-upload span {
+  line-height: 36px;
+  /* Делаем вертикальное выравнивание текста, который написан на кнопке */ }
 
 .btn {
   text-transform: uppercase;
@@ -5369,6 +5414,7 @@ span.option-item {
     font-weight: 400;
     padding: 5px 22px 5px 11px;
     border-radius: 5px;
+    line-height: 18px;
     border: none; }
     .multi-select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
       background: url(../../../img/multi-close.png) no-repeat 0px 4px; }
@@ -5779,6 +5825,170 @@ span.option-item {
     background-image: url(chosen-sprite@2x.png) !important;
     background-size: 52px 37px !important;
     background-repeat: no-repeat !important; } }
+
+/* --- EASYDROPDOWN DEFAULT THEME --- */
+/* PREFIXED CSS */
+.dropdown,
+.dropdown div,
+.dropdown li,
+.dropdown div::after {
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out; }
+
+.dropdown .selected::after,
+.dropdown.scrollable div::after {
+  -webkit-pointer-events: none;
+  -moz-pointer-events: none;
+  -ms-pointer-events: none;
+  pointer-events: none; }
+
+/* WRAPPER */
+.dropdown {
+  position: relative;
+  width: 160px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 3px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.dropdown.open {
+  z-index: 2; }
+
+.dropdown:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+
+.dropdown.focus {
+  box-shadow: 0 0 5px rgba(51, 102, 248, 0.4); }
+
+/* CARAT */
+.dropdown .carat {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  margin-top: -4px;
+  border: 6px solid transparent;
+  border-top: 8px solid #000; }
+
+.dropdown.open .carat {
+  margin-top: -10px;
+  border-top: 6px solid transparent;
+  border-bottom: 8px solid #000; }
+
+.dropdown.disabled .carat {
+  border-top-color: #999; }
+
+/* OLD SELECT (HIDDEN) */
+.dropdown .old {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden; }
+
+.dropdown select {
+  position: absolute;
+  left: 0px;
+  top: 0px; }
+
+.dropdown.touch .old {
+  width: 100%;
+  height: 100%; }
+
+.dropdown.touch select {
+  width: 100%;
+  height: 100%;
+  opacity: 0; }
+
+/* SELECTED FEEDBACK ITEM */
+.dropdown .selected,
+.dropdown li {
+  display: block;
+  font-size: 18px;
+  line-height: 1;
+  color: #000;
+  padding: 9px 12px;
+  overflow: hidden;
+  white-space: nowrap; }
+
+.dropdown.disabled .selected {
+  color: #999; }
+
+.dropdown .selected::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  border-radius: 0 2px 2px 0;
+  box-shadow: inset -55px 0 25px -20px #fff; }
+
+/* DROP DOWN WRAPPER */
+.dropdown div {
+  position: absolute;
+  height: 0;
+  left: -1px;
+  right: -1px;
+  top: 100%;
+  margin-top: -1px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  opacity: 0; }
+
+/* Height is adjusted by JS on open */
+.dropdown.open div {
+  opacity: 1;
+  z-index: 2; }
+
+/* FADE OVERLAY FOR SCROLLING LISTS */
+.dropdown.scrollable div::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  box-shadow: inset 0 -50px 30px -35px #fff; }
+
+.dropdown.scrollable.bottom div::after {
+  opacity: 0; }
+
+/* DROP DOWN LIST */
+.dropdown ul {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  overflow: hidden; }
+
+.dropdown.scrollable.open ul {
+  overflow-y: auto; }
+
+/* DROP DOWN LIST ITEMS */
+.dropdown li {
+  list-style: none;
+  padding: 8px 12px; }
+
+/* .focus class is also added on hover */
+.dropdown li.focus {
+  background: #d24a67;
+  position: relative;
+  z-index: 3;
+  color: #fff; }
+
+.dropdown li.active {
+  font-weight: 700; }
 
 .ih-item {
   position: relative;

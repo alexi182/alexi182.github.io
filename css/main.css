@@ -1131,9 +1131,12 @@ The `sprites` mixin generates identical output to the CSS template
     .dateblock .ui-datepicker select.ui-datepicker-year option {
       background: #ffffff;
       color: #000000;
-      font-size: 16px; }
-      .dateblock .ui-datepicker select.ui-datepicker-year option:hover {
-        background: red; }
+      font-size: 16px;
+      /* &:hover {
+            background: red;
+            -webkit-background-imager: red;
+            -moz-background-image: red;
+         }*/ }
   .dateblock .ui-widget-header .ui-icon {
     display: none !important; }
 

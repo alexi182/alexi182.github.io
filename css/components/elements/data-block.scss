@@ -147,9 +147,11 @@
          background: #ffffff;
          color: #000000;
          font-size: 16px;
-         &:hover {
+        /* &:hover {
             background: red;
-         }
+            -webkit-background-imager: red;
+            -moz-background-image: red;
+         }*/
       }
    }
 

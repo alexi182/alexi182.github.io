@@ -3634,6 +3634,9 @@ span.option-item {
 .row-date {
   font-size: 14px; }
 
+.row-date-inner {
+  margin-left: 10px; }
+
 .row-date-changed {
   color: #2685b2;
   font-size: 15px; }

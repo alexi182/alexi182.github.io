@@ -5,7 +5,7 @@
          border-radius: 5px;
          border: 1px solid #979ea9;
          li.search-choice {
-            background: #63b7df;
+            background: #3c95bf;
             color: #ffffff;
             font-size: 13px;
             font-weight: 400;
@@ -13,12 +13,21 @@
             border-radius: 5px;
             line-height: 18px;
             border: none;
+            box-shadow: none;
             .search-choice-close {
                background: url(../../../img/multi-close.png)no-repeat 0px 4px;
                &:hover{
                   background: url(../../../img/multi-close.png)no-repeat 0px 4px;
                }
             }
+         }
+      }
+   }
+
+   .chosen-container {
+      .chosen-results {
+         li.highlighted {
+            background: #3c95bf;
          }
       }
    }

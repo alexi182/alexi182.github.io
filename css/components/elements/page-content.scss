@@ -423,10 +423,15 @@ float: left;
 
 .row-date {
    font-size: 14px;
+   color: #665665;
 }
 
 .row-date-inner {
    margin-left: 10px;
+}
+
+.row-date-create {
+   color: #000000;
 }
 
 .row-date-changed {
@@ -478,7 +483,6 @@ float: left;
       padding: 1px 10px;
       border-radius: 5px;
       color: #ffffff;
-      margin-right: 10px;
       margin-left: 3px;
    }
 }

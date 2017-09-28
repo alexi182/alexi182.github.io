@@ -245,12 +245,36 @@
 }
 
 .tags-block.status {
-   .tag {
+   .tag.tag_blue {
+      @include transition(200);
+      &:hover {
+         background: #52adcc;
+         color: #ffffff;
+         border: 1px solid #52adcc;
+      }
+   }
+   .tag.tag_grey {
+      @include transition(200);
+      &:hover {
+         background: #aeaeae;
+         color: #ffffff;
+         border: 1px solid #aeaeae;
+      }
+   }
+   .tag.tag_yellow {
       @include transition(200);
       &:hover {
          background: #e0aa4c;
          color: #ffffff;
-         border: 1px solid #d09939;
+         border: 1px solid #e0aa4c;
+      }
+   }
+   .tag.tag_green {
+      @include transition(200);
+      &:hover {
+         background: #00ad5d;
+         color: #ffffff;
+         border: 1px solid #00ad5d;
       }
    }
 }

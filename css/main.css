@@ -1461,14 +1461,41 @@ The `sprites` mixin generates identical output to the CSS template
     color: #ffffff;
     border: 1px solid #4aa1ca; }
 
-.tags-block.status .tag {
+.tags-block.status .tag.tag_blue {
   -webkit-transition: all 200ms;
   -moz-transition: all 200ms;
   transition: all 200ms; }
-  .tags-block.status .tag:hover {
+  .tags-block.status .tag.tag_blue:hover {
+    background: #52adcc;
+    color: #ffffff;
+    border: 1px solid #52adcc; }
+
+.tags-block.status .tag.tag_grey {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  transition: all 200ms; }
+  .tags-block.status .tag.tag_grey:hover {
+    background: #aeaeae;
+    color: #ffffff;
+    border: 1px solid #aeaeae; }
+
+.tags-block.status .tag.tag_yellow {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  transition: all 200ms; }
+  .tags-block.status .tag.tag_yellow:hover {
     background: #e0aa4c;
     color: #ffffff;
-    border: 1px solid #d09939; }
+    border: 1px solid #e0aa4c; }
+
+.tags-block.status .tag.tag_green {
+  -webkit-transition: all 200ms;
+  -moz-transition: all 200ms;
+  transition: all 200ms; }
+  .tags-block.status .tag.tag_green:hover {
+    background: #00ad5d;
+    color: #ffffff;
+    border: 1px solid #00ad5d; }
 
 .tag {
   cursor: pointer;
@@ -3632,10 +3659,14 @@ span.option-item {
   z-index: 10000; }
 
 .row-date {
-  font-size: 14px; }
+  font-size: 14px;
+  color: #665665; }
 
 .row-date-inner {
   margin-left: 10px; }
+
+.row-date-create {
+  color: #000000; }
 
 .row-date-changed {
   color: #2685b2;
@@ -3679,7 +3710,6 @@ span.option-item {
     padding: 1px 10px;
     border-radius: 5px;
     color: #ffffff;
-    margin-right: 10px;
     margin-left: 3px; }
 
 .row-tag {
@@ -5414,18 +5444,22 @@ span.option-item {
   border-radius: 5px;
   border: 1px solid #979ea9; }
   .multi-select .chosen-container-multi .chosen-choices li.search-choice {
-    background: #63b7df;
+    background: #3c95bf;
     color: #ffffff;
     font-size: 13px;
     font-weight: 400;
     padding: 5px 22px 5px 11px;
     border-radius: 5px;
     line-height: 18px;
-    border: none; }
+    border: none;
+    box-shadow: none; }
     .multi-select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
       background: url(../../../img/multi-close.png) no-repeat 0px 4px; }
       .multi-select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
         background: url(../../../img/multi-close.png) no-repeat 0px 4px; }
+
+.multi-select .chosen-container .chosen-results li.highlighted {
+  background: #3c95bf; }
 
 /* Chosen v1.6.1 | (c) 2011-2016 by Harvest | MIT License, https://github.com/harvesthq/chosen/blob/master/LICENSE.md */
 .chosen-container {

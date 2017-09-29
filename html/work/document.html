@@ -67,7 +67,7 @@
 
       <div class="page-content__inner">
 
-         <div class="overlay"></div>
+         <div class="page-content-overlay"></div>
 
          <div class="window window-1">
             <div title="Закрыть" class="button-close button-close_js"></div>
@@ -228,18 +228,16 @@
 
                   <div class="message-disagree">Не согласовано</div>
 
-                  <div class="message-like">
-                     <img src="/img/svg/like.svg" alt="like" />
+                  <!--<div class="message-like">
                      <span>15</span>
-                  </div>
+                  </div>-->
                </div>
                <div class="message__text">
                   <div class="message__text-inner">
                      Здравствуйте! Формулировки показателей 1-22 требуют доработки. Также считаю необходимым исключить показатели 23-30 т.к. они уже собираются в рамках мониторинга на платформе do.edu.ru
                   </div>
                   <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <img src="/img/svg/like.svg" alt="like" />
+                     <a href="#" class="forum-js">Ответить</a>
                   </div>
 
                   <form action="/" class="form-forum">
@@ -262,31 +260,25 @@
                   <div class="message-info__date">
                      15.07.2017 15:17
                   </div>
-
                   <!--<div class="message-disagree">Не согласовано</div>-->
                   <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  <div class="message-like">
-                     <img src="/img/svg/like.svg" alt="like" />
-                     <span>11</span>
-                  </div>
                </div>
                <div class="message__text">
                   <div class="message__text-inner">
                      Уважаемые коллеги, считаю что в версии 4 формулировки показателей корректны.
                   </div>
                   <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <img src="/img/svg/like.svg" alt="like" />
+                     <a href="#" class="forum-js">Ответить</a>
                   </div>
 
-                  <!--      <form action="/" class="form-forum">
-                           <div class="form-forum-send">
-                              <img src="/img/avatar.png" alt="avatar">
-                              <textarea name="send" class="form-forum__area"></textarea>
-                           </div>
-                           <button type="submit" class="form-forum__send-btn">Отправить</button>
-                           <span class="message-answer">Ответ Захаровой М.Б.</span>
-                        </form>-->
+                  <form action="/" class="form-forum">
+                     <div class="form-forum-send">
+                        <img src="/img/avatar.png" alt="avatar">
+                        <textarea name="send" class="form-forum__area"></textarea>
+                     </div>
+                     <button type="submit" class="form-forum__send-btn">Отправить</button>
+                     <span class="message-answer">Ответ Захаровой М.Б.</span>
+                  </form>
                </div>
             </div>
 
@@ -299,41 +291,37 @@
                   <div class="message-info__date">
                      15.07.2017 15:14
                   </div>
-
                   <!--<div class="message-disagree">Не согласовано</div>-->
                   <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  <div class="message-like">
-                     <img src="/img/svg/like.svg" alt="like" />
-                     <span>11</span>
-                  </div>
+                  <!-- <div class="message-like">
+                      <span>11</span>
+                   </div>-->
                </div>
                <div class="message__text">
                   <div class="message__text-inner">
                      Здравствуйте! Считаю, что исправленный вариант (версия 4) готов к утверждению.
                   </div>
                   <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <img src="/img/svg/like.svg" alt="like" />
+                     <a href="#" class="forum-js">Ответить</a>
+                     <!-- <img src="/img/svg/like.svg" alt="like" />-->
                   </div>
 
-                  <!--      <form action="/" class="form-forum">
-                           <div class="form-forum-send">
-                              <img src="/img/avatar.png" alt="avatar">
-                              <textarea name="send" class="form-forum__area"></textarea>
-                           </div>
-                           <button type="submit" class="form-forum__send-btn">Отправить</button>
-                           <span class="message-answer">Ответ Захаровой М.Б.</span>
-                        </form>-->
+                  <form action="/" class="form-forum">
+                     <div class="form-forum-send">
+                        <img src="/img/avatar.png" alt="avatar">
+                        <textarea name="send" class="form-forum__area"></textarea>
+                     </div>
+                     <button type="submit" class="form-forum__send-btn">Отправить</button>
+                     <span class="message-answer">Ответ Захаровой М.Б.</span>
+                  </form>
                </div>
             </div>
-
          </div>
-
       </div>
-
 
    </div>
 </div>
+@@include('../includes/elements/overlay.html', {})
 <script src="/assets/js/bundle.js"></script>
 
 </body>

@@ -238,30 +238,23 @@
       align-items: center;
       flex-wrap: wrap;
       @include transition(300);
+      svg {
+         fill: #ffffff;
+         margin-right: 10px;
+         @include transition(300);
+      }
       &:hover {
          color: #000000;
+         background: #ffffff;
+         svg {
+            fill: #000000;
+         }
       }
       &:first-of-type {
          width: 30%;
          background: #3a4c64;
-         &:before {
-            content: "";
-            display: inline-block;
-            margin-right: 4px;
-            width: 27px;
-            height: 27px;
-            @include transition(300);
-            background: url(../../../img/svg/document/files.svg) no-repeat center;
-         }
-         &:hover {
+         &:hover{
             background: #ffffff;
-            &:before {
-               content: "";
-               display: inline-block;
-               width: 27px;
-               height: 27px;
-               background: url(../../../img/svg/document/files2.svg) no-repeat center;
-            }
          }
       }
 
@@ -269,24 +262,8 @@
          width: 35%;
          margin-left: 0;
          background: #4c6380;
-         &:before {
-            content: "";
-            display: inline-block;
-            width: 27px;
-            height: 27px;
-            margin-right: 4px;
-            @include transition(300);
-            background: url(../../../img/svg/document/statistics.svg) no-repeat center;
-         }
-         &:hover {
+         &:hover{
             background: #ffffff;
-            &:before {
-               content: "";
-               display: inline-block;
-               width: 27px;
-               height: 27px;
-               background: url(../../../img/svg/document/statistics2.svg) no-repeat center;
-            }
          }
       }
 
@@ -294,24 +271,8 @@
          width: 43%;
          margin-right: 0;
          background: #63b7df;
-         &:before {
-            content: "";
-            display: inline-block;
-            width: 27px;
-            height: 27px;
-            margin-right: 4px;
-            @include transition(300);
-            background: url(../../../img/svg/document/info.svg) no-repeat center;
-         }
-         &:hover {
+         &:hover{
             background: #ffffff;
-            &:before {
-               content: "";
-               display: inline-block;
-               width: 27px;
-               height: 27px;
-               background: url(../../../img/svg/document/info2.svg) no-repeat center;
-            }
          }
       }
    }

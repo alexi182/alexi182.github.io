@@ -45,31 +45,40 @@
    background: #ffffff!important;
    color: #000000!important;
    &:first-of-type {
-      &:before {
+      svg {
+         fill: #000000!important;
+      }
+   /*   &:before {
          content: "";
          display: inline-block;
          width: 27px;
          height: 27px;
          background: url(../../../img/svg/document/files2.svg) no-repeat center!important;
-      }
+      }*/
    }
    &:nth-of-type(2) {
-      &:before {
+      svg {
+         fill: #000000!important;
+      }
+ /*     &:before {
          content: "";
          display: inline-block;
          width: 27px;
          height: 27px;
          background: url(../../../img/svg/document/statistics2.svg) no-repeat center!important;
-      }
+      }*/
    }
    &:nth-of-type(3) {
-      &:before {
+      svg {
+         fill: #000000!important;
+      }
+     /* &:before {
          content: "";
          display: inline-block;
          width: 27px;
          height: 27px;
          background: url(../../../img/svg/document/info2.svg) no-repeat center!important;
-      }
+      }*/
    }
 }
 

@@ -769,6 +769,190 @@ textarea {
 .icon_vk:before {
   content: "\f10b"; }
 
+.svg-arrow1-dims {
+  width: 14.999px;
+  height: 8.087px; }
+
+.svg-arrow3_1-dims {
+  width: 8.087px;
+  height: 14.999px; }
+
+.svg-arrow3_2-dims {
+  width: 8.09px;
+  height: 15px; }
+
+.svg-arrow4_1-dims {
+  width: 8.087px;
+  height: 14.999px; }
+
+.svg-arrow4_2-dims {
+  width: 8.09px;
+  height: 15px; }
+
+.svg-block-dims {
+  width: 100px;
+  height: 100px; }
+
+.svg-doc-dims {
+  width: 82.092px;
+  height: 93px; }
+
+.svg-doc2-dims {
+  width: 82.092px;
+  height: 93px; }
+
+.svg-doc_min-dims {
+  width: 21.774px;
+  height: 24.667px; }
+
+.svg-down-arrow-dims {
+  width: 129px;
+  height: 129px; }
+
+.svg-download-dims {
+  width: 32.889px;
+  height: 29.309px; }
+
+.svg-download2-dims {
+  width: 32.889px;
+  height: 29.309px; }
+
+.svg-edit-dims {
+  width: 29.309px;
+  height: 29.309px; }
+
+.svg-edit2-dims {
+  width: 29.309px;
+  height: 29.309px; }
+
+.svg-event-dims {
+  width: 32.466px;
+  height: 33.945px; }
+
+.svg-event2-dims {
+  width: 32.466px;
+  height: 33.945px; }
+
+.svg-events-dims {
+  width: 79.153px;
+  height: 80px; }
+
+.svg-events2-dims {
+  width: 79.153px;
+  height: 80px; }
+
+.svg-events_min-dims {
+  width: 20.778px;
+  height: 21px; }
+
+.svg-files-dims {
+  width: 24.833px;
+  height: 32.021px; }
+
+.svg-files2-dims {
+  width: 24.833px;
+  height: 32.021px; }
+
+.svg-files2-1-dims {
+  width: 17.378px;
+  height: 23px; }
+
+.svg-files2-2-dims {
+  width: 17.378px;
+  height: 23px; }
+
+.svg-info-dims {
+  width: 23px;
+  height: 23px; }
+
+.svg-info2-dims {
+  width: 23px;
+  height: 23px; }
+
+.svg-like-dims {
+  width: 100px;
+  height: 100px; }
+
+.svg-messages-dims {
+  width: 80.94px;
+  height: 80px; }
+
+.svg-messages2-dims {
+  width: 80.94px;
+  height: 80px; }
+
+.svg-notice-dims {
+  width: 90.73px;
+  height: 80px; }
+
+.svg-notice2-dims {
+  width: 90.73px;
+  height: 80px; }
+
+.svg-notice_min-dims {
+  width: 23.001px;
+  height: 20.282px; }
+
+.svg-plus-dims {
+  width: 357px;
+  height: 357px; }
+
+.svg-read-dims {
+  width: 100px;
+  height: 100px; }
+
+.svg-remove-dims {
+  width: 100px;
+  height: 100px; }
+
+.svg-send-dims {
+  width: 200px;
+  height: 200px; }
+
+.svg-settings-dims {
+  width: 82px;
+  height: 82px; }
+
+.svg-settings2-dims {
+  width: 82px;
+  height: 82px; }
+
+.svg-share-dims {
+  width: 25.544px;
+  height: 31px; }
+
+.svg-share2-dims {
+  width: 25.544px;
+  height: 31px; }
+
+.svg-statistics-dims {
+  width: 24.14px;
+  height: 24px; }
+
+.svg-statistics2-dims {
+  width: 24.14px;
+  height: 24px; }
+
+.svg-subscription-dims {
+  width: 36px;
+  height: 30.18px; }
+
+.svg-subscription2-dims {
+  width: 36px;
+  height: 30.18px; }
+
+.svg-tick-dims {
+  width: 26px;
+  height: 26px; }
+
+.svg-user-dims {
+  width: 71.93px;
+  height: 80px; }
+
+.svg-user2-dims {
+  width: 71.93px;
+  height: 80px; }
+
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
 
@@ -1299,116 +1483,132 @@ The `sprites` mixin generates identical output to the CSS template
 
 .content-container__bars {
   margin-top: 20px;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  /*   &-file {
+         display: inline-block;
+         vertical-align: middle;
+         width: 20px;
+         height: 26px;
+         background: url(../../../img/svg/document2/files.svg) no-repeat center center;
+         background-size: 20px;
+         @include transition(200);
+         &:hover {
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 26px;
+            background: url(../../../img/svg/document2/files2.svg) no-repeat center center;
+            background-size: 20px;
+         }
+      }*/
+  /*   &-download {
+      display: inline-block;
+      vertical-align: middle;
+      width: 26px;
+      height: 26px;
+      background: url(../../../img/svg/document2/download.svg) no-repeat center center;
+      background-size: 26px;
+      @include transition(200);
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 26px;
+         height: 26px;
+         background: url(../../../img/svg/document2/download2.svg) no-repeat center center;
+         background-size: 26px;
+      }
+   }*/
+  /*   &-share {
+      display: inline-block;
+      vertical-align: middle;
+      width: 23px;
+      height: 26px;
+      background: url(../../../img/svg/document2/share.svg) no-repeat center center;
+      background-size: 21px;
+      @include transition(200);
+      top: -2px;
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 23px;
+         height: 26px;
+         background: url(../../../img/svg/document2/share2.svg) no-repeat center center;
+         background-size: 21px;
+         top: -2px;
+      }
+   }*/
+  /*   &-subscription {
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
+      height: 25px;
+      background: url(../../../img/svg/document2/subscription.svg) no-repeat center center;
+      background-size: 24px;
+      @include transition(200);
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 24px;
+         height: 25px;
+         background: url(../../../img/svg/document2/subscription2.svg) no-repeat center center;
+         background-size: 24px;
+      }
+   }*/ }
   .content-container__bars a {
-    margin-right: 25px;
+    margin-right: 27px;
     position: relative; }
     .content-container__bars a:last-of-type {
       margin-right: 0; }
     .content-container__bars a:hover .content-container__bars-tooltip {
       display: block; }
-  .content-container__bars-edit {
-    display: inline-block;
-    vertical-align: middle;
-    width: 21px;
-    height: 21px;
-    background: url(../../../img/svg/document2/edit.svg) no-repeat;
-    background-size: 20px;
+  .content-container__bars .svg-edit-dims {
+    width: 29px;
+    height: 30px;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     transition: all 200ms; }
-    .content-container__bars-edit:hover {
-      display: inline-block;
-      vertical-align: middle;
-      width: 21px;
-      height: 21px;
-      background: url(../../../img/svg/document2/edit2.svg) no-repeat;
-      background-size: 20px; }
-  .content-container__bars-file {
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 28px;
-    background: url(../../../img/svg/document2/files.svg) no-repeat;
-    background-size: 20px;
+    .content-container__bars .svg-edit-dims:hover {
+      fill: #3b94c0; }
+  .content-container__bars .svg-files-dims {
+    width: 29px;
+    height: 30px;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     transition: all 200ms; }
-    .content-container__bars-file:hover {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 28px;
-      background: url(../../../img/svg/document2/files2.svg) no-repeat;
-      background-size: 20px; }
-  .content-container__bars-download {
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 21px;
-    background: url(../../../img/svg/document2/download.svg) no-repeat;
-    background-size: 20px;
+    .content-container__bars .svg-files-dims:hover {
+      fill: #3b94c0; }
+  .content-container__bars .svg-download-dims {
+    width: 29px;
+    height: 30px;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     transition: all 200ms; }
-    .content-container__bars-download:hover {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 21px;
-      background: url(../../../img/svg/document2/download2.svg) no-repeat;
-      background-size: 20px; }
-  .content-container__bars-share {
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 25px;
-    background: url(../../../img/svg/document2/share.svg) no-repeat;
-    background-size: 20px;
+    .content-container__bars .svg-download-dims:hover {
+      fill: #3b94c0; }
+  .content-container__bars .svg-share-dims {
+    width: 29px;
+    height: 30px;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     transition: all 200ms; }
-    .content-container__bars-share:hover {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 25px;
-      background: url(../../../img/svg/document2/share2.svg) no-repeat;
-      background-size: 20px; }
-  .content-container__bars-subscription {
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 21px;
-    background: url(../../../img/svg/document2/subscription.svg) no-repeat;
-    background-size: 20px;
+    .content-container__bars .svg-share-dims:hover {
+      fill: #3b94c0; }
+  .content-container__bars .svg-subscription-dims {
+    width: 29px;
+    height: 30px;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     transition: all 200ms; }
-    .content-container__bars-subscription:hover {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 21px;
-      background: url(../../../img/svg/document2/subscription2.svg) no-repeat;
-      background-size: 20px; }
-  .content-container__bars-event {
-    display: inline-block;
-    vertical-align: middle;
-    width: 20px;
-    height: 21px;
-    background: url(../../../img/svg/document2/event.svg) no-repeat;
-    background-size: 20px;
+    .content-container__bars .svg-subscription-dims:hover {
+      fill: #3b94c0; }
+  .content-container__bars .svg-event-dims {
+    width: 29px;
+    height: 30px;
     -webkit-transition: all 200ms;
     -moz-transition: all 200ms;
     transition: all 200ms; }
-    .content-container__bars-event:hover {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 21px;
-      background: url(../../../img/svg/document2/event2.svg) no-repeat;
-      background-size: 20px; }
+    .content-container__bars .svg-event-dims:hover {
+      fill: #3b94c0; }
 
 .content-container__bars-tooltip {
   display: none;
@@ -1879,73 +2079,34 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     transition: all 300ms; }
+    .page-content-row.user-links a svg {
+      fill: #ffffff;
+      margin-right: 10px;
+      -webkit-transition: all 300ms;
+      -moz-transition: all 300ms;
+      transition: all 300ms; }
     .page-content-row.user-links a:hover {
-      color: #000000; }
+      color: #000000;
+      background: #ffffff; }
+      .page-content-row.user-links a:hover svg {
+        fill: #000000; }
     .page-content-row.user-links a:first-of-type {
       width: 30%;
       background: #3a4c64; }
-      .page-content-row.user-links a:first-of-type:before {
-        content: "";
-        display: inline-block;
-        margin-right: 4px;
-        width: 27px;
-        height: 27px;
-        -webkit-transition: all 300ms;
-        -moz-transition: all 300ms;
-        transition: all 300ms;
-        background: url(../../../img/svg/document/files.svg) no-repeat center; }
       .page-content-row.user-links a:first-of-type:hover {
         background: #ffffff; }
-        .page-content-row.user-links a:first-of-type:hover:before {
-          content: "";
-          display: inline-block;
-          width: 27px;
-          height: 27px;
-          background: url(../../../img/svg/document/files2.svg) no-repeat center; }
     .page-content-row.user-links a:nth-of-type(2) {
       width: 35%;
       margin-left: 0;
       background: #4c6380; }
-      .page-content-row.user-links a:nth-of-type(2):before {
-        content: "";
-        display: inline-block;
-        width: 27px;
-        height: 27px;
-        margin-right: 4px;
-        -webkit-transition: all 300ms;
-        -moz-transition: all 300ms;
-        transition: all 300ms;
-        background: url(../../../img/svg/document/statistics.svg) no-repeat center; }
       .page-content-row.user-links a:nth-of-type(2):hover {
         background: #ffffff; }
-        .page-content-row.user-links a:nth-of-type(2):hover:before {
-          content: "";
-          display: inline-block;
-          width: 27px;
-          height: 27px;
-          background: url(../../../img/svg/document/statistics2.svg) no-repeat center; }
     .page-content-row.user-links a:last-of-type {
       width: 43%;
       margin-right: 0;
       background: #63b7df; }
-      .page-content-row.user-links a:last-of-type:before {
-        content: "";
-        display: inline-block;
-        width: 27px;
-        height: 27px;
-        margin-right: 4px;
-        -webkit-transition: all 300ms;
-        -moz-transition: all 300ms;
-        transition: all 300ms;
-        background: url(../../../img/svg/document/info.svg) no-repeat center; }
       .page-content-row.user-links a:last-of-type:hover {
         background: #ffffff; }
-        .page-content-row.user-links a:last-of-type:hover:before {
-          content: "";
-          display: inline-block;
-          width: 27px;
-          height: 27px;
-          background: url(../../../img/svg/document/info2.svg) no-repeat center; }
 
 .message__text .form-forum {
   display: none; }
@@ -3019,7 +3180,7 @@ span.option-item {
   height: 265px;
   text-align: center;
   will-change: transform;
-  padding: 0px 10px;
+  padding: 58px 10px 0;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms; }
@@ -3037,39 +3198,52 @@ span.option-item {
     .link-block__item:hover .link-block__item-alert {
       background: #485973;
       color: #ffffff; }
+    .link-block__item:hover svg {
+      fill: #455773; }
   .link-block__item:first-of-type {
-    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/notice2.svg) no-repeat center 52px; }
+    background: rgba(93, 200, 247, 0.8);
+    /*  url(../../../img/svg/notice2.svg)no-repeat center 52px;*/ }
     .link-block__item:first-of-type:hover {
-      background: #ffffff url(../../../img/svg/notice.svg) no-repeat center 52px; }
+      background: #ffffff;
+      /* url(../../../img/svg/notice.svg) no-repeat center 52px;*/ }
   .link-block__item:nth-of-type(2) {
-    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/messages2.svg) no-repeat center 52px; }
+    background: rgba(72, 90, 119, 0.9); }
     .link-block__item:nth-of-type(2):hover {
-      background: #ffffff url(../../../img/svg/messages.svg) no-repeat center 52px; }
+      background: #ffffff; }
   .link-block__item:nth-of-type(3) {
-    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/doc2.svg) no-repeat center 52px; }
+    background: rgba(93, 200, 247, 0.8); }
     .link-block__item:nth-of-type(3):hover {
-      background: #ffffff url(../../../img/svg/doc.svg) no-repeat center 52px; }
+      background: #ffffff; }
   .link-block__item:nth-of-type(4) {
-    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/events2.svg) no-repeat center 52px; }
+    background: rgba(72, 90, 119, 0.9); }
     .link-block__item:nth-of-type(4):hover {
-      background: #ffffff url(../../../img/svg/events.svg) no-repeat center 52px; }
+      background: #ffffff;
+      /*url(../../../img/svg/events.svg) no-repeat center 52px;*/ }
   .link-block__item:nth-of-type(5) {
-    background: rgba(93, 200, 247, 0.8) url(../../../img/svg/user2.svg) no-repeat center 52px; }
+    background: rgba(93, 200, 247, 0.8);
+    /*url(../../../img/svg/user2.svg)no-repeat center 52px;*/ }
     .link-block__item:nth-of-type(5):hover {
-      background: #ffffff url(../../../img/svg/user.svg) no-repeat center 52px; }
+      background: #ffffff;
+      /* url(../../../img/svg/user.svg) no-repeat center 52px;*/ }
   .link-block__item:nth-of-type(6) {
-    background: rgba(72, 90, 119, 0.9) url(../../../img/svg/settings2.svg) no-repeat center 52px; }
+    background: rgba(72, 90, 119, 0.9);
+    /* url(../../../img/svg/settings2.svg)no-repeat center 52px;*/ }
     .link-block__item:nth-of-type(6) .link-block__item-label {
       display: block; }
     .link-block__item:nth-of-type(6):hover {
-      background: #ffffff url(../../../img/svg/settings.svg) no-repeat center 52px; }
+      background: #ffffff; }
+  .link-block__item svg {
+    fill: #ffffff;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms; }
   .link-block__item-label {
-    position: relative;
+    /*  position: relative;*/
     font-size: 22px;
     font-weight: 400;
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 165px;
+    margin-top: 33px;
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     transition: all 300ms; }
@@ -3077,7 +3251,7 @@ span.option-item {
     font-size: 18px;
     margin-top: 15px;
     position: absolute;
-    top: -161px;
+    top: 0px;
     right: 72px;
     width: 30px;
     height: 30px;
@@ -3192,24 +3366,36 @@ span.option-item {
 .window1-active {
   background: #ffffff !important;
   color: #000000 !important; }
-  .window1-active:first-of-type:before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background: url(../../../img/svg/document/files2.svg) no-repeat center !important; }
-  .window1-active:nth-of-type(2):before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background: url(../../../img/svg/document/statistics2.svg) no-repeat center !important; }
-  .window1-active:nth-of-type(3):before {
-    content: "";
-    display: inline-block;
-    width: 27px;
-    height: 27px;
-    background: url(../../../img/svg/document/info2.svg) no-repeat center !important; }
+  .window1-active:first-of-type {
+    /*   &:before {
+         content: "";
+         display: inline-block;
+         width: 27px;
+         height: 27px;
+         background: url(../../../img/svg/document/files2.svg) no-repeat center!important;
+      }*/ }
+    .window1-active:first-of-type svg {
+      fill: #000000 !important; }
+  .window1-active:nth-of-type(2) {
+    /*     &:before {
+         content: "";
+         display: inline-block;
+         width: 27px;
+         height: 27px;
+         background: url(../../../img/svg/document/statistics2.svg) no-repeat center!important;
+      }*/ }
+    .window1-active:nth-of-type(2) svg {
+      fill: #000000 !important; }
+  .window1-active:nth-of-type(3) {
+    /* &:before {
+         content: "";
+         display: inline-block;
+         width: 27px;
+         height: 27px;
+         background: url(../../../img/svg/document/info2.svg) no-repeat center!important;
+      }*/ }
+    .window1-active:nth-of-type(3) svg {
+      fill: #000000 !important; }
 
 .window:after {
   content: "";

@@ -34,6 +34,7 @@ $('.button-close_js').on('click', function() {
    $('.page-content-overlay').hide();
 });
 
+
 $('.page-content-overlay').on('click', function() {
    $(this).siblings('.window').hide();
    $(this).parent().siblings('.page-content-row.user-links').find('.window1-active').removeClass('window1-active');

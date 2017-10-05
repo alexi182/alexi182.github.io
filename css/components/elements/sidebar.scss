@@ -66,7 +66,6 @@
    right: 4px;
 }
 
-
 .sidebar_opened {
    .sidebar{
       width: 300px;
@@ -79,9 +78,8 @@
          }
       }
    }
-   .index-wrapper {
-      padding-left: 300px;
-      padding-right: 20px;
+   .content {
+      padding-left: 325px;
    }
    .messages__notice{
       display: inline-block!important;
@@ -99,6 +97,9 @@
       position: absolute;
       top: 13px;
       right: 56px;
+   }
+   .layout-content-search {
+      display: inline-block;
    }
 }
 

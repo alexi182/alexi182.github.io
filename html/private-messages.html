@@ -24,19 +24,18 @@
 <![endif]-->
 
 
-<div class="stick-footer sidebar_opened">
-   <div class="layout-links layout-links_profile">
-   <div class="layout-links__item sidebar-profile layout-links__item_closed-profile">
+<div class="page sidebar_opened">
+   <div class="layout-links layout-links_profile layout-links__item_closed-profile">
+   <div class="layout-links__item sidebar-profile">
       <div class="layout-link profile-link">
          <img src="/img/user2.svg" alt="">
       </div>
-
       <div class="layout-content-profile">
          <img src="/img/avatar.png" alt="">
 
          <div class="layout-content-user">
             <div class="layout-content-user__name">
-               Синюгина Татьяна Юрьевна
+               Синюгина <br> Татьяна Юрьевна
             </div>
             <div class="layout-content-user__actions">
                <a href="#" class="layout-content-user__profile">Профиль</a>
@@ -47,8 +46,8 @@
    </div>
 </div>
 
-<div class="layout-links layout-links_search">
-   <div class="layout-links__item sidebar-search layout-links__item_closed-search">
+<div class="layout-links layout-links_search layout-links__item_closed-search">
+   <div class="layout-links__item sidebar-search ">
       <div class="layout-link search-link">
          <img src="/img/magnifier.svg" alt="">
       </div>
@@ -148,6 +147,7 @@
    </div>
 </div>
 
+
    <aside class="sidebar">
    <a href="#" class="close__icon icon-closed close_js">
       <span class="icon-line"></span>
@@ -203,8 +203,8 @@
    </div>
 </aside>
 
-   <div class="index-wrapper index-sidebar">
-      <main class="content">
+   <main class="content index-sidebar">
+      <div class="content-col-left">
 
          <header class="header">
    <a href="main.html" class="logo">
@@ -228,141 +228,133 @@
 </div>
 
          </div>
-      </main>
-   </div>
+      </div>
+      <div class="page-content">
 
-   <div class="page-content page-one page-content_closed">
+         <div class="page-content__inner">
 
-      <div class="page-content__inner">
+            <div class="form-notice mt0">Всего личных сообщений: <span>56</span>  <span>Показать все</span>
+            </div>
 
-         <div class="form-notice mt0">Всего личных сообщений: <span>56</span>  <span>Показать все</span>
-         </div>
-
-         <div class="forum">
-            <div class="forum-block">
-               <div class="message-info">
-                  <img src="/img/avatar2.png" alt="avatar" />
-                  <div class="message-info__author">
-                     Захарова М.Б.
-                  </div>
-                  <div class="message-info__date">
-                     15.07.2017 15:15
-                  </div>
-               </div>
-               <div class="message__text">
-                  <div class="message__text-inner">
-                     Здравствуйте! Формулировки показателей 1-22 требуют доработки. Также считаю необходимым исключить показатели 23-30 т.к. они уже собираются в рамках мониторинга на платформе do.edu.ru
-                  </div>
-                  <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <a href="#">Отметить как прочитанное</a>
-                     <a href="#">Удалить</a>
-                  </div>
-
-                  <form action="/" class="form-forum">
-                     <div class="form-forum-send">
-                        <img src="/img/avatar.png" alt="avatar">
-                        <textarea name="send" class="form-forum__area"></textarea>
+            <div class="forum">
+               <div class="forum-block">
+                  <div class="message-info">
+                     <img src="/img/avatar2.png" alt="avatar" />
+                     <div class="message-info__author">
+                        Захарова М.Б.
                      </div>
-                     <button type="submit" class="form-forum__send-btn">Отправить</button>
+                     <div class="message-info__date">
+                        15.07.2017 15:15
+                     </div>
+                  </div>
+                  <div class="message__text">
+                     <div class="message__text-inner">
+                        Здравствуйте! Формулировки показателей 1-22 требуют доработки. Также считаю необходимым исключить показатели 23-30 т.к. они уже собираются в рамках мониторинга на платформе do.edu.ru
+                     </div>
+                     <div class="message__text-userbar">
+                        <a href="#">Ответить</a>
+                        <a href="#">Отметить как прочитанное</a>
+                        <a href="#">Удалить</a>
+                     </div>
+
+                     <form action="/" class="form-forum">
+                        <div class="form-forum-send">
+                           <img src="/img/avatar.png" alt="avatar">
+                           <textarea name="send" class="form-forum__area"></textarea>
+                        </div>
+                        <button type="submit" class="form-forum__send-btn">Отправить</button>
+                        <span class="message-answer">Ответ Захаровой М.Б.</span>
+                     </form>
+                  </div>
+               </div>
+
+               <div class="forum-block">
+                  <div class="message-info">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                     <div class="message-info__author">
+                        Гончарова Н.Г.
+                     </div>
+                     <div class="message-info__date">
+                        15.07.2017 15:17
+                     </div>
+
+                     <!--<div class="message-disagree">Не согласовано</div>-->
                      <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  </form>
-               </div>
-            </div>
+                  </div>
+                  <div class="message__text">
+                     <div class="message__text-inner">
+                        Здравствуйте! Просьба согласовать дату и время нашей встречи по вопросу отсуждения работы над текущими нормативными документами. Спасибо!
+                     </div>
+                     <div class="message__text-userbar">
+                        <a href="#">Ответить</a>
+                        <a href="#">Отметить как прочитанное</a>
+                        <a href="#">Удалить</a>
+                     </div>
 
-            <div class="forum-block">
-               <div class="message-info">
-                  <img src="/img/avatar-empty.png" alt="avatar" />
-                  <div class="message-info__author">
-                     Гончарова Н.Г.
-                  </div>
-                  <div class="message-info__date">
-                     15.07.2017 15:17
-                  </div>
-
-                  <!--<div class="message-disagree">Не согласовано</div>-->
-                  <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  <div class="message-like">
-                     <img src="/img/svg/like.svg" alt="like" />
-                     <span>11</span>
-                  </div>
-               </div>
-               <div class="message__text">
-                  <div class="message__text-inner">
-                     Здравствуйте! Просьба согласовать дату и время нашей встречи по вопросу отсуждения работы над текущими нормативными документами. Спасибо!
-                  </div>
-                  <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <a href="#">Отметить как прочитанное</a>
-                     <a href="#">Удалить</a>
-                  </div>
-
-                  <!--      <form action="/" class="form-forum">
-                           <div class="form-forum-send">
-                              <img src="/img/avatar.png" alt="avatar">
-                              <textarea name="send" class="form-forum__area"></textarea>
-                           </div>
-                           <button type="submit" class="form-forum__send-btn">Отправить</button>
-                           <span class="message-answer">Ответ Захаровой М.Б.</span>
-                        </form>-->
-               </div>
-            </div>
-
-            <div class="forum-block">
-               <div class="message-info">
-                  <img src="/img/avatar-empty.png" alt="avatar" />
-                  <div class="message-info__author">
-                     Гончарова Н.Г.
-                  </div>
-                  <div class="message-info__date">
-                     15.07.2017 15:14
-                  </div>
-
-                  <!--<div class="message-disagree">Не согласовано</div>-->
-                  <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  <div class="message-like">
-                     <img src="/img/svg/like.svg" alt="like" />
-                     <span>11</span>
+                     <!--      <form action="/" class="form-forum">
+                              <div class="form-forum-send">
+                                 <img src="/img/avatar.png" alt="avatar">
+                                 <textarea name="send" class="form-forum__area"></textarea>
+                              </div>
+                              <button type="submit" class="form-forum__send-btn">Отправить</button>
+                              <span class="message-answer">Ответ Захаровой М.Б.</span>
+                           </form>-->
                   </div>
                </div>
-               <div class="message__text">
-                  <div class="message__text-inner">
-                     Здравствуйте! Считаю, что исправленный вариант (версия 4) готов к утверждению.
-                  </div>
-                  <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <a href="#">Отметить как прочитанное</a>
-                     <a href="#">Удалить</a>
-                  </div>
 
-                  <!--      <form action="/" class="form-forum">
-                           <div class="form-forum-send">
-                              <img src="/img/avatar.png" alt="avatar">
-                              <textarea name="send" class="form-forum__area"></textarea>
-                           </div>
-                           <button type="submit" class="form-forum__send-btn">Отправить</button>
-                           <span class="message-answer">Ответ Захаровой М.Б.</span>
-                        </form>-->
+               <div class="forum-block">
+                  <div class="message-info">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                     <div class="message-info__author">
+                        Гончарова Н.Г.
+                     </div>
+                     <div class="message-info__date">
+                        15.07.2017 15:14
+                     </div>
+
+                     <!--<div class="message-disagree">Не согласовано</div>-->
+                     <span class="message-answer">Ответ Захаровой М.Б.</span>
+                  </div>
+                  <div class="message__text">
+                     <div class="message__text-inner">
+                        Здравствуйте! Считаю, что исправленный вариант (версия 4) готов к утверждению.
+                     </div>
+                     <div class="message__text-userbar">
+                        <a href="#">Ответить</a>
+                        <a href="#">Отметить как прочитанное</a>
+                        <a href="#">Удалить</a>
+                     </div>
+                     <!--  <form action="/" class="form-forum">
+                              <div class="form-forum-send">
+                                 <img src="/img/avatar.png" alt="avatar">
+                                 <textarea name="send" class="form-forum__area"></textarea>
+                              </div>
+                              <button type="submit" class="form-forum__send-btn">Отправить</button>
+                              <span class="message-answer">Ответ Захаровой М.Б.</span>
+                           </form>-->
+                  </div>
                </div>
+
             </div>
 
          </div>
 
+         <div class="pagination">
+            <ul>
+               <li><a href="#"></a></li>
+               <li><a href="#">1</a></li>
+               <li><a href="#">2</a></li>
+               <li><a href="#">3</a></li>
+               <li><a href="#">4</a></li>
+               <li><a href="#">5</a></li>
+               <li><a href="#">
+               </a></li>
+            </ul>
+         </div>
       </div>
+   </main>
 
-      <div class="pagination">
-         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">
-            </a></li>
-         </ul>
-      </div>
-   </div>
+
 </div>
 <div class="overlay"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

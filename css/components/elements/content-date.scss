@@ -67,12 +67,14 @@
       background: #3a4c64 url(../../../img/left.png) no-repeat center;
       left: 798px;
       top: 68px;
+      z-index: 1000;
    }
 
    .slick-next {
       background:  #3a4c64 url(../../../img/right.png) no-repeat center;
       top: 18px;
       right: -50px;
+      z-index: 1000;
    }
 
    .slick-active {

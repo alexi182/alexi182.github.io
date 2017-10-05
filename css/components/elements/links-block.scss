@@ -1,3 +1,8 @@
+.layout-links {
+   @include transition(300);
+   z-index: 1001;
+}
+
 .links-block {
    letter-spacing: -4px;
 }
@@ -83,7 +88,6 @@
       color: #ffffff;
       margin-top: 33px;
       @include transition(300);
-
    }
 
    &-alert {

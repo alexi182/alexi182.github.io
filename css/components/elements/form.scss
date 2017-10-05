@@ -102,6 +102,17 @@
    margin-right: 3%;
 }
 
+.message-agree {
+   background: #00a602;
+   color: #ffffff;
+   font-size: 12px;
+   font-weight: 400;
+   text-transform: uppercase;
+   padding: 3px 8px;
+   margin-left: 3%;
+   margin-right: 3%;
+}
+
 .message-like {
    img {
       width: 28px;
@@ -279,7 +290,7 @@
 }
 
 .message__text .form-forum {
-  display: none;
+   display: none;
 }
 
 .page-content-overlay {

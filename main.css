@@ -242,7 +242,7 @@ select {
 .ta-c {
   text-align: center; }
 
-.stick-footer {
+.page {
   display: table;
   height: 100%;
   margin: auto;
@@ -2307,7 +2307,7 @@ span.option-item {
 .index-btn-enter:hover {
     background: #455773;
     color: #fff; }
-.index-wrapper {
+.content {
   padding-top: 10px;
   max-width: 1004px;
   margin: 0 auto; }

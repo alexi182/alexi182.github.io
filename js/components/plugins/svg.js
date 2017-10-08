@@ -1,0 +1,1 @@
+require('../../vendor/svg4everybody');

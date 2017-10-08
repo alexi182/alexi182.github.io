@@ -8,13 +8,13 @@
 
 @@include('../includes/common/browserhappy.html', {})
 
-<div class="stick-footer sidebar_opened">
+<div class="page sidebar_opened">
    @@include('../includes/elements/right-layout-links.html', {})
 
    @@include('../includes/elements/sidebar.html', {})
 
-   <div class="index-wrapper index-sidebar">
-      <main class="content">
+   <main class="content index-sidebar">
+      <div class="content-col-left">
 
          @@include('../includes/elements/header.html', {})
 
@@ -29,21 +29,39 @@
                </h3>
                <div class="content-container__bars">
                   <a href="#" class="content-container__bars-edit">
+                     <svg class="svg-edit-dims">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#edit"></use>
+                     </svg>
                      <div class="content-container__bars-tooltip">Редактировать</div>
                   </a>
                   <a href="#" class="content-container__bars-file">
+                     <svg class="svg-files-dims">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#files"></use>
+                     </svg>
                      <div class="content-container__bars-tooltip">Файл</div>
                   </a>
                   <a href="#" class="content-container__bars-download">
+                     <svg class="svg-download-dims">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#download"></use>
+                     </svg>
                      <div class="content-container__bars-tooltip">Скачать</div>
                   </a>
                   <a href="#" class="content-container__bars-share">
+                     <svg class="svg-share-dims">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#share"></use>
+                     </svg>
                      <div class="content-container__bars-tooltip">Поделиться</div>
                   </a>
                   <a href="#" class="content-container__bars-subscription">
+                     <svg class="svg-subscription-dims">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#subscription"></use>
+                     </svg>
                      <div class="content-container__bars-tooltip">Подписаться</div>
                   </a>
                   <a href="#" class="content-container__bars-event">
+                     <svg class="svg-event-dims">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#event"></use>
+                     </svg>
                      <div class="content-container__bars-tooltip">Событие</div>
                   </a>
                </div>
@@ -53,288 +71,284 @@
             @@include('../includes/elements/calendar.html', {})
 
          </div>
-      </main>
-   </div>
-
-   <div class="page-content page-content_closed">
-
-      <div class="page-content-row user-links">
-         <a href="#" class="file-list">Список файлов
-         </a>
-         <a href="#" class="statistic">Сводная статистика</a>
-         <a href="#" class="decret">информация по документу</a>
       </div>
+      <div class="page-content">
 
-      <div class="page-content__inner">
-
-         <div class="overlay"></div>
-
-         <div class="window window-1">
-            <div title="Закрыть" class="button-close button-close_js"></div>
-
-            <div class="window__row flex-sb flex-wrap">
-               <div class="window__cell">
-                  <img src="/img/pdf.png" alt="pdf" />
-                  <a href="#" class="window__link">
-                     Проект приказа (PDF, 12Мб.)
-                  </a>
-               </div>
-
-               <div class="window__cell">
-                  <img src="/img/pdf.png" alt="pdf" />
-                  <a href="#" class="window__link">
-                     Приложение 1 - Список показателей мониторинга (PDF, 5Мб)
-                  </a>
-               </div>
-               <div class="window__cell">
-                  <img src="/img/word.png" alt="word" />
-                  <a href="#" class="window__link">
-                     Приложение 2 - Шаблон отчетных форм (DOC, 1Мб)
-                  </a>
-               </div>
-            </div>
-
-            <div class="window__row flex-sb flex-wrap">
-               <div class="window__cell">
-                  <img src="/img/word.png" alt="word" />
-                  <a href="#" class="window__link">
-                     Приложение 2 v2 - Шаблон отчетных форм с изменениями (DOC, 1Мб)
-                  </a>
-               </div>
-            </div>
+         <div class="page-content-row user-links">
+            <a href="#" class="file-list">
+               <svg class="svg-files2-2-dims">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#files2"></use>
+               </svg>
+               Список файлов
+            </a>
+            <a href="#" class="statistic">
+               <svg class="svg-statistics2-dims">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#statistics2"></use>
+               </svg>
+               Сводная статистика</a>
+            <a href="#" class="decret">
+               <svg class="svg-info2-dims">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#info2"></use>
+               </svg>
+               информация по документу</a>
          </div>
 
-         <div class="window window-2">
-            <div title="Закрыть" class="button-close button-close_js"></div>
-            <div class="window__row flex-sb">
-               <div class="window__col">
-                  <img src="/img/diagram.png" alt="">
-               </div>
-               <div class="window__col">
-                  <div class="window__cell window__cell_green window__cell_f18">
-                     Положительные согласования (4 из 7)
-                  </div>
-                  <div class="window__cell window__cell_red window__cell_f18">
-                     Отрицательные согласования (2 из 7)
-                  </div>
-                  <div class="window__cell window__cell_grey window__cell_f18">
-                     Не получено согласования
-                  </div>
-               </div>
+         <div class="page-content__inner">
 
-               <div class="window__col">
-                  <div class="window__cell window__cell_f18">
-                     Число комментариев: 48
-                  </div>
-                  <div class="window__cell window__cell_f18">
-                     Число подписчиков: 85
-                  </div>
-                  <div class="window__cell window__cell_f18">
-                     Отправлено общих рассылок: 2
-                  </div>
-                  <div class="window__cell window__cell_f18">
-                     Событий, связанных с документом: 1
-                  </div>
-               </div>
-            </div>
-         </div>
+            <div class="page-content-overlay"></div>
 
-         <div class="window window-3">
-            <div title="Закрыть" class="button-close button-close_js"></div>
-            <div class="window__row">
-               <h2 class="window__title">Приказ о мониторинге дополнительных показателей дошкольного образования
-                  <span>№ 1-11896_v4</span>
-               </h2>
+            <div class="window window-1">
+               <div title="Закрыть" class="button-close button-close_js"></div>
 
-            </div>
-
-            <div class="window__row flex-sb">
-               <div class="window__col">
+               <div class="window__row flex-sb flex-wrap">
                   <div class="window__cell">
-                     Категория: <span>Дошкольное образование</span>
+                     <img src="/img/pdf.png" alt="pdf" />
+                     <a href="#" class="window__link">
+                        Проект приказа (PDF, 12Мб.)
+                     </a>
+                  </div>
+
+                  <div class="window__cell">
+                     <img src="/img/pdf.png" alt="pdf" />
+                     <a href="#" class="window__link">
+                        Приложение 1 - Список показателей мониторинга (PDF, 5Мб)
+                     </a>
                   </div>
                   <div class="window__cell">
-                     Опубликовала: <span>Синюгина Т.Ю.</span>
+                     <img src="/img/word.png" alt="word" />
+                     <a href="#" class="window__link">
+                        Приложение 2 - Шаблон отчетных форм (DOC, 1Мб)
+                     </a>
                   </div>
                </div>
 
-               <div class="window__col">
+               <div class="window__row flex-sb flex-wrap">
                   <div class="window__cell">
-                     Дата назначения: <span>10 / 09 / 2017</span>
-                  </div>
-                  <div class="window__cell">
-                     Статус: <span>на согласовании</span>
-                  </div>
-               </div>
-
-               <div class="window__col">
-                  <div class="window__cell">
-                     Дата последнего изменения: <span>10 / 09 / 2017</span>
-                  </div>
-                  <div class="window__cell">
-                     Доступ для просмотра: <span>все регионы</span>
+                     <img src="/img/word.png" alt="word" />
+                     <a href="#" class="window__link">
+                        Приложение 2 v2 - Шаблон отчетных форм с изменениями (DOC, 1Мб)
+                     </a>
                   </div>
                </div>
             </div>
 
-
-            <div class="window__row">
-               Разработчики документа: Синюгина Т.Ю., Иванов В.П., Петров В.П.
-            </div>
-
-
-            <div class="window__row">
-               Доступ для согласования: <span>Московская область,  Республика Адыгея, Республика Башкортостан, Республика Бурятия, Республика Алтай, Республика Дагестан, Республика Крым</span>
-            </div>
-         </div>
-
-         <p class="content-main__header">Согласования и комментарии</p>
-         <form action="/" class="form-forum">
-            <div class="form-forum-send">
-               <img src="/img/avatar.png" alt="avatar" />
-               <textarea name="send" class="form-forum__area"></textarea>
-            </div>
-            <button type="submit" class="form-forum__send-btn">Отправить</button>
-         </form>
-
-         <div class="form-notice">Всего комментариев и согласований: <span>48</span> (вывести только <span>согласования</span>)
-         </div>
-
-         <div class="main-message">
-            <div class="message-info">
-               <img src="/img/avatar.png" alt="avatar" />
-               <div class="message-info__author">
-                  Синюгина Т.Ю.
-               </div>
-               <div class="message-info__date">
-                  15.07.2017 12:10
-               </div>
-            </div>
-            <div class="main-message__text">
-               Уважаемые коллеги, просьба согласовать или дать комментарии по его доработке, в частности по составу и количества показателей мониторинга
-            </div>
-         </div>
-
-         <div class="forum pd5">
-            <div class="forum-block">
-               <div class="message-info">
-                  <img src="/img/avatar2.png" alt="avatar" />
-                  <div class="message-info__author">
-                     Захарова М.Б.
+            <div class="window window-2">
+               <div title="Закрыть" class="button-close button-close_js"></div>
+               <div class="window__row flex-sb">
+                  <div class="window__col">
+                     <img src="/img/diagram.png" alt="">
                   </div>
-                  <div class="message-info__date">
-                     15.07.2017 15:15
-                  </div>
-
-                  <div class="message-disagree">Не согласовано</div>
-
-                  <div class="message-like">
-                     <img src="/img/svg/like.svg" alt="like" />
-                     <span>15</span>
-                  </div>
-               </div>
-               <div class="message__text">
-                  <div class="message__text-inner">
-                     Здравствуйте! Формулировки показателей 1-22 требуют доработки. Также считаю необходимым исключить показатели 23-30 т.к. они уже собираются в рамках мониторинга на платформе do.edu.ru
-                  </div>
-                  <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <img src="/img/svg/like.svg" alt="like" />
-                  </div>
-
-                  <form action="/" class="form-forum">
-                     <div class="form-forum-send">
-                        <img src="/img/avatar.png" alt="avatar">
-                        <textarea name="send" class="form-forum__area"></textarea>
+                  <div class="window__col">
+                     <div class="window__cell window__cell_green window__cell_f18">
+                        Положительные согласования (4 из 7)
                      </div>
-                     <button type="submit" class="form-forum__send-btn">Отправить</button>
+                     <div class="window__cell window__cell_red window__cell_f18">
+                        Отрицательные согласования (2 из 7)
+                     </div>
+                     <div class="window__cell window__cell_grey window__cell_f18">
+                        Не получено согласования
+                     </div>
+                  </div>
+
+                  <div class="window__col">
+                     <div class="window__cell window__cell_f18">
+                        Число комментариев: 48
+                     </div>
+                     <div class="window__cell window__cell_f18">
+                        Число подписчиков: 85
+                     </div>
+                     <div class="window__cell window__cell_f18">
+                        Отправлено общих рассылок: 2
+                     </div>
+                     <div class="window__cell window__cell_f18">
+                        Событий, связанных с документом: 1
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="window window-3">
+               <div title="Закрыть" class="button-close button-close_js"></div>
+               <div class="window__row">
+                  <h2 class="window__title">Приказ о мониторинге дополнительных показателей дошкольного образования
+                     <span>№ 1-11896_v4</span>
+                  </h2>
+               </div>
+
+               <div class="window__row flex-sb">
+                  <div class="window__col">
+                     <div class="window__cell">
+                        Категория: <span>Дошкольное образование</span>
+                     </div>
+                     <div class="window__cell">
+                        Опубликовала: <span>Синюгина Т.Ю.</span>
+                     </div>
+                  </div>
+
+                  <div class="window__col">
+                     <div class="window__cell">
+                        Дата назначения: <span>10 / 09 / 2017</span>
+                     </div>
+                     <div class="window__cell">
+                        Статус: <span>на согласовании</span>
+                     </div>
+                  </div>
+
+                  <div class="window__col">
+                     <div class="window__cell">
+                        Дата последнего изменения: <span>10 / 09 / 2017</span>
+                     </div>
+                     <div class="window__cell">
+                        Доступ для просмотра: <span>все регионы</span>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="window__row">
+                  Разработчики документа: Синюгина Т.Ю., Иванов В.П., Петров В.П.
+               </div>
+
+               <div class="window__row">
+                  Доступ для согласования: <span>Московская область,  Республика Адыгея, Республика Башкортостан, Республика Бурятия, Республика Алтай, Республика Дагестан, Республика Крым</span>
+               </div>
+            </div>
+
+            <p class="content-main__header">Согласования и комментарии</p>
+            <form action="/" class="form-forum">
+               <div class="form-forum-send">
+                  <img src="/img/avatar.png" alt="avatar" />
+                  <textarea name="send" class="form-forum__area"></textarea>
+               </div>
+               <button type="submit" class="form-forum__send-btn">Отправить</button>
+            </form>
+
+            <div class="form-notice">Всего комментариев и согласований: <span>48</span> (вывести только <span>согласования</span>)
+            </div>
+
+            <div class="main-message">
+               <div class="message-info">
+                  <img src="/img/avatar.png" alt="avatar" />
+                  <div class="message-info__author">
+                     Синюгина Т.Ю.
+                  </div>
+                  <div class="message-info__date">
+                     15.07.2017 12:10
+                  </div>
+               </div>
+               <div class="main-message__text">
+                  Уважаемые коллеги, просьба согласовать или дать комментарии по его доработке, в частности по составу и количества показателей мониторинга
+               </div>
+            </div>
+
+            <div class="forum pd5">
+               <div class="forum-block">
+                  <div class="message-info">
+                     <img src="/img/avatar2.png" alt="avatar" />
+                     <div class="message-info__author">
+                        Захарова М.Б.
+                     </div>
+                     <div class="message-info__date">
+                        15.07.2017 15:15
+                     </div>
+
+                     <div class="message-agree">Согласовано</div>
+
+                     <!--<div class="message-like">
+                        <span>15</span>
+                     </div>-->
+                  </div>
+                  <div class="message__text">
+                     <div class="message__text-inner">
+                        Здравствуйте! Формулировки показателей 1-22 требуют доработки. Также считаю необходимым исключить показатели 23-30 т.к. они уже собираются в рамках мониторинга на платформе do.edu.ru
+                     </div>
+                     <div class="message__text-userbar">
+                        <a href="#" class="forum-js">Ответить</a>
+                     </div>
+
+                     <form action="/" class="form-forum">
+                        <div class="form-forum-send">
+                           <img src="/img/avatar.png" alt="avatar">
+                           <textarea name="send" class="form-forum__area"></textarea>
+                        </div>
+                        <button type="submit" class="form-forum__send-btn">Отправить</button>
+                        <span class="message-answer">Ответ Захаровой М.Б.</span>
+                     </form>
+                  </div>
+               </div>
+
+               <div class="forum-block">
+                  <div class="message-info">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                     <div class="message-info__author">
+                        Гончарова Н.Г.
+                     </div>
+                     <div class="message-info__date">
+                        15.07.2017 15:17
+                     </div>
+                     <div class="message-disagree">Не согласовано</div>
                      <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  </form>
+                  </div>
+                  <div class="message__text">
+                     <div class="message__text-inner">
+                        Уважаемые коллеги, считаю что в версии 4 формулировки показателей корректны.
+                     </div>
+                     <div class="message__text-userbar">
+                        <a href="#" class="forum-js">Ответить</a>
+                     </div>
+
+                     <form action="/" class="form-forum">
+                        <div class="form-forum-send">
+                           <img src="/img/avatar.png" alt="avatar">
+                           <textarea name="send" class="form-forum__area"></textarea>
+                        </div>
+                        <button type="submit" class="form-forum__send-btn">Отправить</button>
+                        <span class="message-answer">Ответ Захаровой М.Б.</span>
+                     </form>
+                  </div>
+               </div>
+
+               <div class="forum-block">
+                  <div class="message-info">
+                     <img src="/img/avatar-empty.png" alt="avatar" />
+                     <div class="message-info__author">
+                        Гончарова Н.Г.
+                     </div>
+                     <div class="message-info__date">
+                        15.07.2017 15:14
+                     </div>
+                     <!--<div class="message-disagree">Не согласовано</div>-->
+                     <span class="message-answer">Ответ Захаровой М.Б.</span>
+                     <!-- <div class="message-like">
+                         <span>11</span>
+                      </div>-->
+                  </div>
+                  <div class="message__text">
+                     <div class="message__text-inner">
+                        Здравствуйте! Считаю, что исправленный вариант (версия 4) готов к утверждению.
+                     </div>
+                     <div class="message__text-userbar">
+                        <a href="#" class="forum-js">Ответить</a>
+                        <!-- <img src="/img/svg/like.svg" alt="like" />-->
+                     </div>
+
+                     <form action="/" class="form-forum">
+                        <div class="form-forum-send">
+                           <img src="/img/avatar.png" alt="avatar">
+                           <textarea name="send" class="form-forum__area"></textarea>
+                        </div>
+                        <button type="submit" class="form-forum__send-btn">Отправить</button>
+                        <span class="message-answer">Ответ Захаровой М.Б.</span>
+                     </form>
+                  </div>
                </div>
             </div>
-
-            <div class="forum-block">
-               <div class="message-info">
-                  <img src="/img/avatar-empty.png" alt="avatar" />
-                  <div class="message-info__author">
-                     Гончарова Н.Г.
-                  </div>
-                  <div class="message-info__date">
-                     15.07.2017 15:17
-                  </div>
-
-                  <!--<div class="message-disagree">Не согласовано</div>-->
-                  <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  <div class="message-like">
-                     <img src="/img/svg/like.svg" alt="like" />
-                     <span>11</span>
-                  </div>
-               </div>
-               <div class="message__text">
-                  <div class="message__text-inner">
-                     Уважаемые коллеги, считаю что в версии 4 формулировки показателей корректны.
-                  </div>
-                  <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <img src="/img/svg/like.svg" alt="like" />
-                  </div>
-
-                  <!--      <form action="/" class="form-forum">
-                           <div class="form-forum-send">
-                              <img src="/img/avatar.png" alt="avatar">
-                              <textarea name="send" class="form-forum__area"></textarea>
-                           </div>
-                           <button type="submit" class="form-forum__send-btn">Отправить</button>
-                           <span class="message-answer">Ответ Захаровой М.Б.</span>
-                        </form>-->
-               </div>
-            </div>
-
-            <div class="forum-block">
-               <div class="message-info">
-                  <img src="/img/avatar-empty.png" alt="avatar" />
-                  <div class="message-info__author">
-                     Гончарова Н.Г.
-                  </div>
-                  <div class="message-info__date">
-                     15.07.2017 15:14
-                  </div>
-
-                  <!--<div class="message-disagree">Не согласовано</div>-->
-                  <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  <div class="message-like">
-                     <img src="/img/svg/like.svg" alt="like" />
-                     <span>11</span>
-                  </div>
-               </div>
-               <div class="message__text">
-                  <div class="message__text-inner">
-                     Здравствуйте! Считаю, что исправленный вариант (версия 4) готов к утверждению.
-                  </div>
-                  <div class="message__text-userbar">
-                     <a href="#">Ответить</a>
-                     <img src="/img/svg/like.svg" alt="like" />
-                  </div>
-
-                  <!--      <form action="/" class="form-forum">
-                           <div class="form-forum-send">
-                              <img src="/img/avatar.png" alt="avatar">
-                              <textarea name="send" class="form-forum__area"></textarea>
-                           </div>
-                           <button type="submit" class="form-forum__send-btn">Отправить</button>
-                           <span class="message-answer">Ответ Захаровой М.Б.</span>
-                        </form>-->
-               </div>
-            </div>
-
          </div>
 
       </div>
+   </main>
 
-
-   </div>
 </div>
-<script src="/assets/js/bundle.js"></script>
-
+@@include('../includes/elements/overlay.html', {})
+@@include('../includes/common/scripts.html', {})
 </body>
 </html>

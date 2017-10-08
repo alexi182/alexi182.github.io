@@ -24,19 +24,18 @@
 <![endif]-->
 
 
-<div class="stick-footer">
-   <div class="layout-links layout-links_profile">
-   <div class="layout-links__item sidebar-profile layout-links__item_closed-profile">
+<div class="page">
+   <div class="layout-links layout-links_profile layout-links__item_closed-profile">
+   <div class="layout-links__item sidebar-profile">
       <div class="layout-link profile-link">
          <img src="/img/user2.svg" alt="">
       </div>
-
       <div class="layout-content-profile">
          <img src="/img/avatar.png" alt="">
 
          <div class="layout-content-user">
             <div class="layout-content-user__name">
-               Синюгина Татьяна Юрьевна
+               Синюгина <br> Татьяна Юрьевна
             </div>
             <div class="layout-content-user__actions">
                <a href="#" class="layout-content-user__profile">Профиль</a>
@@ -47,8 +46,8 @@
    </div>
 </div>
 
-<div class="layout-links layout-links_search">
-   <div class="layout-links__item sidebar-search layout-links__item_closed-search">
+<div class="layout-links layout-links_search layout-links__item_closed-search">
+   <div class="layout-links__item sidebar-search ">
       <div class="layout-link search-link">
          <img src="/img/magnifier.svg" alt="">
       </div>
@@ -148,8 +147,9 @@
    </div>
 </div>
 
-   <div class="index-wrapper">
-      <main class="content">
+
+   <main class="index-content">
+      <div class="content-col-left">
 
          <header class="header">
    <a href="main.html" class="logo">
@@ -239,45 +239,71 @@
 
             <div class="links-block">
                <a href="messages.html" class="link-block__item">
+                  <svg class="svg-notice-dims">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#notice"></use>
+                  </svg>
                   <div class="link-block__item-label">Уведомления
                      <div class="link-block__item-alert">3</div>
                   </div>
                </a>
 
                <a href="private-messages.html" class="link-block__item">
+                  <svg class="svg-messages-dims">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#messages"></use>
+                  </svg>
                   <div class="link-block__item-label">Личные сообщения
                      <div class="link-block__item-alert">7</div>
                   </div>
                </a>
 
                <a href="documents.html" class="link-block__item">
+                  <svg class="svg-doc-dims">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#doc"></use>
+                  </svg>
                   <div class="link-block__item-label">Документы
                      <div class="link-block__item-alert">10</div>
+
                   </div>
                </a>
 
                <a href="events.html" class="link-block__item">
+                  <svg class="svg-events-dims">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#events"></use>
+                  </svg>
                   <div class="link-block__item-label">События
                      <div class="link-block__item-alert">5</div>
                   </div>
                </a>
 
                <a href="users.html" class="link-block__item">
+                  <svg class="svg-user-dims">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#user"></use>
+                  </svg>
                   <div class="link-block__item-label">Пользователи
                      <div class="link-block__item-alert">35</div>
                   </div>
                </a>
 
                <a href="settings.html" class="link-block__item">
+                  <svg class="svg-settings-dims">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#settings"></use>
+                  </svg>
                   <div class="link-block__item-label">Профиль и настройки
                      <div class="link-block__item-alert">9</div>
                   </div>
                </a>
             </div>
          </div>
-      </main>
-   </div>
+      </div>
+   </main>
 </div>
+<div class="overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+<script src="/js/vendor/svg4everybody.js"></script>
+<script>svg4everybody();</script>
+
 <script src="/assets/js/bundle.js"></script>
 
 </body>

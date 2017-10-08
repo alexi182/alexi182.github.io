@@ -23,7 +23,7 @@
    color: #39404c;
    font-size: 36px;
    font-weight: 400;
-   width: 370px;
+   //width: 370px;
    line-height: 1.1;
    text-transform: uppercase;
 }
@@ -66,7 +66,7 @@
    margin-top: 20px;
    margin-bottom: 35px;
    a{
-      margin-right: 25px;
+      margin-right: 27px;
       position: relative;
       &:last-of-type{
          margin-right: 0;
@@ -77,109 +77,161 @@
          }
       }
    }
-   &-edit {
-      display: inline-block;
-      vertical-align: middle;
-      width: 21px;
-      height: 21px;
-      background: url(../../../img/svg/document2/edit.svg) no-repeat;
-      background-size: 20px;
+   //&-edit {
+   //   display: inline-block;
+   //   vertical-align: middle;
+   //   width: 25px;
+   //   height: 26px;
+   //   background: url(../../../img/svg/document2/edit.svg) no-repeat center center;
+   //   background-size: 23px;
+   //   @include transition(200);
+   //   &:hover {
+   //      display: inline-block;
+   //      vertical-align: middle;
+   //      width: 25px;
+   //      height: 26px;
+   //      background: url(../../../img/svg/document2/edit2.svg) no-repeat center center;
+   //      background-size: 23px;
+   //   }
+   //}
+   .svg-edit-dims {
+      width: 29px;
+      height: 30px;
       @include transition(200);
-      &:hover {
-         display: inline-block;
-         vertical-align: middle;
-         width: 21px;
-         height: 21px;
-         background: url(../../../img/svg/document2/edit2.svg) no-repeat;
-         background-size: 20px;
-      }
-   }
-   &-file {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 28px;
-      background: url(../../../img/svg/document2/files.svg) no-repeat;
-      background-size: 20px;
-      @include transition(200);
-      &:hover {
-         display: inline-block;
-         vertical-align: middle;
-         width: 20px;
-         height: 28px;
-         background: url(../../../img/svg/document2/files2.svg) no-repeat;
-         background-size: 20px;
+      &:hover{
+         fill: #3b94c0 ;
       }
    }
 
-   &-download {
+   .svg-files-dims {
+      width: 29px;
+      height: 30px;
+      @include transition(200);
+      &:hover{
+         fill: #3b94c0 ;
+      }
+   }
+   .svg-download-dims {
+      width: 29px;
+      height: 30px;
+      @include transition(200);
+      &:hover{
+         fill: #3b94c0;
+      }
+   }
+   .svg-share-dims {
+      width: 29px;
+      height: 30px;
+      @include transition(200);
+      &:hover{
+         fill: #3b94c0;
+      }
+   }
+   .svg-subscription-dims {
+      width: 29px;
+      height: 30px;
+      @include transition(200);
+      &:hover{
+         fill: #3b94c0;
+      }
+   }
+   .svg-event-dims {
+      width: 29px;
+      height: 30px;
+      @include transition(200);
+      &:hover{
+         fill: #3b94c0;
+      }
+   }
+
+   /*   &-file {
+         display: inline-block;
+         vertical-align: middle;
+         width: 20px;
+         height: 26px;
+         background: url(../../../img/svg/document2/files.svg) no-repeat center center;
+         background-size: 20px;
+         @include transition(200);
+         &:hover {
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 26px;
+            background: url(../../../img/svg/document2/files2.svg) no-repeat center center;
+            background-size: 20px;
+         }
+      }*/
+
+/*   &-download {
       display: inline-block;
       vertical-align: middle;
-      width: 20px;
-      height: 21px;
-      background: url(../../../img/svg/document2/download.svg) no-repeat;
-      background-size: 20px;
+      width: 26px;
+      height: 26px;
+      background: url(../../../img/svg/document2/download.svg) no-repeat center center;
+      background-size: 26px;
       @include transition(200);
       &:hover {
          display: inline-block;
          vertical-align: middle;
-         width: 20px;
-         height: 21px;
-         background: url(../../../img/svg/document2/download2.svg) no-repeat;
-         background-size: 20px;
+         width: 26px;
+         height: 26px;
+         background: url(../../../img/svg/document2/download2.svg) no-repeat center center;
+         background-size: 26px;
       }
-   }
-   &-share {
+   }*/
+/*   &-share {
       display: inline-block;
       vertical-align: middle;
-      width: 20px;
+      width: 23px;
+      height: 26px;
+      background: url(../../../img/svg/document2/share.svg) no-repeat center center;
+      background-size: 21px;
+      @include transition(200);
+      top: -2px;
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 23px;
+         height: 26px;
+         background: url(../../../img/svg/document2/share2.svg) no-repeat center center;
+         background-size: 21px;
+         top: -2px;
+      }
+   }*/
+/*   &-subscription {
+      display: inline-block;
+      vertical-align: middle;
+      width: 24px;
       height: 25px;
-      background: url(../../../img/svg/document2/share.svg) no-repeat;
-      background-size: 20px;
+      background: url(../../../img/svg/document2/subscription.svg) no-repeat center center;
+      background-size: 24px;
       @include transition(200);
       &:hover {
          display: inline-block;
          vertical-align: middle;
-         width: 20px;
+         width: 24px;
          height: 25px;
-         background: url(../../../img/svg/document2/share2.svg) no-repeat;
-         background-size: 20px;
+         background: url(../../../img/svg/document2/subscription2.svg) no-repeat center center;
+         background-size: 24px;
       }
-   }
-   &-subscription {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 21px;
-      background: url(../../../img/svg/document2/subscription.svg) no-repeat;
-      background-size: 20px;
-      @include transition(200);
-      &:hover {
-         display: inline-block;
-         vertical-align: middle;
-         width: 20px;
-         height: 21px;
-         background: url(../../../img/svg/document2/subscription2.svg) no-repeat;
-         background-size: 20px;
-      }
-   }
-   &-event {
-      display: inline-block;
-      vertical-align: middle;
-      width: 20px;
-      height: 21px;
-      background: url(../../../img/svg/document2/event.svg) no-repeat;
-      background-size: 20px;
-      @include transition(200);
-      &:hover {
-         display: inline-block;
-         vertical-align: middle;
-         width: 20px;
-         height: 21px;
-         background: url(../../../img/svg/document2/event2.svg) no-repeat;
-         background-size: 20px;
-      }
-   }
+   }*/
+   //&-event {
+   //   display: inline-block;
+   //   vertical-align: middle;
+   //   width: 26px;
+   //   height: 26px;
+   //   background: url(../../../img/svg/document2/event.svg) no-repeat center center;
+   //   background-size: 25px;
+   //   @include transition(200);
+   //   &:hover {
+   //      display: inline-block;
+   //      vertical-align: middle;
+   //      width: 26px;
+   //      height: 26px;
+   //      background: url(../../../img/svg/document2/event2.svg) no-repeat center center;
+   //      background-size: 25px;
+   //   }
+   //}
 }
 
 .content-container__bars-tooltip {
@@ -245,12 +297,36 @@
 }
 
 .tags-block.status {
-   .tag {
+   .tag.tag_blue {
+      @include transition(200);
+      &:hover {
+         background: #52adcc;
+         color: #ffffff;
+         border: 1px solid #52adcc;
+      }
+   }
+   .tag.tag_grey {
+      @include transition(200);
+      &:hover {
+         background: #aeaeae;
+         color: #ffffff;
+         border: 1px solid #aeaeae;
+      }
+   }
+   .tag.tag_yellow {
       @include transition(200);
       &:hover {
          background: #e0aa4c;
          color: #ffffff;
-         border: 1px solid #d09939;
+         border: 1px solid #e0aa4c;
+      }
+   }
+   .tag.tag_green {
+      @include transition(200);
+      &:hover {
+         background: #00ad5d;
+         color: #ffffff;
+         border: 1px solid #00ad5d;
       }
    }
 }
@@ -314,7 +390,7 @@
 
 .add-btn {
    display: block;
-  /* float: right;*/
+   /* float: right;*/
    width: 76px;
    height: 40px;
    background: #63b7df url(../../../img/add2.png)no-repeat center;

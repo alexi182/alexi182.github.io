@@ -25,19 +25,18 @@
 <![endif]-->
 
 
-<div class="stick-footer sidebar_opened">
-   <div class="layout-links layout-links_profile">
-   <div class="layout-links__item sidebar-profile layout-links__item_closed-profile">
+<div class="page sidebar_opened">
+   <div class="layout-links layout-links_profile layout-links__item_closed-profile">
+   <div class="layout-links__item sidebar-profile">
       <div class="layout-link profile-link">
          <img src="/img/user2.svg" alt="">
       </div>
-
       <div class="layout-content-profile">
          <img src="/img/avatar.png" alt="">
 
          <div class="layout-content-user">
             <div class="layout-content-user__name">
-               Синюгина Татьяна Юрьевна
+               Синюгина <br> Татьяна Юрьевна
             </div>
             <div class="layout-content-user__actions">
                <a href="#" class="layout-content-user__profile">Профиль</a>
@@ -48,8 +47,8 @@
    </div>
 </div>
 
-<div class="layout-links layout-links_search">
-   <div class="layout-links__item sidebar-search layout-links__item_closed-search">
+<div class="layout-links layout-links_search layout-links__item_closed-search">
+   <div class="layout-links__item sidebar-search ">
       <div class="layout-link search-link">
          <img src="/img/magnifier.svg" alt="">
       </div>
@@ -149,6 +148,7 @@
    </div>
 </div>
 
+
    <aside class="sidebar">
    <a href="#" class="close__icon icon-closed close_js">
       <span class="icon-line"></span>
@@ -204,8 +204,8 @@
    </div>
 </aside>
 
-   <div class="index-wrapper index-sidebar">
-      <main class="content">
+   <main class="content index-sidebar">
+      <div class="content-col-left">
 
          <header class="header">
    <a href="main.html" class="logo">
@@ -232,511 +232,519 @@
 </div>
 
          </div>
-      </main>
-   </div>
-
-   <div class="page-content content-docs page-content_closed">
-      <div class="page-content__userbar">
-         <a href="#" class="page-content__btn all_js">выделить всё</a>
-         <a href="#" class="page-content__btn none_js">в архив</a>
-
-         <a href="" class="page-content__btn-document">Добавить событие</a>
       </div>
 
-      <div class="page-content__post-block">
-         <div class="page-content__post">
-            <div class="page-content__post-top">
-               <input type="checkbox" class="checkbox" id="check" />
-               <label class="checkbox-label" for="check"></label>
-               <div class="page-content__post-date">
-                  18 / 08 / 2017
-               </div>
-               <div class="page-content__post-userbar">
-                  <a href="#" class="page-content__post-link">Срочное</a>
-                  <a href="#" class="page-content__post-icon">
-                     <img src="/img/pen.png" alt="icon" />
-                  </a>
-               </div>
-            </div>
-            <div class="page-content__post-tag">Вебинар</div>
-            <div class="page-content__post-bottom">
-               <img src="/img/doc-icon.png" class="doc-icon" alt="icon" />
-               <a href="#" class="page-content__post-text">
-                  Проект приказа об учёных советах
-               </a>
-               <div class="row mt30">
-                  <span class="row-tag">Минобрнауки, 12:00</span>
-                  <a href="#" class="comments-link fr">Комментарий (+12) </a>
-               </div>
-               <div class="row row-count">
-                  <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
-                  <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
-                  <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
-               </div>
-            </div>
+      <div class="page-content">
+         <div class="page-content__userbar">
+            <a href="#" class="page-content__btn all_js">выделить всё</a>
+            <a href="#" class="page-content__btn none_js">в архив</a>
 
-            <div class="page-content__comment comment-hide">
-               <a href="#" class="close__icon icon-closed"></a>
-               <form>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>Отдел</option>
-                        <option>Отдел 1</option>
-                        <option>Отдел 2</option>
-                     </select>
-                  </div>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>ФИО сотрудника</option>
-                        <option>Сотрудник 1</option>
-                        <option>Сотрудник 2</option>
-                     </select>
-                  </div>
-                  <div class="layout-content-search__block-row">
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата создания
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата изменения
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                  </div>
-                  <div class="search-box">
-                     <label for="text" class="layout-content-search__label">Примечания</label>
-                     <textarea id="text" class="page-content__textarea"></textarea>
-                  </div>
-                  <div class="search-box sbmt">
-                     <button type="submit" class="page-content__submit">Назначить</button>
-                  </div>
-               </form>
-            </div>
-
+            <a href="" class="page-content__btn-document">Добавить событие</a>
          </div>
 
-         <div class="page-content__post">
-            <div class="page-content__post-top">
-               <input type="checkbox" class="checkbox" id="check2" />
-               <label class="checkbox-label" for="check2"></label>
-               <div class="page-content__post-date">
-                  17 / 08 / 2017
+         <div class="page-content__post-block">
+            <div class="page-content__post">
+               <div class="page-content__post-top">
+                  <input type="checkbox" class="checkbox" id="check" />
+                  <label class="checkbox-label" for="check"></label>
+                  <div class="page-content__post-date">
+                     18 / 08 / 2017
+                  </div>
+                  <div class="page-content__post-userbar">
+                     <a href="#" class="page-content__post-link">Срочное</a>
+                     <a href="#" class="page-content__post-icon">
+                        <img src="/img/pen.png" alt="icon" />
+                     </a>
+                  </div>
                </div>
-               <div class="page-content__post-userbar">
-                  <a href="#" class="page-content__post-icon">
-                     <img src="/img/pen.png" alt="icon" />
+               <div class="page-content__post-tag">Вебинар</div>
+               <div class="page-content__post-bottom">
+                  <img src="/img/doc-icon.png" class="doc-icon" alt="icon" />
+                  <a href="#" class="page-content__post-text">
+                     Проект приказа об учёных советах
                   </a>
+                  <div class="row mt30">
+                     <span class="row-tag">Минобрнауки, 12:00</span>
+                     <a href="#" class="comments-link fr">Комментарий (+12) </a>
+                  </div>
+                  <div class="row row-count">
+                     <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
+                     <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
+                     <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
+                  </div>
                </div>
-            </div>
-            <div class="page-content__post-tag">СОВЕЩАНИЕ</div>
-            <div class="page-content__post-bottom">
-               <span class="label-theme">тема:</span>
-               <a href="#" class="page-content__post-text">
-                  Приказ о мониторинге дополнительных показателей дошкольного образования
-               </a>
-               <div class="row mt30">
-                  <span class="row-tag">Минобрнауки, 12:00</span>
-                  <a href="#" class="comments-link fr">Комментарий (+12) </a>
-               </div>
-               <div class="row row-count">
-                  <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
-                  <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
-                  <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
-               </div>
-            </div>
 
-            <div class="page-content__comment comment-hide">
-               <a href="#" class="close__icon icon-closed"></a>
-               <form>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>Отдел</option>
-                        <option>Отдел 1</option>
-                        <option>Отдел 2</option>
-                     </select>
-                  </div>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>ФИО сотрудника</option>
-                        <option>Сотрудник 1</option>
-                        <option>Сотрудник 2</option>
-                     </select>
-                  </div>
-                  <div class="layout-content-search__block-row">
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата создания
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
+               <div class="page-content__comment comment-hide">
+                  <a href="#" class="close__icon icon-closed"></a>
+                  <form>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Отдел</option>
+                           <option>Отдел 1</option>
+                           <option>Отдел 2</option>
+                        </select>
                      </div>
-
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата изменения
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>ФИО сотрудника</option>
+                           <option>Сотрудник 1</option>
+                           <option>Сотрудник 2</option>
+                        </select>
                      </div>
+                     <div class="layout-content-search__block-row">
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата создания
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
 
-                  </div>
-                  <div class="search-box">
-                     <label for="text" class="layout-content-search__label">Примечания</label>
-                     <textarea id="text" class="page-content__textarea"></textarea>
-                  </div>
-                  <div class="search-box sbmt">
-                     <button type="submit" class="page-content__submit">Назначить</button>
-                  </div>
-               </form>
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата изменения
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="search-box">
+                        <label for="text" class="layout-content-search__label">Примечания</label>
+                        <textarea id="text" class="page-content__textarea"></textarea>
+                     </div>
+                     <div class="search-box sbmt">
+                        <button type="submit" class="page-content__submit">Назначить</button>
+                     </div>
+                  </form>
+               </div>
+
             </div>
 
+            <div class="page-content__post">
+               <div class="page-content__post-top">
+                  <input type="checkbox" class="checkbox" id="check2" />
+                  <label class="checkbox-label" for="check2"></label>
+                  <div class="page-content__post-date">
+                     17 / 08 / 2017
+                  </div>
+                  <div class="page-content__post-userbar">
+                     <a href="#" class="page-content__post-icon">
+                        <img src="/img/pen.png" alt="icon" />
+                     </a>
+                  </div>
+               </div>
+               <div class="page-content__post-tag">СОВЕЩАНИЕ</div>
+               <div class="page-content__post-bottom">
+                  <span class="label-theme">тема:</span>
+                  <a href="#" class="page-content__post-text">
+                     Приказ о мониторинге дополнительных показателей дошкольного образования
+                  </a>
+                  <div class="row mt30">
+                     <span class="row-tag">Минобрнауки, 12:00</span>
+                     <a href="#" class="comments-link fr">Комментарий (+12) </a>
+                  </div>
+                  <div class="row row-count">
+                     <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
+                     <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
+                     <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
+                  </div>
+               </div>
+
+               <div class="page-content__comment comment-hide">
+                  <a href="#" class="close__icon icon-closed"></a>
+                  <form>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Отдел</option>
+                           <option>Отдел 1</option>
+                           <option>Отдел 2</option>
+                        </select>
+                     </div>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>ФИО сотрудника</option>
+                           <option>Сотрудник 1</option>
+                           <option>Сотрудник 2</option>
+                        </select>
+                     </div>
+                     <div class="layout-content-search__block-row">
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата создания
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата изменения
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="search-box">
+                        <label for="text" class="layout-content-search__label">Примечания</label>
+                        <textarea id="text" class="page-content__textarea"></textarea>
+                     </div>
+                     <div class="search-box sbmt">
+                        <button type="submit" class="page-content__submit">Назначить</button>
+                     </div>
+                  </form>
+               </div>
+
+            </div>
+
+            <div class="page-content__post">
+               <div class="page-content__post-top">
+                  <input type="checkbox" class="checkbox" id="check3" />
+                  <label class="checkbox-label" for="check3"></label>
+                  <div class="page-content__post-date">
+                     20 / 08 / 2017
+                  </div>
+                  <div class="page-content__post-userbar">
+                     <a href="#" class="page-content__post-link">Срочное</a>
+                     <a href="#" class="page-content__post-icon">
+                        <img src="/img/pen.png" alt="icon" />
+                     </a>
+                  </div>
+               </div>
+               <div class="page-content__post-tag">ПРЕЗЕНТАЦИЯ</div>
+               <div class="page-content__post-bottom">
+                  <img src="/img/doc-icon.png" class="doc-icon" alt="icon">
+                  <a href="#" class="page-content__post-text">
+                     Проект нормативного документа об учебниках и учебных пособиях
+                  </a>
+                  <div class="row mt30">
+                     <span class="row-tag">Минобрнауки, 12:00</span>
+                     <a href="#" class="comments-link fr">Комментарий (+12) </a>
+                  </div>
+                  <div class="row row-count">
+                     <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
+                     <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
+                     <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
+                  </div>
+               </div>
+
+               <div class="page-content__comment comment-hide">
+                  <a href="#" class="close__icon icon-closed"></a>
+                  <form>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Отдел</option>
+                           <option>Отдел 1</option>
+                           <option>Отдел 2</option>
+                        </select>
+                     </div>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>ФИО сотрудника</option>
+                           <option>Сотрудник 1</option>
+                           <option>Сотрудник 2</option>
+                        </select>
+                     </div>
+                     <div class="layout-content-search__block-row">
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата создания
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата изменения
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="search-box">
+                        <label for="text" class="layout-content-search__label">Примечания</label>
+                        <textarea id="text" class="page-content__textarea"></textarea>
+                     </div>
+                     <div class="search-box sbmt">
+                        <button type="submit" class="page-content__submit">Назначить</button>
+                     </div>
+                  </form>
+               </div>
+
+            </div>
+
+            <div class="page-content__post">
+               <div class="page-content__post-top">
+                  <input type="checkbox" class="checkbox" id="check4" />
+                  <label class="checkbox-label" for="check4"></label>
+                  <div class="page-content__post-date">
+                     18 / 08 / 2017
+                  </div>
+                  <div class="page-content__post-userbar">
+                     <a href="#" class="page-content__post-link">Срочное</a>
+                     <a href="#" class="page-content__post-icon">
+                        <img src="/img/pen.png" alt="icon" />
+                     </a>
+                  </div>
+               </div>
+               <div class="page-content__post-tag">Вебинар</div>
+               <div class="page-content__post-bottom">
+                  <img src="/img/doc-icon.png" class="doc-icon" alt="icon" />
+                  <a href="#" class="page-content__post-text">
+                     Проект приказа об учёных советах
+                  </a>
+                  <div class="row mt30">
+                     <span class="row-tag">Минобрнауки, 12:00</span>
+                     <a href="#" class="comments-link fr">Комментарий (+12) </a>
+                  </div>
+                  <div class="row row-count">
+                     <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
+                     <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
+                     <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
+                  </div>
+               </div>
+
+               <div class="page-content__comment comment-hide">
+                  <a href="#" class="close__icon icon-closed"></a>
+                  <form>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Отдел</option>
+                           <option>Отдел 1</option>
+                           <option>Отдел 2</option>
+                        </select>
+                     </div>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>ФИО сотрудника</option>
+                           <option>Сотрудник 1</option>
+                           <option>Сотрудник 2</option>
+                        </select>
+                     </div>
+                     <div class="layout-content-search__block-row">
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата создания
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата изменения
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="search-box">
+                        <label for="text" class="layout-content-search__label">Примечания</label>
+                        <textarea id="text" class="page-content__textarea"></textarea>
+                     </div>
+                     <div class="search-box sbmt">
+                        <button type="submit" class="page-content__submit">Назначить</button>
+                     </div>
+                  </form>
+               </div>
+
+            </div>
+
+            <div class="page-content__post">
+               <div class="page-content__post-top">
+                  <input type="checkbox" class="checkbox" id="check5" />
+                  <label class="checkbox-label" for="check5"></label>
+                  <div class="page-content__post-date">
+                     17 / 08 / 2017
+                  </div>
+                  <div class="page-content__post-userbar">
+                     <a href="#" class="page-content__post-icon">
+                        <img src="/img/pen.png" alt="icon" />
+                     </a>
+                  </div>
+               </div>
+               <div class="page-content__post-tag">СОВЕЩАНИЕ</div>
+               <div class="page-content__post-bottom">
+                  <span class="label-theme">тема:</span>
+                  <a href="#" class="page-content__post-text">
+                     Приказ о мониторинге дополнительных показателей дошкольного образования
+                  </a>
+                  <div class="row mt30">
+                     <span class="row-tag">Минобрнауки, 12:00</span>
+                     <a href="#" class="comments-link fr">Комментарий (+12) </a>
+                  </div>
+                  <div class="row row-count">
+                     <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
+                     <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
+                     <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
+                  </div>
+               </div>
+
+               <div class="page-content__comment comment-hide">
+                  <a href="#" class="close__icon icon-closed"></a>
+                  <form>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Отдел</option>
+                           <option>Отдел 1</option>
+                           <option>Отдел 2</option>
+                        </select>
+                     </div>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>ФИО сотрудника</option>
+                           <option>Сотрудник 1</option>
+                           <option>Сотрудник 2</option>
+                        </select>
+                     </div>
+                     <div class="layout-content-search__block-row">
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата создания
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата изменения
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="search-box">
+                        <label for="text" class="layout-content-search__label">Примечания</label>
+                        <textarea id="text" class="page-content__textarea"></textarea>
+                     </div>
+                     <div class="search-box sbmt">
+                        <button type="submit" class="page-content__submit">Назначить</button>
+                     </div>
+                  </form>
+               </div>
+
+            </div>
+
+            <div class="page-content__post">
+               <div class="page-content__post-top">
+                  <input type="checkbox" class="checkbox" id="check6" />
+                  <label class="checkbox-label" for="check6"></label>
+                  <div class="page-content__post-date">
+                     20 / 08 / 2017
+                  </div>
+                  <div class="page-content__post-userbar">
+                     <a href="#" class="page-content__post-link">Срочное</a>
+                     <a href="#" class="page-content__post-icon">
+                        <img src="/img/pen.png" alt="icon" />
+                     </a>
+                  </div>
+               </div>
+               <div class="page-content__post-tag">ПРЕЗЕНТАЦИЯ</div>
+               <div class="page-content__post-bottom">
+                  <img src="/img/doc-icon.png" class="doc-icon" alt="icon">
+                  <a href="#" class="page-content__post-text">
+                     Проект нормативного документа об учебниках и учебных пособиях
+                  </a>
+                  <div class="row mt30">
+                     <span class="row-tag">Минобрнауки, 12:00</span>
+                     <a href="#" class="comments-link fr">Комментарий (+12) </a>
+                  </div>
+                  <div class="row row-count">
+                     <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
+                     <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
+                     <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
+                  </div>
+               </div>
+
+               <div class="page-content__comment comment-hide">
+                  <a href="#" class="close__icon icon-closed"></a>
+                  <form>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Отдел</option>
+                           <option>Отдел 1</option>
+                           <option>Отдел 2</option>
+                        </select>
+                     </div>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>ФИО сотрудника</option>
+                           <option>Сотрудник 1</option>
+                           <option>Сотрудник 2</option>
+                        </select>
+                     </div>
+                     <div class="layout-content-search__block-row">
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата создания
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                        <div class="layout-content-search__block-row-item">
+                           <label class="layout-content-search__label">
+                              Дата изменения
+                           </label>
+                           <div class="search-box">
+                              <input type="text" class="datepicker">
+                           </div>
+                        </div>
+
+                     </div>
+                     <div class="search-box">
+                        <label for="text" class="layout-content-search__label">Примечания</label>
+                        <textarea id="text" class="page-content__textarea"></textarea>
+                     </div>
+                     <div class="search-box sbmt">
+                        <button type="submit" class="page-content__submit">Назначить</button>
+                     </div>
+                  </form>
+               </div>
+
+            </div>
          </div>
 
-         <div class="page-content__post">
-            <div class="page-content__post-top">
-               <input type="checkbox" class="checkbox" id="check3" />
-               <label class="checkbox-label" for="check3"></label>
-               <div class="page-content__post-date">
-                  20 / 08 / 2017
-               </div>
-               <div class="page-content__post-userbar">
-                  <a href="#" class="page-content__post-link">Срочное</a>
-                  <a href="#" class="page-content__post-icon">
-                     <img src="/img/pen.png" alt="icon" />
-                  </a>
-               </div>
-            </div>
-            <div class="page-content__post-tag">ПРЕЗЕНТАЦИЯ</div>
-            <div class="page-content__post-bottom">
-               <img src="/img/doc-icon.png" class="doc-icon" alt="icon">
-               <a href="#" class="page-content__post-text">
-                  Проект нормативного документа об учебниках и учебных пособиях
-               </a>
-               <div class="row mt30">
-                  <span class="row-tag">Минобрнауки, 12:00</span>
-                  <a href="#" class="comments-link fr">Комментарий (+12) </a>
-               </div>
-               <div class="row row-count">
-                  <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
-                  <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
-                  <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
-               </div>
-            </div>
-
-            <div class="page-content__comment comment-hide">
-               <a href="#" class="close__icon icon-closed"></a>
-               <form>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>Отдел</option>
-                        <option>Отдел 1</option>
-                        <option>Отдел 2</option>
-                     </select>
-                  </div>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>ФИО сотрудника</option>
-                        <option>Сотрудник 1</option>
-                        <option>Сотрудник 2</option>
-                     </select>
-                  </div>
-                  <div class="layout-content-search__block-row">
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата создания
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата изменения
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                  </div>
-                  <div class="search-box">
-                     <label for="text" class="layout-content-search__label">Примечания</label>
-                     <textarea id="text" class="page-content__textarea"></textarea>
-                  </div>
-                  <div class="search-box sbmt">
-                     <button type="submit" class="page-content__submit">Назначить</button>
-                  </div>
-               </form>
-            </div>
-
-         </div>
-
-         <div class="page-content__post">
-            <div class="page-content__post-top">
-               <input type="checkbox" class="checkbox" id="check4" />
-               <label class="checkbox-label" for="check4"></label>
-               <div class="page-content__post-date">
-                  18 / 08 / 2017
-               </div>
-               <div class="page-content__post-userbar">
-                  <a href="#" class="page-content__post-link">Срочное</a>
-                  <a href="#" class="page-content__post-icon">
-                     <img src="/img/pen.png" alt="icon" />
-                  </a>
-               </div>
-            </div>
-            <div class="page-content__post-tag">Вебинар</div>
-            <div class="page-content__post-bottom">
-               <img src="/img/doc-icon.png" class="doc-icon" alt="icon" />
-               <a href="#" class="page-content__post-text">
-                  Проект приказа об учёных советах
-               </a>
-               <div class="row mt30">
-                  <span class="row-tag">Минобрнауки, 12:00</span>
-                  <a href="#" class="comments-link fr">Комментарий (+12) </a>
-               </div>
-               <div class="row row-count">
-                  <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
-                  <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
-                  <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
-               </div>
-            </div>
-
-            <div class="page-content__comment comment-hide">
-               <a href="#" class="close__icon icon-closed"></a>
-               <form>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>Отдел</option>
-                        <option>Отдел 1</option>
-                        <option>Отдел 2</option>
-                     </select>
-                  </div>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>ФИО сотрудника</option>
-                        <option>Сотрудник 1</option>
-                        <option>Сотрудник 2</option>
-                     </select>
-                  </div>
-                  <div class="layout-content-search__block-row">
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата создания
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата изменения
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                  </div>
-                  <div class="search-box">
-                     <label for="text" class="layout-content-search__label">Примечания</label>
-                     <textarea id="text" class="page-content__textarea"></textarea>
-                  </div>
-                  <div class="search-box sbmt">
-                     <button type="submit" class="page-content__submit">Назначить</button>
-                  </div>
-               </form>
-            </div>
-
-         </div>
-
-         <div class="page-content__post">
-            <div class="page-content__post-top">
-               <input type="checkbox" class="checkbox" id="check5" />
-               <label class="checkbox-label" for="check5"></label>
-               <div class="page-content__post-date">
-                  17 / 08 / 2017
-               </div>
-               <div class="page-content__post-userbar">
-                  <a href="#" class="page-content__post-icon">
-                     <img src="/img/pen.png" alt="icon" />
-                  </a>
-               </div>
-            </div>
-            <div class="page-content__post-tag">СОВЕЩАНИЕ</div>
-            <div class="page-content__post-bottom">
-               <span class="label-theme">тема:</span>
-               <a href="#" class="page-content__post-text">
-                  Приказ о мониторинге дополнительных показателей дошкольного образования
-               </a>
-               <div class="row mt30">
-                  <span class="row-tag">Минобрнауки, 12:00</span>
-                  <a href="#" class="comments-link fr">Комментарий (+12) </a>
-               </div>
-               <div class="row row-count">
-                  <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
-                  <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
-                  <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
-               </div>
-            </div>
-
-            <div class="page-content__comment comment-hide">
-               <a href="#" class="close__icon icon-closed"></a>
-               <form>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>Отдел</option>
-                        <option>Отдел 1</option>
-                        <option>Отдел 2</option>
-                     </select>
-                  </div>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>ФИО сотрудника</option>
-                        <option>Сотрудник 1</option>
-                        <option>Сотрудник 2</option>
-                     </select>
-                  </div>
-                  <div class="layout-content-search__block-row">
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата создания
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата изменения
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                  </div>
-                  <div class="search-box">
-                     <label for="text" class="layout-content-search__label">Примечания</label>
-                     <textarea id="text" class="page-content__textarea"></textarea>
-                  </div>
-                  <div class="search-box sbmt">
-                     <button type="submit" class="page-content__submit">Назначить</button>
-                  </div>
-               </form>
-            </div>
-
-         </div>
-
-         <div class="page-content__post">
-            <div class="page-content__post-top">
-               <input type="checkbox" class="checkbox" id="check6" />
-               <label class="checkbox-label" for="check6"></label>
-               <div class="page-content__post-date">
-                  20 / 08 / 2017
-               </div>
-               <div class="page-content__post-userbar">
-                  <a href="#" class="page-content__post-link">Срочное</a>
-                  <a href="#" class="page-content__post-icon">
-                     <img src="/img/pen.png" alt="icon" />
-                  </a>
-               </div>
-            </div>
-            <div class="page-content__post-tag">ПРЕЗЕНТАЦИЯ</div>
-            <div class="page-content__post-bottom">
-               <img src="/img/doc-icon.png" class="doc-icon" alt="icon">
-               <a href="#" class="page-content__post-text">
-                  Проект нормативного документа об учебниках и учебных пособиях
-               </a>
-               <div class="row mt30">
-                  <span class="row-tag">Минобрнауки, 12:00</span>
-                  <a href="#" class="comments-link fr">Комментарий (+12) </a>
-               </div>
-               <div class="row row-count">
-                  <span class="row-count__item row-count__item_grey">просмотрели <span>5</span></span>
-                  <span class="row-count__item row-count__item_green">подтвердили <span>10</span></span>
-                  <span class="row-count__item row-count__item_red">отклонили <span>7</span></span>
-               </div>
-            </div>
-
-            <div class="page-content__comment comment-hide">
-               <a href="#" class="close__icon icon-closed"></a>
-               <form>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>Отдел</option>
-                        <option>Отдел 1</option>
-                        <option>Отдел 2</option>
-                     </select>
-                  </div>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>ФИО сотрудника</option>
-                        <option>Сотрудник 1</option>
-                        <option>Сотрудник 2</option>
-                     </select>
-                  </div>
-                  <div class="layout-content-search__block-row">
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата создания
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                     <div class="layout-content-search__block-row-item">
-                        <label class="layout-content-search__label">
-                           Дата изменения
-                        </label>
-                        <div class="search-box">
-                           <input type="text" class="datepicker">
-                        </div>
-                     </div>
-
-                  </div>
-                  <div class="search-box">
-                     <label for="text" class="layout-content-search__label">Примечания</label>
-                     <textarea id="text" class="page-content__textarea"></textarea>
-                  </div>
-                  <div class="search-box sbmt">
-                     <button type="submit" class="page-content__submit">Назначить</button>
-                  </div>
-               </form>
-            </div>
-
+         <div class="pagination">
+            <ul>
+               <li><a href="#"></a></li>
+               <li><a href="#">1</a></li>
+               <li><a href="#">2</a></li>
+               <li><a href="#">3</a></li>
+               <li><a href="#">4</a></li>
+               <li><a href="#">5</a></li>
+               <li><a href="#">
+               </a></li>
+            </ul>
          </div>
       </div>
+   </main>
 
-      <div class="pagination">
-         <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">
-            </a></li>
-         </ul>
-      </div>
-   </div>
 </div>
+<div class="overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+<script src="/js/vendor/svg4everybody.js"></script>
+<script>svg4everybody();</script>
+
 <script src="/assets/js/bundle.js"></script>
 
 </body>

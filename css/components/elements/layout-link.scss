@@ -49,10 +49,18 @@
 
 .layout-links__item_closed-profile{
     @include transform_translateX(80%);
+   .layout-link {
+      position: relative;
+      z-index: 999;
+   }
 }
 
 .layout-links__item_closed-search{
    @include transform_translateX(93%);
+   .layout-link {
+      position: relative;
+      z-index: 999;
+   }
 }
 
 .layout-link {

@@ -25,19 +25,18 @@
 <![endif]-->
 
 
-<div class="stick-footer sidebar_opened">
-   <div class="layout-links layout-links_profile">
-   <div class="layout-links__item sidebar-profile layout-links__item_closed-profile">
+<div class="page sidebar_opened">
+   <div class="layout-links layout-links_profile layout-links__item_closed-profile">
+   <div class="layout-links__item sidebar-profile">
       <div class="layout-link profile-link">
          <img src="/img/user2.svg" alt="">
       </div>
-
       <div class="layout-content-profile">
          <img src="/img/avatar.png" alt="">
 
          <div class="layout-content-user">
             <div class="layout-content-user__name">
-               Синюгина Татьяна Юрьевна
+               Синюгина <br> Татьяна Юрьевна
             </div>
             <div class="layout-content-user__actions">
                <a href="#" class="layout-content-user__profile">Профиль</a>
@@ -48,8 +47,8 @@
    </div>
 </div>
 
-<div class="layout-links layout-links_search">
-   <div class="layout-links__item sidebar-search layout-links__item_closed-search">
+<div class="layout-links layout-links_search layout-links__item_closed-search">
+   <div class="layout-links__item sidebar-search ">
       <div class="layout-link search-link">
          <img src="/img/magnifier.svg" alt="">
       </div>
@@ -149,6 +148,7 @@
    </div>
 </div>
 
+
    <aside class="sidebar">
    <a href="#" class="close__icon icon-closed close_js">
       <span class="icon-line"></span>
@@ -204,8 +204,8 @@
    </div>
 </aside>
 
-   <div class="index-wrapper index-sidebar">
-      <main class="content">
+   <main class="content index-sidebar">
+      <div class="content-col-left">
 
          <header class="header">
    <a href="main.html" class="logo">
@@ -229,11 +229,9 @@
                   <div class="content-block__img">
                      <img src="/img/avatar-settings.png" class="content-block__avatar" alt="avatar" />
 
-
                      <div class="avatar-back">
                         <input type="file" class="upload-file" />
                      </div>
-
 
                   </div>
                </div>
@@ -265,89 +263,98 @@
 </div>
 
          </div>
-      </main>
-   </div>
-
-   <div class="page-content page-content_closed">
-      <div class="page-content__item">
-         <p class="page-content__item-name">Основное</p>
-         <form action="#">
-            <div class="page-content__row">
-               <label class="page-content__label">Фамилия</label>
-               <div class="page-content__row-item">
-                  <input type="text" value="Захарова" />
-               </div>
-            </div>
-            <div class="page-content__row">
-               <label class="page-content__label">Имя</label>
-               <div class="page-content__row-item">
-                  <input type="text" value="Марина" />
-               </div>
-            </div>
-            <div class="page-content__row">
-               <label class="page-content__label">Отчество</label>
-               <div class="page-content__row-item">
-                  <input type="text" value="Борисовна" />
-               </div>
-            </div>
-            <div class="page-content__row">
-               <label class="page-content__label">E-mail</label>
-               <div class="page-content__row-item">
-                  <input type="text" value="m_zaharova@mon.gov.ru" />
-               </div>
-            </div>
-            <div class="page-content__row">
-               <label class="page-content__label">Телефон</label>
-               <div class="page-content__row-item">
-                  <input type="text" value="8(916) 777-66-77" />
-               </div>
-            </div>
-            <div class="page-content__row">
-               <label class="page-content__label">Место работы, должность</label>
-               <div class="page-content__row-item">
-                  <input type="text" value="Министр образования Московской области" />
-               </div>
-            </div>
-            <div class="page-content__row">
-               <label class="page-content__label">Дата рождения</label>
-               <div class="search-box page-content__row-item">
-                  <input type="text" class="datepicker" />
-               </div>
-            </div>
-            <div class="page-content__row flex-c">
-               <button type="submit" class="page-content__btn">Cохранить</button>
-               <button type="submit" class="page-content__btn">Отменить</button>
-            </div>
-         </form>
       </div>
-
-      <div class="page-content__item">
-         <p class="page-content__item-name">Изменить пароль</p>
-
-         <form action="#">
-            <div class="page-content__row">
-               <label class="page-content__label">введите новый
-                  пароль</label>
-               <div class="page-content__row-item">
-                  <input type="password" />
+      <div class="page-content">
+         <div class="page-content__item">
+            <p class="page-content__item-name">Основное</p>
+            <form action="#">
+               <div class="page-content__row">
+                  <label class="page-content__label">Фамилия</label>
+                  <div class="page-content__row-item">
+                     <input type="text" value="Захарова" />
+                  </div>
                </div>
-            </div>
-            <div class="page-content__row">
-               <label class="page-content__label">повторите новый
-                  пароль</label>
-               <div class="page-content__row-item">
-                  <input type="password" />
+               <div class="page-content__row">
+                  <label class="page-content__label">Имя</label>
+                  <div class="page-content__row-item">
+                     <input type="text" value="Марина" />
+                  </div>
                </div>
-            </div>
-            <div class="page-content__row flex-c">
-               <button type="submit" class="page-content__btn">Cохранить</button>
-            </div>
-         </form>
+               <div class="page-content__row">
+                  <label class="page-content__label">Отчество</label>
+                  <div class="page-content__row-item">
+                     <input type="text" value="Борисовна" />
+                  </div>
+               </div>
+               <div class="page-content__row">
+                  <label class="page-content__label">E-mail</label>
+                  <div class="page-content__row-item">
+                     <input type="text" value="m_zaharova@mon.gov.ru" />
+                  </div>
+               </div>
+               <div class="page-content__row">
+                  <label class="page-content__label">Телефон</label>
+                  <div class="page-content__row-item">
+                     <input type="text" value="8(916) 777-66-77" />
+                  </div>
+               </div>
+               <div class="page-content__row">
+                  <label class="page-content__label">Место работы, должность</label>
+                  <div class="page-content__row-item">
+                     <input type="text" value="Министр образования Московской области" />
+                  </div>
+               </div>
+               <div class="page-content__row">
+                  <label class="page-content__label">Дата рождения</label>
+                  <div class="search-box page-content__row-item">
+                     <input type="text" class="datepicker" />
+                  </div>
+               </div>
+               <div class="page-content__row flex-c">
+                  <button type="submit" class="page-content__btn">Cохранить</button>
+                  <button type="submit" class="page-content__btn">Отменить</button>
+               </div>
+            </form>
+         </div>
+
+         <div class="page-content__item">
+            <p class="page-content__item-name">Изменить пароль</p>
+
+            <form action="#">
+               <div class="page-content__row">
+                  <label class="page-content__label">введите новый
+                     пароль</label>
+                  <div class="page-content__row-item">
+                     <input type="password" />
+                  </div>
+               </div>
+               <div class="page-content__row">
+                  <label class="page-content__label">повторите новый
+                     пароль</label>
+                  <div class="page-content__row-item">
+                     <input type="password" />
+                  </div>
+               </div>
+               <div class="page-content__row flex-c">
+                  <button type="submit" class="page-content__btn">Cохранить</button>
+               </div>
+            </form>
+
+         </div>
 
       </div>
+   </main>
 
-   </div>
+
 </div>
+
+<div class="overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+<script src="/js/vendor/svg4everybody.js"></script>
+<script>svg4everybody();</script>
+
 <script src="/assets/js/bundle.js"></script>
 </body>
 </html>

@@ -52,20 +52,19 @@
 }
 
 .sidebar__num {
-   width: 24px;
-   height: 24px;
+   width: 20px;
+   height: 20px;
    background: #ffffff;
    border-radius: 50%;
    color: #39404c;
    text-align: center;
    box-sizing: border-box;
-   padding: 2px 0;
+   padding: 0px 0;
    font-weight: 700;
    position: absolute;
-   top: -8px;
-   right: 42px;
+   top: -13px;
+   right: 4px;
 }
-
 
 .sidebar_opened {
    .sidebar{
@@ -79,9 +78,8 @@
          }
       }
    }
-   .index-wrapper {
-      padding-left: 300px;
-      padding-right: 20px;
+   .content {
+      padding-left: 325px;
    }
    .messages__notice{
       display: inline-block!important;
@@ -99,6 +97,9 @@
       position: absolute;
       top: 13px;
       right: 56px;
+   }
+   .layout-content-search {
+      display: inline-block;
    }
 }
 

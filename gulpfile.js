@@ -22,6 +22,9 @@ var merge = require('merge-stream');
 var rename = require('gulp-rename');
 var webpack = require('webpack-stream');
 var base64 = require('gulp-base64');
+var svgSprite = require('gulp-svg-sprite');
+var cheerio = require('gulp-cheerio');
+var svgmin = require('gulp-svgmin');
 
 // var plumber = require('gulp-plumber');
 
@@ -139,6 +142,79 @@ gulp.task('sprite', function () {
     }));
     return spriteData.pipe(gulp.dest('./img/'));
 });
+
+
+var svgSpriteConfig = {
+   dest: '.',
+   mode: {
+      symbol: {
+         sprite: './../sprite-symbol.svg',
+         example: true,
+         prefix: ".svg-%s",
+         render: {
+            scss: {
+               dest: './../../../css/components/_global/_sprite-symbol.scss'
+            }
+         },
+         svg: {
+            symbols: 'symbol_sprite.html'
+         }
+      }
+   }
+};
+
+gulp.task('del:svg-symbol', function (cb) {
+   return del(['./img/svg/symbol/**'], cb);
+});
+
+
+gulp.task('copy:svg-symbol-template', function () {
+   return gulp.src(['./img/svg/symbol/sprite.symbol.html'])
+      .pipe(gulp.dest('./html/dist/'));
+});
+
+
+gulp.task('svg-collect', function () {
+   return gulp.src('./img/svg/svg-sprite/*.svg')
+      .pipe(svgmin({
+         plugins: [
+            {removeUselessStrokeAndFill: true},
+            {removeViewBox: true},
+            {removeDimensions: true}
+         
+         ]
+      }))
+      .pipe(svgSprite(svgSpriteConfig))
+      .pipe(gulp.dest('./img/svg/'));
+});
+
+
+gulp.task('remove-attrs', function () {
+   return gulp.src(['./img/svg/sprite-symbol.svg'])
+      .pipe(cheerio({
+         run: function ($) {
+            $('[fill]').removeAttr('fill');
+            $('[style]').removeAttr('style');
+            $('[class]').removeAttr('class');
+            $('style').remove();
+         },
+         parserOptions: {xmlMode: true}
+      }))
+      .pipe(gulp.dest('./img/svg/'));
+});
+
+gulp.task('change-path-to-svg', function () {
+    gulp.src(['./html/dist/sprite.symbol.html'])
+      .pipe(replace('../', '/img/svg/'))
+      .pipe(gulp.dest('./html/app/'));
+});
+
+
+gulp.task('svg-sprite', function (callback) {
+   runSequence('svg-collect', 'copy:svg-symbol-template', ['change-path-to-svg', 'remove-attrs', 'del:svg-symbol'], callback);
+});
+
+
 
 gulp.task('image-min', function () {
     return gulp.src('./img/**/*')

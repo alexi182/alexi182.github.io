@@ -16,8 +16,9 @@
    }
 
    .ui-datepicker-header {
-      background: #3b94c0;
+      /*background: #3b94c0;*/
       border: none;
+      background: transparent;
       margin: 0 -17px;
    }
    .ui-datepicker-title {
@@ -25,7 +26,7 @@
    }
    .ui-datepicker .ui-datepicker-title {
       text-align: center;
-      margin: 0 0px 5px 0px;
+      margin: 5px 0px 5px 0px;
    }
    .ui-datepicker th {
       font-size: 16px;
@@ -51,7 +52,7 @@
       text-align: center;
       background: transparent;
    }
-    .iu-state-hover a:hover {
+   .iu-state-hover a:hover {
       background: transparent;
    }
    .ui-state-active, .ui-widget-content .ui-state-active {
@@ -101,28 +102,29 @@
       //height: 21px;
       cursor: pointer;
       display: inline-block;
-      background: transparent url(../../../img/svg/arrow1.svg) no-repeat 121px 17px;
-      padding-left: 5px;
+      background: #3b94c0 url(../../../img/svg/arrow1.svg) no-repeat 143px 17px;
+      padding-left: 12px;
       color: #ffffff;
       border: none;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 400;
       line-height: 40px;
       padding-bottom: 0px;
       height: 40px;
-      width: 139px;
+      width: 173px;
+      border-radius: 2px;
 
-   /*   &:after {
-         content: "";
-         display: inline-block;
+      /*   &:after {
+            content: "";
+            display: inline-block;
 
-         width: 20px;
-         height: 10px;
-      }*/
+            width: 20px;
+            height: 10px;
+         }*/
       option {
          background: #ffffff;
          color: #000000;
-         font-size: 18px;
+         font-size: 16px;
       }
    }
 
@@ -130,52 +132,58 @@
       //width: 40%;
       //height: 21px;
       cursor: pointer;
-      background: transparent url(../../../img/svg/arrow1.svg) no-repeat 70px 17px;
-      padding-left: 5px;
+      background: #3b94c0 url(../../../img/svg/arrow1.svg) no-repeat 86px 17px;
+      padding-left: 12px;
       color: #ffffff;
       border: none;
-      font-size: 25px;
+      font-size: 20px;
       font-weight: 400;
       line-height: 40px;
       padding-bottom: 0px;
-      width: 100px;
+      width: 112px;
       height: 40px;
+      border-radius: 2px;
       option {
          background: #ffffff;
          color: #000000;
-         font-size: 18px;
+         font-size: 16px;
+        /* &:hover {
+            background: red;
+            -webkit-background-imager: red;
+            -moz-background-image: red;
+         }*/
       }
    }
 
-/*   .ui-datepicker .ui-datepicker-next span {
-      display: block;
-      position: absolute;
-      left: 81%;
-      margin-left: -8px;
-      top: 55%;
-      margin-top: -8px;
-      background: url(../../../img/svg/arrow4_2.svg) no-repeat!important;
-      cursor: pointer;
-   }
+   /*   .ui-datepicker .ui-datepicker-next span {
+         display: block;
+         position: absolute;
+         left: 81%;
+         margin-left: -8px;
+         top: 55%;
+         margin-top: -8px;
+         background: url(../../../img/svg/arrow4_2.svg) no-repeat!important;
+         cursor: pointer;
+      }
 
-   .ui-datepicker .ui-datepicker-prev span {
-      display: block;
-      position: absolute;
-      left: 46%;
-      margin-left: -8px;
-      top: 57%;
-      margin-top: -8px;
-      background: url(../../../img/svg/arrow3_2.svg) no-repeat!important;
-      cursor: pointer;
-   }*/
+      .ui-datepicker .ui-datepicker-prev span {
+         display: block;
+         position: absolute;
+         left: 46%;
+         margin-left: -8px;
+         top: 57%;
+         margin-top: -8px;
+         background: url(../../../img/svg/arrow3_2.svg) no-repeat!important;
+         cursor: pointer;
+      }*/
 
    .ui-widget-header .ui-icon {
       display: none!important;
    }
 
-  /* .ui-datepicker-calendar {
-      background: rgba(255, 255, 255, 0.8);
-   }*/
+   /* .ui-datepicker-calendar {
+       background: rgba(255, 255, 255, 0.8);
+    }*/
 }
 
 .content-block.user-info {
@@ -209,4 +217,93 @@
       margin-left: 15px;
       letter-spacing: 1px;
    }
+}
+
+.content-block__img {
+   position: relative;
+   width: 106px;
+   height: 106px;
+   border-radius: 50%;
+   @include transition(300);
+   cursor: pointer;
+   &:hover {
+      .avatar-back {
+         opacity: 1;
+         @include transform_translateY(-100%);
+      }
+   }
+}
+
+.avatar-back {
+   position: absolute;
+   @include transform_translateY(-30%);
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   @include transition(300);
+   border-radius: 50%;
+   background: rgba(67, 95, 142, 0.73);
+   span {
+      position: absolute;
+      top: 45%;
+      right: 30%;
+   }
+}
+
+.content-block__avatar {
+   width: 106px;
+   height: 106px;
+   border-radius: 50%;
+}
+
+.upload-file {
+
+}
+
+.ui-datepicker-calendar {
+   tbody {
+      tr {
+         &:nth-of-type(2) {
+            td {
+               &:nth-of-type(5) {
+                  a {
+                     color: red;
+                     font-weight: bold;
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+.file-upload {
+   position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+   overflow: hidden; /* Все что выходит за пределы - скрываем */
+   width: 20%; /* Задаем ширину кнопки выбора файла */
+   height: 20px; /* Задаем высоту кнопки выбора файла */
+   background: #6da047;
+   border-radius: 3px;
+   padding: 8px 4px;
+   color: #fff;
+   text-align: center;
+}
+.file-upload:hover {
+   background: #7aad55;
+}
+.file-upload input[type="file"]{
+   display: none; /* Обязательно скрываем настоящий Input File */
+}
+.file-upload label {
+   /* Растягиваем label на всю возможную площадь блока .file-upload */
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+}
+.file-upload span {
+   line-height: 36px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
 }

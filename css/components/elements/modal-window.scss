@@ -19,7 +19,7 @@
    z-index: 1001;
    text-align: left;
    background: #ffffff;
-   padding: 33px 90px 40px 54px;
+   padding: 65px 37px 40px 30px;
    top: 0;
    left: 0;
    box-sizing: border-box;
@@ -30,6 +30,7 @@
    -moz-transform: translate(-50%, -50%);
    transform: translate(-50%, -50%);*/
 }
+
 
 .window1-active a{
    background: #ffffff;
@@ -51,13 +52,13 @@
 }
 .button-close {
    position: absolute;
-   top: 0px;
-   right: 0px;
+   top: 9px;
+   right: 9px;
    width: 47px;
    height: 47px;
    cursor: pointer;
    outline: none;
-  /* background: #1aa1dc;*/
+   /* background: #1aa1dc;*/
 }
 .button-close:after {
    content: "";
@@ -96,8 +97,29 @@
 
 .window__row {
    display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
+   font-size: 16px;
+}
+
+.window__col {
+   margin-right: 27px;
+   margin-bottom: 2%;
+   &:last-of-type {
+      margin-right: 0;
+   }
+}
+
+.window__title {
+   font-size: 24px;
+   font-weight: 400;
+   text-align: center;
+   line-height: 1.2;
+   span {
+      display: block;
+      font-size: 24px;
+      font-weight: 400;
+      margin-top: 10px;
+      margin-bottom: 10px;
+   }
 }
 
 .window__cell {
@@ -106,6 +128,38 @@
    align-items: center;
    max-width: 280px;
    margin-bottom: 40px;
+   line-height: 1.2;
+   font-size: 16px;
+}
+
+.window__cell_red {
+   display: block;
+   background: url(../../../img/red.png) no-repeat left;
+}
+
+.window__cell_green {
+   display: block;
+   background: url(../../../img/green.png) no-repeat left;
+}
+
+.window__cell_grey {
+   display: block;
+   background: url(../../../img/grey.png) no-repeat left;
+}
+
+.window-2 {
+   .window__cell {
+      margin-bottom: 25px;
+      padding-left: 25px;
+   }
+}
+
+.window__cell_f18 {
+   font-size: 18px;
+   span {
+      color: #58a4c6;
+      display: inline!important;
+   }
 }
 
 .window__link {
@@ -141,4 +195,36 @@
 .window__post-text-small {
    color: #000000;
    font-size: 14px;
+}
+
+.window-3 {
+   padding-top: 30px;
+   .window__cell {
+      display: block;
+      span {
+         display: block;
+         margin-top: 4px;
+      }
+   }
+   .window__row {
+      &:last-of-type {
+         margin-top: 20px;
+      }
+   }
+}
+
+@media (max-width: 1600px) {
+   .window-2 {
+      .window__row {
+         flex-wrap: wrap;
+         justify-content: start;
+         .window__cell {
+            max-width: 100%;
+         }
+      }
+   }
+   .window-3 .window__row {
+      flex-wrap: wrap;
+      justify-content: start;
+   }
 }

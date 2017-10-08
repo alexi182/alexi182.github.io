@@ -158,41 +158,50 @@
    <ul>
       <li>
          <a href="messages.html">
-            <span>УВЕДОМЛЕНИЯ (+5)</span>
+            <span class="messages__notice">УВЕДОМЛЕНИЯ</span>
             <img src="/img/svg/notice2.svg" alt="icon">
+            <span class="sidebar__num">5</span>
          </a>
       </li>
       <li>
          <a href="private-messages.html">
-            <span>ЛИЧНЫЕ СООБЩЕНИЯ (+1)</span>
+            <span class="messages__notice">ЛИЧНЫЕ СООБЩЕНИЯ</span>
             <img src="/img/svg/messages2.svg" alt="icon">
+            <span class="sidebar__num">5</span>
          </a>
       </li>
       <li>
          <a href="documents.html">
-            <span>ДОКУМЕНТЫ (+3)</span>
+            <span class="messages__notice">ДОКУМЕНТЫ</span>
             <img src="/img/svg/doc2.svg" alt="icon">
+            <span class="sidebar__num">5</span>
          </a>
       </li>
       <li>
          <a href="events.html">
-            <span>СОБЫТИЯ (+5)</span>
+            <span class="messages__notice">СОБЫТИЯ</span>
             <img src="/img/svg/events2.svg" alt="icon">
+            <span class="sidebar__num">5</span>
          </a>
       </li>
       <li>
          <a href="users.html">
-            <span>ПОЛЬЗОВАТЕЛИ (+2)</span>
+            <span class="messages__notice">ПОЛЬЗОВАТЕЛИ</span>
             <img src="/img/svg/user2.svg" alt="icon">
+            <span class="sidebar__num">5</span>
          </a>
       </li>
       <li>
          <a href="settings.html">
-            <span>ПРОФИЛЬ И НАСТРОЙКИ</span>
+            <span class="messages__notice">ПРОФИЛЬ И НАСТРОЙКИ</span>
             <img src="/img/svg/settings2.svg" alt="icon">
          </a>
       </li>
    </ul>
+   <div class="sidebar__item">
+      <img src="/img/logo-side.png" alt="logo" />
+      <div class="sidebar__phone">тел.: 8-800-xxx-xx-xx</div>
+   </div>
 </aside>
 
    <div class="index-wrapper index-sidebar">
@@ -217,7 +226,16 @@
 
             <div class="content-block user-info">
                <div class="content-block__item">
-                  <img src="/img/avatar-settings.png" alt="avatar" />
+                  <div class="content-block__img">
+                     <img src="/img/avatar-settings.png" class="content-block__avatar" alt="avatar" />
+
+
+                     <div class="avatar-back">
+                        <input type="file" class="upload-file" />
+                     </div>
+
+
+                  </div>
                </div>
                <div class="content-block__item">
                   <div class="content-block__name">
@@ -252,6 +270,7 @@
 
    <div class="page-content page-content_closed">
       <div class="page-content__item">
+         <p class="page-content__item-name">Основное</p>
          <form action="#">
             <div class="page-content__row">
                <label class="page-content__label">Фамилия</label>
@@ -295,12 +314,40 @@
                   <input type="text" class="datepicker" />
                </div>
             </div>
+            <div class="page-content__row flex-c">
+               <button type="submit" class="page-content__btn">Cохранить</button>
+               <button type="submit" class="page-content__btn">Отменить</button>
+            </div>
          </form>
+      </div>
+
+      <div class="page-content__item">
+         <p class="page-content__item-name">Изменить пароль</p>
+
+         <form action="#">
+            <div class="page-content__row">
+               <label class="page-content__label">введите новый
+                  пароль</label>
+               <div class="page-content__row-item">
+                  <input type="password" />
+               </div>
+            </div>
+            <div class="page-content__row">
+               <label class="page-content__label">повторите новый
+                  пароль</label>
+               <div class="page-content__row-item">
+                  <input type="password" />
+               </div>
+            </div>
+            <div class="page-content__row flex-c">
+               <button type="submit" class="page-content__btn">Cохранить</button>
+            </div>
+         </form>
+
       </div>
 
    </div>
 </div>
 <script src="/assets/js/bundle.js"></script>
-
 </body>
 </html>

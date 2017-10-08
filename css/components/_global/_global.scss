@@ -261,9 +261,31 @@ select {
 
 .flex {
    display: flex;
-   flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
+}
+
+.flex-r {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+.flex-wrap {
+   flex-wrap: wrap;
+}
+
+.flex-sb {
+   justify-content: space-between;
+}
+
+.flex-c {
+   justify-content: center!important;
+}
+
+.flex-wrap {
+   flex-wrap: wrap;
+
 }
 
 .stick-footer {

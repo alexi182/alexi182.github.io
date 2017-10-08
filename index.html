@@ -45,19 +45,36 @@
 
    <div class="index-search-box">
       <form class="index-search__form" action="">
-         <div class="index-search__form-item">
+         <div class="index-search__form-item flex">
             <label class="index-search__label">Логин</label>
-            <select class="chosen-select">
-               <option>Пользователь 1</option>
-               <option>Пользователь 2</option>
-            </select>
+            <div class="index-search__col">
+               <input type="text" />
+            </div>
          </div>
 
-         <div class="index-search__form-item">
+         <div class="index-search__form-item flex">
             <label class="index-search__label">Пароль</label>
-            <input type="text" />
+            <div class="index-search__col">
+               <input type="password" />
+            </div>
          </div>
-         <a href="html/main.html" class="index-btn-enter">Войти</a>
+
+         <div class="index-search__form-item flex-r">
+            <div class="index-search__col flex">
+               <a href="html/main.html" class="index-btn-enter">Войти</a>
+               <a href="/" class="index-btn-enter index-question">
+                  <img src="/img/question.png" alt="question" />
+               </a>
+
+               <div class="page-content__post-top">
+                  <input type="checkbox" class="checkbox" id="check3">
+                  <label class="checkbox-label" for="check3"></label>
+                  <div class="page-content__post-date">
+                     запомнить
+                  </div>
+               </div>
+            </div>
+         </div>
       </form>
    </div>
 </div>

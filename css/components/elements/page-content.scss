@@ -51,7 +51,7 @@ float: left;
    font-weight: 400;
    border: 1px solid #39404c;
    cursor: pointer;
-   margin-right: 7px;
+   margin-right: 10px;
    text-transform: uppercase;
    @include transition(300);
    &:hover {
@@ -82,6 +82,13 @@ float: left;
    margin-bottom: 27px;
 }
 
+.page-content__item-name {
+   color: #000000;
+   font-size: 20px;
+   margin-top: 0;
+   margin-bottom: 25px;
+}
+
 .page-content__post-block {
    display: flex;
    flex-wrap: wrap;
@@ -92,12 +99,16 @@ float: left;
    border-left: 1px solid #8696ae;
 }
 
+.page-content__btn {
+
+}
+
 .page-content__row {
    display: flex;
    //flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
-   margin-bottom: 17px;
+   margin-bottom: 20px;
 
    label {
       font-size: 16px;
@@ -155,7 +166,7 @@ float: left;
 .page-content__post-date {
    display: inline-block;
    font-size: 20px;
-   margin-left: 15px;
+   margin-left: 8px;
    font-weight: 400;
 }
 
@@ -414,6 +425,10 @@ float: left;
    font-size: 14px;
 }
 
+.row-date-inner {
+   margin-left: 10px;
+}
+
 .row-date-changed {
    color: #2685b2;
    font-size: 15px;
@@ -422,7 +437,7 @@ float: left;
 .row-count {
    text-align: right;
    border-top: 1px solid #a5a5a5;
-   /*padding-top: 15px;*/
+   padding-top: 15px;
 }
 
 .row-count__item {

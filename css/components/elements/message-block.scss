@@ -1,53 +1,69 @@
 .message-block {
    margin-bottom: 10px;
-   border-top: 1px solid #d55342;
+   border-top: 1px solid #cccccc;
    padding: 20px 0px 6px;
+   &:after {
+      @include clear();
+   }
 }
 
 .message-block__column {
    display: inline-block;
    vertical-align: top;
+   .date-block__item-top-data {
+      margin-top: 4px;
+   }
    &:last-of-type {
       float: right;
    }
    .row {
       &:first-of-type {
-         margin-bottom: 10px;
+         margin-bottom: 17px;
+      }
+      &:after {
+         @include clear();
       }
    }
 }
 
+.notice-red {
+   float: left;
+   margin-right: 20px;
+   margin-top: 8px;
+}
+
 .message {
+   display: block;
    color: #d55342;
    font-size: 18px;
    font-weight: 400;
    margin-bottom: 0;
    margin-top: 0px;
-   max-width: 627px;
 
-   &:after {
-      content: "";
-      display: inline-block;
-      width: 31px;
-      height: 27px;
-      background-size: 31px;
-      background: url(../../../img/notice_min.svg) no-repeat right;
-      float: right;
-      position: relative;
-      top: -53px;
-      left: -42px;
-   }
+   //&:after {
+   //   content: "";
+   //   display: inline-block;
+   //   width: 31px;
+   //   height: 27px;
+   //   background-size: 31px;
+   //   background: url(../../../img/notice_min.svg) no-repeat right;
+   //   float: right;
+   //   position: relative;
+   //   top: -53px;
+   //   left: -42px;
+   //}
 }
 
 .message-block__accept {
-   display: block;
-   margin-top: 22px;
-   width: 150px;
-   height: 39px;
+   display: inline-block;
+   vertical-align: top;
+   float: right;
+   width: 128px;
+   height: 28px;
    border: 1px solid #475973;
-   font-size: 16px;
+   font-size: 14px;
    font-weight: 400;
-   line-height: 36px;
+   line-height: 27px;
    text-transform: uppercase;
    color: #475973;
    text-align: center;

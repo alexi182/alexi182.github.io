@@ -56,6 +56,142 @@
    margin-bottom: 0;
    width: 381px;
    line-height: 1.2;
+   span {
+      margin-top: 15px;
+      display: block;
+   }
+}
+
+.content-container__bars {
+   margin-top: 20px;
+   margin-bottom: 35px;
+   a{
+      margin-right: 25px;
+      position: relative;
+      &:last-of-type{
+         margin-right: 0;
+      }
+      &:hover {
+         .content-container__bars-tooltip {
+            display: block;
+         }
+      }
+   }
+   &-edit {
+      display: inline-block;
+      vertical-align: middle;
+      width: 21px;
+      height: 21px;
+      background: url(../../../img/svg/document2/edit.svg) no-repeat;
+      background-size: 20px;
+      @include transition(200);
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 21px;
+         height: 21px;
+         background: url(../../../img/svg/document2/edit2.svg) no-repeat;
+         background-size: 20px;
+      }
+   }
+   &-file {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 28px;
+      background: url(../../../img/svg/document2/files.svg) no-repeat;
+      background-size: 20px;
+      @include transition(200);
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 20px;
+         height: 28px;
+         background: url(../../../img/svg/document2/files2.svg) no-repeat;
+         background-size: 20px;
+      }
+   }
+
+   &-download {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 21px;
+      background: url(../../../img/svg/document2/download.svg) no-repeat;
+      background-size: 20px;
+      @include transition(200);
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 20px;
+         height: 21px;
+         background: url(../../../img/svg/document2/download2.svg) no-repeat;
+         background-size: 20px;
+      }
+   }
+   &-share {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 25px;
+      background: url(../../../img/svg/document2/share.svg) no-repeat;
+      background-size: 20px;
+      @include transition(200);
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 20px;
+         height: 25px;
+         background: url(../../../img/svg/document2/share2.svg) no-repeat;
+         background-size: 20px;
+      }
+   }
+   &-subscription {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 21px;
+      background: url(../../../img/svg/document2/subscription.svg) no-repeat;
+      background-size: 20px;
+      @include transition(200);
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 20px;
+         height: 21px;
+         background: url(../../../img/svg/document2/subscription2.svg) no-repeat;
+         background-size: 20px;
+      }
+   }
+   &-event {
+      display: inline-block;
+      vertical-align: middle;
+      width: 20px;
+      height: 21px;
+      background: url(../../../img/svg/document2/event.svg) no-repeat;
+      background-size: 20px;
+      @include transition(200);
+      &:hover {
+         display: inline-block;
+         vertical-align: middle;
+         width: 20px;
+         height: 21px;
+         background: url(../../../img/svg/document2/event2.svg) no-repeat;
+         background-size: 20px;
+      }
+   }
+}
+
+.content-container__bars-tooltip {
+   display: none;
+   position: absolute;
+   background: #ffffff;
+   border: 1px solid #999999;
+   padding: 2px 5px;
+   color: #39404c;
+   font-size: 14px;
+   font-weight: 400;
+   top: -33px;
 }
 
 .content-container__icon {

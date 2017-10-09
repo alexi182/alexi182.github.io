@@ -165,9 +165,10 @@ float: left;
 
 .page-content__post-date {
    display: inline-block;
-   font-size: 20px;
+   font-size: 16px;
    margin-left: 8px;
    font-weight: 400;
+   color: #000000;
 }
 
 .page-content__post-userbar {
@@ -358,6 +359,15 @@ float: left;
 }
 
 .pagination {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   .page-active {
+      background: #3d95bf;
+      border: 1px solid #3d95bf;
+      a{
+         color: #ffffff;
+      }
+   }
    ul {
       list-style: none;
       text-align: center;
@@ -365,6 +375,7 @@ float: left;
       li {
          display: inline-block;
          vertical-align: top;
+         border-radius: 7px;
          border: 1px solid #000000;
          background: rgba(255, 255, 255, 0.8);
          @include transition(300);
@@ -375,7 +386,7 @@ float: left;
                padding: 16.5px 17px;
             }
             &:hover {
-               background: #39404c url(../../../img/svg/arrow3_2.svg)no-repeat center;
+               background: #3d95bf url(../../../img/svg/arrow3_2.svg)no-repeat center;
             }
          }
          &:last-of-type {
@@ -385,7 +396,7 @@ float: left;
                padding: 16.5px 17px;
             }
             &:hover {
-               background: #39404c url(../../../img/svg/arrow4_2.svg)no-repeat center;
+               background: #3d95bf url(../../../img/svg/arrow4_2.svg)no-repeat center;
             }
          }
          margin-left: 4px;
@@ -398,7 +409,8 @@ float: left;
             font-weight: 400;
          }
          &:hover {
-            background: #39404c;
+            background: #3d95bf;
+            border: 1px solid #3d95bf;
             a{
                color: #ffffff;
             }

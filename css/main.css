@@ -257,6 +257,15 @@ select {
 .mt30 {
   margin-top: 30px; }
 
+.mt3 {
+  margin-top: 3px; }
+
+.ml30 {
+  margin-left: 30px; }
+
+.pl73 {
+  padding-left: 73px; }
+
 .w100 {
   width: 100% !important; }
 
@@ -1186,30 +1195,76 @@ The `sprites` mixin generates identical output to the CSS template
   .content-messages a:last-of-type {
     margin-right: 0px; }
 
+.dateblock-small {
+  /* .dateblock .ui-widget-header .ui-icon {
+       background-image: url(../../../img/ui-icons_444444_256x240.png) !important;
+    }*/ }
+  .dateblock-small .ui-datepicker-calendar {
+    background: #ffffff; }
+  .dateblock-small #ui-datepicker-div {
+    width: 290px;
+    background: #ffffff; }
+  .dateblock-small .ui-datepicker {
+    padding: 0 10px 0 !important; }
+    .dateblock-small .ui-datepicker .ui-datepicker-title {
+      margin: 0 !important; }
+  .dateblock-small .ui-datepicker td {
+    padding: 5px 8px !important;
+    cursor: pointer; }
+  .dateblock-small .ui-datepicker th {
+    font-size: 14px !important; }
+  .dateblock-small .ui-widget-content .ui-state-default {
+    font-size: 15px !important; }
+  .dateblock-small .ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: 0;
+    background-color: #0578af;
+    margin: 0 -10px !important; }
+  .dateblock-small .ui-datepicker select.ui-datepicker-month {
+    cursor: pointer;
+    display: inline-block;
+    background: #0578af url(../../../img/svg/arrow1.svg) no-repeat 143px 17px !important;
+    padding-left: 12px;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 0px;
+    height: 40px;
+    width: auto !important;
+    border-radius: 2px;
+    text-transform: uppercase; }
+  .dateblock-small .ui-datepicker select.ui-datepicker-year {
+    cursor: pointer;
+    background: #0578af url(../../../img/svg/arrow1.svg) no-repeat 56px 17px !important;
+    padding-left: 0 !important;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    padding-bottom: 0px;
+    width: 75px !important;
+    height: 40px;
+    border-radius: 2px; }
+  .dateblock-small .dropdown:hover {
+    box-shadow: none !important; }
+  .dateblock-small .ui-datepicker .ui-datepicker-prev {
+    background: url(../../../img/left.png) no-repeat center;
+    cursor: pointer;
+    top: 11px;
+    background-size: 9px; }
+  .dateblock-small .ui-datepicker .ui-datepicker-next {
+    background: url(../../../img/right.png) no-repeat center;
+    cursor: pointer;
+    top: 11px;
+    background-size: 9px; }
+
 .dateblock {
   width: 336px;
   background: rgba(255, 255, 255, 0.8);
-  /*   .ui-datepicker .ui-datepicker-next span {
-         display: block;
-         position: absolute;
-         left: 81%;
-         margin-left: -8px;
-         top: 55%;
-         margin-top: -8px;
-         background: url(../../../img/svg/arrow4_2.svg) no-repeat!important;
-         cursor: pointer;
-      }
-
-      .ui-datepicker .ui-datepicker-prev span {
-         display: block;
-         position: absolute;
-         left: 46%;
-         margin-left: -8px;
-         top: 57%;
-         margin-top: -8px;
-         background: url(../../../img/svg/arrow3_2.svg) no-repeat!important;
-         cursor: pointer;
-      }*/
+  padding-top: 10px;
   /* .ui-datepicker-calendar {
        background: rgba(255, 255, 255, 0.8);
     }*/ }
@@ -1220,16 +1275,17 @@ The `sprites` mixin generates identical output to the CSS template
     width: 100%; }
   .dateblock .ui-datepicker {
     padding: 0em 1.2em 0; }
-  .dateblock .ui-datepicker-header {
-    /*background: #3b94c0;*/
+  .dateblock .ui-datepicker .ui-datepicker-header {
+    position: relative;
+    padding: 0 0;
     border: none;
-    background: transparent;
-    margin: 0 -17px; }
+    margin: 0 -4px;
+    background-color: #0578af; }
   .dateblock .ui-datepicker-title {
     background: transparent; }
   .dateblock .ui-datepicker .ui-datepicker-title {
     text-align: center;
-    margin: 5px 0px 5px 0px; }
+    margin: 0; }
   .dateblock .ui-datepicker th {
     font-size: 16px;
     font-weight: 400;
@@ -1282,7 +1338,7 @@ The `sprites` mixin generates identical output to the CSS template
   .dateblock .ui-datepicker select.ui-datepicker-month {
     cursor: pointer;
     display: inline-block;
-    background: #3b94c0 url(../../../img/svg/arrow1.svg) no-repeat 143px 17px;
+    background: #0578af;
     padding-left: 12px;
     color: #ffffff;
     border: none;
@@ -1291,8 +1347,9 @@ The `sprites` mixin generates identical output to the CSS template
     line-height: 40px;
     padding-bottom: 0px;
     height: 40px;
-    width: 173px;
+    width: auto;
     border-radius: 2px;
+    text-transform: uppercase;
     /*   &:after {
             content: "";
             display: inline-block;
@@ -1304,9 +1361,11 @@ The `sprites` mixin generates identical output to the CSS template
       background: #ffffff;
       color: #000000;
       font-size: 16px; }
+  .dateblock .dropdown:hover {
+    box-shadow: none; }
   .dateblock .ui-datepicker select.ui-datepicker-year {
     cursor: pointer;
-    background: #3b94c0 url(../../../img/svg/arrow1.svg) no-repeat 86px 17px;
+    background: #0578af url(../../../img/svg/arrow1.svg) no-repeat 65px 17px;
     padding-left: 12px;
     color: #ffffff;
     border: none;
@@ -1314,7 +1373,7 @@ The `sprites` mixin generates identical output to the CSS template
     font-weight: 400;
     line-height: 40px;
     padding-bottom: 0px;
-    width: 112px;
+    width: 82px;
     height: 40px;
     border-radius: 2px; }
     .dateblock .ui-datepicker select.ui-datepicker-year option {
@@ -1322,10 +1381,22 @@ The `sprites` mixin generates identical output to the CSS template
       color: #000000;
       font-size: 16px;
       /* &:hover {
-            background: red;
-            -webkit-background-imager: red;
-            -moz-background-image: red;
-         }*/ }
+             background: red;
+             -webkit-background-imager: red;
+             -moz-background-image: red;
+          }*/ }
+  .dateblock .ui-datepicker .ui-datepicker-prev {
+    background: url(../../../img/left.png) no-repeat center;
+    cursor: pointer;
+    top: 8px;
+    left: 4px;
+    background-size: 9px; }
+  .dateblock .ui-datepicker .ui-datepicker-next {
+    background: url(../../../img/right.png) no-repeat center;
+    cursor: pointer;
+    top: 8px;
+    right: 4px;
+    background-size: 9px; }
   .dateblock .ui-widget-header .ui-icon {
     display: none !important; }
 
@@ -2797,7 +2868,7 @@ span.option-item {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.1;
-  margin-bottom: 7px; }
+  margin-bottom: 10px; }
 
 .layout-content-user__actions a {
   padding: 2px 10px; }
@@ -3707,9 +3778,10 @@ span.option-item {
 
 .page-content__post-date {
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   margin-left: 8px;
-  font-weight: 400; }
+  font-weight: 400;
+  color: #000000; }
 
 .page-content__post-userbar {
   float: right;
@@ -3864,50 +3936,60 @@ span.option-item {
 .ui-widget-header .ui-icon {
   background-image: url(../../../img/ui-icons_444444_256x240.png) !important; }
 
-.pagination ul {
-  list-style: none;
-  text-align: center;
-  padding-left: 0; }
-  .pagination ul li {
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid #000000;
-    background: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
-    transition: all 300ms;
-    margin-left: 4px; }
-    .pagination ul li:first-of-type {
-      background: rgba(255, 255, 255, 0.8) url(../../../img/svg/arrow3_1.svg) no-repeat center;
-      -webkit-transition: all 300ms;
-      -moz-transition: all 300ms;
-      transition: all 300ms; }
-      .pagination ul li:first-of-type a {
-        padding: 16.5px 17px; }
-      .pagination ul li:first-of-type:hover {
-        background: #39404c url(../../../img/svg/arrow3_2.svg) no-repeat center; }
-    .pagination ul li:last-of-type {
-      background: rgba(255, 255, 255, 0.8) url(../../../img/svg/arrow4_1.svg) no-repeat center;
-      -webkit-transition: all 300ms;
-      -moz-transition: all 300ms;
-      transition: all 300ms; }
-      .pagination ul li:last-of-type a {
-        padding: 16.5px 17px; }
-      .pagination ul li:last-of-type:hover {
-        background: #39404c url(../../../img/svg/arrow4_2.svg) no-repeat center; }
-    .pagination ul li a {
-      display: block;
-      padding: 5px 12px;
+.pagination {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .pagination .page-active {
+    background: #3d95bf;
+    border: 1px solid #3d95bf; }
+    .pagination .page-active a {
+      color: #ffffff; }
+  .pagination ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0; }
+    .pagination ul li {
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 7px;
+      border: 1px solid #000000;
+      background: rgba(255, 255, 255, 0.8);
       -webkit-transition: all 300ms;
       -moz-transition: all 300ms;
       transition: all 300ms;
-      color: #000000;
-      font-size: 17px;
-      font-weight: 400; }
-    .pagination ul li:hover {
-      background: #39404c; }
-      .pagination ul li:hover a {
-        color: #ffffff; }
+      margin-left: 4px; }
+      .pagination ul li:first-of-type {
+        background: rgba(255, 255, 255, 0.8) url(../../../img/svg/arrow3_1.svg) no-repeat center;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        transition: all 300ms; }
+        .pagination ul li:first-of-type a {
+          padding: 16.5px 17px; }
+        .pagination ul li:first-of-type:hover {
+          background: #3d95bf url(../../../img/svg/arrow3_2.svg) no-repeat center; }
+      .pagination ul li:last-of-type {
+        background: rgba(255, 255, 255, 0.8) url(../../../img/svg/arrow4_1.svg) no-repeat center;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        transition: all 300ms; }
+        .pagination ul li:last-of-type a {
+          padding: 16.5px 17px; }
+        .pagination ul li:last-of-type:hover {
+          background: #3d95bf url(../../../img/svg/arrow4_2.svg) no-repeat center; }
+      .pagination ul li a {
+        display: block;
+        padding: 5px 12px;
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        transition: all 300ms;
+        color: #000000;
+        font-size: 17px;
+        font-weight: 400; }
+      .pagination ul li:hover {
+        background: #3d95bf;
+        border: 1px solid #3d95bf; }
+        .pagination ul li:hover a {
+          color: #ffffff; }
 
 .slick-slider {
   width: 785px; }
@@ -4514,8 +4596,8 @@ span.option-item {
   position: relative;
   top: 5px;
   left: 0;
-  width: 23px;
-  height: 23px;
+  width: 21px;
+  height: 21px;
   border: 1px solid #818181;
   cursor: pointer; }
 
@@ -4525,11 +4607,11 @@ span.option-item {
   position: relative;
   top: 5px;
   left: 0;
-  width: 23px;
-  height: 23px;
+  width: 21px;
+  height: 21px;
   border: 1px solid #818181;
-  background: url(../../../img/svg/tick.svg) no-repeat 1px;
-  background-size: 20px 20px; }
+  background: url(../../../img/svg/tick.svg) no-repeat 0px;
+  background-size: 19px 17px; }
 
 .sidebar__item {
   position: absolute;
@@ -4849,6 +4931,7 @@ span.option-item {
   font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
+  margin: 17px auto 0;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
   transition: all 300ms; }
@@ -4856,7 +4939,7 @@ span.option-item {
     background: rgba(255, 245, 215, 0.25);
     color: #39404c; }
 
-.index-search__col {
+.index-search__col, .index-content__col {
   width: 400px;
   margin-left: 7px; }
 
@@ -4925,44 +5008,44 @@ span.option-item {
   font: bold 14px open_sans, sans-serif;
   color: #364693; }
 
-.index-search-box {
+.index-search-box, .index-content-box {
   width: 470px;
   margin: 70px auto 0; }
-  .index-search-box .icon {
+  .index-search-box .icon, .index-content-box .icon {
     display: block;
     position: absolute;
     top: 15px;
     right: 16px;
     font-size: 21px; }
 
-.index-search__form {
+.index-search__form, .index-content__form {
   display: table;
   width: 100%; }
-  .index-search__form-item {
+  .index-search__form-item, .index-content__form-item {
     margin-bottom: 15px; }
-    .index-search__form-item label {
+    .index-search__form-item label, .index-content__form-item label {
       font-size: 18px;
       font-weight: 400;
       color: #39404c; }
-    .index-search__form-item:first-of-type label {
+    .index-search__form-item:first-of-type label, .index-content__form-item:first-of-type label {
       margin-right: 9px; }
-    .index-search__form-item input {
+    .index-search__form-item input, .index-content__form-item input {
       background: #ffffff;
       border: none;
       outline: 0;
       padding: 13px 10px 12px 10px;
       width: 400px;
       box-sizing: border-box; }
-    .index-search__form-item:last-of-type {
+    .index-search__form-item:last-of-type, .index-content__form-item:last-of-type {
       margin-top: 20px; }
 
-.index-search-box__themes {
+.index-search-box__themes, .index-content-box__themes {
   width: 160px;
   display: table-cell; }
-  .index-search-box__themes .chosen-select {
+  .index-search-box__themes .chosen-select, .index-content-box__themes .chosen-select {
     width: 160px; }
 
-.index-search-box__input {
+.index-search-box__input, .index-content-box__input {
   display: table-cell;
   padding-right: 50px;
   vertical-align: top; }
@@ -4995,6 +5078,10 @@ span.option-item {
   outline: none;
   margin: 0;
   z-index: 2; }
+
+.index-content__row-item {
+  display: inline-block;
+  vertical-align: top; }
 
 .index-description {
   line-height: 1.2;
@@ -5599,6 +5686,72 @@ span.option-item {
   background-color: #39404c !important; }
 
 .index-search-box .chosen-container .chosen-results li {
+  padding: 9px 11px;
+  border-bottom: 1px solid grey; }
+
+.index-content-box .chosen-container {
+  font-size: 14px;
+  /* text-transform: uppercase;*/
+  color: #333;
+  background: #ffffff;
+  width: 400px !important; }
+  .index-content-box .chosen-container .chosen-drop {
+    border: 1px solid #818181;
+    border-top: 0;
+    background: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+    border: none; }
+  .index-content-box .chosen-container .chosen-results {
+    margin: 0 0px 0px 0;
+    padding: 0 0 0 0px; }
+    .index-content-box .chosen-container .chosen-results li {
+      display: none;
+      margin: 0;
+      padding: 9px 11px;
+      list-style: none;
+      line-height: 15px;
+      word-wrap: break-word;
+      -webkit-touch-callout: none;
+      border-bottom: 1px solid grey; }
+
+.index-content-box .chosen-container-single .chosen-drop {
+  margin-top: -3px; }
+
+.index-content-box .chosen-container-single .chosen-single {
+  padding: 0 0 0 8px;
+  height: 44px;
+  border: none;
+  border-radius: 3px;
+  background: none;
+  box-shadow: none;
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 46px; }
+  .index-content-box .chosen-container-single .chosen-single span {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: open_sans, sans-serif; }
+  .index-content-box .chosen-container-single .chosen-single div {
+    width: 42px;
+    background-color: #39404c; }
+    .index-content-box .chosen-container-single .chosen-single div b {
+      display: block;
+      transition: .3s;
+      background: url(../../../img/svg/arrow1.svg) no-repeat center; }
+
+.index-content-box .chosen-container-active.chosen-with-drop .chosen-single {
+  border: none;
+  background-image: none;
+  box-shadow: none; }
+  .index-content-box .chosen-container-active.chosen-with-drop .chosen-single div b {
+    background: url(../../../img/svg/arrow1.svg) no-repeat center;
+    transform: rotate(180deg); }
+
+.index-content-box .chosen-container-active.chosen-with-drop .chosen-single div {
+  background-color: #39404c !important; }
+
+.index-content-box .chosen-container .chosen-results li {
   padding: 9px 11px;
   border-bottom: 1px solid grey; }
 

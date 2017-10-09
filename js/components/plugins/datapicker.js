@@ -19,5 +19,7 @@ $('.dateblock').datepicker(
     settings
 );
 
+$( "#ui-datepicker-div" ).wrap( "<div class='dateblock dateblock-small'></div>" );
+
 
 

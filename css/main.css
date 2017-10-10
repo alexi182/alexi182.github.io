@@ -298,7 +298,7 @@ select {
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding-bottom: 70px; }
+  padding-bottom: 175px; }
 
 .content {
   height: 100%;
@@ -884,6 +884,30 @@ textarea {
 .svg-like-dims {
   width: 100px;
   height: 100px; }
+
+.svg-lm-doc-dims {
+  width: 38px;
+  height: 42.92px; }
+
+.svg-lm-events-dims {
+  width: 38px;
+  height: 38.4px; }
+
+.svg-lm-messages-dims {
+  width: 38px;
+  height: 37.559px; }
+
+.svg-lm-notice-dims {
+  width: 38px;
+  height: 33.619px; }
+
+.svg-lm-settings-dims {
+  width: 38px;
+  height: 38px; }
+
+.svg-lm-user-dims {
+  width: 38px;
+  height: 42.26px; }
 
 .svg-messages-dims {
   width: 80.94px;
@@ -1631,10 +1655,11 @@ The `sprites` mixin generates identical output to the CSS template
    }*/ }
   .content-container__bars a {
     margin-right: 27px;
+    display: inline-block;
     position: relative; }
     .content-container__bars a:last-of-type {
       margin-right: 0; }
-    .content-container__bars a:hover .content-container__bars-tooltip {
+    .content-container__bars a:hover .tooltip {
       display: block; }
   .content-container__bars .svg-edit-dims {
     width: 29px;
@@ -1685,7 +1710,7 @@ The `sprites` mixin generates identical output to the CSS template
     .content-container__bars .svg-event-dims:hover {
       fill: #3b94c0; }
 
-.content-container__bars-tooltip {
+.tooltip {
   display: none;
   position: absolute;
   background: #ffffff;
@@ -1694,7 +1719,8 @@ The `sprites` mixin generates identical output to the CSS template
   color: #39404c;
   font-size: 14px;
   font-weight: 400;
-  top: -33px; }
+  top: -49px;
+  z-index: 1000; }
 
 .content-container__icon {
   display: inline-block;
@@ -2111,24 +2137,27 @@ The `sprites` mixin generates identical output to the CSS template
       content: "";
       display: inline-block;
       vertical-align: middle;
-      width: 20px;
-      height: 20px;
-      background: url(../../../img/mes.png) no-repeat; }
+      width: 23px;
+      height: 21px;
+      margin-right: 5px;
+      background: url(../../../img/svg/mes.svg) no-repeat; }
     .message__text-userbar a:nth-of-type(2):before {
       content: "";
       display: inline-block;
       vertical-align: middle;
-      width: 22px;
-      height: 22px;
-      background: url(../../../img/svg/document/read.svg) no-repeat;
+      width: 23px;
+      height: 21px;
+      margin-right: 5px;
+      background: url(../../../img/svg/read.svg) no-repeat;
       background-size: 22px; }
     .message__text-userbar a:last-of-type:before {
       content: "";
       display: inline-block;
       vertical-align: middle;
-      width: 22px;
-      height: 22px;
-      background: url(../../../img/svg/document/remove.svg) no-repeat;
+      width: 23px;
+      height: 21px;
+      margin-right: 5px;
+      background: url(../../../img/svg/del.svg) no-repeat;
       background-size: 22px; }
     .message__text-userbar a:hover {
       text-decoration: none; }
@@ -4452,6 +4481,10 @@ span.option-item {
   width: 300px; }
   .sidebar .messages__notice {
     display: none; }
+  .sidebar .tooltip {
+    top: 11px;
+    z-index: 1000;
+    left: 100%; }
   .sidebar ul {
     margin-top: 70px;
     padding-left: 0; }
@@ -4473,11 +4506,22 @@ span.option-item {
         position: relative;
         top: -7px;
         right: 3px; }
+      .sidebar ul li svg {
+        width: 41px;
+        height: 36px;
+        display: inline-block;
+        float: right;
+        position: relative;
+        top: -7px;
+        right: 3px;
+        fill: #ffffff; }
       .sidebar ul li a {
         display: block;
         position: relative;
         color: #ffffff;
         padding: 19px 11px 40px 23px; }
+        .sidebar ul li a:hover .tooltip {
+          display: block; }
   .sidebar .close__icon {
     width: 45px;
     height: 29px;
@@ -4505,6 +4549,8 @@ span.option-item {
   transform: translateX(0); }
   .sidebar_opened .sidebar ul li a {
     padding: 23px 11px 24px 23px; }
+    .sidebar_opened .sidebar ul li a:hover .tooltip {
+      display: none; }
 
 .sidebar_opened .content {
   padding-left: 325px; }

@@ -67,12 +67,13 @@
    margin-bottom: 35px;
    a{
       margin-right: 27px;
+      display: inline-block;
       position: relative;
       &:last-of-type{
          margin-right: 0;
       }
       &:hover {
-         .content-container__bars-tooltip {
+         .tooltip {
             display: block;
          }
       }
@@ -234,7 +235,7 @@
    //}
 }
 
-.content-container__bars-tooltip {
+.tooltip {
    display: none;
    position: absolute;
    background: #ffffff;
@@ -243,7 +244,8 @@
    color: #39404c;
    font-size: 14px;
    font-weight: 400;
-   top: -33px;
+   top: -49px;
+   z-index: 1000;
 }
 
 .content-container__icon {

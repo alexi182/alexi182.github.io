@@ -30,6 +30,16 @@
       </div>
       <div class="page-content">
 
+         <div class="page-content-row row-search">
+            <form action="/" class="form-search w76">
+               <input type="search" placeholder="ФИО, логин, e-mail" class="search-row" />
+               <button type ="submit" class="search-btn">Искать</button>
+            </form>
+            <a href="#" class="add-btn">
+               <span>Отправить сообщение</span>
+            </a>
+         </div>
+
          <div class="page-content__inner">
 
             <div class="form-notice mt0">Всего личных сообщений: <span>56</span>  <span>Показать все</span>
@@ -133,23 +143,11 @@
                            </form>-->
                   </div>
                </div>
-
             </div>
-
          </div>
 
-         <div class="pagination">
-            <ul>
-               <li><a href="#"></a></li>
-               <li><a href="#">1</a></li>
-               <li><a href="#">2</a></li>
-               <li><a href="#">3</a></li>
-               <li><a href="#">4</a></li>
-               <li><a href="#">5</a></li>
-               <li><a href="#">
-               </a></li>
-            </ul>
-         </div>
+         @@include('../includes/elements/pagination.html', {})
+
       </div>
    </main>
 

@@ -14,6 +14,11 @@
    .messages__notice {
       display: none;
    }
+   .tooltip{
+      top: 11px;
+      z-index: 1000;
+      left: 100%;
+   }
    ul {
       margin-top: 70px;
       padding-left: 0;
@@ -35,11 +40,26 @@
             top: -7px;
             right: 3px;
          }
+         svg {
+            width: 41px;
+            height: 36px;
+            display: inline-block;
+            float: right;
+            position: relative;
+            top: -7px;
+            right: 3px;
+            fill: #ffffff;
+         }
          a{
             display: block;
             position: relative;
             color: #ffffff;
-            padding: 19px 11px 40px 23px;;
+            padding: 19px 11px 40px 23px;
+            &:hover{
+               .tooltip{
+                  display: block;
+               }
+            }
          }
       }
    }
@@ -48,7 +68,6 @@
       height: 29px;
       background: none;
    }
-
 }
 
 .sidebar__num {
@@ -74,6 +93,11 @@
          li{
             a{
                padding: 23px 11px 24px 23px;
+               &:hover{
+                  .tooltip{
+                     display: none;
+                  }
+               }
             }
          }
       }
@@ -174,8 +198,8 @@
    position: relative;
    top: 5px;
    left: 0;
-   width: 23px;
-   height: 23px;
+   width: 21px;
+   height: 21px;
    border: 1px solid #818181;
    cursor: pointer;
 }
@@ -186,11 +210,11 @@
    position: relative;
    top: 5px;
    left: 0;
-   width: 23px;
-   height: 23px;
+   width: 21px;
+   height: 21px;
    border: 1px solid #818181;
-   background: url(../../../img/svg/tick.svg) no-repeat 1px;
-   background-size: 20px 20px;
+   background: url(../../../img/svg/tick.svg) no-repeat 0px;
+   background-size: 19px 17px;
 }
 
 .sidebar__item {

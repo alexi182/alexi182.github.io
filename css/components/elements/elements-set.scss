@@ -163,59 +163,59 @@
          }
       }*/
 
-/*   &-download {
-      display: inline-block;
-      vertical-align: middle;
-      width: 26px;
-      height: 26px;
-      background: url(../../../img/svg/document2/download.svg) no-repeat center center;
-      background-size: 26px;
-      @include transition(200);
-      &:hover {
+   /*   &-download {
          display: inline-block;
          vertical-align: middle;
          width: 26px;
          height: 26px;
-         background: url(../../../img/svg/document2/download2.svg) no-repeat center center;
+         background: url(../../../img/svg/document2/download.svg) no-repeat center center;
          background-size: 26px;
-      }
-   }*/
-/*   &-share {
-      display: inline-block;
-      vertical-align: middle;
-      width: 23px;
-      height: 26px;
-      background: url(../../../img/svg/document2/share.svg) no-repeat center center;
-      background-size: 21px;
-      @include transition(200);
-      top: -2px;
-      &:hover {
+         @include transition(200);
+         &:hover {
+            display: inline-block;
+            vertical-align: middle;
+            width: 26px;
+            height: 26px;
+            background: url(../../../img/svg/document2/download2.svg) no-repeat center center;
+            background-size: 26px;
+         }
+      }*/
+   /*   &-share {
          display: inline-block;
          vertical-align: middle;
          width: 23px;
          height: 26px;
-         background: url(../../../img/svg/document2/share2.svg) no-repeat center center;
+         background: url(../../../img/svg/document2/share.svg) no-repeat center center;
          background-size: 21px;
+         @include transition(200);
          top: -2px;
-      }
-   }*/
-/*   &-subscription {
-      display: inline-block;
-      vertical-align: middle;
-      width: 24px;
-      height: 25px;
-      background: url(../../../img/svg/document2/subscription.svg) no-repeat center center;
-      background-size: 24px;
-      @include transition(200);
-      &:hover {
+         &:hover {
+            display: inline-block;
+            vertical-align: middle;
+            width: 23px;
+            height: 26px;
+            background: url(../../../img/svg/document2/share2.svg) no-repeat center center;
+            background-size: 21px;
+            top: -2px;
+         }
+      }*/
+   /*   &-subscription {
          display: inline-block;
          vertical-align: middle;
          width: 24px;
          height: 25px;
-         background: url(../../../img/svg/document2/subscription2.svg) no-repeat center center;
+         background: url(../../../img/svg/document2/subscription.svg) no-repeat center center;
          background-size: 24px;
-      }
-   }*/
+         @include transition(200);
+         &:hover {
+            display: inline-block;
+            vertical-align: middle;
+            width: 24px;
+            height: 25px;
+            background: url(../../../img/svg/document2/subscription2.svg) no-repeat center center;
+            background-size: 24px;
+         }
+      }*/
    //&-event {
    //   display: inline-block;
    //   vertical-align: middle;
@@ -359,24 +359,29 @@
 }
 
 .search-row {
-   display: inline-block;
-   width: 86%;
+   display: block;
+   width: 84%;
    height: 41px;
    border: 1px solid #dddddd;
    background-color: #ffffff;
-   padding: 3px 7px;
+   padding: 3px 7px 3px 15px;
    margin-right: 10px;
 }
 
 .search-btn {
-   display: inline-block;
-   width: 75px;
+   display: block;
+   /* width: 75px; */
    height: 40px;
    background-color: #466485;
    border: none;
    color: #ffffff;
    text-transform: uppercase;
    cursor: pointer;
+   padding: 0 17px;
+   @include transition(300);
+   &:hover {
+      background: lighten(#466485, 10%);
+   }
 }
 
 .page-content__userlink {
@@ -386,21 +391,27 @@
 .form-search {
    display: flex;
    justify-content: space-between;
-   width: 88%;
-   margin-right: 10px;
 }
 
 .add-btn {
-   display: block;
+   display: flex;
+   align-items: center;
+   margin-left: 10px;
    /* float: right;*/
-   width: 76px;
    height: 40px;
-   background: #63b7df url(../../../img/add2.png)no-repeat center;
+   color: #ffffff;
+   background: #63b7df url(../../../img/send.png)no-repeat 10px 12px;
    @include transition(300);
+   span {
+      display: block;
+      padding: 0px 8px 0px 41px;
+      text-transform: uppercase;
+      line-height: 1.2;
+   }
+   &:hover {
+      background: darken(#63b7df, 10%) url(../../../img/send.png)no-repeat 10px 12px;
+   }
 }
-
-
-
 @media (max-width: 1400px) {
    .content-container__title {
 

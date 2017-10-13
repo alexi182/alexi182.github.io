@@ -46,6 +46,14 @@
       color: #04a8f6;
       cursor: pointer;
    }
+   a {
+      color: #000000;
+      text-decoration: underline;
+      margin-left: 10px;
+      &:hover{
+         text-decoration: none;
+      }
+   }
 }
 
 .message-info {

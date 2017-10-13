@@ -2,7 +2,6 @@ require('../../vendor/jquery-ui');
 
 var settings = {
    changeYear: true,
-   changeMonth: true,
    dateFormat: "dd.mm.yy",
    yearRange: "-20:+20",
    firstDay: 1,

@@ -87,6 +87,23 @@
    width: 336px;
    background: rgba(255, 255, 255, 0.8);
    padding-top: 10px;
+
+
+   .dropdown {
+      position: relative;
+      width: auto;
+       border: none;
+      cursor: pointer;
+      background: transparent;
+      border-radius: 3px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 400;
+      display: inline-block;
+   }
    .ui-datepicker-calendar {
       //background: rgba(255, 255, 255, 0.8);
    }
@@ -171,7 +188,8 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
-      margin-left: 5px;
+      margin-left: 8px;
+      padding-left: 0!important;
    }
    .ui-datepicker-year::-ms-expand {
       display: none;
@@ -225,7 +243,7 @@
       //width: 40%;
       //height: 21px;
       cursor: pointer;
-      background: #0578af url(../../../img/svg/arrow1.svg) no-repeat 65px 17px;
+      background: #0578af url(../../../img/triag.png) no-repeat 50px 17px;
       padding-left: 12px;
       color: #ffffff;
       border: none;
@@ -233,7 +251,7 @@
       font-weight: 400;
       line-height: 40px;
       padding-bottom: 0px;
-      width: 82px;
+      width: 65px;
       height: 40px;
       border-radius: 2px;
       option {

@@ -14,7 +14,7 @@
    outline: 0;
 }
 
-.content-container__title {
+.content-title {
    display: inline-block;
    margin-top: 0;
    margin-bottom: 0;
@@ -248,7 +248,7 @@
    z-index: 1000;
 }
 
-.content-container__icon {
+.content-icon {
    display: inline-block;
    width: 67px;
    height: 59px;
@@ -413,7 +413,7 @@
    }
 }
 @media (max-width: 1400px) {
-   .content-container__title {
+   .content-title {
 
    }
 }

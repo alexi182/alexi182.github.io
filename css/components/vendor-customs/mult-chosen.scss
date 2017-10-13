@@ -3,17 +3,19 @@
       .chosen-choices {
          padding: 7px 10px;
          border-radius: 5px;
-         border: 1px solid #979ea9;
+         border: 1px solid #e1e1e1;
+         background-image: none;
          li.search-choice {
             background: #3c95bf;
             color: #ffffff;
-            font-size: 13px;
+            font-size: 15px;
             font-weight: 400;
             padding: 5px 22px 5px 11px;
             border-radius: 5px;
             line-height: 18px;
             border: none;
             box-shadow: none;
+            margin-right: 10px;
             .search-choice-close {
                background: url(../../../img/multi-close.png)no-repeat 0px 4px;
                &:hover{
@@ -33,3 +35,9 @@
    }
 }
 
+.chosen-container-active {
+   .chosen-choices {
+      border: 1px solid #e1e1e1!important;
+      box-shadow: none!important;
+   }
+}

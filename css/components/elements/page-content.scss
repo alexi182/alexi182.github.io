@@ -1,4 +1,4 @@
-.content-container__head{
+.content-head{
    display: flex;
    align-items: center;
 }
@@ -126,6 +126,11 @@ float: left;
       background: #ffffff url(../../../img/icondate.png) no-repeat 95% center;
       background-size: 22px;
    }
+}
+
+bg {
+   border-bottom: 1px solid #e1e1e1;
+
 }
 
 .page-content__row-item {

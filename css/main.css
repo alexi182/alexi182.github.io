@@ -263,8 +263,8 @@ select {
 .ml30 {
   margin-left: 30px; }
 
-.pl73 {
-  padding-left: 73px; }
+.pl100 {
+  padding-left: 100px; }
 
 .w76 {
   width: 76%; }
@@ -303,7 +303,7 @@ select {
   overflow: hidden;
   padding-bottom: 175px; }
 
-.content {
+.main {
   height: 100%;
   padding: 0 15px; }
 
@@ -371,6 +371,10 @@ h5 {
 
 #toolbar {
   height: 55px !important; }
+
+.w500 {
+  width: 500px;
+  margin: 35px auto 0; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -1295,6 +1299,20 @@ The `sprites` mixin generates identical output to the CSS template
   /* .ui-datepicker-calendar {
        background: rgba(255, 255, 255, 0.8);
     }*/ }
+  .dateblock .dropdown {
+    position: relative;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block; }
   .dateblock .ui-widget-content {
     background: transparent; }
   .dateblock .ui-widget.ui-widget-content {
@@ -1355,7 +1373,8 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    margin-left: 5px; }
+    margin-left: 8px;
+    padding-left: 0 !important; }
   .dateblock .ui-datepicker-year::-ms-expand {
     display: none; }
   .dateblock .ui-datepicker-month::-ms-expand {
@@ -1392,7 +1411,7 @@ The `sprites` mixin generates identical output to the CSS template
     box-shadow: none; }
   .dateblock .ui-datepicker select.ui-datepicker-year {
     cursor: pointer;
-    background: #0578af url(../../../img/svg/arrow1.svg) no-repeat 65px 17px;
+    background: #0578af url(../../../img/triag.png) no-repeat 50px 17px;
     padding-left: 12px;
     color: #ffffff;
     border: none;
@@ -1400,7 +1419,7 @@ The `sprites` mixin generates identical output to the CSS template
     font-weight: 400;
     line-height: 40px;
     padding-bottom: 0px;
-    width: 82px;
+    width: 65px;
     height: 40px;
     border-radius: 2px; }
     .dateblock .ui-datepicker select.ui-datepicker-year option {
@@ -1548,7 +1567,7 @@ The `sprites` mixin generates identical output to the CSS template
   margin: 10px;
   outline: 0; }
 
-.content-container__title {
+.content-title {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
@@ -1725,7 +1744,7 @@ The `sprites` mixin generates identical output to the CSS template
   top: -49px;
   z-index: 1000; }
 
-.content-container__icon {
+.content-icon {
   display: inline-block;
   width: 67px;
   height: 59px; }
@@ -2040,6 +2059,12 @@ The `sprites` mixin generates identical output to the CSS template
     text-decoration: underline;
     color: #04a8f6;
     cursor: pointer; }
+  .form-notice a {
+    color: #000000;
+    text-decoration: underline;
+    margin-left: 10px; }
+    .form-notice a:hover {
+      text-decoration: none; }
 
 .message-info {
   display: flex;
@@ -3684,7 +3709,7 @@ span.option-item {
     flex-wrap: wrap;
     justify-content: start; } }
 
-.content-container__head {
+.content-head {
   display: flex;
   align-items: center; }
 
@@ -3795,6 +3820,9 @@ span.option-item {
   .page-content__row .datepicker {
     background: #ffffff url(../../../img/icondate.png) no-repeat 95% center;
     background-size: 22px; }
+
+bg {
+  border-bottom: 1px solid #e1e1e1; }
 
 .page-content__row-item {
   width: 75%; }
@@ -4577,7 +4605,7 @@ span.option-item {
     .sidebar_opened .sidebar ul li a:hover .tooltip {
       display: none; }
 
-.sidebar_opened .content {
+.sidebar_opened .main {
   padding-left: 325px; }
 
 .sidebar_opened .messages__notice {
@@ -4984,7 +5012,7 @@ span.option-item {
   overflow-x: hidden;
   margin: 0 auto; }
 
-.index-content {
+.index-main {
   max-width: 850px;
   height: 100%;
   padding: 20px 15px 0;
@@ -5027,7 +5055,7 @@ span.option-item {
     background: #455773;
     border: 2px solid #455773; }
 
-.content {
+.main {
   padding-top: 20px;
   padding-right: 7%;
   position: relative;
@@ -5079,15 +5107,12 @@ span.option-item {
   font: bold 14px open_sans, sans-serif;
   color: #364693; }
 
-.index-search-box, .index-content-box {
-  width: 470px;
-  margin: 70px auto 0; }
-  .index-search-box .icon, .index-content-box .icon {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 16px;
-    font-size: 21px; }
+.select-block .icon, .index-content-box .icon {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 16px;
+  font-size: 21px; }
 
 .index-search__form, .index-content__form {
   display: table;
@@ -5110,13 +5135,13 @@ span.option-item {
     .index-search__form-item:last-of-type, .index-content__form-item:last-of-type {
       margin-top: 20px; }
 
-.index-search-box__themes, .index-content-box__themes {
+.select-block__themes, .index-content-box__themes {
   width: 160px;
   display: table-cell; }
-  .index-search-box__themes .chosen-select, .index-content-box__themes .chosen-select {
+  .select-block__themes .chosen-select, .index-content-box__themes .chosen-select {
     width: 160px; }
 
-.index-search-box__input, .index-content-box__input {
+.select-block__input, .index-content-box__input {
   display: table-cell;
   padding-right: 50px;
   vertical-align: top; }
@@ -5483,7 +5508,7 @@ span.option-item {
   .index-counters {
     /*text-align: left;
       padding-left: 214px;*/ }
-  .index-search-box {
+  .select-block {
     /*max-width: 679px;
       margin: 10px 0 0 214px;*/ }
   .odometer-digit {
@@ -5545,17 +5570,17 @@ span.option-item {
 @media screen and (max-width: 1200px) {
   .index-counters {
     padding-left: 150px; }
-  .index-search-box {
+  .select-block {
     /* max-width: 555px;
        margin: 10px 0 0 150px;
        height: 38px;*/ }
-    .index-search-box .icon {
+    .select-block .icon {
       top: 10px;
       right: 13px;
       font-size: 18px; }
-  .index-search-box__themes {
+  .select-block__themes {
     width: 120px; }
-    .index-search-box__themes .chosen-select {
+    .select-block__themes .chosen-select {
       width: 120px; }
   .index-search {
     top: 2px;
@@ -5694,35 +5719,34 @@ span.option-item {
     position: relative;
     top: -2px; }
 
-.index-search-box .chosen-container {
+.select-block .chosen-container {
   font-size: 14px;
   /* text-transform: uppercase;*/
   color: #333;
   background: #ffffff;
   width: 400px !important; }
-  .index-search-box .chosen-container .chosen-drop {
+  .select-block .chosen-container .chosen-drop {
     border: 1px solid #818181;
     border-top: 0;
     background: #fff;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
     border: none; }
-  .index-search-box .chosen-container .chosen-results {
+  .select-block .chosen-container .chosen-results {
     margin: 0 0px 0px 0;
     padding: 0 0 0 0px; }
-    .index-search-box .chosen-container .chosen-results li {
+    .select-block .chosen-container .chosen-results li {
       display: none;
       margin: 0;
       padding: 9px 11px;
       list-style: none;
       line-height: 15px;
       word-wrap: break-word;
-      -webkit-touch-callout: none;
-      border-bottom: 1px solid grey; }
+      -webkit-touch-callout: none; }
 
-.index-search-box .chosen-container-single .chosen-drop {
+.select-block .chosen-container-single .chosen-drop {
   margin-top: -3px; }
 
-.index-search-box .chosen-container-single .chosen-single {
+.select-block .chosen-container-single .chosen-single {
   padding: 0 0 0 8px;
   height: 44px;
   border: none;
@@ -5733,32 +5757,32 @@ span.option-item {
   text-decoration: none;
   white-space: nowrap;
   line-height: 46px; }
-  .index-search-box .chosen-container-single .chosen-single span {
+  .select-block .chosen-container-single .chosen-single span {
     font-size: 15px;
     font-weight: 400;
     font-family: open_sans, sans-serif; }
-  .index-search-box .chosen-container-single .chosen-single div {
+  .select-block .chosen-container-single .chosen-single div {
     width: 42px;
-    background-color: #39404c; }
-    .index-search-box .chosen-container-single .chosen-single div b {
+    /* background-color: #39404c;*/ }
+    .select-block .chosen-container-single .chosen-single div b {
       display: block;
       transition: .3s;
-      background: url(../../../img/svg/arrow1.svg) no-repeat center; }
+      background: url(../../../img/search-down.png) no-repeat center; }
 
-.index-search-box .chosen-container-active.chosen-with-drop .chosen-single {
+.select-block .chosen-container-active.chosen-with-drop .chosen-single {
   border: none;
   background-image: none;
   box-shadow: none; }
-  .index-search-box .chosen-container-active.chosen-with-drop .chosen-single div b {
-    background: url(../../../img/svg/arrow1.svg) no-repeat center;
+  .select-block .chosen-container-active.chosen-with-drop .chosen-single div b {
+    background: url(../../../img/search-down.png) no-repeat center;
     transform: rotate(180deg); }
 
-.index-search-box .chosen-container-active.chosen-with-drop .chosen-single div {
-  background-color: #39404c !important; }
+.select-block .chosen-container-active.chosen-with-drop .chosen-single div {
+  /* background-color: #39404c!important;*/ }
 
-.index-search-box .chosen-container .chosen-results li {
+.select-block .chosen-container .chosen-results li {
   padding: 9px 11px;
-  border-bottom: 1px solid grey; }
+  /*      border-bottom: 1px solid grey;*/ }
 
 .index-content-box .chosen-container {
   font-size: 14px;
@@ -5783,7 +5807,7 @@ span.option-item {
       line-height: 15px;
       word-wrap: break-word;
       -webkit-touch-callout: none;
-      border-bottom: 1px solid grey; }
+      /*border-bottom: 1px solid grey;*/ }
 
 .index-content-box .chosen-container-single .chosen-drop {
   margin-top: -3px; }
@@ -5823,13 +5847,12 @@ span.option-item {
   background-color: #39404c !important; }
 
 .index-content-box .chosen-container .chosen-results li {
-  padding: 9px 11px;
-  border-bottom: 1px solid grey; }
+  padding: 9px 11px; }
 
 /*
 
 @media screen and (max-width: 1200px) {
-   .index-search-box {
+   .select-block {
       .chosen-container {
          font-size: 10px;
       }
@@ -5953,17 +5976,19 @@ span.option-item {
 .multi-select .chosen-container-multi .chosen-choices {
   padding: 7px 10px;
   border-radius: 5px;
-  border: 1px solid #979ea9; }
+  border: 1px solid #e1e1e1;
+  background-image: none; }
   .multi-select .chosen-container-multi .chosen-choices li.search-choice {
     background: #3c95bf;
     color: #ffffff;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
     padding: 5px 22px 5px 11px;
     border-radius: 5px;
     line-height: 18px;
     border: none;
-    box-shadow: none; }
+    box-shadow: none;
+    margin-right: 10px; }
     .multi-select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
       background: url(../../../img/multi-close.png) no-repeat 0px 4px; }
       .multi-select .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
@@ -5971,6 +5996,10 @@ span.option-item {
 
 .multi-select .chosen-container .chosen-results li.highlighted {
   background: #3c95bf; }
+
+.chosen-container-active .chosen-choices {
+  border: 1px solid #e1e1e1 !important;
+  box-shadow: none !important; }
 
 /* Chosen v1.6.1 | (c) 2011-2016 by Harvest | MIT License, https://github.com/harvesthq/chosen/blob/master/LICENSE.md */
 .chosen-container {

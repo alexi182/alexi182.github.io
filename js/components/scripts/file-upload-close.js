@@ -5,8 +5,8 @@ $(".file-upload input[type=file]").on('change', function () {
    );
 });
 
- $('.files').on('click', '.js-file-close', function (e) {
-    e.preventDefault();
-    $(this).parent().parent('.file-block').remove();
- });
+$('.files').on('click', '.js-file-close', function (e) {
+   e.preventDefault();
+   $(this).parent().parent('.file-block').remove();
+});
 

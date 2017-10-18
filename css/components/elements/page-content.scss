@@ -102,6 +102,10 @@
 
 .page-content__btn {}
 
+.page-content__row.btn-b {
+   margin-top: 37px;
+}
+
 .page-content__row {
     display: flex; //flex-wrap: wrap;
     align-items: center;
@@ -779,12 +783,13 @@ bg {
 }*/
 
 @media (max-width: 1300px) {
+   
     /* .sidebar_opened .sidebar {
       width: 270px!important;
    }
 */
     .page-content {
-        padding: 15px 0px 0px 5px!important;
+      //   padding: 15px 0px 0px 5px!important;
     }
     /*  .sidebar_opened .content {
       padding-left: 270px!important;

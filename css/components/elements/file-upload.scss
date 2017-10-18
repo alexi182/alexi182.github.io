@@ -1,63 +1,95 @@
 .file-upload {
-	position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
-	overflow: hidden; /* Все что выходит за пределы - скрываем */
-	width: 20%; /* Задаем ширину кнопки выбора файла */
-	height: 20px; /* Задаем высоту кнопки выбора файла */ 
-	border-radius: 3px;
-	padding: 8px 4px;
-	color: #fff;
-	text-align: center;
-	background: transparent!important;
+    position: relative;
+    /* Даем возможность делать позиционирование, внутри данного элемента */
+    overflow: hidden;
+    /* Все что выходит за пределы - скрываем */
+    width: 20%;
+    /* Задаем ширину кнопки выбора файла */
+    height: 20px;
+    /* Задаем высоту кнопки выбора файла */
+    border-radius: 3px;
+    padding: 8px 4px;
+    color: #fff;
+    text-align: center;
+    background: transparent!important;
+    margin-top: 4px;
 }
+
 .file-upload:hover {
-	background: #7aad55;
+    background: #7aad55;
 }
-.file-upload input[type="file"]{
-	display: none; /* Обязательно скрываем настоящий Input File */
+
+.file-upload input[type="file"] {
+    display: none;
+    /* Обязательно скрываем настоящий Input File */
 }
+
 .file-upload label {
-/* Растягиваем label на всю возможную площадь блока .file-upload */
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
+    /* Растягиваем label на всю возможную площадь блока .file-upload */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }
+
 .file-upload span {
-	width: 108px;
-	height: 15px;
-	color: #333333;
-	font-family: "Open Sans";
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 24px;
-	text-decoration: underline;
-	/* Text style for "Добавить ф" */
-	letter-spacing: 0.56px;
-&:hover {
-   	text-decoration: none;
-	}
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    text-decoration: underline;
+    /* Text style for "Добавить ф" */
+    letter-spacing: 0.56px;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .files {
-	width: 100%;
-	padding: 5px 7px;
-	border: 1px solid #e1e1e1;
-	background: #ffffff;
-	font-size: 16px;
-.file {
-	display: block;
-	border-radius: 5px;
-	border: 1px solid #979ea9;
-	background-color: #ffffff;
-	color: #333333;
-	font-family: "Open Sans";
-	font-size: 14px;
-	font-weight: 300;
-	line-height: 24px;
-	/* Text style for "П, риложен" */
-	letter-spacing: 0.56px;
-	}
+    width: 100%;
+    min-height: 36px;
+    padding: 7px 7px;
+    border: 1px solid #e1e1e1;
+    background: #ffffff;
+    font-size: 16px;
+    input {
+        padding: 3px 7px!important;
+        border: none!important;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .file {
+        display: block;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #333333;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.56px;
+        padding: 4px 9px;
+    }
+    .file-block {
+        position: relative;
+        border: 1px solid #979ea9;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        .file-close {
+           display: block;
+           width: 10px;
+           height: 10px;
+           position: absolute;
+           background: url(../../../img/file-close.png)no-repeat;
+           right: 10px;
+           top: 35%;
+        }
+      &:last-of-type {
+         margin-bottom: 0;
+      }  
+    }
 }

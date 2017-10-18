@@ -37,13 +37,10 @@
 
 .file-upload span {
     color: #333333;
-    font-family: "Open Sans";
     font-size: 14px;
-    font-weight: 300;
     line-height: 24px;
     text-decoration: underline;
     /* Text style for "Добавить ф" */
-    letter-spacing: 0.56px;
     &:hover {
         text-decoration: none;
     }
@@ -68,9 +65,7 @@
         border-radius: 5px;
         background-color: #ffffff;
         color: #333333;
-        font-family: "Open Sans";
         font-size: 14px;
-        font-weight: 300;
         letter-spacing: 0.56px;
         padding: 4px 9px;
     }
@@ -90,6 +85,6 @@
         }
       &:last-of-type {
          margin-bottom: 0;
-      }  
+      }
     }
 }

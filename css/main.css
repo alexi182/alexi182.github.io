@@ -1936,13 +1936,10 @@ The `sprites` mixin generates identical output to the CSS template
 
 .file-upload span {
   color: #333333;
-  font-family: "Open Sans";
   font-size: 14px;
-  font-weight: 300;
   line-height: 24px;
   text-decoration: underline;
-  /* Text style for "Добавить ф" */
-  letter-spacing: 0.56px; }
+  /* Text style for "Добавить ф" */ }
   .file-upload span:hover {
     text-decoration: none; }
 
@@ -1963,9 +1960,7 @@ The `sprites` mixin generates identical output to the CSS template
     border-radius: 5px;
     background-color: #ffffff;
     color: #333333;
-    font-family: "Open Sans";
     font-size: 14px;
-    font-weight: 300;
     letter-spacing: 0.56px;
     padding: 4px 9px; }
   .files .file-block {
@@ -3608,7 +3603,7 @@ span.option-item {
   z-index: 1001;
   text-align: left;
   background: #ffffff;
-  padding: 65px 37px 40px 30px;
+  padding: 43px 37px 5px 30px;
   top: 0;
   left: 0;
   box-sizing: border-box;
@@ -3706,8 +3701,7 @@ span.option-item {
   font-size: 16px; }
 
 .window__col {
-  margin-right: 27px;
-  margin-bottom: 2%; }
+  margin-right: 27px; }
   .window__col:last-of-type {
     margin-right: 0; }
 
@@ -3728,7 +3722,7 @@ span.option-item {
   justify-content: space-between;
   align-items: center;
   max-width: 308px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   line-height: 1.2;
   font-size: 16px; }
 
@@ -3783,14 +3777,15 @@ span.option-item {
   font-size: 14px; }
 
 .window-3 {
-  padding-top: 30px; }
+  padding-top: 20px; }
   .window-3 .window__cell {
     display: block; }
     .window-3 .window__cell span {
       display: block;
       margin-top: 4px; }
   .window-3 .window__row:last-of-type {
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 20px; }
 
 @media (max-width: 1600px) {
   .window-2 .window__row {

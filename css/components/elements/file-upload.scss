@@ -12,7 +12,6 @@
     color: #fff;
     text-align: center;
     background: transparent!important;
-    margin-top: 4px;
 }
 
 .file-upload:hover {
@@ -49,11 +48,14 @@
     }
 }
 
+.files-in {
+   min-height: 36px;
+   padding: 7px 7px;
+   border: 1px solid #e1e1e1;
+}
+
 .files {
     width: 100%;
-    min-height: 36px;
-    padding: 7px 7px;
-    border: 1px solid #e1e1e1;
     background: #ffffff;
     font-size: 16px;
     input {

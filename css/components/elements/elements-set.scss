@@ -34,6 +34,22 @@
    }*/
 }
 
+.content-block__item.user {
+   position: relative;
+   &:hover {
+      .tooltip {
+         display: block;
+      }
+   }
+}
+
+.content-block__item.user .tooltip {
+   position: absolute;
+   top: 0;
+   top: auto;
+   display: none;
+}
+
 .content-block.calendar {
     //width: 308px;
     //text-align: center;

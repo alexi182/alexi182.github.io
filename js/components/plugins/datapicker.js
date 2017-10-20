@@ -11,14 +11,25 @@ var settings = {
 };
 
 $(".datepicker").datepicker(
-    settings
+   settings
 );
 
 $('.dateblock').datepicker(
-    settings
+   settings, {
+      beforeShowDay: function (d) {
+         var curd = $.datepicker.formatDate("dd.mm.yy", new Date());
+         var dat = $.datepicker.formatDate("dd.mm.yy", d);
+         // Если дата является текущей, то указываем для ячейки с датой
+         // класс cls1, а также задаем текст подсказки
+         if (dat == curd) return [true, "cls1", "Это сегодня"];
+         // Если дата равна "10.10.2017", то делаем ее неактивной
+         else if (dat == "10.10.2017") return [false, "cls2"];
+         else return [true, "cls2"];
+      }
+   }
 );
 
-$( "#ui-datepicker-div" ).wrap( "<div class='dateblock dateblock-small'></div>" );
+$("#ui-datepicker-div").wrap("<div class='dateblock dateblock-small'></div>");
 
 
 

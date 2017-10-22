@@ -13,9 +13,11 @@
       }
    }
    .ui-datepicker td {
-      padding: 5px 8px!important;
+      // padding: 5px 8px!important;
+
       cursor: pointer;
    }
+
 
    .ui-datepicker th {
       font-size: 14px!important;
@@ -208,7 +210,7 @@
       -moz-appearance: none;
       appearance: none;
       margin-right: 5px;
-   
+
    }
    .ui-datepicker select.ui-datepicker-year {
       background: #526b8b;

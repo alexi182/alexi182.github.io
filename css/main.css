@@ -1240,7 +1240,6 @@ The `sprites` mixin generates identical output to the CSS template
     .dateblock-small .ui-datepicker .ui-datepicker-title {
       margin: 0 !important; }
   .dateblock-small .ui-datepicker td {
-    padding: 5px 8px !important;
     cursor: pointer; }
   .dateblock-small .ui-datepicker th {
     font-size: 14px !important; }

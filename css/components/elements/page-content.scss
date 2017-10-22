@@ -43,12 +43,10 @@
 
 .page-content__btn {
     display: inline-block;
-    box-sizing: border-box;
-    height: 32px;
     padding: 5px 10px;
     background: transparent;
     color: #39404c;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     border: 1px solid #39404c;
     cursor: pointer;
@@ -59,6 +57,11 @@
         background: #39404c;
         color: #ffffff;
     }
+}
+
+.checked {
+   background: #39404c;
+        color: #ffffff;
 }
 
 .page-content__btn-document {
@@ -90,7 +93,7 @@
     margin-bottom: 25px;
 }
 
-.page-content__post-block {
+.page-content__block {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -783,7 +786,7 @@ bg {
 }*/
 
 @media (max-width: 1300px) {
-   
+
     /* .sidebar_opened .sidebar {
       width: 270px!important;
    }

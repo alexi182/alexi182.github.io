@@ -1,163 +1,168 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
    @@include('../includes/common/head.html', {})
 </head>
+
 <body>
 
-@@include('../includes/common/browserhappy.html', {})
+   @@include('../includes/common/browserhappy.html', {})
 
-<div class="page sidebar_opened">
-   @@include('../includes/elements/right-layout-links.html', {})
+   <div class="page sidebar_opened">
+      @@include('../includes/elements/right-layout-links.html', {}) @@include('../includes/elements/sidebar.html', {})
 
-   @@include('../includes/elements/sidebar.html', {})
+      <main class="main index-sidebar">
 
-   <main class="main index-sidebar">
+         <div class="content">
 
-      <div class="content">
+            @@include('../includes/elements/header.html', {})
 
-         @@include('../includes/elements/header.html', {})
+            <div class="content-container">
+               <div class="content-head">
 
-         <div class="content-container">
-            <div class="content-head">
-               <img src="/img/svg/messages.svg" alt="notice" class="content-icon">
-               <h2 class="content-title">Личные
-                  сообщения</h2>
+                  <svg class="content-icon">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#lm-messages"></use>
+                  </svg>
+                  <h2 class="content-title">Личные сообщения
+                  </h2>
+               </div>
+
+               <!--@@include('../includes/elements/last-messages.html', {})-->
+
+               @@include('../includes/elements/calendar.html', {})
+
             </div>
-
-            <!--@@include('../includes/elements/last-messages.html', {})-->
-
-            @@include('../includes/elements/calendar.html', {})
-
          </div>
-      </div>
-      <div class="page-content">
-         <div class="page-content-row row-search">
-            <form action="/" class="form-search w76">
-               <input type="search" placeholder="ФИО, логин, e-mail" class="search-row" />
-               <button type ="submit" class="search-btn">Искать</button>
-            </form>
-            <a href="#" class="add-btn">
+         <div class="page-content">
+            <div class="page-content-row row-search">
+               <form action="/" class="form-search w76">
+                  <input type="search" placeholder="ФИО, логин, e-mail" class="search-row" />
+                  <button type="submit" class="search-btn"></button>
+               </form>
+               <a href="#" class="add-btn">
                <span>Отправить сообщение</span>
             </a>
-         </div>
-
-         <div class="page-content__item">
-
-            <div class="form-notice mt0">Всего личных сообщений:
-               <span>56</span>
-               <a href="#">Показать все</a>
             </div>
 
-            <div class="forum">
-               <div class="forum-block">
-                  <div class="message-info">
-                     <img src="/img/avatar2.png" alt="avatar" />
-                     <div class="message-info__author">
-                        Захарова М.Б.
-                     </div>
-                     <div class="message-info__date">
-                        15.07.2017 15:15
-                     </div>
-                  </div>
-                  <div class="message__text">
-                     <div class="message__text-inner">
-                        Здравствуйте! Формулировки показателей 1-22 требуют доработки. Также считаю необходимым исключить показатели 23-30 т.к. они уже собираются в рамках мониторинга на платформе do.edu.ru
-                     </div>
-                     <div class="message__text-userbar">
-                        <a href="#" class="forum-js">Ответить</a>
-                        <a href="#">Отметить как прочитанное</a>
-                        <a href="#">Удалить</a>
-                     </div>
+            <div class="page-content__item">
 
-                     <form action="/" class="form-forum">
-                        <div class="form-forum-send">
-                           <img src="/img/avatar.png" alt="avatar">
-                           <textarea name="send" class="form-forum__area"></textarea>
-                        </div>
-                        <button type="submit" class="form-forum__send-btn">Отправить</button>
-                        <span class="message-answer">Ответ Захаровой М.Б.</span>
-                     </form>
-                  </div>
+               <div class="form-notice mt0">Всего личных сообщений:
+                  <span>56</span>
+                  <a href="#">Показать все</a>
                </div>
 
-               <div class="forum-block">
-                  <div class="message-info">
-                     <img src="/img/avatar-empty.png" alt="avatar" />
-                     <div class="message-info__author">
-                        Гончарова Н.Г.
-                     </div>
-                     <div class="message-info__date">
-                        15.07.2017 15:17
-                     </div>
-
-                     <!--<div class="message-disagree">Не согласовано</div>-->
-                     <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  </div>
-                  <div class="message__text">
-                     <div class="message__text-inner">
-                        Здравствуйте! Просьба согласовать дату и время нашей встречи по вопросу отсуждения работы над текущими нормативными документами. Спасибо!
-                     </div>
-                     <div class="message__text-userbar">
-                        <a href="#" class="forum-js">Ответить</a>
-                        <a href="#">Отметить как прочитанное</a>
-                        <a href="#">Удалить</a>
-                     </div>
-
-                     <form action="/" class="form-forum">
-                        <div class="form-forum-send">
-                           <img src="/img/avatar.png" alt="avatar">
-                           <textarea name="send" class="form-forum__area"></textarea>
+               <div class="forum">
+                  <div class="forum-block">
+                     <div class="message-info">
+                        <img src="/img/avatar2.png" alt="avatar" />
+                        <div class="message-info__author">
+                           Захарова М.Б.
                         </div>
-                        <button type="submit" class="form-forum__send-btn">Отправить</button>
-                        <span class="message-answer">Ответ Захаровой М.Б.</span>
-                     </form>
-                  </div>
-               </div>
-
-               <div class="forum-block">
-                  <div class="message-info">
-                     <img src="/img/avatar-empty.png" alt="avatar" />
-                     <div class="message-info__author">
-                        Гончарова Н.Г.
-                     </div>
-                     <div class="message-info__date">
-                        15.07.2017 15:14
-                     </div>
-
-                     <!--<div class="message-disagree">Не согласовано</div>-->
-                     <span class="message-answer">Ответ Захаровой М.Б.</span>
-                  </div>
-                  <div class="message__text">
-                     <div class="message__text-inner">
-                        Здравствуйте! Считаю, что исправленный вариант (версия 4) готов к утверждению.
-                     </div>
-                     <div class="message__text-userbar">
-                        <a href="#" class="forum-js">Ответить</a>
-                        <a href="#">Отметить как прочитанное</a>
-                        <a href="#">Удалить</a>
-                     </div>
-                     <form action="/" class="form-forum">
-                        <div class="form-forum-send">
-                           <img src="/img/avatar.png" alt="avatar">
-                           <textarea name="send" class="form-forum__area"></textarea>
+                        <div class="message-info__date">
+                           15.07.2017 15:15
                         </div>
-                        <button type="submit" class="form-forum__send-btn">Отправить</button>
+                     </div>
+                     <div class="message__text">
+                        <div class="message__text-inner">
+                           Здравствуйте! Формулировки показателей 1-22 требуют доработки. Также считаю необходимым исключить показатели 23-30 т.к. они
+                           уже собираются в рамках мониторинга на платформе do.edu.ru
+                        </div>
+                        <div class="message__text-userbar">
+                           <a href="#" class="forum-js">Ответить</a>
+                           <a href="#">Отметить как прочитанное</a>
+                           <a href="#">Удалить</a>
+                        </div>
+
+                        <form action="/" class="form-forum">
+                           <div class="form-forum-send">
+                              <img src="/img/avatar.png" alt="avatar">
+                              <textarea name="send" class="form-forum__area"></textarea>
+                           </div>
+                           <button type="submit" class="form-forum__send-btn">Отправить</button>
+                           <span class="message-answer">Ответ Захаровой М.Б.</span>
+                        </form>
+                     </div>
+                  </div>
+
+                  <div class="forum-block">
+                     <div class="message-info">
+                        <img src="/img/avatar-empty.png" alt="avatar" />
+                        <div class="message-info__author">
+                           Гончарова Н.Г.
+                        </div>
+                        <div class="message-info__date">
+                           15.07.2017 15:17
+                        </div>
+
+                        <!--<div class="message-disagree">Не согласовано</div>-->
                         <span class="message-answer">Ответ Захаровой М.Б.</span>
-                     </form>
+                     </div>
+                     <div class="message__text">
+                        <div class="message__text-inner">
+                           Здравствуйте! Просьба согласовать дату и время нашей встречи по вопросу отсуждения работы над текущими нормативными документами.
+                           Спасибо!
+                        </div>
+                        <div class="message__text-userbar">
+                           <a href="#" class="forum-js">Ответить</a>
+                           <a href="#">Отметить как прочитанное</a>
+                           <a href="#">Удалить</a>
+                        </div>
+
+                        <form action="/" class="form-forum">
+                           <div class="form-forum-send">
+                              <img src="/img/avatar.png" alt="avatar">
+                              <textarea name="send" class="form-forum__area"></textarea>
+                           </div>
+                           <button type="submit" class="form-forum__send-btn">Отправить</button>
+                           <span class="message-answer">Ответ Захаровой М.Б.</span>
+                        </form>
+                     </div>
+                  </div>
+
+                  <div class="forum-block">
+                     <div class="message-info">
+                        <img src="/img/avatar-empty.png" alt="avatar" />
+                        <div class="message-info__author">
+                           Гончарова Н.Г.
+                        </div>
+                        <div class="message-info__date">
+                           15.07.2017 15:14
+                        </div>
+
+                        <!--<div class="message-disagree">Не согласовано</div>-->
+                        <span class="message-answer">Ответ Захаровой М.Б.</span>
+                     </div>
+                     <div class="message__text">
+                        <div class="message__text-inner">
+                           Здравствуйте! Считаю, что исправленный вариант (версия 4) готов к утверждению.
+                        </div>
+                        <div class="message__text-userbar">
+                           <a href="#" class="forum-js">Ответить</a>
+                           <a href="#">Отметить как прочитанное</a>
+                           <a href="#">Удалить</a>
+                        </div>
+                        <form action="/" class="form-forum">
+                           <div class="form-forum-send">
+                              <img src="/img/avatar.png" alt="avatar">
+                              <textarea name="send" class="form-forum__area"></textarea>
+                           </div>
+                           <button type="submit" class="form-forum__send-btn">Отправить</button>
+                           <span class="message-answer">Ответ Захаровой М.Б.</span>
+                        </form>
+                     </div>
                   </div>
                </div>
             </div>
+
+            @@include('../includes/elements/pagination.html', {})
+
          </div>
+      </main>
 
-         @@include('../includes/elements/pagination.html', {})
-
-      </div>
-   </main>
-
-</div>
-@@include('../includes/elements/overlay.html', {})
-@@include('../includes/common/scripts.html', {})
+   </div>
+   @@include('../includes/elements/overlay.html', {}) @@include('../includes/common/scripts.html', {})
 
 </body>
+
 </html>

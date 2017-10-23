@@ -357,7 +357,7 @@
       .avatar-back {
          position: absolute;
          z-index: 49;
-         @include transform_translateY(100%);
+         //@include transform_translateY(100%);
          width: 100%;
          height: 100%;
          opacity: 0;
@@ -383,7 +383,7 @@
       &:hover {
          .avatar-back {
             opacity: 1;
-            @include transform_translateY(0);
+            //@include transform_translateY(0);
          }
       }
    }

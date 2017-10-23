@@ -14,7 +14,6 @@
    }
    .ui-datepicker td {
       // padding: 5px 8px!important;
-
       cursor: pointer;
    }
 
@@ -94,7 +93,7 @@
    .dropdown {
       position: relative;
       width: auto;
-       border: none;
+      border: none;
       cursor: pointer;
       background: transparent;
       border-radius: 3px;
@@ -323,7 +322,6 @@
 
 .content-block.user-info {
    display: flex;
-   flex-wrap: wrap;
    align-items: center;
    .content-block__item {
       width: 280px;
@@ -354,34 +352,40 @@
    }
 }
 
-.content-block__img {
-   position: relative;
-   width: 106px;
-   height: 106px;
-   border-radius: 50%;
-   @include transition(300);
-   cursor: pointer;
-   &:hover {
+.content-block.user-info {
+   .content-block__item {
       .avatar-back {
-         opacity: 1;
-         @include transform_translateY(-100%);
+         position: absolute;
+         z-index: 49;
+         @include transform_translateY(100%);
+         width: 100%;
+         height: 100%;
+         opacity: 0;
+         top:0;
+         @include transition(300);
+         border-radius: 50%;
+         background: rgba(67, 95, 142, 0.73);
+         span {
+            position: absolute;
+            top: 45%;
+            right: 30%;
+         }
       }
    }
-}
-
-.avatar-back {
-   position: absolute;
-   @include transform_translateY(-30%);
-   width: 100%;
-   height: 100%;
-   opacity: 0;
-   @include transition(300);
-   border-radius: 50%;
-   background: rgba(67, 95, 142, 0.73);
-   span {
-      position: absolute;
-      top: 45%;
-      right: 30%;
+   .content-block__img {
+      position: relative;
+      z-index: 50;
+      width: 106px;
+      height: 106px;
+      border-radius: 50%;
+      @include transition(300);
+      cursor: pointer;
+      &:hover {
+         .avatar-back {
+            opacity: 1;
+            @include transform_translateY(0);
+         }
+      }
    }
 }
 

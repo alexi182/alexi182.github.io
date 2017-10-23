@@ -19,12 +19,18 @@
 
          <div class="content-container">
             <div class="content-head">
-               <img src="/img/svg/user.svg" alt="notice" class="content-icon">
-               <h2 class="content-title">Пользователи</h2>
-            </div>
-            <div class="content-block flex">
-                  
 
+               <svg class="content-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#user"></use>
+               </svg>
+
+               <h2 class="content-title">Пользователи</h2>
+
+            </div>
+
+            <p class="content-container__subtitle_small">Дни рождения в этом месяце</p>
+
+            <div class="content-block flex">
                <div class="content-block__item user">
                   <img src="/img/user-1.png" alt="" />
                   <div class="tooltip">Захарова М. Б.</div>
@@ -51,10 +57,10 @@
          <div class="page-content-row row-search">
             <form action="/" class="form-search w100">
                <input type="search" placeholder="ФИО, логин, e-mail" class="search-row" />
-               <button type ="submit" class="search-btn">Искать</button>
+               <button type ="submit" class="search-btn"></button>
             </form>
          </div>
-         <div class="page-content__post-block">
+         <div class="page-content__block">
             <div class="page-content__post">
                <div class="page-content__post-userbar">
                   <div class="page-content__post-region">московская область</div>

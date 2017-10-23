@@ -272,6 +272,9 @@ select {
 .w100 {
   width: 100% !important; }
 
+.f28 {
+  font-size: 28px; }
+
 .flex {
   display: flex;
   align-items: center;
@@ -1592,16 +1595,16 @@ The `sprites` mixin generates identical output to the CSS template
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 8px;
+  margin-left: 12px;
   vertical-align: middle;
   color: #39404c;
-  font-size: 36px;
+  font-size: 33px;
   font-weight: 400;
   line-height: 1.1;
   text-transform: uppercase; }
 
 .content-block {
-  margin-top: 30px;
+  margin-top: 25px;
   /*&:last-of-type {
       margin-top: 40px;
    }*/ }
@@ -1710,10 +1713,11 @@ The `sprites` mixin generates identical output to the CSS template
       }*/ }
   .content-container__bars > div {
     display: flex;
-    justify-content: space-between;
     margin-top: 10px; }
     .content-container__bars > div > span {
       display: block; }
+      .content-container__bars > div > span:first-child {
+        margin-right: 50px; }
       .content-container__bars > div > span > span {
         display: block;
         font-weight: bold; }
@@ -1788,8 +1792,8 @@ The `sprites` mixin generates identical output to the CSS template
 
 .content-icon {
   display: inline-block;
-  width: 67px;
-  height: 59px;
+  width: 81px;
+  height: 60px;
   fill: #455773; }
 
 .content-block__date {
@@ -1815,8 +1819,14 @@ The `sprites` mixin generates identical output to the CSS template
 .tags-block {
   max-width: 376px;
   margin-top: 10px; }
-  .tags-block .chosen-container {
-    width: 350px !important; }
+  .tags-block .tag {
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    transition: all 200ms; }
+    .tags-block .tag:hover {
+      background: #63b7df;
+      color: #ffffff;
+      border: 1px solid #4aa1ca; }
 
 .tags-block.category .tag {
   -webkit-transition: all 200ms;
@@ -1826,6 +1836,8 @@ The `sprites` mixin generates identical output to the CSS template
     background: #63b7df;
     color: #ffffff;
     border: 1px solid #4aa1ca; }
+  .tags-block.category .tag:last-of-type {
+    margin-right: 0; }
 
 .tags-block.status .tag.tag_blue {
   -webkit-transition: all 200ms;
@@ -1869,23 +1881,15 @@ The `sprites` mixin generates identical output to the CSS template
   text-align: center;
   box-sizing: border-box;
   color: #000000;
-  padding: 4px 11px 4px 11px;
+  padding: 3px 11px 4px 11px;
   border-radius: 5px;
   /* text-transform: uppercase; */
   border: 1px solid #979ea9;
   background-color: #ffffff;
   margin-bottom: 10px;
   margin-right: 3px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 400;
-  -webkit-transition: all 300ms;
-  -moz-transition: all 300ms;
-  transition: all 300ms; }
-  .tag:hover {
-    background: #52adcc;
-    color: #ffffff;
-    border-color: #52adcc; }
+  font-size: 15px;
+  font-weight: 400; }
 
 .page-content__post-tag {
   color: #2685b2;
@@ -1896,20 +1900,18 @@ The `sprites` mixin generates identical output to the CSS template
 
 .search-row {
   display: block;
-  width: 100%;
+  width: 84%;
   height: 41px;
   border: 1px solid #dddddd;
   background-color: #ffffff;
-  padding: 3px 45px 3px 19px; }
+  padding: 3px 7px 3px 15px;
+  margin-right: 10px; }
 
 .search-btn {
   display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
+  /* width: 75px; */
   height: 40px;
-  background: transparent url(../../../img/search.png) no-repeat 11px 9px;
+  background-color: #466485;
   border: none;
   color: #ffffff;
   text-transform: uppercase;
@@ -1917,16 +1919,11 @@ The `sprites` mixin generates identical output to the CSS template
   padding: 0 17px;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
-  transition: all 300ms;
-  will-change: transform; }
+  transition: all 300ms; }
   .search-btn:hover {
-    -webkit-transform: scale(1.03) scale(1.03) scale(1.03);
-    -moz-transform: scale(1.03) scale(1.03) scale(1.03);
-    -ms-transform: scale(1.03) scale(1.03) scale(1.03);
-    transform: scale(1.03) scale(1.03) scale(1.03); }
+    background: #587da6; }
 
 .form-search {
-  position: relative;
   display: flex;
   justify-content: space-between; }
 

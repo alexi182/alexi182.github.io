@@ -53,97 +53,98 @@
          <img src="/img/magnifier.svg" alt="">
       </div>
       <div class="layout-content-search">
-         <div class="layout-content-search__top">
-            <input type="text" placeholder="Поиск документов: введите название документа">
-            <a href="#" class="advance-search">Расширенный поиск</a>
-            <a href="#" class="close-search"></a>
-         </div>
-
-         <div class="layout-content-search__block block-hide">
-            <div class="layout-content-search__block-column">
-               <div class="layout-content-search__block-row">
-                  <label class="layout-content-search__label">
-                     Вид документа
-                  </label>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>Все</option>
-                        <option>Не все</option>
-                     </select>
-                  </div>
-               </div>
-
-               <div class="layout-content-search__block-row">
-                  <label class="layout-content-search__label">
-                     Заголовок
-                  </label>
-                  <div class="search-box">
-                     <input type="text">
-                  </div>
-               </div>
-
-               <div class="layout-content-search__block-row">
-                  <div class="layout-content-search__block-row-item">
+         <form action="">
+            <div class="layout-content-search__top">
+               <input type="text" placeholder="Поиск документов: введите название документа" class="layout-content-search__input" />
+               <button type="submit" class="search-btn"></button>
+               <a href="#" class="advance-search">Расширенный поиск</a>
+               <a href="#" class="close-search"></a>
+            </div>
+            <div class="layout-content-search__block block-hide">
+               <div class="layout-content-search__block-column">
+                  <div class="layout-content-search__block-row">
                      <label class="layout-content-search__label">
-                        Дата создания
+                        Вид документа
                      </label>
                      <div class="search-box">
-                        <input type="text" class="datepicker">
+                        <select class="chosen-select">
+                           <option>Все</option>
+                           <option>Не все</option>
+                        </select>
                      </div>
                   </div>
 
-                  <div class="layout-content-search__block-row-item">
+                  <div class="layout-content-search__block-row">
                      <label class="layout-content-search__label">
-                        Дата изменения
+                        Заголовок
                      </label>
                      <div class="search-box">
-                        <input type="text" class="datepicker">
+                        <input type="text">
                      </div>
                   </div>
 
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+
                </div>
+
+               <div class="layout-content-search__block-column">
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Категория
+                     </label>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Все</option>
+                           <option>Не все</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Номер
+                     </label>
+                     <div class="search-box">
+                        <input type="text">
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Статус
+                     </label>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>В работе</option>
+                           <option>Не в работе</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <button class="search-button" type="submit">Поиск</button>
 
             </div>
-
-            <div class="layout-content-search__block-column">
-               <div class="layout-content-search__block-row">
-                  <label class="layout-content-search__label">
-                     Категория
-                  </label>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>Все</option>
-                        <option>Не все</option>
-                     </select>
-                  </div>
-               </div>
-
-               <div class="layout-content-search__block-row">
-                  <label class="layout-content-search__label">
-                     Номер
-                  </label>
-                  <div class="search-box">
-                     <input type="text">
-                  </div>
-               </div>
-
-               <div class="layout-content-search__block-row">
-                  <label class="layout-content-search__label">
-                     Статус
-                  </label>
-                  <div class="search-box">
-                     <select class="chosen-select">
-                        <option>В работе</option>
-                        <option>Не в работе</option>
-                     </select>
-                  </div>
-               </div>
-            </div>
-
-            <button class="search-button" type="submit">Поиск</button>
-
-         </div>
-
+         </form>
       </div>
    </div>
 </div>

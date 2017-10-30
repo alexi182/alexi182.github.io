@@ -166,14 +166,18 @@
    letter-spacing: 0;
 
    input {
-      border: 1px solid #dddddd;
-      width: 100%;
-      outline: 0;
-      font-size: 16px;
-      font-weight: 300;
-      padding: 10px 15px;
-      background: url(../../../img/search.png) no-repeat 870px 9px;
+
    }
+}
+
+.layout-content-search__input {
+   border: 1px solid #dddddd;
+   width: 100%;
+   outline: 0;
+   font-size: 16px;
+   font-weight: 300;
+   padding: 10px 15px;
+   /*background: url(../../../img/search.png) no-repeat 870px 9px;*/
 }
 
 .layout-content-search__block {
@@ -196,7 +200,7 @@
          width: 15px;
          height: 9px;
          margin-left: 10px;
-         background: url(../../../img/search-down.png)no-repeat;
+         background: url(../../../img/search-down.png) no-repeat;
       }
    }
    .close-search {
@@ -210,10 +214,9 @@
          width: 20px;
          height: 22px;
          margin-left: 10px;
-         background: url(../../../img/search-close.png)no-repeat;
+         background: url(../../../img/search-close.png) no-repeat;
       }
    }
-
 }
 
 .block-hide {
@@ -243,8 +246,11 @@
    width: 40%;
    display: inline-block;
    vertical-align: top;
-   background: url(../../../img/icondate.png) no-repeat 130px 27px;
+
    background-size: 25px;
+   .datepicker {
+
+   }
    &:last-of-type {
       margin-left: 35px;
    }
@@ -262,6 +268,12 @@
    input {
       padding: 5px 7px;
       width: 100%;
+   }
+   .datepicker {
+      border: 1px solid #e8e8e8;
+      background: url(../../../img/icondate.png) no-repeat 129px 2px;
+      background-size: 25px;
+      height: 33px;
    }
 }
  .search-button {

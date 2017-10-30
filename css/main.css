@@ -3128,14 +3128,15 @@ span.option-item {
   width: 919px;
   background: #ffffff;
   letter-spacing: 0; }
-  .layout-content-search input {
-    border: 1px solid #dddddd;
-    width: 100%;
-    outline: 0;
-    font-size: 16px;
-    font-weight: 300;
-    padding: 10px 15px;
-    background: url(../../../img/search.png) no-repeat 870px 9px; }
+
+.layout-content-search__input {
+  border: 1px solid #dddddd;
+  width: 100%;
+  outline: 0;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 15px;
+  /*background: url(../../../img/search.png) no-repeat 870px 9px;*/ }
 
 .layout-content-search__block {
   text-align: center; }
@@ -3191,7 +3192,6 @@ span.option-item {
   width: 40%;
   display: inline-block;
   vertical-align: top;
-  background: url(../../../img/icondate.png) no-repeat 130px 27px;
   background-size: 25px; }
   .layout-content-search__block-row-item:last-of-type {
     margin-left: 35px; }
@@ -3206,6 +3206,12 @@ span.option-item {
 .search-box input {
   padding: 5px 7px;
   width: 100%; }
+
+.search-box .datepicker {
+  border: 1px solid #e8e8e8;
+  background: url(../../../img/icondate.png) no-repeat 129px 2px;
+  background-size: 25px;
+  height: 33px; }
 
 .search-button {
   margin-top: 5px;

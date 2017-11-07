@@ -135,7 +135,16 @@
       }
       &:first-of-type {
          label {
-            margin-right: 9px;
+            //margin-right: 9px;
+            position: relative;
+            left: 28px;
+         }
+      }
+      &:nth-of-type(2) {
+         label {
+            //margin-right: 9px;
+            position: relative;
+            left: 17px;
          }
       }
       input {

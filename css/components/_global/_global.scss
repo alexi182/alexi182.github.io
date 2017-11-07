@@ -24,7 +24,7 @@ body {
    background: url(../../../img/main-bg.jpg)no-repeat center top fixed;
    background-size: cover;
    font-family: $open-sans;
-   /*overflow-x: auto;*/
+   overflow-x: hidden;
 }
 
 
@@ -318,6 +318,7 @@ select {
    height: 100%;
    margin: auto;
    width: 100%;
+   min-width: 1200px;
    position: relative;
    overflow: hidden;
    padding-bottom: 175px;

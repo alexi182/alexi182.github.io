@@ -1,0 +1,346 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+   <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title></title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="/css/main.css">
+
+</head>
+<body>
+
+<!--[if lte IE 9]>
+<style>
+   .browserupgrade {text-align: center;border: 2px solid #b4b472;font-size: 20px;padding: 20px;position: fixed;background: #333;color: #c1bea2;width: 400px;left: 50%;margin-left: -200px;z-index: 999999;}
+   .browserupgrade a {color: #fff;}
+   .browserupgrade a:hover {color: #e0c1ff;text-decoration: none;}
+</style>
+<p class="browserupgrade">Вы используете <strong>устаревший</strong> браузер. Пожалуйста<br/> <a
+        href="http://browsehappy.com/">обновите ваш браузер или установите альтернативный</a><br/> для корректного
+   отображения содержимого сайта.</p>
+<![endif]-->
+
+
+<div class="page sidebar_opened">
+   <div class="layout-links layout-links_profile layout-links__item_closed-profile">
+   <div class="layout-links__item sidebar-profile">
+      <div class="layout-link profile-link">
+         <img src="/img/user2.svg" alt="">
+      </div>
+      <div class="layout-content-profile">
+         <img src="/img/avatar.png" alt="">
+
+         <div class="layout-content-user">
+            <div class="layout-content-user__name">
+               Синюгина <br> Татьяна Юрьевна
+            </div>
+            <div class="layout-content-user__actions">
+               <a href="#" class="layout-content-user__profile">Профиль</a>
+               <a href="#" class="layout-content-user__exit">Выйти</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="layout-links layout-links_search layout-links__item_closed-search">
+   <div class="layout-links__item sidebar-search ">
+      <div class="layout-link search-link">
+         <img src="/img/magnifier.svg" alt="">
+      </div>
+      <div class="layout-content-search">
+         <form action="">
+            <div class="layout-content-search__top">
+               <input type="text" placeholder="Поиск документов: введите название документа" class="layout-content-search__input" />
+               <button type="submit" class="search-btn"></button>
+               <a href="#" class="advance-search">Расширенный поиск</a>
+               <a href="#" class="close-search"></a>
+            </div>
+            <div class="layout-content-search__block block-hide">
+               <div class="layout-content-search__block-column">
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Вид документа
+                     </label>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Все</option>
+                           <option>Не все</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Заголовок
+                     </label>
+                     <div class="search-box">
+                        <input type="text">
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата создания
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                     <div class="layout-content-search__block-row-item">
+                        <label class="layout-content-search__label">
+                           Дата изменения
+                        </label>
+                        <div class="search-box">
+                           <input type="text" class="datepicker">
+                        </div>
+                     </div>
+
+                  </div>
+
+               </div>
+
+               <div class="layout-content-search__block-column">
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Категория
+                     </label>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>Все</option>
+                           <option>Не все</option>
+                        </select>
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Номер
+                     </label>
+                     <div class="search-box">
+                        <input type="text">
+                     </div>
+                  </div>
+
+                  <div class="layout-content-search__block-row">
+                     <label class="layout-content-search__label">
+                        Статус
+                     </label>
+                     <div class="search-box">
+                        <select class="chosen-select">
+                           <option>В работе</option>
+                           <option>Не в работе</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+
+               <button class="search-button" type="submit">Поиск</button>
+
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+
+
+   <aside class="sidebar">
+   <a href="#" class="close__icon icon-closed close_js">
+      <span class="icon-line"></span>
+      <span class="icon-line"></span>
+      <span class="icon-line"></span>
+   </a>
+   <ul>
+      <li>
+         <a href="messages.html">
+            <span class="messages__notice">УВЕДОМЛЕНИЯ</span>
+           <!-- <svg class="svg-lm-notice-dims">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#lm-notice"></use>
+            </svg>-->
+            <img src="/img/svg/left-menu/notice.svg" alt="">
+            <span class="sidebar__num">5</span>
+            <div class="tooltip">Уведомления</div>
+         </a>
+      </li>
+      <li>
+         <a href="private-messages.html">
+            <span class="messages__notice">ЛИЧНЫЕ СООБЩЕНИЯ</span>
+            <!--<svg class="svg-lm-messages-dims">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#lm-messages"></use>
+            </svg>-->
+            <img src="/img/svg/left-menu/messages.svg" alt="">
+            <span class="sidebar__num">5</span>
+            <div class="tooltip">Личные сообщения</div>
+         </a>
+      </li>
+      <li>
+         <a href="documents.html">
+            <span class="messages__notice">ДОКУМЕНТЫ</span>
+            <!--<svg class="svg-lm-doc-dims">-->
+               <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#lm-doc"></use>-->
+            <!--</svg>-->
+            <img src="/img/svg/left-menu/doc.svg" alt="">
+            <span class="sidebar__num">5</span>
+            <div class="tooltip">Документы</div>
+         </a>
+      </li>
+      <li>
+         <a href="events.html">
+            <span class="messages__notice">СОБЫТИЯ</span>
+            <!--<svg class="svg-lm-events-dims">
+               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#lm-events"></use>
+            </svg>-->
+            <img src="/img/svg/left-menu/events.svg" alt="">
+            <span class="sidebar__num">5</span>
+            <div class="tooltip">События</div>
+         </a>
+      </li>
+      <li>
+         <a href="users.html">
+            <span class="messages__notice">ПОЛЬЗОВАТЕЛИ</span>
+            <!--<svg class="svg-lm-user-dims">-->
+               <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#lm-user"></use>-->
+            <!--</svg>-->
+            <img src="/img/svg/left-menu/user.svg" alt="">
+            <span class="sidebar__num">5</span>
+            <div class="tooltip">Пользователи</div>
+         </a>
+      </li>
+      <li>
+         <a href="settings.html">
+            <span class="messages__notice">ПРОФИЛЬ И НАСТРОЙКИ</span>
+            <!--<svg class="svg-lm-settings-dims">-->
+               <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#lm-settings"></use>-->
+            <!--</svg>-->
+            <img src="/img/svg/left-menu/settings.svg" alt="">
+            <div class="tooltip">Профиль и настройки</div>
+         </a>
+      </li>
+   </ul>
+   <div class="sidebar__item">
+      <img src="/img/logo-side.png" alt="logo" />
+      <div class="sidebar__phone">тел.: 8-800-xxx-xx-xx</div>
+   </div>
+</aside>
+
+   <main class="main index-sidebar">
+      <div class="content">
+
+         <header class="header">
+   <a href="main.html" class="logo">
+      <img src="/img/logo.png" alt="logo">
+      <h1 class="main-title">
+         ПЛАТФОРМА ДЛЯ ПОДГОТОВКИ И СОГЛАСОВАНИЯ НОРМАТИВНЫХ ДОКУМЕНТОВ МИНОБРНАУКИ РОССИИ
+      </h1>
+   </a>
+</header>
+
+         <div class="content-container">
+            <div class="content-head">
+               <!--<svg class="content-icon">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg/sprite-symbol.svg#lm-doc"></use>
+               </svg>-->
+               <h2 class="content-title">События</h2>
+            </div>
+            <div class="content-block">
+               <h3 class="content-container__subtitle">Международная конференция «Материалы и технологии для Арктики»
+               </h3>
+            </div>
+
+            <div class="content-block calendar">
+  <!-- <h3 class="content-container__subtitle">Календарь событий</h3>-->
+   <div class="dateblock"></div>
+</div>
+
+         </div>
+      </div>
+      <div class="page-content">
+
+         <div class="page-content-row user-links2">
+            <div class="date-block slick">
+               <div class="date-block__item date-block__item_event">
+                  <div class="date-block__item-top">
+                     <div class="date-block__item-top-data">
+                        24 / 08 / 2017
+                     </div>
+                  </div>
+               </div>
+
+               <div class="date-block__item date-block__item_doc">
+                  <div class="date-block__item-top">
+                     <div class="date-block__item-top-data">
+                        25 / 08 / 2017
+                     </div>
+                  </div>
+                  <a href="#" class="date-block__item-bottom">
+                     Расшифровка ошибок, содержащихся в разделе Анализ загрузки
+                  </a>
+               </div>
+
+               <div class="date-block__item date-block__item_event">
+                  <div class="date-block__item-top">
+                     <div class="date-block__item-top-data">
+                        25 / 08 / 2017
+                     </div>
+                     <div class="date-block__item-top-icon">
+                        <img src="img/events_min.svg" alt="">
+                     </div>
+                  </div>
+                  <a href="#" class="date-block__item-bottom">
+                     Расшифровка ошибок, содержащихся в разделе Анализ загрузки
+                  </a>
+               </div>
+
+               <div class="date-block__item date-block__item_doc">
+                  <div class="date-block__item-top">
+                     <div class="date-block__item-top-data">
+                        25 / 08 / 2017
+                     </div>
+                     <div class="date-block__item-top-icon">
+                        <img src="img/events_min.svg" alt="">
+                     </div>
+                  </div>
+                  <a href="#" class="date-block__item-bottom">
+                     Расшифровка ошибок, содержащихся в разделе Анализ загрузки
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="page-content__inner">
+            <p class="content-main__header">Согласования и комментарии</p>
+
+         </div>
+
+         <div class="pagination">
+   <ul>
+      <li><a href="#"></a></li>
+      <li class="page-active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">
+      </a></li>
+   </ul>
+</div>
+
+      </div>
+   </main>
+
+</div>
+<div class="overlay"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+
+<script src="/js/vendor/svg4everybody.js"></script>
+<script>svg4everybody();</script>
+
+<script src="/assets/js/bundle.js"></script>
+</body>
+</html>

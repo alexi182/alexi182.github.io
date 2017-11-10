@@ -3148,7 +3148,7 @@ span.option-item {
     color: #000000;
     float: right;
     margin-top: 5px;
-    margin-right: 25px; }
+    margin-right: 20px; }
     .layout-content-search__top .advance-search:hover {
       text-decoration: underline; }
     .layout-content-search__top .advance-search:after {
@@ -3160,7 +3160,7 @@ span.option-item {
       background: url(../../../img/search-down.png) no-repeat; }
   .layout-content-search__top .close-search {
     position: absolute;
-    right: 25px;
+    right: 17px;
     top: 52px;
     display: none; }
     .layout-content-search__top .close-search:after {
@@ -3206,12 +3206,13 @@ span.option-item {
 
 .search-box input {
   padding: 5px 7px;
-  width: 100%; }
+  width: 100%;
+  border: 1px solid #e8e8e8; }
 
 .search-box .datepicker {
   border: 1px solid #e8e8e8;
-  background: url(../../../img/icondate.png) no-repeat 129px 2px;
-  background-size: 25px;
+  background: url(../../../img/icondate.png) no-repeat 131px 5px;
+  background-size: 21px;
   height: 33px; }
 
 .search-button {

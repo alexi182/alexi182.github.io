@@ -60,7 +60,7 @@
 }
 
 .checked {
-   background: #39404c;
+    background: #39404c;
     color: #ffffff;
 }
 
@@ -78,6 +78,13 @@
     &:hover {
         background: darken(#63b7df, 10%) url(../../../img/plus-c.png) no-repeat 9px 7px;
     }
+}
+
+.page-content-title {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
 }
 
 .page-content__item {
@@ -106,7 +113,7 @@
 .page-content__btn {}
 
 .page-content__row.btn-b {
-   margin-top: 37px;
+    margin-top: 37px;
 }
 
 .page-content__row {
@@ -655,9 +662,9 @@
 }
 
 .category.multi-select {
-   .chosen-container {
-      width: 100%!important;
-   }
+    .chosen-container {
+        width: 100%!important;
+    }
 }
 
 @media (max-width: 1760px) {
@@ -792,7 +799,7 @@
    }
 */
     .page-content {
-      //   padding: 15px 0px 0px 5px!important;
+        //   padding: 15px 0px 0px 5px!important;
     }
     /*  .sidebar_opened .content {
       padding-left: 270px!important;

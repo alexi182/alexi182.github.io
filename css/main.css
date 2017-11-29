@@ -1197,7 +1197,7 @@ The `sprites` mixin generates identical output to the CSS template
 .page-content__inner {
   background: rgba(255, 255, 255, 0.9);
   padding: 27px 45px 27px 30px;
-  height: 100%;
+  /*height: 100%;*/
   position: relative; }
 
 .content-main__header {
@@ -1524,11 +1524,11 @@ The `sprites` mixin generates identical output to the CSS template
   transition: all 300ms;
   cursor: pointer;
   /*    &:hover {
-         .avatar-back {
-            opacity: 1;
-            //@include transform_translateY(0);
-         }
-      }*/ }
+             .avatar-back {
+                opacity: 1;
+                //@include transform_translateY(0);
+             }
+          }*/ }
 
 .content-block__avatar {
   width: 106px;

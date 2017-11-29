@@ -384,12 +384,12 @@
       border-radius: 50%;
       @include transition(300);
       cursor: pointer;
-  /*    &:hover {
-         .avatar-back {
-            opacity: 1;
-            //@include transform_translateY(0);
-         }
-      }*/
+      /*    &:hover {
+             .avatar-back {
+                opacity: 1;
+                //@include transform_translateY(0);
+             }
+          }*/
    }
 }
 
